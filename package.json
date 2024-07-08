@@ -1,0 +1,54 @@
+{
+	"name": "@deafwave/osrs-botmaker-types",
+	"version": "0.3.0",
+	"author": {
+		"name": "Chandler Ferry",
+		"url": "https://github.com/ChandlerFerry"
+	},
+	"description": "Typescript Types for Sox's Botmaker",
+	"license": "Apache-2.0",
+	"type": "module",
+	"contributors": [],
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
+	"exports": {
+		"types": "./dist/src/index.d.ts",
+		"default": "./dist/src/exports/index.js"
+	},
+	"main": "./dist/src/exports/index.js",
+	"types": "./dist/src/index.d.ts",
+	"scripts": {
+		"lint": "eslint . --quiet",
+		"build": "tsc && cpy src/index.d.ts dist && cpy src/types dist",
+		"prepublish": "tsc && cpy src/index.d.ts dist && cpy src/types dist"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@eslint/eslintrc": "^2.1.1",
+		"@eslint/js": "~8.48.0",
+		"@tsconfig/node20": "^20.1.2",
+		"@tsconfig/strictest": "^2.0.3",
+		"@types/eslint": "^8.56.5",
+		"@types/eslint__js": "^8.42.3",
+		"@types/fs-extra": "^11.0.4",
+		"@typescript-eslint/eslint-plugin": "^7.1.1",
+		"@typescript-eslint/parser": "^7.1.1",
+		"cpy-cli": "^5.0.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jest": "^27.9.0",
+		"eslint-plugin-unicorn": "^51.0.1",
+		"jsonc-eslint-parser": "^2.4.0",
+		"prettier": "^3.2.5",
+		"prettier-eslint": "^16.3.0",
+		"tsx": "^4.7.1",
+		"typescript": "5.2.2",
+		"typescript-eslint": "^7.1.1"
+	}
+}

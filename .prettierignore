@@ -1,0 +1,12 @@
+# Other Languages
+CHANGELOG.md
+*.md
+*.yaml
+
+# Linters & Test
+coverage
+
+# Build
+dist
+tmp
+package.json
