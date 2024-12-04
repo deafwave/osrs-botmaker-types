@@ -2,17 +2,37 @@
 
 declare const bot: SoxBotApi;
 
+interface ExchangeRequest {
+	itemId: number;
+	quantity: number;
+	aborted: boolean;
+	complete: boolean;
+	aborting: boolean;
+	slot: number | null;
+}
 interface SoxBotApi {
-	events: net.runelite.client.eventbus.EventBus;
+	events: {
+		unregisterAll: () => void;
+	} & net.runelite.client.eventbus.EventBus;
 	bank: {
 		close: () => void;
+		depositAll: () => void;
 		depositAllWithId: (id: number) => void;
 		depositAllWithName: (name: string) => void;
 		depositWithId: (id: number) => void;
 		depositWithName: (name: string) => void;
+		getNotedMode: () => boolean;
+		getQuantityOfAllIds: (itemIds: number[]) => number[];
+		getQuantityOfAllNames: (itemNames: string[]) => number[];
+		getQuantityOfId: (itemId: number) => number;
+		getQuantityOfName: (itemName: string) => number;
+		isBanking: () => boolean;
 		isOpen: () => boolean;
+		open: () => void;
+		setNotedMode: (value: boolean) => void;
 		withdrawAllWithId: (id: number) => void;
 		withdrawAllWithName: (name: string) => void;
+		withdrawQuantityWithId: (id: number, quantity: number) => void;
 		withdrawWithId: (id: number) => void;
 		withdrawWithName: (name: string) => void;
 	};
@@ -30,6 +50,23 @@ interface SoxBotApi {
 	counters: {
 		getCounter: (name: string) => number;
 		setCounter: (name: string, value: number) => void;
+	};
+	equipment: {
+		containsAllIds: (ids: number[]) => boolean;
+		containsAllNames: (names: string[]) => boolean;
+		containsAnyIds: (ids: number[]) => boolean;
+		containsAnyNames: (names: string[]) => boolean;
+		containsId: (id: number) => boolean;
+		containsName: (name: string) => boolean;
+		getEquipment: () => any[];
+	};
+	/** WARNING: QUEUE DOES NOT CLEAR ON GE ADDTOBUY */
+	grandExchange: {
+		addBuyToQueue: (itemId: number, quantity: number, walkToAndOpenGE: boolean) => ExchangeRequest;
+		getExchangeQueueSize: () => number;
+		getFreeSlots: () => number;
+		isExchanging: () => boolean;
+		isOpen: () => boolean;
 	};
 	graphicsObjects: {
 		getWithIds: (ids: number[]) => net.runelite.api.GraphicsObject[];
@@ -65,6 +102,21 @@ interface SoxBotApi {
 		followPlayer: (names: string[]) => void;
 		isNearPlayer: (radius: number, names: string[]) => boolean;
 		tradePlayer: (names: string[]) => void;
+	};
+	plugins: {
+		questHelper: {
+			getCurrentQuestName: () => string;
+			getNextItem: () => any[];
+			/** TODO: ItemOnItem type */
+			getNextItemOnItem: () => any;
+			getNextNpc: () => net.runelite.api.NPC;
+			getNextTileObject: () => net.runelite.api.TileObject;
+			getNextWidget: () => net.runelite.api.widgets.Widget;
+			getNextWorldPoint: () => net.runelite.api.coords.WorldPoint;
+			getOverlayText: () => string;
+			isQuestStarted: () => boolean;
+			performNextStep: () => boolean;
+		};
 	};
 	prayer: {
 		togglePrayer: (prayer: net.runelite.api.Prayer, bypassMouseClicks: boolean) => void;
@@ -109,9 +161,22 @@ interface SoxBotApi {
 		) => void;
 		interactWidgetText: (text: string) => void;
 	};
+
+	menuAction(
+		p0: number,
+		p1: number,
+		action: MenuAction,
+		identifier: number,
+		itemId: number,
+		option: string,
+		target: string,
+		bounds: Rectangle,
+	): void;
+
 	clearGameChat: () => void;
 	localPlayerIdle: () => boolean;
 	localPlayerMoving: () => boolean;
 	printGameMessage: (message: string) => void;
 	runClientScript: (ints: number[]) => void;
+	terminate: () => void;
 }

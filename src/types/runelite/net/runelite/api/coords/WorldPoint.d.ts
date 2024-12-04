@@ -34,6 +34,8 @@ declare namespace net.runelite.api.coords {
 	 */
 	export class WorldPoint {
 		constructor(x: number, y: number, plane: number);
+
+		equals(worldPoint: WorldPoint): boolean;
 		/**
 		 * X-axis coordinate.
 		 */
@@ -120,12 +122,7 @@ declare namespace net.runelite.api.coords {
 		 * @param plane the plane
 		 * @return the tile coordinate containing the local point
 		 */
-		static fromLocal(
-			wv: WorldView,
-			x: number,
-			y: number,
-			plane: number,
-		): WorldPoint;
+		static fromLocal(wv: WorldView, x: number, y: number, plane: number): WorldPoint;
 		/**
 		 * Gets the coordinate of the tile that contains the passed local point.
 		 *
@@ -135,12 +132,7 @@ declare namespace net.runelite.api.coords {
 		 * @param plane the plane
 		 * @return the tile coordinate containing the local point
 		 */
-		static fromLocal(
-			scene: Scene,
-			x: number,
-			y: number,
-			plane: number,
-		): WorldPoint;
+		static fromLocal(scene: Scene, x: number, y: number, plane: number): WorldPoint;
 		/**
 		 * Gets the coordinate of the tile that contains the passed local point.
 		 *
@@ -151,12 +143,7 @@ declare namespace net.runelite.api.coords {
 		 * @return the tile coordinate containing the local point
 		 */
 		/** @deprecated */
-		static fromLocal(
-			client: Client,
-			x: number,
-			y: number,
-			plane: number,
-		): WorldPoint;
+		static fromLocal(client: Client, x: number, y: number, plane: number): WorldPoint;
 		/**
 		 * Gets the coordinate of the tile that contains the passed local point,
 		 * accounting for instances.
@@ -165,10 +152,7 @@ declare namespace net.runelite.api.coords {
 		 * @param localPoint the local coordinate
 		 * @return the tile coordinate containing the local point
 		 */
-		static fromLocalInstance(
-			client: Client,
-			localPoint: LocalPoint,
-		): WorldPoint;
+		static fromLocalInstance(client: Client, localPoint: LocalPoint): WorldPoint;
 		/**
 		 * Gets the coordinate of the tile that contains the passed local point,
 		 * accounting for instances.
@@ -178,11 +162,7 @@ declare namespace net.runelite.api.coords {
 		 * @param plane the plane the localpoint is on
 		 * @return the tile coordinate containing the local point
 		 */
-		static fromLocalInstance(
-			client: Client,
-			localPoint: LocalPoint,
-			plane: number,
-		): WorldPoint;
+		static fromLocalInstance(client: Client, localPoint: LocalPoint, plane: number): WorldPoint;
 		/**
 		 * Gets the coordinate of the tile that contains the passed local point,
 		 * accounting for instances.
@@ -192,11 +172,7 @@ declare namespace net.runelite.api.coords {
 		 * @param plane      the plane for the returned point, if it is not an instance
 		 * @return the tile coordinate containing the local point
 		 */
-		static fromLocalInstance(
-			scene: Scene,
-			localPoint: LocalPoint,
-			plane: number,
-		): WorldPoint;
+		static fromLocalInstance(scene: Scene, localPoint: LocalPoint, plane: number): WorldPoint;
 		private static fromLocalInstance(
 			instanceTemplateChunks: number[][][],
 			localPoint: LocalPoint,
@@ -212,26 +188,17 @@ declare namespace net.runelite.api.coords {
 		 * more than one if the same template chunk occurs more than once on the scene.
 		 */
 		/** @deprecated */
-		static toLocalInstance(
-			client: Client,
-			worldPoint: WorldPoint,
-		): Collection<WorldPoint>;
+		static toLocalInstance(client: Client, worldPoint: WorldPoint): Collection<WorldPoint>;
 		/**
 		 * Get occurrences of a tile on the scene, accounting for instances. There may be
 		 * more than one if the same template chunk occurs more than once on the scene.
 		 */
-		static toLocalInstance(
-			wv: WorldView,
-			worldPoint: WorldPoint,
-		): Collection<WorldPoint>;
+		static toLocalInstance(wv: WorldView, worldPoint: WorldPoint): Collection<WorldPoint>;
 		/**
 		 * Get occurrences of a tile on the scene, accounting for instances. There may be
 		 * more than one if the same template chunk occurs more than once on the scene.
 		 */
-		static toLocalInstance(
-			scene: Scene,
-			worldPoint: WorldPoint,
-		): Collection<WorldPoint>;
+		static toLocalInstance(scene: Scene, worldPoint: WorldPoint): Collection<WorldPoint>;
 		private static toLocalInstance(
 			instanceTemplateChunks: number[][][],
 			baseX: number,
@@ -276,30 +243,15 @@ declare namespace net.runelite.api.coords {
 		 */
 		distanceTo2D(other: WorldPoint): number;
 		/** @deprecated */
-		static fromScene(
-			client: Client,
-			x: number,
-			y: number,
-			plane: number,
-		): WorldPoint;
+		static fromScene(client: Client, x: number, y: number, plane: number): WorldPoint;
 		/**
 		 * Converts the passed scene coordinates to a world space
 		 */
-		static fromScene(
-			wv: WorldView,
-			x: number,
-			y: number,
-			plane: number,
-		): WorldPoint;
+		static fromScene(wv: WorldView, x: number, y: number, plane: number): WorldPoint;
 		/**
 		 * Converts the passed scene coordinates to a world space
 		 */
-		static fromScene(
-			scene: Scene,
-			x: number,
-			y: number,
-			plane: number,
-		): WorldPoint;
+		static fromScene(scene: Scene, x: number, y: number, plane: number): WorldPoint;
 		/**
 		 * Gets the ID of the region containing this tile.
 		 *
@@ -309,12 +261,7 @@ declare namespace net.runelite.api.coords {
 		/**
 		 * Converts the passed region ID and coordinates to a world coordinate
 		 */
-		static fromRegion(
-			regionId: number,
-			regionX: number,
-			regionY: number,
-			plane: number,
-		): WorldPoint;
+		static fromRegion(regionId: number, regionX: number, regionY: number, plane: number): WorldPoint;
 		/**
 		 * Gets the X-axis coordinate of the region coordinate
 		 */
@@ -331,10 +278,7 @@ declare namespace net.runelite.api.coords {
 		 * @param toOverworld whether to convert to overworld coordinates, or to real coordinates
 		 * @return
 		 */
-		static getMirrorPoint(
-			worldPoint: WorldPoint,
-			toOverworld: boolean,
-		): WorldPoint;
+		static getMirrorPoint(worldPoint: WorldPoint, toOverworld: boolean): WorldPoint;
 		// Test against what we are converting from
 		/**
 		 * Checks whether this tile is located within any of the given areas.

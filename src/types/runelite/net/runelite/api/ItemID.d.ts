@@ -13810,6 +13810,8 @@ declare namespace net.runelite.api {
 		static readonly MOONLIGHT_POTION1 = 29083;
 		static readonly SULPHUR_BLADES = 29084;
 		static readonly SULPHUROUS_ESSENCE = 29087;
+		static readonly GLACIAL_TEMOTL = 29889;
+		static readonly BURNING_CLAWS = 29577;
 		static readonly CALCIFIED_DEPOSIT = 29088;
 		static readonly CALCIFIED_MOTH = 29090;
 		static readonly NOT_MEAT = 29098;

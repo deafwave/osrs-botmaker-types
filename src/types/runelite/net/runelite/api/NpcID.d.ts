@@ -10719,5 +10719,6 @@ declare namespace net.runelite.api {
 		static readonly ARMOURED_ZOMBIE_12762 = 12762;
 		static readonly ARMOURED_ZOMBIE_12763 = 12763;
 		static readonly ARMOURED_ZOMBIE_12764 = 12764;
+		static readonly SULPHUR_NAGUA = 13033;
 	}
 }
