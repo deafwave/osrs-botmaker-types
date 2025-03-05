@@ -16,6 +16,8 @@ interface SoxBotApi {
 	} & net.runelite.client.eventbus.EventBus;
 	bank: {
 		close: () => void;
+		consumeIds: (ids: number[]) => boolean;
+    	consumeNames: (names: string[]) => boolean;
 		depositAll: () => void;
 		depositAllWithId: (id: number) => void;
 		depositAllWithName: (name: string) => void;
@@ -37,9 +39,9 @@ interface SoxBotApi {
 		withdrawWithName: (name: string) => void;
 	};
 	bmCache: {
-		getBoolean: (key: string) => boolean;
-		getInt: (key: string) => number;
-		getString: (key: string) => string;
+		getBoolean: (key: string, defaultValue : boolean) => boolean;
+		getInt: (key: string, defaultValue : number) => number;
+		getString: (key: string, defaultValue : string) => string;
 		saveBoolean: (key: string, value: boolean) => void;
 		saveInt: (key: string, value: number) => void;
 		saveString: (key: string, value: string) => void;
@@ -72,6 +74,17 @@ interface SoxBotApi {
 		getWithIds: (ids: number[]) => net.runelite.api.GraphicsObject[];
 	};
 	inventory: {
+		containsAllIds: (ids: number[]) => boolean;
+		containsAllNames: (names: string[]) => boolean;
+		containsAnyIds: (ids: number[]) => boolean;
+		containsAnyNames: (names: string[]) => boolean;
+		containsId: (id: number) => boolean;
+		containsName: (name: string) => boolean;
+		getEmptySlots: () => number;
+		getQuantityOfAllIds: (itemIds: number[]) => number[];
+		getQuantityOfAllNames: (itemNames: string[]) => number[];
+		getQuantityOfId: (itemId: number) => number;
+		getQuantityOfName: (itemName: string) => number;
 		interactWithIds: (itemIds: number[], options: string[]) => void;
 		interactWithNames: (itemNames: string[], options: string[]) => void;
 		itemOnItemWithIds: (itemId1: number, itemId2: number) => void;
@@ -90,13 +103,18 @@ interface SoxBotApi {
 		interactSupplied: (target: net.runelite.api.NPC, action: string) => void;
 	};
 	objects: {
+		getClosest: (tileObjects: net.runelite.api.TileObject[]) => net.runelite.api.TileObject;
+		getClosestWithin: (tileObjects: net.runelite.api.TileObject[], maxDistance: number) => net.runelite.api.TileObject;
 		getTileObjectComposition: (objectId: number) => net.runelite.api.ObjectComposition;
 		getTileObjectsWithIds: (ids: number[]) => net.runelite.api.TileObject[];
 		getTileObjectsWithNames: (names: string[]) => net.runelite.api.TileObject[];
+		getTileObjectsWithOptions: (options: string[]) => net.runelite.api.TileObject[];
 		interactObject: (objectName: string, action: string) => void;
 		interactObjects: (objectNames: string[], actions: string[]) => void;
 		interactSuppliedObject: (target: net.runelite.api.TileObject, action: string) => void;
-	};
+		isNearIds: (ids: number[], distance: number) => boolean;
+		isNearNames: (names: string[], distance: number) => boolean;
+	};	
 	players: {
 		attackPlayer: (names: string[]) => void;
 		followPlayer: (names: string[]) => void;
@@ -170,7 +188,7 @@ interface SoxBotApi {
 		itemId: number,
 		option: string,
 		target: string,
-		bounds: Rectangle,
+		bounds?: Rectangle,
 	): void;
 
 	clearGameChat: () => void;
