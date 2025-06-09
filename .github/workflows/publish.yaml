@@ -1,9 +1,10 @@
 name: Build on Main
+
 on:
   push:
     branches: [main]
-  paths:
-    - 'package.json'
+    paths:
+      - 'package.json'
   
 concurrency:
   group: ${{ github.repository }}-${{ github.event.ref }}
