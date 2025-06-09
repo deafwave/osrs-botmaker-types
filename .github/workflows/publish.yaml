@@ -24,7 +24,7 @@ jobs:
           scope: '@deafwave'
           cache: 'pnpm'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: ⏫ Bumping version
         id: bumping-version
         uses: jpb06/bump-package@latest
