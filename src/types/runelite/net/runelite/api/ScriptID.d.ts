@@ -34,7 +34,7 @@ declare namespace net.runelite.api {
 		 * <li> int how far down to scroll </li>
 		 * </ul>
 		 */
-
+		@ScriptArguments((integer = 3))
 		static readonly UPDATE_SCROLLBAR = 72;
 
 		/**
@@ -47,19 +47,19 @@ declare namespace net.runelite.api {
 		 * <li> int set target </li>
 		 * </ul>
 		 */
-
+		@ScriptArguments((integer = 4), (string = 1))
 		static readonly CHAT_SEND = 5517;
 
 		/**
 		 * Rebuilds the chatbox and the pmbox
 		 */
-
+		@ScriptArguments()
 		static readonly SPLITPM_CHANGED = 83;
 
 		/**
 		 * Rebuilds the chatbox
 		 */
-
+		@ScriptArguments()
 		static readonly BUILD_CHATBOX = 216;
 
 		/**
@@ -70,6 +70,7 @@ declare namespace net.runelite.api {
 		 * <li> String Player to send private message to</li>
 		 * </ul>
 		 */
+		@ScriptArguments((string = 1))
 		static readonly OPEN_PRIVATE_MESSAGE_INTERFACE = 107;
 
 		/**
@@ -78,6 +79,7 @@ declare namespace net.runelite.api {
 		 * <li> String Message Prefix. Only used inside the GE search interfaces
 		 * </ul>
 		 */
+		@ScriptArguments((string = 1))
 		static readonly CHAT_TEXT_INPUT_REBUILD = 222;
 
 		/**
@@ -88,6 +90,7 @@ declare namespace net.runelite.api {
 		 * <li> int (boolean) Submit close to server </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 3))
 		static readonly MESSAGE_LAYER_CLOSE = 299;
 
 		/**
@@ -97,11 +100,13 @@ declare namespace net.runelite.api {
 		 * <li> int (InputType) message layer type we are changing to </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 1))
 		static readonly MESSAGE_LAYER_OPEN = 677;
 
 		/**
 		 * Builds the chatbox input widget
 		 */
+		@ScriptArguments()
 		static readonly CHAT_PROMPT_INIT = 223;
 
 		/**
@@ -115,6 +120,7 @@ declare namespace net.runelite.api {
 		 *
 		 * Returns a pair of booleans indicating if the stash unit is built and if it is filled
 		 */
+		@ScriptArguments((integer = 4))
 		static readonly WATSON_STASH_UNIT_CHECK = 1479;
 
 		/**
@@ -127,6 +133,7 @@ declare namespace net.runelite.api {
 		 * <li> int (QuestState) the normalized state of the quest
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 1))
 		static readonly QUEST_STATUS_GET = 4029;
 
 		/**
@@ -136,6 +143,7 @@ declare namespace net.runelite.api {
 		 * <li> int Number of lines </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 2))
 		static readonly QUEST_UPDATE_LINECOUNT = 2523;
 
 		/**
@@ -145,6 +153,7 @@ declare namespace net.runelite.api {
 		 * <li> int Number of lines </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 2))
 		static readonly DIARY_UPDATE_LINECOUNT = 6845;
 
 		/**
@@ -156,6 +165,7 @@ declare namespace net.runelite.api {
 		 * <li> int  Reset zoom position for resizable viewport mode</li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 2))
 		static readonly CAMERA_DO_ZOOM = 42;
 
 		/**
@@ -163,13 +173,15 @@ declare namespace net.runelite.api {
 		 *
 		 * This is used to eat events when you want a menu action attached to it
 		 * because you need an op listener attached to it for it to work
-		 * @deprecated
 		 */
+		@ScriptArguments()
+		@Deprecated
 		static readonly NULL = 10003;
 
 		/**
 		 * Send a private message.
 		 */
+		@ScriptArguments((string = 2))
 		static readonly PRIVMSG = 10004;
 
 		/**
@@ -180,6 +192,7 @@ declare namespace net.runelite.api {
 		 * <li>int Amount of exp to drop</li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 2))
 		static readonly XPDROP_DISABLED = 2091;
 
 		/**
@@ -188,31 +201,37 @@ declare namespace net.runelite.api {
 		 * <li>String Players in-game name</li>
 		 * </ul>
 		 */
+		@ScriptArguments((string = 1))
 		static readonly FRIENDS_CHAT_SEND_KICK = 3764;
 
 		/**
 		 * Builds the widget that holds all of the players inside a friends chat
 		 */
+		@ScriptArguments((integer = 15))
 		static readonly FRIENDS_CHAT_CHANNEL_REBUILD = 1658;
 
 		/**
 		 * Builds the widget that holds all of the players inside a clan chat
 		 */
+		@ScriptArguments((integer = 7))
 		static readonly CLAN_SIDEPANEL_DRAW = 4396;
 
 		/**
 		 * Builds the widget for making an offer in Grand Exchange
 		 */
+		@ScriptArguments((integer = 17))
 		static readonly GE_OFFERS_SETUP_BUILD = 779;
 
 		/**
 		 * Builds the grand exchange item search widget
 		 */
+		@ScriptArguments((integer = 3))
 		static readonly GE_ITEM_SEARCH = 752;
 
 		/**
 		 * On load listener for building the quest list interface
 		 */
+		@ScriptArguments((integer = 8))
 		static readonly QUESTLIST_INIT = 1350;
 
 		/**
@@ -229,6 +248,7 @@ declare namespace net.runelite.api {
 		 * <li> int (WidgetID) Friends list player previous name holder </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 9))
 		static readonly FRIENDS_UPDATE = 631;
 
 		/**
@@ -243,6 +263,7 @@ declare namespace net.runelite.api {
 		 * <li> int (WidgetID) Ignore list player previous name holder </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 7))
 		static readonly IGNORE_UPDATE = 630;
 
 		/**
@@ -251,21 +272,28 @@ declare namespace net.runelite.api {
 		 * <li> int (WidgetID) * 16, various widgets making up the bank interface </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 17))
 		static readonly BANKMAIN_SEARCH_REFRESH = 283;
+
+		@ScriptArguments((integer = 6))
+		static readonly BANKMAIN_DRAGSCROLL = 284;
 
 		/**
 		 * Called to update the PVP widget (wilderness level/protection)
 		 */
+		@ScriptArguments((integer = 1))
 		static readonly PVP_WIDGET_BUILDER = 388;
 
 		/**
 		 * Called to build the combat interface
 		 */
-		static readonly COMBAT_INTERFACE_SETUP = 420;
+		@ScriptArguments()
+		static readonly COMBAT_INTERFACE_SETUP = 7593;
 
 		/**
 		 * Called to build the toplevel interface
 		 */
+		@ScriptArguments((integer = 2))
 		static readonly TOPLEVEL_REDRAW = 907;
 
 		/**
@@ -274,8 +302,10 @@ declare namespace net.runelite.api {
 		 * <li> XP drop parent component </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 4), (string = 1))
 		static readonly XPDROPS_SETDROPSIZE = 996;
 
+		@ScriptArguments((integer = 34))
 		static readonly BANKMAIN_INIT = 274;
 
 		/**
@@ -284,10 +314,13 @@ declare namespace net.runelite.api {
 		 * <li>int (WidgetID) * 17, various widgets making up the bank interface</li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 17))
 		static readonly BANKMAIN_BUILD = 277;
 
+		@ScriptArguments((integer = 19))
 		static readonly BANKMAIN_FINISHBUILDING = 505;
 
+		@ScriptArguments()
 		static readonly BANKMAIN_SEARCHING = 514;
 
 		/**
@@ -301,8 +334,10 @@ declare namespace net.runelite.api {
 		 * These can be retrieved from the onInvTransmitListener of BANK_ITEM_CONTAINER. Note that this array also
 		 * contains the script ID for the bank layout script in the first index
 		 */
+		@ScriptArguments((integer = 18))
 		static readonly BANKMAIN_SEARCH_TOGGLE = 281;
 
+		@ScriptArguments((integer = 6))
 		static readonly BANKMAIN_SIZE_CHECK = 840;
 
 		/**
@@ -319,63 +354,81 @@ declare namespace net.runelite.api {
 		 * <li>int (WidgetID) drag parent</li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 11), (string = 1))
 		static readonly SETTINGS_SLIDER_CHOOSE_ONOP = 3885;
 
 		/**
 		 * Position and size the wiki button, as well as hide/unhide it
 		 */
+		@ScriptArguments((integer = 4))
 		static readonly WIKI_ICON_UPDATE = 3306;
 
 		/**
 		 * Drag callback for the camera zoom slider in the options side panel.
 		 */
+		@ScriptArguments((integer = 3))
 		static readonly ZOOM_SLIDER_ONDRAG = 833;
 
 		/**
 		 * Drag callback for the camera zoom slider in the settings.
 		 */
+		@ScriptArguments((integer = 6))
 		static readonly SETTINGS_ZOOM_SLIDER_ONDRAG = 3896;
 
-		static readonly COLLECTION_DRAW_LIST = 2730;
+		@ScriptArguments((integer = 8))
+		static readonly COLLECTION_DRAW_LIST = 2731;
 
 		/**
 		 * Draws the active notification in increasing sizes (increasing horizontally first, then vertically) to show a
 		 * starting animation.
 		 */
+		@ScriptArguments((integer = 3))
 		static readonly NOTIFICATION_START = 3346;
 
 		/**
 		 * Draws the active notification in full size for a specified number of client ticks. In essence, delayed between
 		 * the open and close animations.
 		 */
+		@ScriptArguments((integer = 1))
 		static readonly NOTIFICATION_DELAY = 3347;
 
+		@ScriptArguments((integer = 7))
 		static readonly GROUP_IRONMAN_STORAGE_BUILD = 5269;
 
+		@ScriptArguments((integer = 6))
 		static readonly INVENTORY_DRAWITEM = 6011;
 
 		/**
 		 * Initializes the trade interface
 		 */
+		@ScriptArguments((integer = 6))
 		static readonly TRADE_MAIN_INIT = 755;
 
 		/**
 		 * Transitions the tob hud into the white flash that happens when sotetseg teleports the players to the maze.
 		 */
+		@ScriptArguments((string = 1))
 		static readonly TOB_HUD_SOTETSEG_FADE = 2308;
 
+		@ScriptArguments((integer = 3))
 		static readonly RAIDS_STORAGE_PRIVATE_ITEMS = 1607;
 
+		@ScriptArguments((integer = 12))
 		static readonly HP_HUD_UPDATE = 2103;
 
+		@ScriptArguments((integer = 7))
 		static readonly ORBS_UPDATE_RUNENERGY = 447;
 
+		@ScriptArguments((integer = 9))
 		static readonly WORLDMAP_LOADMAP = 1712;
 
+		@ScriptArguments((integer = 5))
 		static readonly PRAYER_UPDATEBUTTON = 463;
 
+		@ScriptArguments((integer = 9), (string = 2))
 		static readonly PRAYER_REDRAW = 547;
 
+		@ScriptArguments((integer = 3))
 		static readonly QUICKPRAYER_INIT = 466;
 
 		/**
@@ -388,13 +441,49 @@ declare namespace net.runelite.api {
 		 * <li> overlay ticks </li>
 		 * </ul>
 		 */
+		@ScriptArguments((integer = 7))
 		static readonly ADD_OVERLAYTIMER_LOC = 5474;
 
+		@ScriptArguments((integer = 7), (string = 1))
 		static readonly ACCOUNT_SUMMARY_TEXT_FORMAT = 3948;
 
+		@ScriptArguments((integer = 10), (string = 3))
 		static readonly ACCOUNT_SUMMARY_SECTION_FORMAT = 3950;
+
+		@ScriptArguments((integer = 6), (string = 2))
 		static readonly CHATBOX_KEYINPUT_MATCHED = 2153;
 
+		@ScriptArguments((integer = 6))
 		static readonly EQUIPMENT_SET_STAT_BONUS_SETUP = 3517;
+
+		@ScriptArguments((integer = 12), (string = 2))
+		static readonly MAGIC_SPELLBOOK_INITIALISESPELLS = 2616;
+
+		@ScriptArguments((integer = 2))
+		static readonly MOTHERLODE_HUD_UPDATE = 1634;
+
+		@ScriptArguments((integer = 1))
+		static readonly POTIONSTORE_DOSES = 3750;
+
+		@ScriptArguments((integer = 1))
+		static readonly POTIONSTORE_WITHDRAW_DOSES = 4818;
+
+		@ScriptArguments()
+		static readonly POTIONSTORE_BUILD = 6080;
+
+		@ScriptArguments((integer = 3))
+		static readonly POTIONSTORE_DOSE_CHANGE = 6555;
+
+		@ScriptArguments((integer = 5))
+		static readonly FAIRYRINGS_SORT_UPDATE = 402;
+
+		@ScriptArguments((integer = 1), (string = 1))
+		static readonly POPUP_OVERLAY_YESNO_INIT = 4212;
+
+		@ScriptArguments((integer = 12))
+		static readonly BANK_DEPOSITBOX_INIT = 144;
+
+		@ScriptArguments((integer = 7))
+		static readonly SEED_VAULT_BUILD = 2819;
 	}
 }

@@ -59,6 +59,33 @@ declare namespace net.runelite.api {
 		static readonly WOODCUTTING_2H_CRYSTAL = 10072;
 		static readonly WOODCUTTING_2H_CRYSTAL_INACTIVE = 10073;
 		static readonly WOODCUTTING_2H_3A = 10074;
+		static readonly WOODCUTTING_ENT_BRONZE = 3291;
+		static readonly WOODCUTTING_ENT_IRON = 3290;
+		static readonly WOODCUTTING_ENT_STEEL = 3289;
+		static readonly WOODCUTTING_ENT_BLACK = 3288;
+		static readonly WOODCUTTING_ENT_MITHRIL = 3287;
+		static readonly WOODCUTTING_ENT_ADAMANT = 3286;
+		static readonly WOODCUTTING_ENT_RUNE = 3285;
+		static readonly WOODCUTTING_ENT_GILDED = 8305;
+		static readonly WOODCUTTING_ENT_DRAGON = 3292;
+		static readonly WOODCUTTING_ENT_DRAGON_OR = 23;
+		static readonly WOODCUTTING_ENT_INFERNAL = 2116;
+		static readonly WOODCUTTING_ENT_INFERNAL_OR = 8777;
+		static readonly WOODCUTTING_ENT_3A = 7266;
+		static readonly WOODCUTTING_ENT_CRYSTAL = 8323;
+		static readonly WOODCUTTING_ENT_CRYSTAL_INACTIVE = 8327;
+		static readonly WOODCUTTING_ENT_TRAILBLAZER = 8780;
+		static readonly WOODCUTTING_ENT_2H_BRONZE = 10517;
+		static readonly WOODCUTTING_ENT_2H_IRON = 10518;
+		static readonly WOODCUTTING_ENT_2H_STEEL = 10519;
+		static readonly WOODCUTTING_ENT_2H_BLACK = 10520;
+		static readonly WOODCUTTING_ENT_2H_MITHRIL = 10521;
+		static readonly WOODCUTTING_ENT_2H_ADAMANT = 10522;
+		static readonly WOODCUTTING_ENT_2H_RUNE = 10523;
+		static readonly WOODCUTTING_ENT_2H_DRAGON = 10524;
+		static readonly WOODCUTTING_ENT_2H_CRYSTAL = 10525;
+		static readonly WOODCUTTING_ENT_2H_CRYSTAL_INACTIVE = 10526;
+		static readonly WOODCUTTING_ENT_2H_3A = 10527;
 		static readonly CONSUMING = 829; // consuming consumables
 		static readonly FIREMAKING = 733;
 		static readonly FIREMAKING_FORESTERS_CAMPFIRE_ARCTIC_PINE = 10563;
@@ -78,12 +105,18 @@ declare namespace net.runelite.api {
 		static readonly COOKING_WINE = 7529;
 		static readonly FLETCHING_BOW_CUTTING = 1248;
 		static readonly HUNTER_LAY_BOXTRAP_BIRDSNARE = 5208; //same for laying bird snares and box traps
-		static readonly HUNTER_LAY_DEADFALLTRAP = 5212; //setting up deadfall trap
 		static readonly HUNTER_LAY_NETTRAP = 5215; //setting up net trap
 		static readonly HUNTER_LAY_MANIACAL_MONKEY_BOULDER_TRAP = 7259; // setting up maniacal monkey boulder trap
 		static readonly HUNTER_CHECK_BIRD_SNARE = 5207;
-		static readonly HUNTER_CHECK_BOX_TRAP = 5212;
 		static readonly HERBLORE_MAKE_TAR = 5249;
+		static readonly FLETCHING_ATTACH_STOCK_TO_BRONZE_LIMBS = 4436;
+		static readonly FLETCHING_ATTACH_STOCK_TO_BLURITE_LIMBS = 4437;
+		static readonly FLETCHING_ATTACH_STOCK_TO_IRON_LIMBS = 4438;
+		static readonly FLETCHING_ATTACH_STOCK_TO_STEEL_LIMBS = 4439;
+		static readonly FLETCHING_ATTACH_STOCK_TO_MITHRIL_LIMBS = 4440;
+		static readonly FLETCHING_ATTACH_STOCK_TO_ADAMANTITE_LIMBS = 4441;
+		static readonly FLETCHING_ATTACH_STOCK_TO_RUNITE_LIMBS = 4442;
+		static readonly FLETCHING_ATTACH_STOCK_TO_DRAGON_LIMBS = 7860;
 		static readonly FLETCHING_STRING_NORMAL_SHORTBOW = 6678;
 		static readonly FLETCHING_STRING_NORMAL_LONGBOW = 6684;
 		static readonly FLETCHING_STRING_OAK_SHORTBOW = 6679;
@@ -120,8 +153,9 @@ declare namespace net.runelite.api {
 		static readonly CRAFTING_POTTERS_WHEEL = 883;
 		static readonly CRAFTING_POTTERY_OVEN = 24975;
 		static readonly CRAFTING_LOOM = 2270;
+		static readonly CRAFTING_CRUSH_BLESSED_BONES = 11099;
 		static readonly SMITHING_SMELTING = 899;
-		static readonly SMITHING_CANNONBALL = 827; //cball smithing uses this and SMITHING_SMELTING
+		static readonly SMITHING_CANNONBALL = 827; // same as BURYING_BONES
 		static readonly SMITHING_ANVIL = 898;
 		static readonly SMITHING_IMCANDO_HAMMER = 8911;
 		static readonly FISHING_BIG_NET = 620;
@@ -191,24 +225,28 @@ declare namespace net.runelite.api {
 		static readonly MINING_MOTHERLODE_3A = 7282;
 		static readonly MINING_MOTHERLODE_CRYSTAL = 8345;
 		static readonly MINING_MOTHERLODE_TRAILBLAZER = 8786; // Same animation as Infernal pickaxe (or)
-		readonly MINING_CRASHEDSTAR_BRONZE = 6747;
-		readonly MINING_CRASHEDSTAR_IRON = 6748;
-		readonly MINING_CRASHEDSTAR_STEEL = 6749;
-		readonly MINING_CRASHEDSTAR_BLACK = 6108;
-		readonly MINING_CRASHEDSTAR_MITHRIL = 6751;
-		readonly MINING_CRASHEDSTAR_ADAMANT = 6750;
-		readonly MINING_CRASHEDSTAR_RUNE = 6746;
-		readonly MINING_CRASHEDSTAR_GILDED = 8314;
-		readonly MINING_CRASHEDSTAR_DRAGON = 7140;
-		readonly MINING_CRASHEDSTAR_DRAGON_UPGRADED = 643;
-		readonly MINING_CRASHEDSTAR_DRAGON_OR = 8349;
-		readonly MINING_CRASHEDSTAR_DRAGON_OR_TRAILBLAZER = 8888;
-		readonly MINING_CRASHEDSTAR_INFERNAL = 4483;
-		readonly MINING_CRASHEDSTAR_3A = 7284;
-		readonly MINING_CRASHEDSTAR_CRYSTAL = 8350;
+		static readonly MINING_CRASHEDSTAR_BRONZE = 6747;
+		static readonly MINING_CRASHEDSTAR_IRON = 6748;
+		static readonly MINING_CRASHEDSTAR_STEEL = 6749;
+		static readonly MINING_CRASHEDSTAR_BLACK = 6108;
+		static readonly MINING_CRASHEDSTAR_MITHRIL = 6751;
+		static readonly MINING_CRASHEDSTAR_ADAMANT = 6750;
+		static readonly MINING_CRASHEDSTAR_RUNE = 6746;
+		static readonly MINING_CRASHEDSTAR_GILDED = 8314;
+		static readonly MINING_CRASHEDSTAR_DRAGON = 7140;
+		static readonly MINING_CRASHEDSTAR_DRAGON_UPGRADED = 643;
+		static readonly MINING_CRASHEDSTAR_DRAGON_OR = 8349;
+		static readonly MINING_CRASHEDSTAR_DRAGON_OR_TRAILBLAZER = 8888;
+		static readonly MINING_CRASHEDSTAR_INFERNAL = 4483;
+		static readonly MINING_CRASHEDSTAR_3A = 7284;
+		static readonly MINING_CRASHEDSTAR_CRYSTAL = 8350;
 		static readonly DENSE_ESSENCE_CHIPPING = 7201;
 		static readonly DENSE_ESSENCE_CHISELING = 7202;
 		static readonly HERBLORE_POTIONMAKING = 363; //used for both herb and secondary
+		static readonly HERBLORE_MIXOLOGY_CONCENTRATE = 11644;
+		static readonly HERBLORE_MIXOLOGY_CRYSTALIZE = 11639;
+		static readonly HERBLORE_MIXOLOGY_HOMOGENIZE = 11634;
+		static readonly HERBLORE_MIXOLOGY_REFINER = 11604;
 		static readonly MAGIC_CHARGING_ORBS = 726;
 		static readonly MAGIC_MAKE_TABLET = 4068;
 		static readonly MAGIC_ENCHANTING_JEWELRY = 931;
@@ -223,8 +261,6 @@ declare namespace net.runelite.api {
 		static readonly DEMONIC_GORILLA_MAGIC_ATTACK = 7225;
 		static readonly DEMONIC_GORILLA_MELEE_ATTACK = 7226;
 		static readonly DEMONIC_GORILLA_RANGED_ATTACK = 7227;
-		static readonly DEMONIC_GORILLA_AOE_ATTACK = 7228;
-		static readonly DEMONIC_GORILLA_PRAYER_SWITCH = 7228;
 		static readonly DEMONIC_GORILLA_DEFEND = 7224;
 		static readonly BOOK_HOME_TELEPORT_1 = 4847;
 		static readonly BOOK_HOME_TELEPORT_2 = 4850;
@@ -264,6 +300,9 @@ declare namespace net.runelite.api {
 		static readonly CHURN_MILK_LONG = 2795;
 		static readonly CLEANING_SPECIMENS_1 = 6217;
 		static readonly CLEANING_SPECIMENS_2 = 6459;
+		static readonly SACRIFICE_BLESSED_BONE_SHARDS = 11102;
+		static readonly MAKING_SUNFIRE_WINE = 11095;
+		static readonly THIEVING_VARLAMORE_STEALING_VALUABLES = 11075;
 
 		// Ectofuntus animations
 		static readonly ECTOFUNTUS_FILL_SLIME_BUCKET = 4471;
@@ -274,7 +313,9 @@ declare namespace net.runelite.api {
 		// NPC animations
 		static readonly TZTOK_JAD_MAGIC_ATTACK = 2656;
 		static readonly TZTOK_JAD_RANGE_ATTACK = 2652;
+		static readonly CYCLOPS_ATTACK = 4652;
 		static readonly HELLHOUND_DEFENCE = 6566;
+		static readonly DUCK_BOBBING = 6818;
 
 		// Farming
 		static readonly FARMING_HARVEST_FRUIT_TREE = 2280;
@@ -285,18 +326,18 @@ declare namespace net.runelite.api {
 		static readonly FARMING_PLANT_SEED = 2291;
 		static readonly FARMING_HARVEST_FLOWER = 2292;
 		static readonly FARMING_MIX_ULTRACOMPOST = 7699;
-		static readonly FARMING_HARVEST_ALLOTMENT = 830;
+		static readonly FARMING_HARVEST_ALLOTMENT = 830; // same as DIG
 
 		// Lunar spellbook
 		static readonly ENERGY_TRANSFER_VENGEANCE_OTHER = 4411;
 		static readonly MAGIC_LUNAR_SHARED = 4413; // Utilized by Fertile Soil, Boost/Stat Potion Share, NPC Contact, Bake Pie
 		static readonly MAGIC_LUNAR_CURE_PLANT = 4432;
-		static readonly MAGIC_LUNAR_GEOMANCY = 7118;
 		static readonly MAGIC_LUNAR_PLANK_MAKE = 6298;
 		static readonly MAGIC_LUNAR_STRING_JEWELRY = 4412;
 
 		// Arceuus spellbook
 		static readonly MAGIC_ARCEUUS_RESURRECT_CROPS = 7118;
+		static readonly MAGIC_ARCEUUS_DEMONBANE = 8977; // Shared by all 3 Demonbane spells
 
 		// Battlestaff Crafting
 		static readonly CRAFTING_BATTLESTAVES = 7531;
@@ -319,5 +360,32 @@ declare namespace net.runelite.api {
 
 		// POH Animations
 		static readonly INCENSE_BURNER = 3687;
+		static readonly PORTAL_NEXUS_SPIN = 367;
+
+		// Wyrms
+		static readonly WYRM_IDLE_DORMANT = 8266;
+		static readonly WYRM_IDLE_ACTIVE = 8267;
+		static readonly WYRM_ATTACK_MELEE = 8270;
+		static readonly WYRM_ATTACK_MAGE = 8271;
+
+		// Lost City's Tree spirit
+		static readonly TREE_SPIRIT_IDLE = 5530;
+		static readonly TREE_SPIRIT_WALK = 5531;
+
+		static readonly SIGN_HOLDING_ZOMBIE_PROTESTOR_WALK = 5583;
+
+		static readonly VIGGORAS_CHAINMACE_IDLE = 244;
+
+		static readonly MLM_WATER_WHEEL_SPINNING = 1051;
+		static readonly HARMONY_ISLAND_WINDMILL_SPINNING = 5857;
+		static readonly GWENITH_WINDMILL_SPINNING = 6495;
+		static readonly LITHKREN_GENERATOR_SPINNING = 7898;
+		static readonly GIANTS_FOUNDRY_WATER_WHEEL_SPINNING = 9450;
+
+		static readonly HUEYCOATL_DEATH = 11679;
+
+		static readonly SLAYER_TOWER_WATER_BUCKET_DRIP = 3558;
+
+		static readonly KEY_MASTER_IDLE = 4519;
 	}
 }

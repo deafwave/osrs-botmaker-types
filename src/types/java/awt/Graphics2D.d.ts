@@ -8,7 +8,9 @@ declare namespace java.awt {
 		fillOval(x: number, y: number, width: number, height: number): void;
 		drawPolygon(xPoints: number[], yPoints: number[], nPoints: number): void;
 		fillPolygon(xPoints: number[], yPoints: number[], nPoints: number): void;
-
+		draw(shape: Shape): void; // Assuming a Shape interface is defined
+		fill(shape: Shape | Polygon): void;
+		getColor(): java.awt.Color; // Assuming a Color interface is defined
 		// Methods for manipulating graphics settings
 		setColor(color: java.awt.Color): void; // Assuming a Color interface is defined
 		setStroke(stroke: Stroke): void; // Assuming a Stroke interface is defined

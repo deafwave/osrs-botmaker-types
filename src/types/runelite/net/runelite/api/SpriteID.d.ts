@@ -378,7 +378,9 @@ declare namespace net.runelite.api {
 		static readonly SPELL_WATER_SURGE = 363;
 		static readonly SPELL_EARTH_SURGE = 364;
 		static readonly SPELL_FIRE_SURGE = 365;
-		/* Unmapped: 366, 367, 368 */
+		/* Unmapped: 366 */
+		static readonly SPELL_CIVITAS_ILLA_FORTIS_TELEPORT = 367;
+		/* Unmapped: 368 */
 		static readonly SPELL_BIND_DISABLED = 369;
 		static readonly SPELL_SNARE_DISABLED = 370;
 		static readonly SPELL_ENTANGLE_DISABLED = 371;
@@ -532,8 +534,6 @@ declare namespace net.runelite.api {
 		static readonly FIGHT_PITS_WINNER_SKULL_RED = 524;
 		static readonly BOUNTY_HUNTER_TARGET_WEALTH_5_VERY_HIGH = 525;
 		static readonly BOUNTY_HUNTER_TARGET_WEALTH_4_HIGH = 526;
-		static readonly BOUNTY_HUNTER_TARGET_WEALTH_3_MEDIUM = 527;
-		static readonly BOUNTY_HUNTER_TARGET_WEALTH_2_LOW = 528;
 		static readonly HOUSE_LOADING_SCREEN = 529;
 		static readonly TEXTURE_ROUGH_STONE = 530;
 		static readonly TEXTURE_WATER_531 = 531;
@@ -771,7 +771,6 @@ declare namespace net.runelite.api {
 		static readonly TAB_QUESTS = 776;
 		static readonly RS2_TAB_INVENTORY = 777;
 		static readonly RS2_TAB_EQUIPMENT = 778;
-		static readonly RS2_TAB_PRAYER = 779;
 		static readonly TAB_PRAYER = 779;
 		static readonly TAB_MAGIC = 780;
 		static readonly RS2_TAB_FRIENDS_CHAT = 781;
@@ -1056,7 +1055,6 @@ declare namespace net.runelite.api {
 		static readonly MINIMAP_ORB_RUN_ICON_SLOWED_DEPLETION = 1092;
 		static readonly FRIENDS_PREVIOUS_USERNAME = 1093;
 		static readonly UNKNOWN_MAP_ICON_INFORMATION_I = 1094;
-		static readonly BOUNTY_HUNTER_TARGET_NONE = 1095;
 		static readonly BOUNTY_HUNTER_TARGET_WEALTH_1_VERY_LOW = 1096;
 		static readonly DEADMAN_BANK_KEYS_5 = 1097;
 		static readonly ABLEGAMERS_PROMO_BANNER = 1098;
@@ -1281,7 +1279,8 @@ declare namespace net.runelite.api {
 		static readonly EMOTE_SMOOTH_DANCE_LOCKED = 1355;
 		static readonly EMOTE_CRAZY_DANCE_LOCKED = 1356;
 		static readonly EMOTE_PREMIER_SHIELD_LOCKED = 1357;
-		/* Unmapped: 1358~1359 */
+		static readonly HITSPLAT_BLUE_MISS = 1358;
+		/* Unmapped: 1359 */
 		static readonly HITSPLAT_GREEN_POISON = 1360;
 		/* Unmapped: 1361~1363 */
 		static readonly BOUNTY_HUNTER_SKIP_TARGET = 1364;
@@ -1340,10 +1339,12 @@ declare namespace net.runelite.api {
 		/* Unmapped: 1419 */
 		static readonly PRAYER_RIGOUR = 1420;
 		static readonly PRAYER_AUGURY = 1421;
-		/* Unmapped: 1422, 1423 */
+		static readonly PRAYER_DEADEYE = 1422;
+		static readonly PRAYER_MYSTIC_VIGOUR = 1423;
 		static readonly PRAYER_RIGOUR_DISABLED = 1424;
 		static readonly PRAYER_AUGURY_DISABLED = 1425;
-		/* Unmapped: 1426, 1427 */
+		static readonly PRAYER_DEADEYE_DISABLED = 1426;
+		static readonly PRAYER_MYSTIC_VIGOUR_DISABLED = 1427;
 		static readonly UNKNOWN_BLACK_ANTICLOCKWISE_ARROW_SHADOWED = 1428;
 		static readonly UNKNOWN_BLACK_ANTICLOCKWISE_ARROW = 1429;
 		static readonly YELLOW_CLICK_ANIMATION_1_1430 = 1430;
@@ -1655,12 +1656,53 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_YELLOW_FRONT_70PX = 2977;
 		static readonly HEALTHBAR_YELLOW_BACK_70PX = 2978;
 		/* Unmapped: 2979, 2980 */
+		static readonly SPELL_RESURRECT_GREATER_GHOST = 2980;
 		static readonly SPELL_RESURRECT_SUPERIOR_SKELETON = 2981;
 		/* Unmapped: 2982~2983 */
 		static readonly SPELL_RESURRECT_GREATER_ZOMBIE = 2984;
 		/* Unmapped: 2985~2986 */
 		static readonly SPELL_RESURRECT_SUPERIOR_SKELETON_DISABLED = 2987;
-		/* Unmapped: 2988~4707 */
+		/* Unmapped: 2988~4259 */
+		static readonly HISCORE_MIMIC = 4260;
+		static readonly HISCORE_OBOR = 4261;
+		static readonly HISCORE_BRYOPHYTA = 4262;
+		static readonly HISCORE_GIANT_MOLE = 4263;
+		static readonly HISCORE_GROTESQUE_GUARDIANS = 4264;
+		static readonly HISCORE_TEMPOROSS = 4265;
+		static readonly HISCORE_WINTERTODT = 4266;
+		static readonly HISCORE_BARROWS_CHESTS = 4267;
+		static readonly HISCORE_SARACHNIS = 4269;
+		static readonly HISCORE_KALPHITE_QUEEN = 4270;
+		static readonly HISCORE_HESPORI = 4271;
+		static readonly HISCORE_SKOTIZO = 4272;
+		static readonly HISCORE_ZALCANO = 4273;
+		static readonly HISCORE_KING_BLACK_DRAGON = 4274;
+		static readonly HISCORE_KRAKEN = 4275;
+		static readonly HISCORE_ABYSSAL_SIRE = 4276;
+		static readonly HISCORE_THERMONUCLEAR_SMOKE_DEVIL = 4277;
+		static readonly HISCORE_THE_GAUNTLET = 4278;
+		static readonly HISCORE_ZULRAH = 4279;
+		static readonly HISCORE_CERBERUS = 4280;
+		static readonly HISCORE_VORKATH = 4281;
+		static readonly HISCORE_GENERAL_GRAARDOR = 4282;
+		static readonly HISCORE_KRIL_TSUTSAROTH = 4283;
+		static readonly HISCORE_COMMANDER_ZILYANA = 4284;
+		static readonly HISCORE_KREEARRA = 4285;
+		static readonly HISCORE_NIGHTMARE = 4286;
+		static readonly HISCORE_CORPOREAL_BEAST = 4287;
+		static readonly HISCORE_CHAMBERS_OF_XERIC = 4288;
+		static readonly HISCORE_ALCHEMICAL_HYDRA = 4289;
+		static readonly HISCORE_THEATRE_OF_BLOOD = 4290;
+		static readonly HISCORE_NEX = 4291;
+		static readonly HISCORE_DAGANNOTH_SUPREME = 4292;
+		static readonly HISCORE_DAGANNOTH_REX = 4293;
+		static readonly HISCORE_DAGANNOTH_PRIME = 4294;
+		static readonly HISCORE_THE_CORRUPTED_GAUNTLET = 4295;
+		static readonly HISCORE_CHAMBERS_OF_XERIC_CHALLENGE_MODE = 4296;
+		static readonly HISCORE_TOMBS_OF_AMASCUT = 4297;
+		static readonly HISCORE_TOMBS_OF_AMASCUT_EXPERT = 4298;
+		static readonly HISCORE_PHANTOM_MUSPAH = 4299;
+		/* Unmapped: 4300~4707 */
 		static readonly HEALTHBAR_PURPLE_FRONT_30PX = 4708;
 		static readonly HEALTHBAR_PURPLE_BACK_30PX = 4709;
 		static readonly HEALTHBAR_PURPLE_FRONT_40PX = 4710;
@@ -1681,6 +1723,30 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_PURPLE_BACK_140PX = 4725;
 		static readonly HEALTHBAR_PURPLE_FRONT_160PX = 4726;
 		static readonly HEALTHBAR_PURPLE_BACK_160PX = 4727;
+		/* Unmapped: 4728~4765 */
+		static readonly COLOSSEUM_DOOM = 4766;
+		/* Unmapped: 4767~4770 */
+		static readonly HEALTHBAR_GREEN_FRONT_30PX = 4771;
+		static readonly HEALTHBAR_GREEN_BACK_30PX = 4772;
+		static readonly HEALTHBAR_GREEN_FRONT_40PX = 4773;
+		static readonly HEALTHBAR_GREEN_BACK_40PX = 4774;
+		static readonly HEALTHBAR_GREEN_FRONT_50PX = 4775;
+		static readonly HEALTHBAR_GREEN_BACK_50PX = 4776;
+		static readonly HEALTHBAR_GREEN_FRONT_60PX = 4777;
+		static readonly HEALTHBAR_GREEN_BACK_60PX = 4778;
+		static readonly HEALTHBAR_GREEN_FRONT_70PX = 4779;
+		static readonly HEALTHBAR_GREEN_BACK_70PX = 4780;
+		static readonly HEALTHBAR_GREEN_FRONT_80PX = 4781;
+		static readonly HEALTHBAR_GREEN_BACK_80PX = 4782;
+		static readonly HEALTHBAR_GREEN_FRONT_100PX = 4783;
+		static readonly HEALTHBAR_GREEN_BACK_100PX = 4784;
+		static readonly HEALTHBAR_GREEN_FRONT_120PX = 4785;
+		static readonly HEALTHBAR_GREEN_BACK_120PX = 4786;
+		static readonly HEALTHBAR_GREEN_FRONT_140PX = 4787;
+		static readonly HEALTHBAR_GREEN_BACK_140PX = 4788;
+		static readonly HEALTHBAR_GREEN_FRONT_160PX = 4789;
+		static readonly HEALTHBAR_GREEN_BACK_160PX = 4790;
+		/* Unmapped: 4791~4842 */
 		static readonly PRAYER_RP_ANCIENT_STRENGTH = 4843;
 		static readonly PRAYER_RP_ANCIENT_SIGHT = 4844;
 		static readonly PRAYER_RP_ANCIENT_WILL = 4845;
@@ -1706,5 +1772,69 @@ declare namespace net.runelite.api {
 		static readonly PRAYER_RP_VINDICATION = 4863;
 		static readonly PRAYER_RP_PROTECT_ITEM = 4865;
 		static readonly ACTIVATED_PRAYER_BACKGROUND = 4892;
+		/* Unmapped: 4893~5250 */
+		static readonly EMOTE_FORTIS_SALUTE = 5251;
+		/* Unmapped: 5252~5578 */
+		static readonly HEALTHBAR_BLOOD_MOON_FRONT_120PX = 5579;
+		static readonly HEALTHBAR_BLOOD_MOON_BACK_120PX = 5580;
+		static readonly HEALTHBAR_BLUE_MOON_FRONT_120PX = 5581;
+		static readonly HEALTHBAR_BLUE_MOON_BACK_120PX = 5582;
+		static readonly HEALTHBAR_ECLIPSE_MOON_FRONT_120PX = 5583;
+		static readonly HEALTHBAR_ECLIPSE_MOON_BACK_120PX = 5584;
+		/* Unmapped: 5585~5608 */
+		static readonly HEALTHBAR_DEFAULT_FRONT_90PX = 5609;
+		static readonly HEALTHBAR_DEFAULT_BACK_90PX = 5610;
+		static readonly HEALTHBAR_CYAN_FRONT_90PX = 5611;
+		static readonly HEALTHBAR_CYAN_BACK_90PX = 5612;
+		static readonly HEALTHBAR_ORANGE_FRONT_90PX = 5613;
+		static readonly HEALTHBAR_ORANGE_BACK_90PX = 5614;
+		static readonly HEALTHBAR_YELLOW_FRONT_90PX = 5615;
+		static readonly HEALTHBAR_YELLOW_BACK_90PX = 5616;
+		static readonly HEALTHBAR_PURPLE_FRONT_90PX = 5617;
+		static readonly HEALTHBAR_PURPLE_BACK_90PX = 5618;
+		static readonly HEALTHBAR_GREEN_FRONT_90PX = 5619;
+		static readonly HEALTHBAR_GREEN_BACK_90PX = 5620;
+		static readonly HISCORE_CHAOS_ELEMENTAL = 5621;
+		static readonly HISCORE_ARTIO_CALLISTO = 5622;
+		static readonly HISCORE_CALVARION_VETION = 5623;
+		static readonly HISCORE_SPINDEL_VENENATIS = 5624;
+		static readonly HISCORE_CHAOS_FANATIC = 5625;
+		static readonly HISCORE_CRAZY_ARCHAEOLOGIST = 5626;
+		static readonly HISCORE_DERANGED_ARCHAEOLOGIST = 5627;
+		static readonly HISCORE_SCORPIA = 5628;
+		static readonly HISCORE_TZTOK_JAD = 5629;
+		static readonly HISCORE_TZKAL_ZUK = 5630;
+		static readonly HISCORE_THE_WHISPERER = 5631;
+		static readonly HISCORE_DUKE_SUCELLUS = 5632;
+		static readonly HISCORE_THE_LEVIATHAN = 5633;
+		static readonly HISCORE_VARDORVIS = 5634;
+		static readonly HISCORE_SCURRIUS = 5635;
+		static readonly HISCORE_SOL_HEREDIT = 5636;
+		static readonly HISCORE_LUNAR_CHESTS = 5637;
+		static readonly HISCORE_ARAXXOR = 5638;
+		static readonly HISCORE_AMOXLIATL = 5639;
+		static readonly HISCORE_THE_HUEYCOATL = 5640;
+		/* Unmapped: 5641~5643 */
+		static readonly HEALTHBAR_BLOOD_MOON_FRONT_90PX = 5644;
+		static readonly HEALTHBAR_BLOOD_MOON_BACK_90PX = 5645;
+		static readonly HEALTHBAR_BLUE_MOON_FRONT_90PX = 5646;
+		static readonly HEALTHBAR_BLUE_MOON_BACK_90PX = 5647;
+		static readonly HEALTHBAR_ECLIPSE_MOON_FRONT_90PX = 5648;
+		static readonly HEALTHBAR_ECLIPSE_MOON_BACK_90PX = 5649;
+		/* Unmapped: 5650~5852 */
+		static readonly HISCORE_CLUE_SCROLL_ALL = 5853;
+		static readonly HISCORE_BOUNTY_HUNTER_HUNTER = 5854;
+		static readonly HISCORE_BOUNTY_HUNTER_ROGUE = 5855;
+		static readonly HISCORE_LAST_MAN_STANDING = 5856;
+		static readonly HISCORE_LEAGUE_POINTS = 5857;
+		static readonly HISCORE_SOUL_WARS_ZEAL = 5858;
+		static readonly HISCORE_PVP_ARENA_RANK = 5859;
+		static readonly HISCORE_RIFTS_CLOSED = 5860;
+		static readonly HISCORE_DEADMAN_POINTS = 5861;
+		static readonly HISCORE_COLOSSEUM_GLORY = 5862;
+		static readonly HEALTHBAR_LAST_STAND_FRONT = 5863;
+		static readonly HEALTHBAR_LAST_STAND_BACK = 5864;
+		/* Unmapped: 5865~6344 */
+		static readonly HISCORE_ROYAL_TITANS = 6345;
 	}
 }

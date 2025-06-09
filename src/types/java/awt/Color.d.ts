@@ -43,3 +43,5 @@ declare namespace java.awt {
 		static decode(hexString: string): Color;
 	}
 }
+
+type Color = java.awt.Color;

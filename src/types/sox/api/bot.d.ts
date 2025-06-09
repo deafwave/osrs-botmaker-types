@@ -17,7 +17,7 @@ interface SoxBotApi {
 	bank: {
 		close: () => void;
 		consumeIds: (ids: number[]) => boolean;
-    	consumeNames: (names: string[]) => boolean;
+		consumeNames: (names: string[]) => boolean;
 		depositAll: () => void;
 		depositAllWithId: (id: number) => void;
 		depositAllWithName: (name: string) => void;
@@ -39,9 +39,9 @@ interface SoxBotApi {
 		withdrawWithName: (name: string) => void;
 	};
 	bmCache: {
-		getBoolean: (key: string, defaultValue : boolean) => boolean;
-		getInt: (key: string, defaultValue : number) => number;
-		getString: (key: string, defaultValue : string) => string;
+		getBoolean: (key: string, defaultValue: boolean) => boolean;
+		getInt: (key: string, defaultValue: number) => number;
+		getString: (key: string, defaultValue: string) => string;
 		saveBoolean: (key: string, value: boolean) => void;
 		saveInt: (key: string, value: number) => void;
 		saveString: (key: string, value: string) => void;
@@ -93,6 +93,12 @@ interface SoxBotApi {
 		itemOnPlayerWithIds: (itemId: number, player: net.runelite.api.Player) => void;
 		itemOnPlayerWithNames: (itemNames: string[], playerNames: string[]) => void;
 	};
+	notifier: {
+		sendMessage: (message: string) => void;
+	};
+	net: {
+		sendMessage: (targetIds: string[], message: string, includeSelf: boolean) => void;
+	};
 	npcs: {
 		getAnimationID: (npc: net.runelite.api.NPC) => number;
 		getAttackSpeed: (npcId: number) => number;
@@ -114,7 +120,7 @@ interface SoxBotApi {
 		interactSuppliedObject: (target: net.runelite.api.TileObject, action: string) => void;
 		isNearIds: (ids: number[], distance: number) => boolean;
 		isNearNames: (names: string[], distance: number) => boolean;
-	};	
+	};
 	players: {
 		attackPlayer: (names: string[]) => void;
 		followPlayer: (names: string[]) => void;

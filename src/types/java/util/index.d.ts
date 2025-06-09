@@ -16,7 +16,7 @@ declare namespace java.util {
 		hashCode(): number;
 		forEach(callback: (value: T) => void): void;
 	}
-	
+
 	export interface Iterator<T> {
 		hasNext(): boolean;
 		next(): T;
@@ -25,37 +25,37 @@ declare namespace java.util {
 
 	export class Collections {
 		static disjoint<T>(c1: Collection<T>, c2: Collection<T>): boolean;
-	
+
 		static checkedCollection<T>(c: Collection<T>, type: { new(): T }): Collection<T>
-	
+
 		static checkedList<T>(list: List<T>, type: { new(): T }): List<T>
-	
+
 		static checkedMap<K, V>(m: Map<K, V>, keyType: { new(): K }, valueType: { new(): V }): Map<K, V>
-	
+
 		static checkedSet<T>(s: Set<T>, type: { new(): T }): Set<T>
 		static emptyList<T>(): List<T>
-	
+
 		static emptyMap<K, V>(): Map<K, V>
 		static emptySet<T>(): Set<T>
-	
+
 		static singletonList<T>(item: T): List<T>
-	
+
 		static singletonMap<K, V>(key: K, value: V): Map<K, V>
-	
+
 		static singletonSet<T>(item: T): Set<T>
 
 		static reverse<T>(list: List<T> | ArrayList<T>): void;
 	}
 
 	export interface List<T> implements Collection<T> {
-        get(index: number): T;
-        set(index: number, element: T): T;
-        add(index: number, element: T): void;
-        remove(index: number): T;
-        indexOf(o: T): number;
-        lastIndexOf(o: T): number;
-        listIterator(): ListIterator<T>;
-        subList(fromIndex: number, toIndex: number): List<T>;
+		get(index: number): T;
+		set(index: number, element: T): T;
+		add(index: number, element: T): void;
+		remove(index: number): T;
+		indexOf(o: T): number;
+		lastIndexOf(o: T): number;
+		listIterator(): ListIterator<T>;
+		subList(fromIndex: number, toIndex: number): List<T>;
 
 		size(): number;
 		isEmpty(): boolean;
@@ -72,18 +72,18 @@ declare namespace java.util {
 		equals(o: object): boolean;
 		hashCode(): number;
 		forEach(callback: (value: T) => void): void;
-    }
+	}
 
 	export interface ListIterator<T> extends Iterator<T> {
-        hasPrevious(): boolean;
-        previous(): T;
-        nextIndex(): number;
-        previousIndex(): number;
-        set(e: T): void;
-        add(e: T): void;
-    }
-	
-    export interface Set<T> extends Collection<E> {
+		hasPrevious(): boolean;
+		previous(): T;
+		nextIndex(): number;
+		previousIndex(): number;
+		set(e: T): void;
+		add(e: T): void;
+	}
+
+	export interface Set<T> extends Collection<E> {
 		add(element: T): boolean;
 		clear(): void;
 		contains(element: T): boolean;
@@ -93,7 +93,7 @@ declare namespace java.util {
 		toArray(): T[];
 	}
 
-    export class LinkedList<T> {
+	export class LinkedList<T> {
 		constructor();
 		add(element: T): boolean;
 		add(index: number, element: T): void;
@@ -108,7 +108,7 @@ declare namespace java.util {
 		poll(): T;
 	}
 
-    export class HashSet<T> implements Collection<T> {
+	export class HashSet<T> implements Collection<T> {
 		private items: T[];
 
 		constructor();
@@ -144,30 +144,30 @@ declare namespace java.util {
 	}
 
 	export class ArrayDeque<E> {
-        constructor();
+		constructor();
 
-        add(element: E): boolean;
-        addFirst(element: E): void;
-        addLast(element: E): void;
-        clear(): void;
-        clone(): ArrayDeque<E>;
-        contains(element: Object): boolean;
-        isEmpty(): boolean;
-        iterator(): Iterator<E>;
-        offer(element: E): boolean;
-        offerFirst(element: E): boolean;
-        offerLast(element: E): boolean;
-        peek(): E | null;
-        peekFirst(): E | null;
-        peekLast(): E | null;
-        poll(): E | null;
-        pollFirst(): E | null;
-        pollLast(): E | null;
-        remove(): E;
-        removeFirst(): E;
-        removeLast(): E;
-        size(): number;
-    }
+		add(element: E): boolean;
+		addFirst(element: E): void;
+		addLast(element: E): void;
+		clear(): void;
+		clone(): ArrayDeque<E>;
+		contains(element: Object): boolean;
+		isEmpty(): boolean;
+		iterator(): Iterator<E>;
+		offer(element: E): boolean;
+		offerFirst(element: E): boolean;
+		offerLast(element: E): boolean;
+		peek(): E | null;
+		peekFirst(): E | null;
+		peekLast(): E | null;
+		poll(): E | null;
+		pollFirst(): E | null;
+		pollLast(): E | null;
+		remove(): E;
+		removeFirst(): E;
+		removeLast(): E;
+		size(): number;
+	}
 
 	export interface Deque<e> extends Queue<E> {
 		addFirst(e: E): void;
@@ -227,5 +227,42 @@ declare namespace java.util {
 		listIterator(): ListIterator<E>;
 		listIterator(index: number): ListIterator<E>;
 		subList(fromIndex: number, toIndex: number): List<E>;
+	}
+
+	export class HashMap<K, V> implements Map<K, V> {
+		constructor();
+		constructor(initialCapacity: number);
+		constructor(initialCapacity: number, loadFactor: number);
+		constructor(m: Map<K, V>);
+
+		// Methods from Map<K,V> interface
+		size(): number;
+		isEmpty(): boolean;
+		containsKey(key: K): boolean;
+		containsValue(value: V): boolean;
+		get(key: K): V | null;
+		put(key: K, value: V): V | null;
+		remove(key: K): V | null; // Overload 1
+		remove(key: K, value: V): boolean; // Overload 2
+		putAll(m: Map<K, V>): void;
+		clear(): void;
+		keySet(): Set<K>;
+		values(): Collection<V>;
+		entrySet(): Set<Entry<K, V>>;
+		equals(o: object): boolean;
+		hashCode(): number;
+		getOrDefault(key: K, defaultValue: V): V;
+		forEach(action: (key: K, value: V) => void): void;
+		replaceAll(func: (key: K, value: V) => V): void;
+		putIfAbsent(key: K, value: V): V | null;
+		replace(key: K, value: V): V | null; // Overload 1
+		replace(key: K, oldValue: V, newValue: V): boolean; // Overload 2
+		computeIfAbsent(key: K, mappingFunction: (key: K) => V | null): V | null;
+		computeIfPresent(key: K, remappingFunction: (key: K, value: V) => V | null): V | null;
+		compute(key: K, remappingFunction: (key: K, value: V | null) => V | null): V | null;
+		merge(key: K, value: V, remappingFunction: (oldValue: V, newValue: V) => V | null): V | null;
+
+		// HashMap specific methods (e.g., clone)
+		clone(): HashMap<K, V>;
 	}
 }

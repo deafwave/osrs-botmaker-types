@@ -24,121 +24,110 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
 declare namespace net.runelite.client.config {
-export class ConfigManager
-{
-	// null => we need to make a new profile
-	switchProfile(newProfile: ConfigProfile): void;
-		// Ensure existing config is saved
-		// sync the latest config revision from the server
-	getRSProfileKey(): string;
-	onSessionOpen(sessionOpen: SessionOpen): void;
-		// special case for $rsprofile since it acts as an automatically-synced profile that is always merged
-		// instead of overwritten. After a login send a PATCH for the offline $rsprofile to merge it with the
-		// remote $rsprofile so that when $rsprofile is synced later it doesn't overwrite and lose the local
-		// $rsprofile settings.
-	onSessionClose(sessionClose: SessionClose): void;
-		// remove the remote profiles
-	toggleSync(profile: ConfigProfile, sync: boolean): void;
-		// flush pending config changes first in the event the profile being
-		// synced is the active profile.
-				// sync the entire profile from disk
-	renameProfile(profile: ConfigProfile, name: string): void;
-	private migrate(): void;
-	importAndMigrate(lock: ProfileManager.Lock, from: File, targetProfile: ConfigProfile): void;
-	private static removeDuplicateProfiles(lock: ProfileManager.Lock): void;
-	private static fixRsProfileName(lock: ProfileManager.Lock): void;
-	load(): void;
-			// synced rsprofile need to be fetched if outdated
-			// --profile
-				// select a config profile associated with the display name from the jagex launcher, if available
-						// Calling getConfiguration before a profile has been loaded is usually invalid. Because
-						// rsProfile is loaded above before this is run and we are only attempting to load rsProfile
-						// keys, it is safe to be called.
-					// if creating the initial default profile
-			// synced profile need to be fetched if outdated
-	private mergeRemoteProfiles(remoteProfiles: Array<Profile>): void;
-				// convert the profile to a non-synced profile
-	private syncRemote(lock: ProfileManager.Lock, profile: ConfigProfile, remoteProfiles: Array<Profile>): void;
-			// $rsprofile is normally synced, even when logged out
-				// remote configuration replaces local
-	getConfig(clazz: any): T;
-	getConfigurationKeys(prefix: string): Array<string>;
-	getRSProfileConfigurationKeys(group: string, profile: string, keyPrefix: string): Array<string>;
-	static getWholeKey(groupName: string, profile: string, key: string): string;
-	// region get configuration
-	private getConfiguration(configData: ConfigData, groupName: string, rsProfile: string, key: string): string;
-	getConfiguration(groupName: string, key: string): string;
-	getRSProfileConfiguration(groupName: string, key: string): string;
-	getConfiguration(groupName: string, profile: string, key: string): string;
-	getConfiguration(groupName: string, key: string, clazz: Type): T;
-	getRSProfileConfiguration(groupName: string, key: string, clazz: Type): T;
-	getConfiguration(groupName: string, profile: string, key: string, type: Type): T;
-	// endregion
-	// region set configuration
-	private setConfiguration(configData: ConfigData, groupName: string, profile: string, key: string, value: string): void;
-	setConfiguration(groupName: string, profile: string, key: string, value: string): void;
-	setConfiguration(groupName: string, key: string, value: string): void;
-	setConfiguration(groupName: string, profile: string, key: string, value: T): void;
-	setConfiguration(groupName: string, key: string, value: T): void;
-	setRSProfileConfiguration(groupName: string, key: string, value: T): void;
-	// endregion
-	// region unset configuration
-	private unsetConfiguration(configData: ConfigData, groupName: string, profile: string, key: string): void;
-	unsetConfiguration(groupName: string, profile: string, key: string): void;
-	unsetConfiguration(groupName: string, key: string): void;
-	unsetRSProfileConfiguration(groupName: string, key: string): void;
-	// endregion
-	getConfigDescriptor(configurationProxy: Config): ConfigDescriptor;
 	/**
-	 * Initialize the configuration from the default settings
-	 *
-	 * @param proxy proxy instance implementing {@link Config}
+	 * The core profile type used by ConfigManager.
 	 */
-	setDefaultConfiguration(proxy: T, override: boolean): void;
-			// only apply default configuration for methods which read configuration (0 args)
-					// only unset if already set
-				// This checks if it is set and is also unmarshallable to the correct type; so
-				// we will overwrite invalid config values with the default
-			// null and the empty string are treated identically in sendConfig and treated as an unset
-			// If a config value defaults to "" and the current value is null, it will cause an extra
-			// unset to be sent, so treat them as equal
-	stringToObject(str: string, type: Type): Record<string, any>;
-					// Guice holds references to all jitted types.
-					// To allow class unloading, use a temporary child injector
-					// and use it to get the instance, and cache it a weak map.
-	objectToString(object: Record<string, any>): string | null;
-		// run after plugins, in the event they save config on shutdown
-	private onClientShutdown(e: ClientShutdown): void;
-	sendConfig(): void;
-			// since we hold references to profiles outside of the lock, they are stale.
-			// fetch the latest version.
-	private static updateProfile(lock: ProfileManager.Lock, profile: ConfigProfile): ConfigProfile;
-			// We just recreate it, with the same id, so that the ConfigData stays valid
-			// I think this is okay because while the in memory config on this client will be outdated,
-			// the version on disk and also the remote version will still be consistent
-	private saveConfiguration(lock: ProfileManager.Lock, profile: ConfigProfile, data: ConfigData): void;
-						// version on disk now mismatches the remote config. Set rev as -1 to force a reload
-						// on next start.
-	private static buildConfigPatch(profileName: string, patchChanges: Record<string, string>): ConfigPatch;
-		// Note profileName is only used for internal profiles and on initial sync, to prevent
-		// clients fighting over profile names.
-	getRSProfiles(): Array<RuneScapeProfile>;
-	private findRSProfile(profiles: Array<RuneScapeProfile>, accountHash: number, type: RuneScapeProfileType, displayName: string, create: boolean): RuneScapeProfile;
-		// generate the new key deterministically so if you "create" the same profile on 2 different clients it doesn't duplicate
-	private updateRSProfile(): void;
-	private onAccountHashChanged(ev: net.runelite.api.events.AccountHashChanged): void;
-	private onWorldChanged(ev: net.runelite.api.events.WorldChanged): void;
-	private onPlayerChanged(ev: net.runelite.api.events.PlayerChanged): void;
-	private onRuneScapeProfileChanged(ev: RuneScapeProfileChanged): void;
-					// change active profile
+	export interface RuneScapeProfile {
+		/** The display name of this profile */
+		getName(): string;
+		// …extend with other profile methods as needed…
+	}
+
 	/**
-	 * Split a config key into (group, profile, key)
-	 *
-	 * @param key in form group.(rsprofile.profile.)?key
-	 * @return an array of {group, profile, key}
+	 * Alias so your code can use ConfigProfile everywhere without changes
 	 */
-	static splitKey(key: string): string[] | null;
-			// all keys must have a group and key
-}
+	export type ConfigProfile = RuneScapeProfile;
+
+	export class ConfigManager {
+		// ────── Profile Management ──────
+		/** Switch to (or implicitly create) the given profile */
+		switchProfile(newProfile: ConfigProfile): void;
+		/** Rename an existing profile */
+		renameProfile(profile: ConfigProfile, name: string): void;
+		/** Enable or disable cloud-sync for a profile */
+		toggleSync(profile: ConfigProfile, sync: boolean): void;
+		/** Get the key of the current RuneScape profile */
+		getRSProfileKey(): string;
+
+		// ────── Session Events ──────
+		/** Called when the client session opens (e.g. on login) */
+		onSessionOpen(sessionOpen: SessionOpen): void;
+		/** Called when the client session closes (e.g. on logout) */
+		onSessionClose(sessionClose: SessionClose): void;
+
+		// ────── Configuration Retrieval ──────
+		/** Simple two-arg getter; returns raw string */
+		getConfiguration(groupName: string, key: string): string;
+		/** Typed two-arg getter; cast via the provided Type */
+		getConfiguration<T>(groupName: string, key: string, clazz: Type): T;
+		/** Four-arg getter: read from a non-current profile */
+		getConfiguration<T>(groupName: string, profile: string, key: string, type: Type): T;
+		/** Profile-specific getters */
+		getRSProfileConfiguration(groupName: string, key: string): string;
+		getRSProfileConfiguration<T>(groupName: string, key: string, clazz: Type): T;
+		/** List keys under this group or profile */
+		getConfigurationKeys(prefix: string): Array<string>;
+		getRSProfileConfigurationKeys(group: string, profile: string, keyPrefix: string): Array<string>;
+		/** Utility: combine group, profile, and key */
+		static getWholeKey(groupName: string, profile: string, key: string): string;
+
+		// ────── Configuration Setting ──────
+		/** Simple two-arg setter; stores as string */
+		setConfiguration(groupName: string, key: string, value: string): void;
+		/** Typed two-arg setter; stores any serializable T */
+		setConfiguration<T>(groupName: string, key: string, value: T): void;
+		/** Four-arg setter: write into a non-current profile */
+		setConfiguration(groupName: string, profile: string, key: string, value: string): void;
+		setConfiguration<T>(groupName: string, profile: string, key: string, value: T): void;
+		setRSProfileConfiguration<T>(groupName: string, key: string, value: T): void;
+
+		// ────── Configuration Removal ──────
+		unsetConfiguration(groupName: string, key: string): void;
+		unsetConfiguration(groupName: string, profile: string, key: string): void;
+		unsetRSProfileConfiguration(groupName: string, key: string): void;
+
+		// ────── Profile Listing & Lookup ──────
+		/** Returns all known profiles */
+		getRSProfiles(): Array<RuneScapeProfile>;
+		/** Internal helper to find (or create) a profile by name */
+		private findRSProfile(
+			profiles: Array<RuneScapeProfile>,
+			accountHash: number,
+			type: RuneScapeProfileType,
+			displayName: string,
+			create: boolean,
+		): RuneScapeProfile;
+
+		// ────── Migration & Internal Utilities ──────
+		importAndMigrate(lock: ProfileManager.Lock, from: File, targetProfile: ConfigProfile): void;
+		private migrate(): void;
+		private static removeDuplicateProfiles(lock: ProfileManager.Lock): void;
+		private static fixRsProfileName(lock: ProfileManager.Lock): void;
+		private mergeRemoteProfiles(remoteProfiles: Array<Profile>): void;
+		private syncRemote(lock: ProfileManager.Lock, profile: ConfigProfile, remoteProfiles: Array<Profile>): void;
+
+		// ────── Core APIs ──────
+		getConfig<T>(clazz: any): T;
+		getConfigDescriptor(configurationProxy: Config): ConfigDescriptor;
+		setDefaultConfiguration(proxy: T, override: boolean): void;
+		stringToObject(str: string, type: Type): Record<string, any>;
+		objectToString(object: Record<string, any>): string | null;
+		private onClientShutdown(e: ClientShutdown): void;
+		sendConfig(): void;
+		private static updateProfile(lock: ProfileManager.Lock, profile: ConfigProfile): ConfigProfile;
+		private saveConfiguration(lock: ProfileManager.Lock, profile: ConfigProfile, data: ConfigData): void;
+		private static buildConfigPatch(profileName: string, patchChanges: Record<string, string>): ConfigPatch;
+
+		// ────── Event Handlers ──────
+		private updateRSProfile(): void;
+		private onAccountHashChanged(ev: net.runelite.api.events.AccountHashChanged): void;
+		private onWorldChanged(ev: net.runelite.api.events.WorldChanged): void;
+		private onPlayerChanged(ev: net.runelite.api.events.PlayerChanged): void;
+		private onRuneScapeProfileChanged(ev: RuneScapeProfileChanged): void;
+
+		/** Split a config key into [group, (rsprofile.), key] */
+		static splitKey(key: string): string[] | null;
+	}
 }
