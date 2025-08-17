@@ -55,6 +55,17 @@ declare namespace bot {
         widgets: bot.widgets;
 
         // Direct methods
+        /**
+         * Performs a menu action.
+         * @param p0 The first parameter for the menu action
+         * @param p1 The second parameter for the menu action
+         * @param action The menu action to perform
+         * @param identifier The identifier for the menu action
+         * @param itemId The item ID for the menu action
+         * @param option The option for the menu action
+         * @param target The target for the menu action
+         * @param bounds The bounds for the menu action
+         */
         menuAction: {
             (
                 p0: number,
@@ -76,11 +87,40 @@ declare namespace bot {
                 bounds: java.awt.Rectangle
             ): void;
         };
+        /**
+         * Clears the game chat.
+         */
         clearGameChat: () => void;
+        /**
+         * Checks if the local player is idle.
+         * @returns True if the local player is idle, false otherwise.
+         */
         localPlayerIdle: () => boolean;
+        /**
+         * Checks if the local player is moving.
+         * @returns True if the local player is moving, false otherwise.
+         */
         localPlayerMoving: () => boolean;
+        /**
+         * Prints a message to the game chat.
+         * @param message The message to print.
+         */
         printGameMessage: (message: string) => void;
+        /**
+         * Prints a message to the log.
+         * @param message The message to print.
+         */
+        printLogMessage: (message: string) => void;
+
+        /**
+         * Runs a client script.
+         * @param ints The integer parameters for the script.
+         */
         runClientScript: (ints: number[]) => void;
+
+        /**
+         * Terminates the bot.
+         */
         terminate: () => void;
     }
 }
