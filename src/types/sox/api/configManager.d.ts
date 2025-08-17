@@ -1,10 +1,19 @@
 /// <reference path="../runelite/index.d.ts" />
 
 
+
 /**
  * The configManager provides methods to get, set, and manage configuration values and profiles.
  */
 declare const configManager: {
+
+    /**
+     * Constants for RuneScape profiles
+     */
+    RSPROFILE_DISPLAY_NAME: string;
+    RSPROFILE_GROUP: string;
+    RSPROFILE_TYPE: string;
+
     /**
      * Retrieves a configuration value as a string or object.
      * @param groupName - The configuration group name.
