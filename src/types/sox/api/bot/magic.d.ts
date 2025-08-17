@@ -70,9 +70,26 @@ declare namespace bot {
         /**
          * Casts a magic spell
          * @param spellName The name of the spell to cast
-         * @param actionIndex Optional action index for the spell
+         * @param actionIndex Action index for the spell
          */
-        cast: (spellName: SpellName, actionIndex?: number) => void;
+        cast: {
+            (spellName: SpellName): void;
+            (spellName: SpellName, actionIndex: number): void;
+        };
+
+        /**
+         * Casts a magic spell on an inventory item by its ID
+         * @param spellName The name of the spell to cast
+         * @param itemId The ID of the inventory item to cast the spell on
+         */
+        castOnInventoryItemId: (spellName: SpellName, itemId: number) => void;
+
+        /**
+         * Casts a magic spell on an inventory item by its name
+         * @param spellName The name of the spell to cast
+         * @param itemName The name of the inventory item to cast the spell on
+         */
+        castOnInventoryItemName: (spellName: SpellName, itemName: string) => void;
 
         /**
          * Casts a magic spell on an NPC

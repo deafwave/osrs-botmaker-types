@@ -1,5 +1,3 @@
-/// <reference path="../../../runelite/index.d.ts" />
-
 declare namespace bot {
     /**
      * Represents the interface for interacting with the bank system.

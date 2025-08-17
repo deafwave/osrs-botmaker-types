@@ -130,5 +130,17 @@ declare namespace bot {
          * @param playerNames Array of player names to use the item on
          */
         itemOnPlayerWithNames: (itemNames: string[], playerNames: string[]) => void;
+
+        /**
+         * Checks if the inventory is full
+         * @returns True if the inventory is full, false otherwise
+         */
+        isFull: () => boolean;
+
+        /**
+         * Gets all widgets in the inventory
+         * @returns An array of all inventory widgets
+         */
+        getAllWidgets(): net.runelite.api.widgets.Widget[];
     }
 }

@@ -5,6 +5,11 @@ declare namespace bot {
      * Interface for interacting with the player's equipped items
      * Provides methods to check and manage equipment
      */
+    type Item = {
+        id: number;
+        quantity: number;
+    };
+
     interface equipment {
         /**
          * Checks if the player has all the specified items equipped by their IDs
@@ -52,6 +57,6 @@ declare namespace bot {
          * Gets an array of all currently equipped items
          * @returns Array of equipped items
          */
-        getEquipment: () => any[];
+        getEquipment: () => Item[];
     }
 }

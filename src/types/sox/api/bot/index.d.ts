@@ -1,5 +1,6 @@
 /// <reference path="./bank.d.ts" />
 /// <reference path="./bmCache.d.ts" />
+/// <reference path="./bmGlobalCache.d.ts" />
 /// <reference path="./breakHandler.d.ts" />
 /// <reference path="./counters.d.ts" />
 /// <reference path="./equipment.d.ts" />
@@ -28,8 +29,10 @@ declare namespace bot {
     interface SoxBotApi extends bot {
 
         // Namespaces
+        attackStyle: bot.attackStyle;
         bank: bot.bank;
         bmCache: bot.bmCache;
+        bmGlobalCache: bot.bmGlobalCache;
         breakHandler: bot.breakHandler;
         counters: bot.counters;
         equipment: bot.equipment;

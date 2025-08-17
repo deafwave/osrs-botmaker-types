@@ -13,5 +13,12 @@ declare namespace bot {
          * @param includeSelf Whether to include the sender in the recipients
          */
         sendMessage: (targetIds: string[], message: string, includeSelf: boolean) => void;
+
+        /**
+         * Sends a message to local players
+         * @param message The message content to send
+         * @param includeSelf Whether to include the sender in the recipients
+         */
+        sendMessageToLocalPlayers: (message: string, includeSelf: boolean) => void;
     }
 }

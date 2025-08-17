@@ -21,6 +21,21 @@ declare namespace bot {
         getAttackSpeed: (npcId: number) => number;
 
         /**
+         * Gets the closest NPC from an array of NPCs
+         * @param npcs Array of NPCs to search
+         * @returns The closest NPC or null if none found
+         */
+        getClosest: (npcs: Array<net.runelite.api.NPC>) => net.runelite.api.NPC | null;
+
+        /**
+         * Gets the closest NPC within a maximum distance
+         * @param npcs Array of NPCs to search
+         * @param maxDistance The maximum distance to search within
+         * @returns The closest NPC within the specified distance or null if none found
+         */
+        getClosestWithin: (npcs: Array<net.runelite.api.NPC>, maxDistance: number) => net.runelite.api.NPC | null;
+
+        /**
          * Gets the head icon of an NPC (such as prayer icons)
          * @param npc The NPC to get the head icon for
          * @returns The head icon of the NPC
@@ -54,5 +69,21 @@ declare namespace bot {
          * @param action The interaction action to perform
          */
         interactSupplied: (target: net.runelite.api.NPC, action: string) => void;
+
+        /**
+         * Checks if any NPCs with the specified IDs are within a certain distance
+         * @param ids Array of NPC IDs to check
+         * @param distance The maximum distance to check within
+         * @returns True if any NPCs are within the specified distance, false otherwise
+         */
+        isNearIds: (ids: number[], distance: number) => boolean;
+
+        /**
+         * Checks if any NPCs with the specified names are within a certain distance
+         * @param names Array of NPC names to check
+         * @param distance The maximum distance to check within
+         * @returns True if any NPCs are within the specified distance, false otherwise
+         */
+        isNearNames: (names: string[], distance: number) => boolean;
     }
 }

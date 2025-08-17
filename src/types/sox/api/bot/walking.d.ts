@@ -13,6 +13,12 @@ declare namespace bot {
         getWebWalkCalculatedPath: () => net.runelite.api.coords.WorldPoint[];
 
         /**
+         * Checks if the player is currently using the RLPL web walking system
+         * @returns True if the player is using RLPL web walking, false otherwise
+         */
+        isRlplWebWalking: () => boolean;
+
+        /**
          * Checks if the player is currently running
          * @returns True if the player is running, false otherwise
          */
