@@ -18,6 +18,7 @@
 /// <reference path="./plugins.d.ts" />
 /// <reference path="./prayer.d.ts" />
 /// <reference path="./projectiles.d.ts" />
+/// <reference path="./task.d.ts" />
 /// <reference path="./tileItems.d.ts" />
 /// <reference path="./types.d.ts" />
 /// <reference path="./variables.d.ts" />
@@ -49,6 +50,7 @@ declare namespace bot {
         plugins: bot.plugins;
         prayer: bot.prayer;
         projectiles: bot.projectiles;
+        task: bot.task;
         tileItems: bot.tileItems;
         variables: bot.variables;
         walking: bot.walking;

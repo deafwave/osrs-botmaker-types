@@ -104,6 +104,13 @@ declare namespace bot {
         itemOnItemWithIds: (itemId1: number, itemId2: number) => void;
 
         /**
+         * Uses on inventory item on the last item in the inventory by its ID
+         * @param itemId1 The ID of the item to use
+         * @param lastItemId2 The ID of the last item in the inventory
+         */
+        itemOnLastItemWithIds: (itemId1: number, lastItemId2: number) => void;
+
+        /**
          * Uses an inventory item on an NPC by the item's ID
          * @param itemId The ID of the item to use
          * @param npc The NPC to use the item on
