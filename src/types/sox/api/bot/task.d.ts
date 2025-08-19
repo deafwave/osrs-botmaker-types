@@ -1,7 +1,5 @@
 
-/**
- * Represents a task that can be performed by a bot.
- */
+
 declare namespace bot {
     /**
      * Represents an instance of a bot task with actions and control methods.

@@ -1,4 +1,4 @@
-/// <reference path="../../../runelite/index.d.ts" />
+
 
 declare namespace bot {
     /**

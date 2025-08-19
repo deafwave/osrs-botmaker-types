@@ -2,6 +2,13 @@
 /// <reference path="./types.d.ts" />
 
 declare namespace bot {
+
+    interface TileItemInfo {
+        id: number;
+        name: string;
+        quantity: number;
+        location: net.runelite.api.coords.WorldPoint;
+    }
     /**
      * Interface for interacting with items on the ground (tile items)
      * Provides methods to find and loot items from the ground
@@ -12,27 +19,27 @@ declare namespace bot {
          * @param value The minimum value of items to find
          * @returns Array of TileItemInfo objects for items meeting the value criteria
          */
-        getItemsOfValue: (value: number) => bot.TileItemInfo[];
+        getItemsOfValue: (value: number) => TileItemInfo[];
 
         /**
          * Gets all items on the ground that match the specified IDs
          * @param ids Array of item IDs to match
          * @returns Array of TileItemInfo objects for matching items
          */
-        getItemsWithIds: (ids: number[]) => bot.TileItemInfo[];
+        getItemsWithIds: (ids: number[]) => TileItemInfo[];
 
         /**
          * Gets all items on the ground that match the specified names
          * @param names Array of item names to match
          * @returns Array of TileItemInfo objects for matching items
          */
-        getItemsWithNames: (names: string[]) => bot.TileItemInfo[];
+        getItemsWithNames: (names: string[]) => TileItemInfo[];
 
         /**
          * Loots a specific item from the ground
          * @param tileItemInfo The TileItemInfo object representing the item to loot
          */
-        lootItem: (tileItemInfo: bot.TileItemInfo) => void;
+        lootItem: (tileItemInfo: TileItemInfo) => void;
 
         /**
          * Loots all items of the specified minimum value within the maximum distance

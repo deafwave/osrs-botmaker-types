@@ -1,3 +1,5 @@
+
+
 declare namespace bot {
     /**
      * Represents the interface for interacting with the bank system.
