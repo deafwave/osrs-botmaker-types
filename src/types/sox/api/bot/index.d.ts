@@ -70,12 +70,12 @@ declare namespace bot {
 		menuAction(
 			p0: number,
 			p1: number,
-			action: MenuAction,
+			action: net.runelite.api.MenuAction,
 			identifier: number,
 			itemId: number,
 			option: string,
 			target: string,
-			bounds?: Rectangle,
+			bounds?: java.awt.Rectangle,
 		): void;
 		/**
 		 * Clears the game chat.
