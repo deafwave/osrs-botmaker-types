@@ -2,7 +2,7 @@
 /// <reference path="../../../../../java/index.d.ts" />
 declare namespace net.runelite.client.ui.overlay.components {
 	export class LayoutableRenderableEntity extends RenderableEntity {
-		getBounds(): java.awt.Rectangle;
+		getBounds(): Rectangle;
 		setPreferredLocation(position: java.awt.Point): void;
 		setPreferredSize(dimension: java.awt.Dimension): void;
 	}

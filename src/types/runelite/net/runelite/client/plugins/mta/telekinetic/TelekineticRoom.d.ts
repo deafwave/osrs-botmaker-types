@@ -27,11 +27,17 @@
 declare namespace net.runelite.client.plugins.mta.telekinetic {
 	export class TelekineticRoom extends MTARoom {
 		resetRoom(): void;
-		onWallObjectSpawned(event: net.runelite.api.events.WallObjectSpawned): void;
-		onGameStateChanged(event: net.runelite.api.events.GameStateChanged): void;
+		onWallObjectSpawned(
+			event: net.runelite.api.events.WallObjectSpawned,
+		): void;
+		onGameStateChanged(
+			event: net.runelite.api.events.GameStateChanged,
+		): void;
 		// Game objects are nulled when loading new scenes, thus never trigger their respective
 		// ObjectDespawned events.
-		onGroundObjectSpawned(event: net.runelite.api.events.GroundObjectSpawned): void;
+		onGroundObjectSpawned(
+			event: net.runelite.api.events.GroundObjectSpawned,
+		): void;
 		onGameTick(event: net.runelite.api.events.GameTick): void;
 		//Prevent unnecessary updating when the guardian has not moved
 		onNpcSpawned(event: net.runelite.api.events.NpcSpawned): void;
@@ -47,19 +53,34 @@ declare namespace net.runelite.client.plugins.mta.telekinetic {
 			area: net.runelite.api.coords.WorldArea,
 			worldPoint: net.runelite.api.coords.WorldPoint,
 		): net.runelite.api.coords.WorldPoint;
-		private renderWorldPoint(graphics: Graphics2D, worldPoint: net.runelite.api.coords.WorldPoint): void;
-		private renderLocalPoint(graphics: Graphics2D, local: net.runelite.api.coords.LocalPoint): void;
+		private renderWorldPoint(
+			graphics: Graphics2D,
+			worldPoint: net.runelite.api.coords.WorldPoint,
+		): void;
+		private renderLocalPoint(
+			graphics: Graphics2D,
+			local: net.runelite.api.coords.LocalPoint,
+		): void;
 		private build(): Stack<Direction>;
 		private getGuardianDestination(): net.runelite.api.coords.LocalPoint;
-		private build(start: net.runelite.api.coords.WorldPoint): Stack<Direction>;
-		private build(edges: Record<WorldPoint, WorldPoint>, finish: net.runelite.api.coords.WorldPoint): Stack<Direction>;
-		private neighbours(point: net.runelite.api.coords.LocalPoint): net.runelite.api.coords.LocalPoint[];
+		private build(
+			start: net.runelite.api.coords.WorldPoint,
+		): Stack<Direction>;
+		private build(
+			edges: Record<WorldPoint, WorldPoint>,
+			finish: net.runelite.api.coords.WorldPoint,
+		): Stack<Direction>;
+		private neighbours(
+			point: net.runelite.api.coords.LocalPoint,
+		): net.runelite.api.coords.LocalPoint[];
 		private neighbour(
 			point: net.runelite.api.coords.LocalPoint,
 			direction: net.runelite.api.coords.Direction,
 		): net.runelite.api.coords.LocalPoint;
-		private getBounds(walls: WallObject[]): java.awt.Rectangle;
+		private getBounds(walls: WallObject[]): Rectangle;
 		private getPosition(): net.runelite.api.coords.Direction;
-		private getIndicatorLine(direction: net.runelite.api.coords.Direction): net.runelite.api.coords.WorldArea;
+		private getIndicatorLine(
+			direction: net.runelite.api.coords.Direction,
+		): net.runelite.api.coords.WorldArea;
 	}
 }

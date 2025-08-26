@@ -395,7 +395,7 @@ declare namespace net.runelite.api.widgets {
 		 *
 		 * @return the occupied area of the widget
 		 */
-		getBounds(): java.awt.Rectangle;
+		getBounds(): Rectangle;
 		/**
 		 * Gets the item ID displayed by the widget.
 		 *
@@ -514,7 +514,12 @@ declare namespace net.runelite.api.widgets {
 		 */
 		setOriginalWidth(originalWidth: number): Widget;
 		setSize(width: number, height: number): Widget;
-		setSize(width: number, height: number, widthMode: number, heightMode: number): Widget;
+		setSize(
+			width: number,
+			height: number,
+			widthMode: number,
+			heightMode: number,
+		): Widget;
 		/**
 		 * Gets the menu options available on the widget as a sparse array.
 		 */

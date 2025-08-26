@@ -25,18 +25,19 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 declare namespace net.runelite.api.geometry {
-	export class Shapes<T extends Shape> implements Shape {
-		getBounds(): java.awt.Rectangle;
-		getBounds2D(): Rectangle2D;
-		contains(x: number, y: number): boolean;
-		contains(p: Point2D): boolean;
-		intersects(x: number, y: number, w: number, h: number): boolean;
-		intersects(r: Rectangle2D): boolean;
-		contains(x: number, y: number, w: number, h: number): boolean;
-		contains(r: Rectangle2D): boolean;
-		getPathIterator(at: AffineTransform): PathIterator;
-		getPathIterator(at: AffineTransform, flatness: number): PathIterator;
-		/** TBD-1 */
-		// export class ShapeIterator implements PathIterator
-	}
+export class Shapes<T extends Shape> implements Shape
+{
+	getBounds(): Rectangle;
+	getBounds2D(): Rectangle2D;
+	contains(x: number, y: number): boolean;
+	contains(p: Point2D): boolean;
+	intersects(x: number, y: number, w: number, h: number): boolean;
+	intersects(r: Rectangle2D): boolean;
+	contains(x: number, y: number, w: number, h: number): boolean;
+	contains(r: Rectangle2D): boolean;
+	getPathIterator(at: AffineTransform): PathIterator;
+	getPathIterator(at: AffineTransform, flatness: number): PathIterator;
+/** TBD-1 */
+// export class ShapeIterator implements PathIterator
+}
 }
