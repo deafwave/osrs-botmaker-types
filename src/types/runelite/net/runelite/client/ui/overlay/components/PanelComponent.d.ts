@@ -28,7 +28,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 	export class PanelComponent implements LayoutableRenderableEntity {
 		render(graphics: java.awt.Graphics2D): java.awt.Dimension;
 		getBackgroundColor(): java.awt.Color;
-		getBounds(): Rectangle;
+		getBounds(): java.awt.Rectangle;
 		getChildren(): List<net.runelite.client.ui.overlay.components.LayoutableRenderableEntity>;
 		getPreferredSize(): java.awt.Dimension;
 		render(graphics: java.awt.Graphics2D): java.awt.Dimension;

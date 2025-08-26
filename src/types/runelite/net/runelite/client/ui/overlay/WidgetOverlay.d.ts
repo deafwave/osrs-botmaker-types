@@ -81,7 +81,7 @@ declare namespace net.runelite.client.ui.overlay {
 		 * Gets the parent bounds for overlay dragging.
 		 * @returns The parent bounds as a rectangle.
 		 */
-		getParentBounds(): Rectangle;
+		getParentBounds(): java.awt.Rectangle;
 
 		/**
 		 * Revalidates the overlay.

@@ -13,7 +13,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 
 	export class TitleComponent {
 		builder(): TitleComponentBuilder;
-		getBounds(): Rectangle;
+		getBounds(): java.awt.Rectangle;
 		build(): TitleComponent;
 		setColor(color: java.awt.Color): void;
 		setPreferredLocation(preferredLocation: net.runelite.api.Point): void;

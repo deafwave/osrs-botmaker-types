@@ -9,7 +9,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 			TEXT_ONLY: string;
 		};
 
-		getBounds(): Rectangle;
+		getBounds(): java.awt.Rectangle;
 		render(graphics: Graphics2D): java.awt.Dimension;
 		setBackgroundColor(backgroundColor: java.awt.Color): void;
 		setCenterLabel(centerLabel: string): void;

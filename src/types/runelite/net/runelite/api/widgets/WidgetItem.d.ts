@@ -25,45 +25,44 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 declare namespace net.runelite.api.widgets {
-/**
- * An item that is being represented in a {@link Widget}.
- */
-export class WidgetItem
-{
 	/**
-	 * The ID of the item represented.
-	 *
-	 * @see net.runelite.api.ItemID
+	 * An item that is being represented in a {@link Widget}.
 	 */
-	/**
-	 * The quantity of the represented item.
-	 */
-	/**
-	 * The area where the widget is drawn on the canvas.
-	 */
-	/**
-	 * The widget which contains this item.
-	 */
-	/**
-	 * The canvas bounds for the widget, if it is being dragged.
-	 */
-	/**
-	 * Get the area where the widget item is drawn on the canvas, accounting for drag
-	 * @return
-	 */
-	getCanvasBounds(): Rectangle;
-	/**
-	 * Get the area where the widget item is drawn on the canvas
-	 * @param dragging whether the returned area should account for widget drag
-	 * @return
-	 */
-	getCanvasBounds(dragging: boolean): Rectangle;
-	/**
-	 * Gets the upper-left coordinate of where the widget is being drawn
-	 * on the canvas, accounting for drag.
-	 *
-	 * @return the upper-left coordinate of where this widget is drawn
-	 */
-	getCanvasLocation(): Point;
-}
+	export class WidgetItem {
+		/**
+		 * The ID of the item represented.
+		 *
+		 * @see net.runelite.api.ItemID
+		 */
+		/**
+		 * The quantity of the represented item.
+		 */
+		/**
+		 * The area where the widget is drawn on the canvas.
+		 */
+		/**
+		 * The widget which contains this item.
+		 */
+		/**
+		 * The canvas bounds for the widget, if it is being dragged.
+		 */
+		/**
+		 * Get the area where the widget item is drawn on the canvas, accounting for drag
+		 * @return
+		 */
+		getCanvasBounds(): java.awt.Rectangle;
+		/**
+		 * Get the area where the widget item is drawn on the canvas
+		 * @param dragging whether the returned area should account for widget drag
+		 * @return
+		 */
+		getCanvasBounds(dragging: boolean): java.awt.Rectangle;
+		/**
+		 * Gets the upper-left coordinate of where the widget is being drawn
+		 * on the canvas, accounting for drag.
+		 *
+		 * @return the upper-left coordinate of where this widget is drawn
+		 */
+		getCanvasLocation(): Point;
+	}
 }

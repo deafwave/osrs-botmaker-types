@@ -25,44 +25,43 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 declare namespace net.runelite.api.geometry {
-/**
- * A simple list of vertices that can be append or prepended to
- */
-export class SimplePolygon implements Shape
-{
-	pushLeft(xCoord: number, yCoord: number): void;
-	popLeft(): void;
-	private expandLeft(grow: number): void;
-	pushRight(xCoord: number, yCoord: number): void;
-	popRight(): void;
-	private expandRight(grow: number): void;
-	getX(index: number): number;
-	getY(index: number): number;
-	size(): number;
-	toRuneLitePointList(): Array<Ponumber>;
-	copyTo(xDest: number[], yDest: number[], offset: number): void;
-	appendTo(other: SimplePolygon): void;
-	reverse(): void;
 	/**
-	 * Clips the polygon with the passed convex polygon
+	 * A simple list of vertices that can be append or prepended to
 	 */
-	intersectWithConvex(convex: SimplePolygon): void;
+	export class SimplePolygon implements Shape {
+		pushLeft(xCoord: number, yCoord: number): void;
+		popLeft(): void;
+		private expandLeft(grow: number): void;
+		pushRight(xCoord: number, yCoord: number): void;
+		popRight(): void;
+		private expandRight(grow: number): void;
+		getX(index: number): number;
+		getY(index: number): number;
+		size(): number;
+		toRuneLitePointList(): Array<Ponumber>;
+		copyTo(xDest: number[], yDest: number[], offset: number): void;
+		appendTo(other: SimplePolygon): void;
+		reverse(): void;
+		/**
+		 * Clips the polygon with the passed convex polygon
+		 */
+		intersectWithConvex(convex: SimplePolygon): void;
 		// Sutherland-Hodgman
-	getBounds(): Rectangle;
-	getBounds2D(): Rectangle2D;
-	contains(cx: number, cy: number): boolean;
-	private crossings(cx: number, cy: number, swap: boolean): number;
-	contains(p: Point2D): boolean;
-	intersects(x0: number, y0: number, w: number, h: number): boolean;
+		getBounds(): java.awt.Rectangle;
+		getBounds2D(): Rectangle2D;
+		contains(cx: number, cy: number): boolean;
+		private crossings(cx: number, cy: number, swap: boolean): number;
+		contains(p: Point2D): boolean;
+		intersects(x0: number, y0: number, w: number, h: number): boolean;
 		// this is horribly inefficient, but I don't think it will be called anywhere
-	intersects(r: Rectangle2D): boolean;
-	contains(x: number, y: number, w: number, h: number): boolean;
-	contains(r: Rectangle2D): boolean;
-	getPathIterator(at: AffineTransform): PathIterator;
-	getPathIterator(at: AffineTransform, flatness: number): PathIterator;
-/** TBD-1 */
-// export class SimpleIterator implements PathIterator
-/** TBD-1 */
-// export class TransformIterator extends SimpleIterator
-}
+		intersects(r: Rectangle2D): boolean;
+		contains(x: number, y: number, w: number, h: number): boolean;
+		contains(r: Rectangle2D): boolean;
+		getPathIterator(at: AffineTransform): PathIterator;
+		getPathIterator(at: AffineTransform, flatness: number): PathIterator;
+		/** TBD-1 */
+		// export class SimpleIterator implements PathIterator
+		/** TBD-1 */
+		// export class TransformIterator extends SimpleIterator
+	}
 }

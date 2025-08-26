@@ -17,7 +17,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 
 	export class LineComponent {
 		builder(): LineComponentBuilder;
-		getBounds(): Rectangle;
+		getBounds(): java.awt.Rectangle;
 		render(graphics: Graphics2D): java.awt.Dimension;
 		setLeft(left: string): void;
 		setLeftColor(leftColor: java.awt.Color): void;

@@ -6,7 +6,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 		constructor();
 		constructor(image: BufferedImage);
 
-		getBounds(): Rectangle;
+		getBounds(): java.awt.Rectangle;
 		render(graphics: Graphics2D): java.awt.Dimension;
 		setPreferredLocation(preferredLocation: net.runelite.api.Point): void;
 		setPreferredSize(dimension: java.awt.Dimension): void;

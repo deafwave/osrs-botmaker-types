@@ -25,11 +25,10 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 declare namespace net.runelite.client.ui.overlay {
-export class OverlayBounds
-{
-	translated(x: number, y: number): OverlayBounds;
-	forPosition(overlayPosition: OverlayPosition): Rectangle;
-	fromBounds(bounds: Rectangle): OverlayPosition;
-	getBounds(): Collection<Rectangle>;
-}
+	export class OverlayBounds {
+		translated(x: number, y: number): OverlayBounds;
+		forPosition(overlayPosition: OverlayPosition): java.awt.Rectangle;
+		fromBounds(bounds: Rectangle): OverlayPosition;
+		getBounds(): Collection<Rectangle>;
+	}
 }
