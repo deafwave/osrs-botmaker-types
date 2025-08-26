@@ -9,7 +9,6 @@ declare namespace java.awt {
 			/** 0.00 - 1.00 */
 			b: number,
 		);
-
 		constructor(
 			/** 0.00 - 1.00 */
 			r: number,
@@ -40,7 +39,14 @@ declare namespace java.awt {
 		getBlue(): number;
 		getAlpha(): number;
 
+		/** Returns a brighter version of this color */
+		brighter(): Color;
+
+		/** Returns a darker version of this color */
+		darker(): Color;
+
 		static decode(hexString: string): Color;
+		static getColor(name: string): Color;
 	}
 }
 

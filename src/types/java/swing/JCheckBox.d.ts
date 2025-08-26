@@ -11,6 +11,9 @@ declare namespace javax.swing {
 		removeActionListener(listener: (event: java.awt.event.ActionListener) => void): void;
 		addFocusListener(listener: java.awt.event.FocusListener): void;
 		removeFocusListener(listener: java.awt.event.FocusListener): void;
+		setForeground(color: java.awt.Color): void;
+		setFont(font: java.awt.Font): void;
+		setToolTipText(text: string): void;
 	}
 }
 

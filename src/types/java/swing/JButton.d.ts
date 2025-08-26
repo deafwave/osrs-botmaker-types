@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JButton {
+	export class JButton extends javax.swing.JComponent {
 		constructor(label: string);
 		setText(label: string): void;
 		getText(): string;
