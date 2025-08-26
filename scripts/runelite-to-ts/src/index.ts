@@ -4,17 +4,33 @@ import * as path from 'path';
 
 const BASE_URL =
 	'https://raw.githubusercontent.com/runelite/runelite/refs/heads/master/runelite-api/src/main/java/net/runelite/api';
-const OUTPUT_DIR = path.join(__dirname, '../../../src/types/runelite/net/runelite/api');
+const BASE_OUTPUT_DIR = path.join(__dirname, '../../../src/types/runelite/net/runelite/api');
+
+const GAMEVAL_OUTPUT_DIR = path.join(BASE_OUTPUT_DIR, 'gameval');
 
 const FILES_TO_PROCESS = [
-	{ name: 'ItemID', url: `${BASE_URL}/ItemID.java` },
-	{ name: 'NpcID', url: `${BASE_URL}/NpcID.java` },
-	{ name: 'NullItemID', url: `${BASE_URL}/NullItemID.java` },
-	{ name: 'NullNpcID', url: `${BASE_URL}/NullNpcID.java` },
-	{ name: 'NullObjectID', url: `${BASE_URL}/NullObjectID.java` },
-	{ name: 'ObjectID', url: `${BASE_URL}/ObjectID.java` },
-	{ name: 'ParamID', url: `${BASE_URL}/ParamID.java` },
-	{ name: 'SpriteID', url: `${BASE_URL}/SpriteID.java` },
+	{ name: 'ItemID', url: `${BASE_URL}/ItemID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'NpcID', url: `${BASE_URL}/NpcID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'NullItemID', url: `${BASE_URL}/NullItemID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'NullNpcID', url: `${BASE_URL}/NullNpcID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'NullObjectID', url: `${BASE_URL}/NullObjectID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'ObjectID', url: `${BASE_URL}/ObjectID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'ParamID', url: `${BASE_URL}/ParamID.java`, outputDir: BASE_OUTPUT_DIR },
+	{ name: 'SpriteID', url: `${BASE_URL}/SpriteID.java`, outputDir: BASE_OUTPUT_DIR },
+	// Gameval files
+	{ name: 'AnimationID', url: `${BASE_URL}/gameval/AnimationID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'DBTableID', url: `${BASE_URL}/gameval/DBTableID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'InterfaceID', url: `${BASE_URL}/gameval/InterfaceID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'InventoryID', url: `${BASE_URL}/gameval/InventoryID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'ItemID', url: `${BASE_URL}/gameval/ItemID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'NpcID', url: `${BASE_URL}/gameval/NpcID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'ObjectID', url: `${BASE_URL}/gameval/ObjectID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'ObjectID1', url: `${BASE_URL}/gameval/ObjectID1.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'SpotanimID', url: `${BASE_URL}/gameval/SpotanimID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'SpriteID', url: `${BASE_URL}/gameval/SpriteID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'VarClientID', url: `${BASE_URL}/gameval/VarClientID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'VarPlayerID', url: `${BASE_URL}/gameval/VarPlayerID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
+	{ name: 'VarbitID', url: `${BASE_URL}/gameval/VarbitID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
 ];
 
 interface ItemConstant {
@@ -45,10 +61,14 @@ function parseItemConstants(javaContent: string): ItemConstant[] {
 	return constants;
 }
 
-function generateTypeScriptDeclaration(constants: ItemConstant[], className: string): string {
-	const header = `/// <reference path="../../../../../../src/types/java/index.d.ts" />
-/// <reference path="../../../../../../src/types/runelite/index.d.ts" />
-declare namespace net.runelite.api {
+function generateTypeScriptDeclaration(constants: ItemConstant[], className: string, isGameval: boolean = false): string {
+	const javaRefPath = isGameval ? '../../../../../../../src/types/java/index.d.ts' : '../../../../../../src/types/java/index.d.ts';
+	const runeliteRefPath = isGameval ? '../../../../../../../src/types/runelite/index.d.ts' : '../../../../../../src/types/runelite/index.d.ts';
+	const namespace = isGameval ? 'net.runelite.api.gameval' : 'net.runelite.api';
+
+	const header = `/// <reference path="${javaRefPath}" />
+/// <reference path="${runeliteRefPath}" />
+declare namespace ${namespace} {
 \texport class ${className} {`;
 
 	const constantDeclarations = constants
@@ -61,8 +81,14 @@ declare namespace net.runelite.api {
 	return `${header}\n${constantDeclarations}\n${footer}\n`;
 }
 
-async function processFile(url: string, outputPath: string, className: string, name: string) {
+async function processFile(url: string, outputPath: string, className: string, name: string, isGameval: boolean = false) {
 	try {
+		// Ensure output directory exists
+		const outputDir = path.dirname(outputPath);
+		if (!fs.existsSync(outputDir)) {
+			fs.mkdirSync(outputDir, { recursive: true });
+		}
+
 		// Fetch the Java file
 		const javaContent = await fetchJavaFile(url, name);
 		console.log(`${name} fetched successfully`);
@@ -72,7 +98,7 @@ async function processFile(url: string, outputPath: string, className: string, n
 		console.log(`Parsed ${constants.length} constants from ${name}`);
 
 		// Generate TypeScript declaration
-		const tsDeclaration = generateTypeScriptDeclaration(constants, className);
+		const tsDeclaration = generateTypeScriptDeclaration(constants, className, isGameval);
 
 		// Write to output file
 		fs.writeFileSync(outputPath, tsDeclaration);
@@ -89,8 +115,9 @@ async function main() {
 		console.log(`Processing ${FILES_TO_PROCESS.length} RuneLite API files...\n`);
 
 		for (const file of FILES_TO_PROCESS) {
-			const outputPath = path.join(OUTPUT_DIR, `${file.name}.d.ts`);
-			await processFile(file.url, outputPath, file.name, `${file.name}.java`);
+			const outputPath = path.join(file.outputDir, `${file.name}.d.ts`);
+			const isGameval = file.outputDir.includes('gameval');
+			await processFile(file.url, outputPath, file.name, `${file.name}.java`, isGameval);
 			console.log(''); // Add spacing between files
 		}
 
