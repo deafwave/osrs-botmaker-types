@@ -5,10 +5,12 @@ import * as path from 'path';
 const BASE_URL =
 	'https://raw.githubusercontent.com/runelite/runelite/refs/heads/master/runelite-api/src/main/java/net/runelite/api';
 const BASE_OUTPUT_DIR = path.join(__dirname, '../../../src/types/runelite/net/runelite/api');
+const ROLLUP_OUTPUT_DIR = path.join(__dirname, '../../../src/rollup');
 
 const GAMEVAL_OUTPUT_DIR = path.join(BASE_OUTPUT_DIR, 'gameval');
 
 const FILES_TO_PROCESS = [
+	{ name: 'EnumID', url: `${BASE_URL}/EnumID.java`, outputDir: BASE_OUTPUT_DIR },
 	{ name: 'ItemID', url: `${BASE_URL}/ItemID.java`, outputDir: BASE_OUTPUT_DIR },
 	{ name: 'NpcID', url: `${BASE_URL}/NpcID.java`, outputDir: BASE_OUTPUT_DIR },
 	{ name: 'NullItemID', url: `${BASE_URL}/NullItemID.java`, outputDir: BASE_OUTPUT_DIR },
@@ -81,6 +83,16 @@ declare namespace ${namespace} {
 	return `${header}\n${constantDeclarations}\n${footer}\n`;
 }
 
+function generateRollupExport(constants: ItemConstant[], className: string): string {
+	const header = `// This file is auto-generated. Do not edit manually.\n`;
+	
+	const constantExports = constants
+		.map((constant) => `\t${constant.name}: ${constant.value},`)
+		.join('\n');
+
+	return `${header}export default {\n${constantExports}\n};\n`;
+}
+
 async function processFile(url: string, outputPath: string, className: string, name: string, isGameval: boolean = false) {
 	try {
 		// Ensure output directory exists
@@ -103,6 +115,20 @@ async function processFile(url: string, outputPath: string, className: string, n
 		// Write to output file
 		fs.writeFileSync(outputPath, tsDeclaration);
 		console.log(`TypeScript declaration written to: ${outputPath}`);
+
+		// Generate and write Rollup export (only for main API files, not gameval)
+		if (!isGameval) {
+			// Ensure rollup output directory exists
+			if (!fs.existsSync(ROLLUP_OUTPUT_DIR)) {
+				fs.mkdirSync(ROLLUP_OUTPUT_DIR, { recursive: true });
+			}
+
+			const rollupExport = generateRollupExport(constants, className);
+			const rollupPath = path.join(ROLLUP_OUTPUT_DIR, `${className}.ts`);
+			fs.writeFileSync(rollupPath, rollupExport);
+			console.log(`Rollup export written to: ${rollupPath}`);
+		}
+
 		console.log(`${className}.d.ts has been successfully updated!`);
 	} catch (error) {
 		console.error(`Error processing ${name}:`, error);

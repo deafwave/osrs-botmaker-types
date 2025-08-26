@@ -66,6 +66,7 @@ export default [
 			'**/rollup.cjs',
 			'**/*.js',
 			'scripts',
+			'src/rollup/**',
 
 			'**/*.d.ts',
 		],
