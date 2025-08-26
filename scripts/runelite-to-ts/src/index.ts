@@ -3,16 +3,19 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const RUNELITE_ITEMID_URL = 'https://raw.githubusercontent.com/runelite/runelite/refs/heads/master/runelite-api/src/main/java/net/runelite/api/ItemID.java';
-const OUTPUT_PATH = path.join(__dirname, '../../../src/types/runelite/net/runelite/api/ItemID.d.ts');
+const RUNELITE_NPCID_URL = 'https://raw.githubusercontent.com/runelite/runelite/refs/heads/master/runelite-api/src/main/java/net/runelite/api/NpcID.java';
+
+const ITEMID_OUTPUT_PATH = path.join(__dirname, '../../../src/types/runelite/net/runelite/api/ItemID.d.ts');
+const NPCID_OUTPUT_PATH = path.join(__dirname, '../../../src/types/runelite/net/runelite/api/NpcID.d.ts');
 
 interface ItemConstant {
   name: string;
   value: number;
 }
 
-async function fetchItemIDJava(): Promise<string> {
-  console.log('Fetching ItemID.java from RuneLite repository...');
-  const response = await axios.get(RUNELITE_ITEMID_URL);
+async function fetchJavaFile(url: string, name: string): Promise<string> {
+  console.log(`Fetching ${name} from RuneLite repository...`);
+  const response = await axios.get(url);
   return response.data;
 }
 
@@ -33,11 +36,11 @@ function parseItemConstants(javaContent: string): ItemConstant[] {
   return constants;
 }
 
-function generateTypeScriptDeclaration(constants: ItemConstant[]): string {
+function generateTypeScriptDeclaration(constants: ItemConstant[], className: string): string {
   const header = `/// <reference path="../../../../../../src/types/java/index.d.ts" />
 /// <reference path="../../../../../../src/types/runelite/index.d.ts" />
 declare namespace net.runelite.api {
-\texport class ItemID {`;
+\texport class ${className} {`;
 
   const constantDeclarations = constants
     .map(constant => `\t\tstatic readonly ${constant.name} = ${constant.value};`)
@@ -49,23 +52,39 @@ declare namespace net.runelite.api {
   return `${header}\n${constantDeclarations}\n${footer}\n`;
 }
 
-async function main() {
+async function processFile(url: string, outputPath: string, className: string, name: string) {
   try {
     // Fetch the Java file
-    const javaContent = await fetchItemIDJava();
-    console.log('Java file fetched successfully');
+    const javaContent = await fetchJavaFile(url, name);
+    console.log(`${name} fetched successfully`);
     
     // Parse constants
     const constants = parseItemConstants(javaContent);
-    console.log(`Parsed ${constants.length} item constants`);
+    console.log(`Parsed ${constants.length} constants from ${name}`);
     
     // Generate TypeScript declaration
-    const tsDeclaration = generateTypeScriptDeclaration(constants);
+    const tsDeclaration = generateTypeScriptDeclaration(constants, className);
     
     // Write to output file
-    fs.writeFileSync(OUTPUT_PATH, tsDeclaration);
-    console.log(`TypeScript declaration written to: ${OUTPUT_PATH}`);
-    console.log('ItemID.d.ts has been successfully updated!');
+    fs.writeFileSync(outputPath, tsDeclaration);
+    console.log(`TypeScript declaration written to: ${outputPath}`);
+    console.log(`${className}.d.ts has been successfully updated!`);
+    
+  } catch (error) {
+    console.error(`Error processing ${name}:`, error);
+    throw error;
+  }
+}
+
+async function main() {
+  try {
+    // Process ItemID
+    await processFile(RUNELITE_ITEMID_URL, ITEMID_OUTPUT_PATH, 'ItemID', 'ItemID.java');
+    
+    // Process NpcID  
+    await processFile(RUNELITE_NPCID_URL, NPCID_OUTPUT_PATH, 'NpcID', 'NpcID.java');
+    
+    console.log('\nAll files processed successfully!');
     
   } catch (error) {
     console.error('Error:', error);
