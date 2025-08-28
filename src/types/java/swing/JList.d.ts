@@ -1,6 +1,6 @@
 declare namespace javax.swing {
-	export class JList {
-		constructor(items: string[]);
+	export class JList extends javax.swing.JComponent {
+		constructor(items: string[] | javax.swing.DefaultListModel);
 		getSelectedValue(): string;
 		getSelectedValuesList(): string[];
 		setSelectionMode(mode: number): void;
