@@ -101,7 +101,6 @@ declare namespace bot {
 		 * @param message The message to print.
 		 */
 		printLogMessage: (message: string) => void;
-
 		/**
 		 * Runs a client script.
 		 * @param ints The integer parameters for the script.

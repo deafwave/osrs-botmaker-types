@@ -15,6 +15,12 @@ declare namespace bot {
          * Stops the execution of the bot task.
          */
         stop: () => void;
+
+        /**
+         * Sleep for a specified duration.
+         * @param duration - The duration to sleep in milliseconds.
+         */
+        sleep: (duration: number) => void;
     }
 
     /**
