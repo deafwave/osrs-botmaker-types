@@ -1,7 +1,7 @@
 /// <reference path="./Rectangle.d.ts" />
 interface Shape {
 	// Methods to get the bounding box of the shape
-	getBounds(): Rectangle; // Assuming a Rectangle interface is defined
+	getBounds(): java.awt.Rectangle; // Assuming a Rectangle interface is defined
 	getBounds2D(): Rectangle2D; // Assuming a Rectangle2D interface is defined
 
 	// Methods to test if a point or rectangle lies inside the boundary of the shape

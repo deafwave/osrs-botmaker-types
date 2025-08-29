@@ -33,64 +33,120 @@ declare namespace net.runelite.api {
 		 * Gets the ID of the projectile.
 		 *
 		 * @return the projectile ID
-		 * @see GraphicID
+		 * @see net.runelite.api.gameval.SpotanimID
 		 */
 		getId(): number;
+
+		/**
+		 * Get the level the projectile starts on.
+		 *
+		 * @return
+		 */
+		getSourceLevel(): number;
+
+		/**
+		 * Get the point the projectile starts at.
+		 *
+		 * @return
+		 */
+		getSourcePoint(): net.runelite.api.coords.LocalPoint;
+
+		/**
+		 * Get the actor the projectile starts at.
+		 *
+		 * @return
+		 */
+		getSourceActor(): Actor | null;
+
+		/**
+		 * Get the level the projectile ends on.
+		 * @return
+		 */
+		getTargetLevel(): number;
+
+		/**
+		 * Get the point the projectile ends at.
+		 *
+		 * @return
+		 */
+		getTargetPoint(): net.runelite.api.coords.LocalPoint;
+
+		/**
+		 * Get the actor the projectile ends at.
+		 *
+		 * @return
+		 */
+		getTargetActor(): Actor | null;
+
 		/**
 		 * Gets the actor that is targeted by this projectile.
 		 *
 		 * @return the target actor, or null if this projectile is an AoE attack
+		 * @deprecated
 		 */
-		getInteracting(): Actor;
+		getInteracting(): Actor | null;
+
 		/**
 		 * Get the target point of the projectile. For projectiles with an actor target,
 		 * this is updated each frame to the actor position.
 		 *
 		 * @return
+		 * @deprecated
 		 */
 		getTarget(): net.runelite.api.coords.LocalPoint;
+
 		/**
 		 * Gets the original x-axis coordinate that this projectile started from.
 		 *
 		 * @return the original coordinate
+		 * @deprecated
 		 */
 		getX1(): number;
+
 		/**
 		 * Gets the original y-axis coordinate that this projectile started from.
 		 *
 		 * @return the original coordinate
+		 * @deprecated
 		 */
 		getY1(): number;
+
 		/**
 		 * Gets the plane that the projectile is on.
 		 *
 		 * @return the plane
+		 * @deprecated
 		 */
 		getFloor(): number;
+
 		/**
 		 * Gets the height of the projectile.
 		 *
 		 * @return the height
 		 */
 		getHeight(): number;
+
 		/**
 		 * Gets the ending height of the projectile.
 		 *
 		 * @return the ending height
 		 */
 		getEndHeight(): number;
+
 		/**
 		 * Gets the game cycle that the projectile begun movement at.
 		 *
 		 * @return the start game cycle
 		 */
 		getStartCycle(): number;
+
 		/**
 		 * Gets the game cycle that the projectile will reach its target at.
 		 *
 		 * @return the end game cycle
 		 */
 		getEndCycle(): number;
+
 		/**
 		 * Sets the game cycle the projectile will reach its target at. The
 		 * projectile automatically despawns after this time, and setting the
@@ -99,6 +155,7 @@ declare namespace net.runelite.api {
 		 * @param cycle
 		 */
 		setEndCycle(cycle: number): void;
+
 		/**
 		 * Gets the remaining game cycles until the projectile reaches its
 		 * target and despawns.
@@ -106,6 +163,7 @@ declare namespace net.runelite.api {
 		 * @return the remaining game cycles
 		 */
 		getRemainingCycles(): number;
+
 		/**
 		 * Gets the slope of the projectile.
 		 * <p>
@@ -115,59 +173,48 @@ declare namespace net.runelite.api {
 		 * @return the slope of the projectile
 		 */
 		getSlope(): number;
+
 		/**
 		 * Gets the starting height of the projectile.
 		 *
 		 * @return the starting height
 		 */
 		getStartHeight(): number;
+
 		/**
 		 * Gets the current x-axis coordinate of the projectile.
 		 *
 		 * @return the x-axis coordinate
 		 */
 		getX(): number;
+
 		/**
 		 * Gets the current y-axis coordinate of the projectile.
 		 *
 		 * @return the y-axis coordinate
 		 */
 		getY(): number;
+
 		/**
 		 * Gets the current z-axis coordinate of the projectile.
 		 *
 		 * @return the z-axis coordinate
 		 */
 		getZ(): number;
+
 		/**
-		 * Gets the scalar quantity (speed) at which the projectile is travelling.
+		 * Get the projectile orientation in JAU
 		 *
-		 * @return the scalar quantity
+		 * @return
 		 */
-		getScalar(): number;
-		/**
-		 * Gets the x-axis velocity of the projectile.
-		 *
-		 * @return the x-axis velocity
-		 */
-		getVelocityX(): number;
-		/**
-		 * Gets the y-axis velocity of the projectile.
-		 *
-		 * @return the y-axis velocity
-		 */
-		getVelocityY(): number;
-		/**
-		 * Gets the z-axis velocity of the projectile.
-		 *
-		 * @return the z-axis velocity
-		 */
-		getVelocityZ(): number;
+		getOrientation(): number;
+
 		/**
 		 * The animation of the projectile
 		 * @return
 		 */
 		getAnimation(): Animation | null;
+
 		/**
 		 * The frame of the current animation
 		 * @return

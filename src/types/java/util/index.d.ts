@@ -1,3 +1,5 @@
+/// <reference path="./function/BooleanSupplier.d.ts" />
+
 declare namespace java.util {
 	export interface Collection<T> {
 		size(): number;

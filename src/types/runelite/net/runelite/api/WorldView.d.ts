@@ -25,33 +25,39 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 declare namespace net.runelite.api {
-	export class WorldView {
+	export interface WorldView {
 		/**
 		 * Get the world view id
 		 * @return the id, or -1 if this is the top level worldview
 		 */
 		getId(): number;
+
 		/**
 		 * Test if this worldview is the top level world view.
 		 * @return
 		 */
 		isTopLevel(): boolean;
+
 		/**
 		 * Gets the worldview's scene
 		 */
 		getScene(): Scene;
+
 		/**
 		 * Gets all of the Players in this view
 		 */
-		players(): any;
+		players(): IndexedObjectSet<Player>;
+
 		/**
 		 * Gets all the Non Player Characters in this view
 		 */
-		npcs(): any;
+		npcs(): IndexedObjectSet<NPC>;
+
 		/**
 		 * Gets all the WorldEntities in this view
 		 */
-		worldEntities(): any;
+		worldEntities(): IndexedObjectSet<WorldEntity>;
+
 		/**
 		 * Gets an array of tile collision data.
 		 * <p>
@@ -60,6 +66,7 @@ declare namespace net.runelite.api {
 		 * @return the collision data
 		 */
 		getCollisionMaps(): CollisionData[] | null;
+
 		/**
 		 * Gets the current plane the player is on.
 		 * <p>
@@ -73,6 +80,7 @@ declare namespace net.runelite.api {
 		 * @return the plane
 		 */
 		getPlane(): number;
+
 		/**
 		 * Gets a 3D array containing the heights of tiles in the
 		 * current scene.
@@ -80,6 +88,7 @@ declare namespace net.runelite.api {
 		 * @return the tile heights
 		 */
 		getTileHeights(): number[][][];
+
 		/**
 		 * Gets a 3D array containing the settings of tiles in the
 		 * current scene.
@@ -87,16 +96,19 @@ declare namespace net.runelite.api {
 		 * @return the tile settings
 		 */
 		getTileSettings(): number[][][];
+
 		/**
 		 * Get the size of the world view, x-axis
 		 * @return
 		 */
 		getSizeX(): number;
+
 		/**
 		 * Get the size of the world view, y-axis
 		 * @return
 		 */
 		getSizeY(): number;
+
 		/**
 		 * Returns the x-axis base coordinate.
 		 * <p>
@@ -106,6 +118,7 @@ declare namespace net.runelite.api {
 		 * @return the base x-axis coordinate
 		 */
 		getBaseX(): number;
+
 		/**
 		 * Returns the y-axis base coordinate.
 		 * <p>
@@ -115,6 +128,7 @@ declare namespace net.runelite.api {
 		 * @return the base y-axis coordinate
 		 */
 		getBaseY(): number;
+
 		/**
 		 * Create a projectile.
 		 * @param id projectile/spotanim id
@@ -131,6 +145,7 @@ declare namespace net.runelite.api {
 		 * @param targetX target x - if an actor target is supplied should be the target x
 		 * @param targetY target y - if an actor target is supplied should be the target y
 		 * @return the new projectile
+		 * @deprecated
 		 */
 		createProjectile(
 			id: number,
@@ -143,34 +158,32 @@ declare namespace net.runelite.api {
 			slope: number,
 			startHeight: number,
 			endHeight: number,
-			target: Actor,
+			target: Actor | null,
 			targetX: number,
 			targetY: number,
 		): Projectile;
-		/**
-		 * Gets a list of all projectiles currently spawned.
-		 *
-		 * @return all projectiles
-		 */
-		getProjectiles(): net.runelite.api.Deque<Projectile>;
+
 		/**
 		 * Gets a list of all graphics objects currently drawn.
 		 *
 		 * @return all graphics objects
 		 */
-		getGraphicsObjects(): net.runelite.api.Deque<GraphicsObject>;
+		getGraphicsObjects(): Deque<GraphicsObject>;
+
 		/**
 		 * Gets the currently selected tile. (ie. last right clicked tile)
 		 *
 		 * @return the selected tile
 		 */
 		getSelectedSceneTile(): Tile | null;
+
 		/**
 		 * Check if this scene is an instance
 		 * @see #getInstanceTemplateChunks()
 		 * @return
 		 */
 		isInstance(): boolean;
+
 		/**
 		 * Contains a 3D array of template chunks for instanced areas.
 		 * <p>
@@ -192,5 +205,16 @@ declare namespace net.runelite.api {
 		 * @see InstanceTemplates
 		 */
 		getInstanceTemplateChunks(): number[][][];
+
+		/**
+		 * Gets an array of map region IDs that are currently loaded.
+		 *
+		 * @return the map regions
+		 */
+		getMapRegions(): number[];
+	}
+
+	export namespace WorldView {
+		export const TOPLEVEL: number;
 	}
 }

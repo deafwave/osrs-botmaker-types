@@ -1,30 +1,5 @@
 /// <reference path="../../../../../../src/types/java/index.d.ts" />
 /// <reference path="../../../../../../src/types/runelite/index.d.ts" />
-/*
- * Copyright (c) 2018, Lotto <https://github.com/devLotto>
- * Copyright (c) 2018, SoyChai <https://github.com/SoyChai>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
 declare namespace net.runelite.api {
 	export class SpriteID {
 		static readonly RS2_CHATBOX_BUTTONS = 0;
@@ -193,7 +168,6 @@ declare namespace net.runelite.api {
 		static readonly EQUIPMENT_SLOT_HANDS = 164;
 		static readonly EQUIPMENT_SLOT_FEET = 165;
 		static readonly EQUIPMENT_SLOT_AMMUNITION = 166;
-		/* Unmapped: 167 */
 		static readonly TAB_COMBAT = 168;
 		static readonly COMPASS_TEXTURE = 169;
 		static readonly EQUIPMENT_SLOT_TILE = 170;
@@ -213,7 +187,6 @@ declare namespace net.runelite.api {
 		static readonly STATS_TILE_HALF_RIGHT_BLACK = 184;
 		static readonly MUSIC_PLAYER_BUTTON = 185;
 		static readonly MUSIC_PLAYER_BUTTON_SELECTED = 186;
-		/* Unmapped: 187~194 */
 		static readonly UNKNOWN_BUTTON_SQUARE_SMALL = 195;
 		static readonly UNKNOWN_BUTTON_SQUARE_SMALL_SELECTED = 196;
 		static readonly SKILL_ATTACK = 197;
@@ -244,7 +217,6 @@ declare namespace net.runelite.api {
 		static readonly SKILL_TOTAL = 222;
 		static readonly UNKNOWN_EMPTY_VIAL = 223;
 		static readonly UNKNOWN_DRAGON_DAGGER_P = 224;
-		/* Unmapped: 225~232 */
 		static readonly COMBAT_STYLE_AXE_BLOCK = 233;
 		static readonly COMBAT_STYLE_AXE_CHOP = 234;
 		static readonly COMBAT_STYLE_AXE_HACK = 235;
@@ -304,13 +276,11 @@ declare namespace net.runelite.api {
 		static readonly COMBAT_STYLE_SALAMANDER_SCORCH = 289;
 		static readonly COMBAT_STYLE_SALAMANDER_FLARE = 290;
 		static readonly COMBAT_STYLE_SALAMANDER_BLAZE = 291;
-		/* Unmapped: 292 */
 		static readonly COMBAT_STYLE_BUTTON_NARROW = 293;
 		static readonly COMBAT_STYLE_BUTTON_NARROW_SELECTED = 294;
 		static readonly COMBAT_STYLE_BUTTON_THIN = 295;
 		static readonly COMBAT_STYLE_BUTTON_THIN_SELECTED = 296;
 		static readonly DIALOG_BACKGROUND = 297;
-		/* Unmapped: 298 */
 		static readonly RS2_YELLOW_CLICK_ANIMATION_1 = 299;
 		static readonly RS2_MINIMAP_MARKER_RED_ITEM = 300;
 		static readonly RS2_SWORD_POINTED_LEFT = 301;
@@ -378,9 +348,7 @@ declare namespace net.runelite.api {
 		static readonly SPELL_WATER_SURGE = 363;
 		static readonly SPELL_EARTH_SURGE = 364;
 		static readonly SPELL_FIRE_SURGE = 365;
-		/* Unmapped: 366 */
 		static readonly SPELL_CIVITAS_ILLA_FORTIS_TELEPORT = 367;
-		/* Unmapped: 368 */
 		static readonly SPELL_BIND_DISABLED = 369;
 		static readonly SPELL_SNARE_DISABLED = 370;
 		static readonly SPELL_ENTANGLE_DISABLED = 371;
@@ -428,7 +396,6 @@ declare namespace net.runelite.api {
 		static readonly SPELL_WATER_SURGE_DISABLED = 413;
 		static readonly SPELL_EARTH_SURGE_DISABLED = 414;
 		static readonly SPELL_FIRE_SURGE_DISABLED = 415;
-		/* Unmapped: 416, 417, 418 */
 		static readonly UNKNOWN_STANCE_ICON_1 = 419;
 		static readonly UNKNOWN_STANCE_ICON_2 = 420;
 		static readonly UNKNOWN_STANCE_ICON_3 = 421;
@@ -504,7 +471,6 @@ declare namespace net.runelite.api {
 		static readonly TEXTURE_BRICKS_SANDSTONE = 491;
 		static readonly TEXTURE_HEIROGLYPHS = 492;
 		static readonly TEXTURE_493 = 493;
-		/* Unmapped: 494~497 */
 		static readonly LOGIN_SCREEN_RUNESCAPE_LOGO = 498;
 		static readonly LOGIN_SCREEN_DIALOG_BACKGROUND = 499;
 		static readonly LOGIN_SCREEN_BUTTON_BACKGROUND = 500;
@@ -592,7 +558,6 @@ declare namespace net.runelite.api {
 		static readonly SPELL_RECHARGE_DRAGONSTONE = 584;
 		static readonly SPELL_SPIN_FLAX = 585;
 		static readonly SPELL_OURANIA_TELEPORT = 586;
-		/* Unmapped: 587~592 */
 		static readonly SPELL_BAKE_PIE_DISABLED = 593;
 		static readonly SPELL_MOONCLAN_TELEPORT_DISABLED = 594;
 		static readonly SPELL_WATERBIRTH_TELEPORT_DISABLED = 595;
@@ -637,10 +602,8 @@ declare namespace net.runelite.api {
 		static readonly SPELL_RECHARGE_DRAGONSTONE_DISABLED = 634;
 		static readonly SPELL_SPIN_FLAX_DISABLED = 635;
 		static readonly SPELL_OURANIA_TELEPORT_DISABLED = 636;
-		/* Unmapped: 637~642 */
 		static readonly TEXTURE_ROOF_TILES_SLATE_DIRTY = 643;
 		static readonly TEXTURE_POLISHED_TIMBER = 644;
-		/* Unmapped: 645~648 */
 		static readonly EQUIPMENT_WEIGHT = 649;
 		static readonly WORLD_MAP_KEY_EFFECTS_THUNDERBOLT = 650;
 		static readonly UNKNOWN_PRAYER_ICON = 651;
@@ -756,7 +719,6 @@ declare namespace net.runelite.api {
 		static readonly OPTIONS_SQUARE_BUTTON = 761;
 		static readonly OPTIONS_SQUARE_BUTTON_SELECTED = 762;
 		static readonly TEXTURE_FALLING_SNOW_EFFECT = 763;
-		/* Unmapped: 764 */
 		static readonly BARBARIAN_ASSAULT_WAVE_ICON = 765;
 		static readonly BARBARIAN_ASSAULT_EAR_ICON = 766;
 		static readonly BARBARIAN_ASSAULT_MOUTH_ICON = 767;
@@ -811,7 +773,6 @@ declare namespace net.runelite.api {
 		static readonly LOGIN_SCREEN_SORTING_ARROW_UP_DISABLED = 816;
 		static readonly LOGIN_SCREEN_WORLD_STAR_FREE = 817;
 		static readonly LOGIN_SCREEN_WORLD_SELECT_BUTTON = 818;
-		/* Unmapped: 819 */
 		static readonly BOTTOM_LINE_MODE_SIDE_PANEL_EDGE_TOP = 820;
 		static readonly BOTTOM_LINE_MODE_SIDE_PANEL_EDGE_LEFT = 821;
 		static readonly BOTTOM_LINE_MODE_SIDE_PANEL_EDGE_BOTTOM = 822;
@@ -843,7 +804,6 @@ declare namespace net.runelite.api {
 		static readonly BOTTOM_LINE_MODE_CORNER_BOTTOM_LEFT = 848;
 		static readonly BOTTOM_LINE_MODE_CORNER_BOTTOM_RIGHT = 849;
 		static readonly BOTTOM_LINE_MODE_INTERSECTION_MIDDLE = 850;
-		/* Unmapped: 851~860 */
 		static readonly UNKNOWN_GLASS_STREAKS = 861;
 		static readonly WITCHS_HOUSE_PIANO_MUSICAL_NOTES_BEAMED = 862;
 		static readonly WITCHS_HOUSE_PIANO_MUSICAL_NOTE_CROTCHET = 863;
@@ -955,7 +915,6 @@ declare namespace net.runelite.api {
 		static readonly UNUSED_BOTTOM_LINE_MODE_CORNER_BOTTOM_LEFT = 974;
 		static readonly UNUSED_BOTTOM_LINE_MODE_CORNER_BOTTOM_RIGHT = 975;
 		static readonly UNUSED_BOTTOM_LINE_MODE_INTERSECTION_MIDDLE = 976;
-		/* Unmapped: 977~986 */
 		static readonly UNKNOWN_BORDER_EDGE_HORIZONTAL = 987;
 		static readonly UNKNOWN_BORDER_EDGE_VERTICAL = 988;
 		static readonly UNKNOWN_BORDER_EDGE_HORIZONTAL_989 = 989;
@@ -1182,7 +1141,6 @@ declare namespace net.runelite.api {
 		static readonly DEADMAN_BANK_KEYS_3 = 1222;
 		static readonly DEADMAN_BANK_KEYS_2 = 1223;
 		static readonly DEADMAN_BANK_KEYS_1 = 1224;
-		/* Unmapped: 1225 */
 		static readonly BANK_RAID_SEND_TO_INVENTORY = 1226;
 		static readonly BANK_RAID_SEND_TO_BANK = 1227;
 		static readonly LOGIN_SCREEN_DEADMAN_MODE_LOGO = 1228;
@@ -1208,31 +1166,25 @@ declare namespace net.runelite.api {
 		static readonly SPELL_ADEPT_REANIMATION = 1248;
 		static readonly SPELL_EXPERT_REANIMATION = 1249;
 		static readonly SPELL_MASTER_REANIMATION = 1250;
-		/* Unmapped: 1251 */
 		static readonly SPELL_ARCEUUS_LIBRARY_TELEPORT = 1252;
 		static readonly SPELL_DRAYNOR_MANOR_TELEPORT = 1253;
 		static readonly SPELL_SALVE_GRAVEYARD_TELEPORT = 1254;
-		/* Unmapped: 1255 */
 		static readonly SPELL_MIND_ALTAR_TELEPORT = 1256;
 		static readonly SPELL_RESPAWN_TELEPORT = 1257;
-		/* Unmapped 1258 */
 		static readonly SPELL_FENKENSTRAINS_CASTLE_TELEPORT = 1259;
 		static readonly SPELL_WEST_ARDOUGNE_TELEPORT = 1260;
 		static readonly SPELL_HARMONY_ISLAND_TELEPORT = 1261;
 		static readonly SPELL_BARROWS_TELEPORT = 1262;
 		static readonly SPELL_APE_ATOLL_TELEPORT = 1263;
 		static readonly SPELL_CEMETERY_TELEPORT = 1264;
-		/* Unmapped: 1265 */
 		static readonly SPELL_RESURRECT_CROPS = 1266;
 		static readonly SPELL_GHOSTLY_GRASP = 1267;
 		static readonly SPELL_SKELETAL_GRASP = 1268;
 		static readonly SPELL_UNDEAD_GRASP = 1269;
 		static readonly SPELL_RESURRECT_LESSER_GHOST = 1270;
-		/* Unmapped: 1271~1296 */
 		static readonly QUESTS_PAGE_ICON_PURPLE_KOUREND = 1297;
 		static readonly UNUSED_TAB_QUESTS_GREEN_ACHIEVEMENT_DIARIES = 1298;
 		static readonly TAB_QUESTS_GREEN_ACHIEVEMENT_DIARIES = 1299;
-		/* Unmapped: 1300~1301 */
 		static readonly SPELL_INFERIOR_DEMONBANE = 1302;
 		static readonly SPELL_SUPERIOR_DEMONBANE = 1303;
 		static readonly SPELL_DARK_DEMONBANE = 1304;
@@ -1240,27 +1192,19 @@ declare namespace net.runelite.api {
 		static readonly SPELL_WARD_OF_ARCEUUS = 1306;
 		static readonly SPELL_LESSER_CORRUPTION = 1307;
 		static readonly SPELL_GREATER_CORRUPTION = 1308;
-		/* Unmapped: 1309 */
 		static readonly SPELL_DEATH_CHARGE = 1310;
 		static readonly SPELL_DEMONIC_OFFERING = 1311;
 		static readonly SPELL_SINISTER_OFFERING = 1312;
-		/* Unmapped: 1313~1314 */
 		static readonly SPELL_SHADOW_VEIL = 1315;
 		static readonly SPELL_DARK_LURE = 1316;
 		static readonly SPELL_VILE_VIGOUR = 1317;
 		static readonly SPELL_DEGRIME = 1318;
-		/* Unmapped: 1319~1323 */
 		static readonly SPELL_MARK_OF_DARKNESS_DISABLED = 1324;
 		static readonly SPELL_WARD_OF_ARCEUUS_DISABLED = 1325;
-		/* Unmapped: 1326 */
 		static readonly SPELL_GREATER_CORRUPTION_DISABLED = 1327;
-		/* Unmapped: 1328 */
 		static readonly SPELL_DEATH_CHARGE_DISABLED = 1329;
-		/* Unmapped: 1330~1333 */
 		static readonly SPELL_SHADOW_VEIL_DISABLED = 1334;
-		/* Unmapped: 1335~1337 */
 		static readonly WORLD_SWITCHER_WORLD_STAR_BLUE = 1338;
-		/* Unmapped: 1339 */
 		static readonly FAIRY_RING_REMOVE_FAVOURITE = 1340;
 		static readonly FAIRY_RING_ADD_FAVOURITE = 1341;
 		static readonly BANK_PLACEHOLDERS_LOCK = 1342;
@@ -1280,9 +1224,7 @@ declare namespace net.runelite.api {
 		static readonly EMOTE_CRAZY_DANCE_LOCKED = 1356;
 		static readonly EMOTE_PREMIER_SHIELD_LOCKED = 1357;
 		static readonly HITSPLAT_BLUE_MISS = 1358;
-		/* Unmapped: 1359 */
 		static readonly HITSPLAT_GREEN_POISON = 1360;
-		/* Unmapped: 1361~1363 */
 		static readonly BOUNTY_HUNTER_SKIP_TARGET = 1364;
 		static readonly BOUNTY_HUNTER_SKIP_TARGET_HOVERED = 1365;
 		static readonly HOUSE_VIEWER_ROTATE_CLOCKWISE = 1366;
@@ -1312,7 +1254,6 @@ declare namespace net.runelite.api {
 		static readonly HOUSE_VIEWER_MENAGERIE_OUTDOORS = 1390;
 		static readonly HOUSE_VIEWER_SUPERIOR_GARDEN = 1391;
 		static readonly HOUSE_VIEWER_ACHIEVEMENT_GALLERY = 1392;
-		/* Unmapped: 1393, 1394, 1395 */
 		static readonly UNUSED_TEXTURE_LEAVES_WITH_RED_X = 1396;
 		static readonly SKILL_CRAFTING_1397 = 1397;
 		static readonly SKILL_FIREMAKING_LOGS = 1398;
@@ -1336,7 +1277,6 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_COX_BLUE = 1416;
 		static readonly HEALTHBAR_COX_YELLOW = 1417;
 		static readonly HEALTHBAR_COX_RED = 1418;
-		/* Unmapped: 1419 */
 		static readonly PRAYER_RIGOUR = 1420;
 		static readonly PRAYER_AUGURY = 1421;
 		static readonly PRAYER_DEADEYE = 1422;
@@ -1359,7 +1299,6 @@ declare namespace net.runelite.api {
 		static readonly MINIMAP_ORB_WORLD_MAP_PLANET = 1439;
 		static readonly MINIMAP_ORB_WORLD_MAP_PLANET_HOVERED = 1440;
 		static readonly FIXED_MODE_TOP_RIGHT_CORNER = 1441;
-		/* Unmapped: 1442~1447 */
 		static readonly MAP_ICON_GENERAL_STORE = 1448;
 		static readonly MAP_ICON_SWORD_SHOP = 1449;
 		static readonly MAP_ICON_MAGIC_SHOP = 1450;
@@ -1448,7 +1387,6 @@ declare namespace net.runelite.api {
 		static readonly MAP_ICON_RAIDS_LOBBY = 1533;
 		static readonly MAP_ICON_MAP_LINK_DOWNSTAIRS = 1534;
 		static readonly MAP_ICON_MAP_LINK_UPSTAIRS = 1535;
-		/* Unmapped: 1536, 1537, 1538 */
 		static readonly WORLD_MAP_YOU_ARE_HERE = 1539;
 		static readonly WORLD_MAP_OFFSCREEN_FOCUS_ARROW = 1540;
 		static readonly WORLD_MAP_OFFSCREEN_FOCUS_ARROW_DIAGONAL = 1541;
@@ -1479,7 +1417,6 @@ declare namespace net.runelite.api {
 		static readonly OPTIONS_SHIFT_KEY_DISABLED = 1566;
 		static readonly OPTIONS_FINGER_POINTING_AT_PET = 1567;
 		static readonly OPTIONS_SCROLL = 1568;
-		/* Unmapped: 1569, 1570, 1571 */
 		static readonly OPTIONS_FIXED_MODE_ENABLED = 1572;
 		static readonly OPTIONS_RESIZEABLE_MODE_ENABLED = 1573;
 		static readonly OPTIONS_FIXED_MODE_ENABLED_VERTICAL = 1574;
@@ -1505,7 +1442,6 @@ declare namespace net.runelite.api {
 		static readonly UNKNOWN_BUTTON_HALF_RIGHT_FADED_RED = 1594;
 		static readonly UNKNOWN_SLIM_BUTTON = 1595;
 		static readonly UNKNOWN_SLIM_BUTTON_SELECTED = 1596;
-		/* Unmapped: 1597, 1598, 1599 */
 		static readonly LOGOUT_THUMB_UP = 1600;
 		static readonly LOGOUT_THUMB_DOWN = 1601;
 		static readonly LOGOUT_THUMB_UP_HOVERED = 1602;
@@ -1515,10 +1451,8 @@ declare namespace net.runelite.api {
 		static readonly UNKNOWN_SMALL_SPECIAL_ICON = 1606;
 		static readonly MINIMAP_ORB_SPECIAL = 1607;
 		static readonly MINIMAP_ORB_SPECIAL_ACTIVATED = 1608;
-		/* Unmapped: 1609 */
 		static readonly MINIMAP_ORB_SPECIAL_ICON = 1610;
 		static readonly FIXED_MODE_MINIMAP_FRAME_BOTTOM = 1611;
-		/* Unmapped: 1612, 1613, 1614 */
 		static readonly MOBILE_TUTORIAL_FUNCTION_MODE_BUTTON = 1615;
 		static readonly MOBILE_TUTORIAL_CAMERA_MOVEMENT = 1616;
 		static readonly MOBILE_CONCEPT_SKETCH_UI = 1617;
@@ -1531,20 +1465,13 @@ declare namespace net.runelite.api {
 		static readonly MOBILE_FUNCTION_MODE_DISABLED = 1624;
 		static readonly MOBILE_YELLOW_TOUCH_ANIMATION_1 = 1625;
 		static readonly MOBILE_YELLOW_TOUCH_ANIMATION_2 = 1626;
-		/* Unmapped: 1627~1631 */
 		static readonly HITSPLAT_DARK_GREEN_VENOM = 1632;
-		/* Unmapped: 1633~1652 */
 		static readonly MOBILE_FINGER_ON_INTERFACE = 1653;
-		/* Unmapped: 1627~1701 */
 		static readonly BUTTON_FRIENDS = 1702;
 		static readonly BUTTON_IGNORES = 1703;
-		/* Unmapped: 1704~1707 */
 		static readonly TAB_MAGIC_SPELLBOOK_ARCEUUS_UNUSED = 1708;
-		/* Unmapped: 1709, 1710 */
 		static readonly TAB_MAGIC_SPELLBOOK_ARCEUUS = 1711;
-		/* Unmapped: 1712 */
 		static readonly TAB_QUESTS_ORANGE_ADVENTURE_PATHS = 1713;
-		/* Unmapped: 1714~2175 */
 		static readonly HEALTHBAR_DEFAULT_FRONT_30PX = 2176;
 		static readonly HEALTHBAR_DEFAULT_BACK_30PX = 2177;
 		static readonly HEALTHBAR_DEFAULT_FRONT_50PX = 2178;
@@ -1561,18 +1488,12 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_DEFAULT_BACK_140PX = 2189;
 		static readonly HEALTHBAR_DEFAULT_FRONT_160PX = 2190;
 		static readonly HEALTHBAR_DEFAULT_BACK_160PX = 2191;
-		/* Unmapped: 2192~2218 */
 		static readonly QUESTS_PAGE_ICON_ORANGE_ADVENTURE_PATHS = 2219;
-		/* Unmapped: 2220~2275 */
 		static readonly QUESTS_PAGE_ICON_BROWN_CHARACTER_SUMMARY = 2276;
-		/* Unmapped: 2277~2306 */
 		static readonly TAB_CLAN_CHAT = 2307;
-		/* Unmapped: 2308 */
 		static readonly TAB_QUESTS_BROWN_CHARACTER_SUMMARY = 2309;
-		/* Unmapped: 2308~2419 */
 		static readonly WIKI_DESELECTED = 2420;
 		static readonly WIKI_SELECTED = 2421;
-		/* Unmapped: 2422~2430 */
 		static readonly HEALTHBAR_DEFAULT_FRONT_40PX = 2431;
 		static readonly HEALTHBAR_DEFAULT_BACK_40PX = 2432;
 		static readonly HEALTHBAR_CYAN_FRONT_30PX = 2433;
@@ -1629,7 +1550,6 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_YELLOW_BACK_140PX = 2484;
 		static readonly HEALTHBAR_YELLOW_FRONT_160PX = 2485;
 		static readonly HEALTHBAR_YELLOW_BACK_160PX = 2486;
-		/* Unmapped: 2487~2824 */
 		static readonly FRIENDS_CHAT_RANK_SMILEY_FRIEND = 2825;
 		static readonly FRIENDS_CHAT_RANK_CROWN_JAGEX_MODERATOR = 2826;
 		static readonly FRIENDS_CHAT_RANK_KEY_CHANNEL_OWNER = 2827;
@@ -1639,14 +1559,11 @@ declare namespace net.runelite.api {
 		static readonly FRIENDS_CHAT_RANK_TRIPLE_CHEVRON_SERGEANT = 2831;
 		static readonly FRIENDS_CHAT_RANK_DOUBLE_CHEVRON_CORPORAL = 2832;
 		static readonly FRIENDS_CHAT_RANK_SINGLE_CHEVRON_RECRUIT = 2833;
-		/* Unmapped: 2834~2857 */
 		static readonly SETTINGS_SLIDER_HANDLE_BLUE = 2858;
 		static readonly SETTINGS_SLIDER_HANDLE_RED = 2859;
 		static readonly SETTINGS_SLIDER_HANDLE_GREEN = 2860;
-		/* Unmapped: 2861~2966 */
 		static readonly HEALTHBAR_BLUE_FRONT_50PX = 2967;
 		static readonly HEALTHBAR_BLUE_BACK_50PX = 2968;
-		/* Unmapped: 2968~2970 */
 		static readonly HEALTHBAR_DEFAULT_FRONT_70PX = 2971;
 		static readonly HEALTHBAR_DEFAULT_BACK_70PX = 2972;
 		static readonly HEALTHBAR_CYAN_FRONT_70PX = 2973;
@@ -1655,14 +1572,9 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_ORANGE_BACK_70PX = 2976;
 		static readonly HEALTHBAR_YELLOW_FRONT_70PX = 2977;
 		static readonly HEALTHBAR_YELLOW_BACK_70PX = 2978;
-		/* Unmapped: 2979, 2980 */
-		static readonly SPELL_RESURRECT_GREATER_GHOST = 2980;
 		static readonly SPELL_RESURRECT_SUPERIOR_SKELETON = 2981;
-		/* Unmapped: 2982~2983 */
 		static readonly SPELL_RESURRECT_GREATER_ZOMBIE = 2984;
-		/* Unmapped: 2985~2986 */
 		static readonly SPELL_RESURRECT_SUPERIOR_SKELETON_DISABLED = 2987;
-		/* Unmapped: 2988~4259 */
 		static readonly HISCORE_MIMIC = 4260;
 		static readonly HISCORE_OBOR = 4261;
 		static readonly HISCORE_BRYOPHYTA = 4262;
@@ -1702,7 +1614,6 @@ declare namespace net.runelite.api {
 		static readonly HISCORE_TOMBS_OF_AMASCUT = 4297;
 		static readonly HISCORE_TOMBS_OF_AMASCUT_EXPERT = 4298;
 		static readonly HISCORE_PHANTOM_MUSPAH = 4299;
-		/* Unmapped: 4300~4707 */
 		static readonly HEALTHBAR_PURPLE_FRONT_30PX = 4708;
 		static readonly HEALTHBAR_PURPLE_BACK_30PX = 4709;
 		static readonly HEALTHBAR_PURPLE_FRONT_40PX = 4710;
@@ -1723,9 +1634,8 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_PURPLE_BACK_140PX = 4725;
 		static readonly HEALTHBAR_PURPLE_FRONT_160PX = 4726;
 		static readonly HEALTHBAR_PURPLE_BACK_160PX = 4727;
-		/* Unmapped: 4728~4765 */
 		static readonly COLOSSEUM_DOOM = 4766;
-		/* Unmapped: 4767~4770 */
+		static readonly BURN_DAMAGE = 4767;
 		static readonly HEALTHBAR_GREEN_FRONT_30PX = 4771;
 		static readonly HEALTHBAR_GREEN_BACK_30PX = 4772;
 		static readonly HEALTHBAR_GREEN_FRONT_40PX = 4773;
@@ -1746,7 +1656,6 @@ declare namespace net.runelite.api {
 		static readonly HEALTHBAR_GREEN_BACK_140PX = 4788;
 		static readonly HEALTHBAR_GREEN_FRONT_160PX = 4789;
 		static readonly HEALTHBAR_GREEN_BACK_160PX = 4790;
-		/* Unmapped: 4791~4842 */
 		static readonly PRAYER_RP_ANCIENT_STRENGTH = 4843;
 		static readonly PRAYER_RP_ANCIENT_SIGHT = 4844;
 		static readonly PRAYER_RP_ANCIENT_WILL = 4845;
@@ -1772,16 +1681,13 @@ declare namespace net.runelite.api {
 		static readonly PRAYER_RP_VINDICATION = 4863;
 		static readonly PRAYER_RP_PROTECT_ITEM = 4865;
 		static readonly ACTIVATED_PRAYER_BACKGROUND = 4892;
-		/* Unmapped: 4893~5250 */
 		static readonly EMOTE_FORTIS_SALUTE = 5251;
-		/* Unmapped: 5252~5578 */
 		static readonly HEALTHBAR_BLOOD_MOON_FRONT_120PX = 5579;
 		static readonly HEALTHBAR_BLOOD_MOON_BACK_120PX = 5580;
 		static readonly HEALTHBAR_BLUE_MOON_FRONT_120PX = 5581;
 		static readonly HEALTHBAR_BLUE_MOON_BACK_120PX = 5582;
 		static readonly HEALTHBAR_ECLIPSE_MOON_FRONT_120PX = 5583;
 		static readonly HEALTHBAR_ECLIPSE_MOON_BACK_120PX = 5584;
-		/* Unmapped: 5585~5608 */
 		static readonly HEALTHBAR_DEFAULT_FRONT_90PX = 5609;
 		static readonly HEALTHBAR_DEFAULT_BACK_90PX = 5610;
 		static readonly HEALTHBAR_CYAN_FRONT_90PX = 5611;
@@ -1814,14 +1720,12 @@ declare namespace net.runelite.api {
 		static readonly HISCORE_ARAXXOR = 5638;
 		static readonly HISCORE_AMOXLIATL = 5639;
 		static readonly HISCORE_THE_HUEYCOATL = 5640;
-		/* Unmapped: 5641~5643 */
 		static readonly HEALTHBAR_BLOOD_MOON_FRONT_90PX = 5644;
 		static readonly HEALTHBAR_BLOOD_MOON_BACK_90PX = 5645;
 		static readonly HEALTHBAR_BLUE_MOON_FRONT_90PX = 5646;
 		static readonly HEALTHBAR_BLUE_MOON_BACK_90PX = 5647;
 		static readonly HEALTHBAR_ECLIPSE_MOON_FRONT_90PX = 5648;
 		static readonly HEALTHBAR_ECLIPSE_MOON_BACK_90PX = 5649;
-		/* Unmapped: 5650~5852 */
 		static readonly HISCORE_CLUE_SCROLL_ALL = 5853;
 		static readonly HISCORE_BOUNTY_HUNTER_HUNTER = 5854;
 		static readonly HISCORE_BOUNTY_HUNTER_ROGUE = 5855;
@@ -1834,7 +1738,8 @@ declare namespace net.runelite.api {
 		static readonly HISCORE_COLOSSEUM_GLORY = 5862;
 		static readonly HEALTHBAR_LAST_STAND_FRONT = 5863;
 		static readonly HEALTHBAR_LAST_STAND_BACK = 5864;
-		/* Unmapped: 5865~6344 */
 		static readonly HISCORE_ROYAL_TITANS = 6345;
+		static readonly HISCORE_YAMA = 6346;
+		static readonly HISCORE_COLLECTIONS_LOGGED = 6390;
 	}
 }
