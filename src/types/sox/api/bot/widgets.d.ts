@@ -19,10 +19,15 @@ declare namespace bot {
          * @param p0 The first parameter for the interaction
          * @param p1 The second parameter for the interaction (optional)
          */
-        interactSpecifiedWidget: {
-            (packedWidgetId: number, identifier: number, opcode: number, p0: number): void;
-            (packedWidgetId: number, identifier: number, opcode: number, p0: number, p1: number): void;
-        };
+
+        interactSpecifiedWidget: (
+            packedWidgetId: number,
+            identifier: number,
+            opcode: number,
+            p0: number,
+            p1?: number
+        ) => void;
+
         /**
          * Interacts with a widget by matching its text content
          * @param text The text to search for in widgets

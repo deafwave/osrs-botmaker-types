@@ -68,27 +68,17 @@ declare namespace bot {
          * @param target The target for the menu action
          * @param bounds The bounds for the menu action
          */
-        menuAction: {
-            (
-                p0: number,
-                p1: number,
-                action: net.runelite.api.MenuAction,
-                identifier: number,
-                itemId: number,
-                option: string,
-                target: string
-            ): void;
-            (
-                p0: number,
-                p1: number,
-                action: net.runelite.api.MenuAction,
-                identifier: number,
-                itemId: number,
-                option: string,
-                target: string,
-                bounds: java.awt.Rectangle
-            ): void;
-        };
+        menuAction: (
+            p0: number,
+            p1: number,
+            action: net.runelite.api.MenuAction,
+            identifier: number,
+            itemId: number,
+            option: string,
+            target: string,
+            bounds?: java.awt.Rectangle
+        ) => void;
+
         /**
          * Clears the game chat.
          */

@@ -72,10 +72,7 @@ declare namespace bot {
          * @param spellName The name of the spell to cast
          * @param actionIndex Action index for the spell
          */
-        cast: {
-            (spellName: SpellName): void;
-            (spellName: SpellName, actionIndex: number): void;
-        };
+        cast: (spellName: SpellName, actionIndex?: number) => void;
 
         /**
          * Casts a magic spell on an inventory item by its ID
