@@ -78,7 +78,7 @@ declare namespace net.runelite.api {
 		 * @param sender the sender/channel name
 		 * @return the message node for the message
 		 */
-		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string): MessageNode;
+		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string | null): MessageNode;
 
 		/**
 		 * Adds a new chat message to the chatbox.
@@ -90,7 +90,7 @@ declare namespace net.runelite.api {
 		 * @param postEvent whether to post the chat message event
 		 * @return the message node for the message
 		 */
-		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string, postEvent: boolean): MessageNode;
+		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string | null, postEvent: boolean): MessageNode;
 
 		/**
 		 * Gets the current game state.
