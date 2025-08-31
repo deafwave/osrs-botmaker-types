@@ -49,7 +49,7 @@ declare namespace net.runelite.api {
 		 *
 		 * @return
 		 */
-		getSourcePoint(): net.runelite.api.coords.LocalPoint;
+		getSourcePoint(): net.runelite.api.coords.WorldPoint;
 
 		/**
 		 * Get the actor the projectile starts at.
@@ -69,7 +69,7 @@ declare namespace net.runelite.api {
 		 *
 		 * @return
 		 */
-		getTargetPoint(): net.runelite.api.coords.LocalPoint;
+		getTargetPoint(): net.runelite.api.coords.WorldPoint;
 
 		/**
 		 * Get the actor the projectile ends at.
@@ -123,6 +123,7 @@ declare namespace net.runelite.api {
 		 * Gets the height of the projectile.
 		 *
 		 * @return the height
+		 * @deprecated
 		 */
 		getHeight(): number;
 
@@ -166,13 +167,17 @@ declare namespace net.runelite.api {
 
 		/**
 		 * Gets the slope of the projectile.
-		 * <p>
-		 * This value indicates how much arc the projectile can have. Projectiles
-		 * with larger slopes have a more noticeable arc when thrown.
 		 *
 		 * @return the slope of the projectile
 		 */
 		getSlope(): number;
+
+		/**
+		 * Gets the starting position of the projectile.
+		 *
+		 * @return the starting position
+		 */
+		getStartPos(): number;
 
 		/**
 		 * Gets the starting height of the projectile.
