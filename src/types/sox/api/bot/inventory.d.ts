@@ -83,6 +83,13 @@ declare namespace bot {
         getQuantityOfName: (itemName: string) => number;
 
         /**
+         * Interacts with an inventory item at the specified index
+         * @param index The index of the item to interact with
+         * @param options Array of interaction options
+         */
+        interactAtIndex: (index: number, options: string[]) => void;
+
+        /**
          * Interacts with inventory items by their IDs
          * @param itemIds Array of item IDs to interact with
          * @param options Array of interaction options
