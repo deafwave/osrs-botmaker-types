@@ -23,6 +23,7 @@
 /// <reference path="./types.d.ts" />
 /// <reference path="./variables.d.ts" />
 /// <reference path="./walking.d.ts" />
+/// <reference path="./web.d.ts" />
 /// <reference path="./widgets.d.ts" />
 
 declare namespace bot {
@@ -53,6 +54,7 @@ declare namespace bot {
 		tileItems: bot.tileItems;
 		variables: bot.variables;
 		walking: bot.walking;
+		web: bot.web;
 		widgets: bot.widgets;
 
 		// Direct methods
