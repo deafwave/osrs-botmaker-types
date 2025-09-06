@@ -102,8 +102,14 @@ declare namespace java {
 				getName(): string;
 				getType(): java.lang.Class<any>;
 				getModifiers(): number;
+				isAccessible(): boolean;
+				setAccessible(flag: boolean): void;
 				isEnumConstant(): boolean;
 				isSynthetic(): boolean;
+				getAnnotation<A extends any>(annotationClass: java.lang.Class<A>): A | null;
+				getAnnotations(): any[];
+				getDeclaredAnnotations(): any[];
+				getGenericType(): any;
 				toString(): string;
 			}
 
