@@ -2,7 +2,7 @@ declare namespace java {
 	namespace lang {
 		export class Object {
 			constructor();
-			equals(obj: any): boolean;
+			equals(obj: Record<string, any>): boolean;
 			hashCode(): number;
 			toString(): string;
 			getClass(): java.lang.Class<any>;
