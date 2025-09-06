@@ -1,2 +1,3 @@
 /// <reference path="./types/index.d.ts" />
-/// <reference path="./api/index.d.ts" />
+
+export { _zRhinoRuneliteRollupBugFixes } from './api/index.js';
