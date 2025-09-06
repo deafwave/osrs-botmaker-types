@@ -12505,7 +12505,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly NPC_ENT_ATTACK_01 = 12506;
 		static readonly NPC_ENT_ATTACK_02 = 12507;
 		static readonly NPC_ENT_DEATH_01 = 12508;
-		static readonly NPC_ENT_DEATH_02 = 12509;
 		static readonly NPC_ENT_WORSHIP_01 = 12510;
 		static readonly NPC_ENT_WORSHIP_02 = 12511;
 		static readonly VFX_ENT_AUBURN_REWARD_SPAWN_01 = 12512;

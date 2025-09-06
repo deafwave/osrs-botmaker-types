@@ -3417,6 +3417,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly _2 = 2849;
 		static readonly _3 = 2850;
 		static readonly _4 = 2851;
+		static readonly _5 = 6411;
+		static readonly _6 = 6412;
+		static readonly _7 = 6413;
 		static readonly _0 = 2852;
 		static readonly _1 = 2853;
 		static readonly _2 = 2854;

@@ -2,7 +2,6 @@
 /// <reference path="../../../../../../src/types/runelite/index.d.ts" />
 declare namespace net.runelite.api {
 	export class EnumID {
-		static readonly SLAYER_TASK_CREATURE = 693;
 		static readonly RUNEPOUCH_RUNE = 982;
 		static readonly XPDROP_COLORS = 1169;
 		static readonly FRIENDS_CHAT_RANK_ICONS = 1543;
@@ -22,14 +21,12 @@ declare namespace net.runelite.api {
 		static readonly POH_COSTUME_ALTERNATES = 3304;
 		static readonly CLAN_RANK_NAME = 3797;
 		static readonly CLAN_RANK_GRAPHIC = 3798;
-		static readonly SLAYER_TASK_LOCATION = 4064;
 		static readonly PRAYERS_NORMAL = 4956;
 		static readonly PRAYERS_RUINOUS = 4959;
 		static readonly PRAYERS_NORMAL_DEADEYE = 3341;
 		static readonly PRAYERS_NORMAL_MYSTIC_VIGOUR = 3342;
 		static readonly PRAYERS_NORMAL_DEADEYE_MYSTIC_VIGOUR = 3343;
 		static readonly WORLD_LOCATIONS = 4992;
-		static readonly SLAYER_TASK = 5008;
 		static readonly WEAPON_STYLES = 3908;
 		static readonly SPELLBOOKS = 1981;
 		static readonly SPELLBOOKS_SUB = 5280;

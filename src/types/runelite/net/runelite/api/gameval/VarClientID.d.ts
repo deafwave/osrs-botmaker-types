@@ -1262,5 +1262,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly OSM_POPOUT_SCROLLPOS_GROUNDITEMS = 1257;
 		static readonly BUFF_SURGE_POTION_START = 1258;
 		static readonly HPBAR_HUD_LAST_NPC = 1259;
+		static readonly SLAYER_REWARDS_TAB_LAST_OPENED = 1260;
 	}
 }

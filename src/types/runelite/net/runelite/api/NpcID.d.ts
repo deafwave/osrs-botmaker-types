@@ -12345,5 +12345,6 @@ declare namespace net.runelite.api {
 		static readonly GIANT_DEMONIC_MAGIC_LARVA = 14789;
 		static readonly HARVESTER = 14790;
 		static readonly HARVESTER_14791 = 14791;
+		static readonly WIZGUARD = 14792;
 	}
 }

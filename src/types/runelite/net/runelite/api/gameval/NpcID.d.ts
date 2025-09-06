@@ -14794,5 +14794,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly DOM_DEMONIC_ENERGY_GIANT_MAGE = 14789;
 		static readonly KASTORI_HARVESTER_01 = 14790;
 		static readonly KASTORI_HARVESTER_02 = 14791;
+		static readonly DEADMAN_GUARD_WIZARD = 14792;
 	}
 }

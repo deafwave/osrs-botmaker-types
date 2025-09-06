@@ -2264,5 +2264,20 @@ declare namespace net.runelite.api.gameval {
 		static readonly DOM_LEVEL_HIGHSCORES = 4824;
 		static readonly TOTAL_GEMSTONE_CRAB_KILLS = 4825;
 		static readonly DOM_CURRENT_LEVEL_TEMP = 4828;
+		static readonly SLAYER_REWARDS_BLOCKED_2 = 4830;
+		static readonly SLAYER_REWARDS_BLOCKED_3 = 4831;
+		static readonly SLAYER_REWARDS_BLOCKED_4 = 4832;
+		static readonly SLAYER_REWARDS_BLOCKED_5 = 4833;
+		static readonly SLAYER_REWARDS_BLOCKED_6 = 4834;
+		static readonly SLAYER_REWARDS_BLOCKED_7 = 4835;
+		static readonly SLAYER_REWARDS_BLOCKED_8 = 4836;
+		static readonly SLAYER_REWARDS_BLOCKED_9 = 4837;
+		static readonly SLAYER_REWARDS_BLOCKED_10 = 4838;
+		static readonly SLAYER_REWARDS_BLOCKED_11 = 4839;
+		static readonly SLAYER_REWARDS_BLOCKED_12 = 4840;
+		static readonly SLAYER_REWARDS_BLOCKED_13 = 4841;
+		static readonly SLAYER_REWARDS_BLOCKED_DIARY_1 = 4842;
+		static readonly SLAYER_REWARDS_BLOCKED_DIARY_2 = 4843;
+		static readonly SLAYER_MISC = 4844;
 	}
 }

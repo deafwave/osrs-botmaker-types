@@ -183,7 +183,6 @@ declare namespace net.runelite.api {
 		static readonly OC_PRAYER_COMPONENT = 1751;
 		static readonly OC_PRAYER_LEVEL = 1753;
 		static readonly NPC_DEATH_HIDER_EXCLUDE = 1799;
-		static readonly SLAYER_TASK_NAME = 1801;
 		static readonly ATTACK_STYLE_NAME = 1407;
 		static readonly SPELL_BUTTON = 596;
 		static readonly SPELL_NAME = 601;
