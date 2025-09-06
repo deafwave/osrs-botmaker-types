@@ -9,6 +9,7 @@ import objectIdMap from '../rollup/ObjectID.js';
 import parameterIdMap from '../rollup/ParamID.js';
 import spriteIdMap from '../rollup/SpriteID.js';
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function _zRhinoRuneliteRollupBugFixes() {
 	return {
 		name: 'rhino-runelite-bug-fixes', // name of the plugin
