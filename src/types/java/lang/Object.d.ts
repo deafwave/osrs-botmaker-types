@@ -77,61 +77,61 @@ declare namespace java {
 			toGenericString(): string;
 			toString(): string;
 		}
-	}
 
-	export namespace reflect {
-		export class Field extends java.lang.Object {
-			get(obj: any): any;
-			getBoolean(obj: any): boolean;
-			getByte(obj: any): number;
-			getChar(obj: any): string;
-			getDouble(obj: any): number;
-			getFloat(obj: any): number;
-			getInt(obj: any): number;
-			getLong(obj: any): number;
-			getShort(obj: any): number;
-			set(obj: any, value: any): void;
-			setBoolean(obj: any, value: boolean): void;
-			setByte(obj: any, value: number): void;
-			setChar(obj: any, value: string): void;
-			setDouble(obj: any, value: number): void;
-			setFloat(obj: any, value: number): void;
-			setInt(obj: any, value: number): void;
-			setLong(obj: any, value: number): void;
-			setShort(obj: any, value: number): void;
-			getDeclaringClass(): java.lang.Class<any>;
-			getName(): string;
-			getType(): java.lang.Class<any>;
-			getModifiers(): number;
-			isEnumConstant(): boolean;
-			isSynthetic(): boolean;
-			toString(): string;
-		}
+		export namespace reflect {
+			export class Field extends java.lang.Object {
+				get(obj: any): any;
+				getBoolean(obj: any): boolean;
+				getByte(obj: any): number;
+				getChar(obj: any): string;
+				getDouble(obj: any): number;
+				getFloat(obj: any): number;
+				getInt(obj: any): number;
+				getLong(obj: any): number;
+				getShort(obj: any): number;
+				set(obj: any, value: any): void;
+				setBoolean(obj: any, value: boolean): void;
+				setByte(obj: any, value: number): void;
+				setChar(obj: any, value: string): void;
+				setDouble(obj: any, value: number): void;
+				setFloat(obj: any, value: number): void;
+				setInt(obj: any, value: number): void;
+				setLong(obj: any, value: number): void;
+				setShort(obj: any, value: number): void;
+				getDeclaringClass(): java.lang.Class<any>;
+				getName(): string;
+				getType(): java.lang.Class<any>;
+				getModifiers(): number;
+				isEnumConstant(): boolean;
+				isSynthetic(): boolean;
+				toString(): string;
+			}
 
-		export class Method extends java.lang.Object {
-			invoke(obj: any, ...args: any[]): any;
-			getDeclaringClass(): java.lang.Class<any>;
-			getName(): string;
-			getParameterTypes(): java.lang.Class<any>[];
-			getReturnType(): java.lang.Class<any>;
-			getModifiers(): number;
-			getParameterCount(): number;
-			isAccessible(): boolean;
-			setAccessible(flag: boolean): void;
-			isVarArgs(): boolean;
-			isSynthetic(): boolean;
-			isBridge(): boolean;
-			isDefault(): boolean;
-			getGenericParameterTypes(): any[];
-			getGenericReturnType(): any;
-			getGenericExceptionTypes(): any[];
-			getExceptionTypes(): java.lang.Class<any>[];
-			getAnnotation<A extends any>(annotationClass: java.lang.Class<A>): A | null;
-			getAnnotations(): any[];
-			getDeclaredAnnotations(): any[];
-			getParameterAnnotations(): any[][];
-			toString(): string;
-			toGenericString(): string;
+			export class Method extends java.lang.Object {
+				invoke(obj: any, ...args: any[]): any;
+				getDeclaringClass(): java.lang.Class<any>;
+				getName(): string;
+				getParameterTypes(): java.lang.Class<any>[];
+				getReturnType(): java.lang.Class<any>;
+				getModifiers(): number;
+				getParameterCount(): number;
+				isAccessible(): boolean;
+				setAccessible(flag: boolean): void;
+				isVarArgs(): boolean;
+				isSynthetic(): boolean;
+				isBridge(): boolean;
+				isDefault(): boolean;
+				getGenericParameterTypes(): any[];
+				getGenericReturnType(): any;
+				getGenericExceptionTypes(): any[];
+				getExceptionTypes(): java.lang.Class<any>[];
+				getAnnotation<A extends any>(annotationClass: java.lang.Class<A>): A | null;
+				getAnnotations(): any[];
+				getDeclaredAnnotations(): any[];
+				getParameterAnnotations(): any[][];
+				toString(): string;
+				toGenericString(): string;
+			}
 		}
 	}
 }
