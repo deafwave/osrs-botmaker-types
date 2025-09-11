@@ -30,6 +30,9 @@ export class HotkeyButton extends JButton
 		// Disable focus traversal keys such as tab to allow tab key to be bound
 				// Mouse buttons other than button1 don't give focus
 					// We have to use a mouse adapter instead of an action listener so the press action key (space) can be bound
-	setValue(value: Keybind): void;
+	constructor(keybind:  net.runelite.client.config.Keybind, modifierless: boolean);
+	setValue(value: net.runelite.client.config.Keybind): void;
+	addFocusListener(focusListener: java.awt.event.FocusListener): void;
+	getClass(): java.lang.Class<HotkeyButton>;
 }
 }

@@ -43,9 +43,12 @@ export class Keybind
 	 * KeyReleased event this returns if the event is this hotkey being
 	 * released
 	 */
+	constructor(keyCode: number, modifiers: number);
 	matches(e: KeyEvent): boolean;
 	private matches(e: KeyEvent, ignoreModifiers: boolean): boolean;
 	toString(): string;
 	static getModifierForKeyCode(keyCode: number): number | null;
+	getKeyCode(): number;
+	getModifiers(): number;
 }
 }
