@@ -2279,5 +2279,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_REWARDS_BLOCKED_DIARY_1 = 4842;
 		static readonly SLAYER_REWARDS_BLOCKED_DIARY_2 = 4843;
 		static readonly SLAYER_MISC = 4844;
+		static readonly DOM_PREVIOUS_DEEPEST_LEVEL = 4846;
+		static readonly COLLECTION_COUNT_UNSYNCED = 4848;
+		static readonly SETTINGS_VARP_6 = 4849;
+		static readonly SETTINGS_BIRDHOUSE_SEED_WARNING_VALUE = 4850;
+		static readonly WORN_ITEM_BONUS3 = 4851;
+		static readonly WORN_ITEM_BONUS4 = 4852;
+		static readonly WORN_ITEM_BONUS5 = 4853;
+		static readonly WORN_ITEM_BONUS6 = 4854;
 	}
 }
