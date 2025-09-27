@@ -27844,5 +27844,18 @@ declare namespace net.runelite.api {
 		static readonly IVY = 57677;
 		static readonly BROKEN_WINDOW_57678 = 57678;
 		static readonly BROKEN_WINDOW_57679 = 57679;
+		static readonly SKELETON_57680 = 57680;
+		static readonly MIRROR_57689 = 57689;
+		static readonly BOOKCASE_57693 = 57693;
+		static readonly ROPE_57704 = 57704;
+		static readonly ROPE_57705 = 57705;
+		static readonly ROPE_57707 = 57707;
+		static readonly ROPE_57708 = 57708;
+		static readonly BRIDGE_57710 = 57710;
+		static readonly BRIDGE_57711 = 57711;
+		static readonly BRIDGE_57712 = 57712;
+		static readonly BRIDGE_57713 = 57713;
+		static readonly BRIDGE_57714 = 57714;
+		static readonly BRIDGE_SUPPORT = 57719;
 	}
 }

@@ -463,6 +463,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly INVISIBLE_FONT = 6315;
 		static readonly HEADICONS_ET = 6405;
 		static readonly TEXTURE_THATCHED02 = 6408;
+		static readonly FARMING_UNDEAD_ICON = 6414;
 		static readonly _0 = 0;
 		static readonly _1 = 1;
 		static readonly _2 = 2;

@@ -4112,7 +4112,7 @@ declare namespace net.runelite.api {
 		static readonly MALCOLM_4414 = 4414;
 		static readonly TREE_4416 = 4416;
 		static readonly UNDEAD_TREE = 4417;
-		static readonly _SNEAKY_UNDEAD_FOWL = 4419;
+		static readonly SNEAKY_UNDEAD_FOWL = 4419;
 		static readonly COW31337KILLER = 4420;
 		static readonly UNDEAD_COW_4421 = 4421;
 		static readonly ALICE_4422 = 4422;
