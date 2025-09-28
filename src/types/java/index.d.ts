@@ -32,6 +32,7 @@
 /// <reference path="./swing/event/ListSelectionListener.d.ts" />
 /// <reference path="./util/index.d.ts" />
 /// <reference path="./util/Collection.d.ts" />
+/// <reference path="./util/concurrent.d.ts" />
 /// <reference path="./io/FileWriter.d.ts" />
 /// <reference path="./swing/Border.d.ts" />
 /// <reference path="./swing/BorderFactory.d.ts" />
@@ -95,4 +96,6 @@
 /// <reference path="./awt/datatransfer/Transferable.d.ts" />
 /// <reference path="./awt/datatransfer/DataFlavor.d.ts" />
 /// <reference path="./awt/datatransfer/StringSelection.d.ts" />
+/// <reference path="./security/MessageDigest.d.ts" />
+/// <reference path="./security/MessageDigester.d.ts" />
 /* /// <reference path="./Java.d.ts" />*/
