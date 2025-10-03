@@ -1245,6 +1245,7 @@
 /// <reference path="./net/runelite/api/JagexColor.d.ts" />
 /// <reference path="./net/runelite/api/KeyCode.d.ts" />
 /// <reference path="./net/runelite/api/MainBufferProvider.d.ts" />
+/// <reference path="./net/runelite/api/Menu.d.ts" />
 /// <reference path="./net/runelite/api/MenuAction.d.ts" />
 /// <reference path="./net/runelite/api/MenuEntry.d.ts" />
 /// <reference path="./net/runelite/api/Mesh.d.ts" />
