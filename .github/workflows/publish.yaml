@@ -4,26 +4,34 @@ on:
     branches: [main]
 
 concurrency:
-  group: ${{ github.repository }}-${{ github.event.ref }}
+  group: ${{ github.repository }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build_publish:
+  bump_version:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      bump_performed: ${{ steps['bumping-version'].outputs['bump-performed'] }}
+      new_version: ${{ steps['bumping-version'].outputs['new-version'] }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Setup PNPM
         uses: pnpm/action-setup@v4
         with:
           version: 10
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@deafwave'
           cache: 'pnpm'
+
       - name: ⏫ Bumping version
         id: bumping-version
         uses: jpb06/bump-package@latest
@@ -31,11 +39,73 @@ jobs:
           major-keywords: BREAKING CHANGE
           minor-keywords: feat,minor
           patch-keywords: fix,chore
-      - name: 🚀 Publishing package
+
+  publish_github:
+    runs-on: ubuntu-latest
+    needs: bump_version
+    if: needs.bump_version.outputs.bump_performed == 'true'
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: ⬇️ Checkout repo @ latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node (GitHub Packages)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@deafwave'
+          cache: 'pnpm'
+
+      - name: 🚀 Publish to GitHub Packages
         run: |
           pnpm i
           pnpm lint
           pnpm build
-          pnpm publish
+          pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish_npm:
+    runs-on: ubuntu-latest
+    needs: bump_version
+    if: needs.bump_version.outputs.bump_performed == 'true'
+    permissions:
+      contents: read
+    steps:
+      - name: ⬇️ Checkout repo @ latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main 
+          fetch-depth: 0
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node (npmjs)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
+
+      - name: 🚀 Publish to npm 
+        run: | 
+          pnpm i
+          pnpm lint
+          pnpm build
+          pnpm publish --registry=https://registry.npmjs.org --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
