@@ -93,7 +93,7 @@ declare namespace net.runelite.client.ui.overlay {
 			action: net.runelite.api.MenuAction,
 			option: string,
 			target: string,
-			callback: Consumer<net.runelite.api.MenuEntry>,
+			callback: Consumer<net.runelite.api.MenuEntry> | ((entry: net.runelite.api.MenuEntry) => void),
 		): any;
 		removeMenuEntry(
 			action: net.runelite.api.MenuAction,
