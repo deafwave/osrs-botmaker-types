@@ -72,7 +72,7 @@ jobs:
           pnpm i
           pnpm lint
           pnpm build
-          pnpm publish --no-git-checks
+          pnpm publish --registry=https://npm.pkg.github.com --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
