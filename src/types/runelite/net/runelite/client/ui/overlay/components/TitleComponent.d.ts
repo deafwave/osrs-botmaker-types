@@ -2,6 +2,7 @@
 /// <reference path="../../../../../java/index.d.ts" />
 declare namespace net.runelite.client.ui.overlay.components {
 	export class TitleComponentBuilder {
+		constructor() : TitleComponentBuilder;
 		bounds(bounds: Rectangle): TitleComponentBuilder;
 		build(): TitleComponent;
 		color(color: java.awt.Color): TitleComponentBuilder;
@@ -13,6 +14,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 
 	export class TitleComponent {
 		builder(): TitleComponentBuilder;
+		static builder(): TitleComponentBuilder;
 		getBounds(): Rectangle;
 		build(): TitleComponent;
 		setColor(color: java.awt.Color): void;
