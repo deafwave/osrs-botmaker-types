@@ -85,8 +85,18 @@ declare namespace ${namespace} {
 
 function generateRollupExport(constants: ItemConstant[], className: string): string {
 	const header = `// This file is auto-generated. Do not edit manually.\n`;
-	
-	const constantExports = constants
+
+	// Deduplicate constants by name, keeping only the first occurrence
+	const seen = new Set<string>();
+	const deduplicatedConstants = constants.filter((constant) => {
+		if (seen.has(constant.name)) {
+			return false;
+		}
+		seen.add(constant.name);
+		return true;
+	});
+
+	const constantExports = deduplicatedConstants
 		.map((constant) => `\t${constant.name}: ${constant.value},`)
 		.join('\n');
 
