@@ -33,7 +33,7 @@ jobs:
           cache-dependency-path: 'scripts/runelite-to-ts/pnpm-lock.yaml'
 
       - name: Run update script
-        run: ./scripts/update-data.sh
+        run: ./scripts/update-runelite.sh
 
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
