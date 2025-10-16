@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars, unicorn/prevent-abbreviations */
 import collisionDataFlagMap from '../rollup/CollisionDataFlag.js';
 import componentIdMap from '../rollup/ComponentID.js';
 import enumIdMap from '../rollup/EnumID.js';
