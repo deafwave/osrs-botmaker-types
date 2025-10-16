@@ -1263,5 +1263,20 @@ declare namespace net.runelite.api.gameval {
 		static readonly BUFF_SURGE_POTION_START = 1258;
 		static readonly HPBAR_HUD_LAST_NPC = 1259;
 		static readonly SLAYER_REWARDS_TAB_LAST_OPENED = 1260;
+		static readonly BINGO_SELECTED_GRID = 1261;
+		static readonly BINGO_SELECTED_TILE = 1262;
+		static readonly BINGO_SELECTED_REWARD_OPTION = 1263;
+		static readonly BINGO_LOOKUP_PHRASE = 1264;
+		static readonly BINGO_SHOW_REWARDS = 1265;
+		static readonly BINGO_INFO_VISIBLE = 1266;
+		static readonly BINGO_INFO_MAXIMISED = 1267;
+		static readonly BINGO_OVERLAY_X = 1268;
+		static readonly BINGO_OVERLAY_Y = 1269;
+		static readonly BINGO_OVERLAY_WIDTH = 1270;
+		static readonly BINGO_OVERLAY_HEIGHT = 1271;
+		static readonly TOPLEVEL_FLOATER_MIN_WIDTH = 1272;
+		static readonly TOPLEVEL_FLOATER_MIN_HEIGHT = 1273;
+		static readonly TOPLEVEL_FLOATER_DEFAULT_WIDTH = 1274;
+		static readonly TOPLEVEL_FLOATER_DEFAULT_HEIGHT = 1275;
 	}
 }

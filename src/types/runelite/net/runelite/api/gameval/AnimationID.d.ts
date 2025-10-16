@@ -12523,5 +12523,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUMAN_WALK_60 = 12525;
 		static readonly HUMAN_EAT_WITHSOUND = 12526;
 		static readonly HUMAN_STAMP_MERGE = 12527;
+		static readonly PAINTING_SPOOKY_HALLOWEEN01_BLINK = 12528;
 	}
 }

@@ -14795,5 +14795,27 @@ declare namespace net.runelite.api.gameval {
 		static readonly KASTORI_HARVESTER_01 = 14790;
 		static readonly KASTORI_HARVESTER_02 = 14791;
 		static readonly DEADMAN_GUARD_WIZARD = 14792;
+		static readonly RANTZ_PRE_QUEST = 14793;
+		static readonly RANTZ_POST_QUEST = 14794;
+		static readonly VERZIK_INITIAL_BASE = 14795;
+		static readonly VERZIK_INITIAL_QUICKSTART = 14796;
+		static readonly VERZIK_INITIAL_HARD_BASE = 14797;
+		static readonly VERZIK_INITIAL_HARD_QUICKSTART = 14798;
+		static readonly EVENT_SAGE = 14799;
+		static readonly EVENTS_SHOP = 14800;
+		static readonly EVENTS_SHOP_1OP = 14801;
+		static readonly EVENTS_SHOP_3OP = 14802;
+		static readonly EVENTS_GUARDIAN_RANGE = 14803;
+		static readonly EVENTS_GUARDIAN_MAGE = 14804;
+		static readonly EVENTS_GUARDIAN_MELEE = 14805;
+		static readonly HW25_CHAIR_NPC_REWARD = 14806;
+		static readonly HW25_CHAIR_NPC_EVENT = 14807;
+		static readonly HW25_CHAIR_SETH = 14808;
+		static readonly HW25_CHAIR_NPC_CS = 14809;
+		static readonly HW25_STRAYDOG_WANDER = 14810;
+		static readonly HW25_STRAYDOG_NOMOVE = 14811;
+		static readonly HW25_DEADTH_CS = 14812;
+		static readonly HW25_SETH_GROATS_CS = 14813;
+		static readonly HW25_FRED_THE_FARMER_CS = 14814;
 	}
 }

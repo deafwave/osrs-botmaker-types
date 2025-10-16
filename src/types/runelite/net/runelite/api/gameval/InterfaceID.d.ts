@@ -927,5 +927,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly JIGSAW = 922;
 		static readonly MESSAGEBOX_TITLED = 923;
 		static readonly SLAYER_REWARDS_TASK_LIST = 924;
+		static readonly BINGO_WELCOME = 925;
+		static readonly BINGO_OVERLAY = 926;
+		static readonly EVENT_REWARDS = 927;
 	}
 }

@@ -938,5 +938,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly PUB_AUBURNVALE = 933;
 		static readonly PUB_NEMUS = 934;
 		static readonly DOM_LOOTPILE_DURING = 935;
+		static readonly REWARD_TRANSFER_TEMP_INV = 936;
 	}
 }

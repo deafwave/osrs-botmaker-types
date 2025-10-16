@@ -27857,5 +27857,37 @@ declare namespace net.runelite.api {
 		static readonly BRIDGE_57713 = 57713;
 		static readonly BRIDGE_57714 = 57714;
 		static readonly BRIDGE_SUPPORT = 57719;
+		static readonly ENERGY_BARRIER_57723 = 57723;
+		static readonly SCARECROW_57726 = 57726;
+		static readonly SPOOKY_PICTURE_57728 = 57728;
+		static readonly SPOOKY_WALL_LAMP = 57730;
+		static readonly NOTICES_57732 = 57732;
+		static readonly ICON_OF_THE_FLAMES_OF_LLOIGHENN = 57733;
+		static readonly INCENSE_BURNER_57734 = 57734;
+		static readonly INCENSE_BURNER_57735 = 57735;
+		static readonly STAINEDGLASS_WINDOW_57736 = 57736;
+		static readonly STAINEDGLASS_WINDOW_57737 = 57737;
+		static readonly STAINEDGLASS_WINDOW_57738 = 57738;
+		static readonly STAINEDGLASS_WINDOW_57739 = 57739;
+		static readonly STAINEDGLASS_WINDOW_57740 = 57740;
+		static readonly STAINEDGLASS_WINDOW_57741 = 57741;
+		static readonly STAINEDGLASS_WINDOW_57742 = 57742;
+		static readonly STAINEDGLASS_WINDOW_57743 = 57743;
+		static readonly STAINEDGLASS_WINDOW_57744 = 57744;
+		static readonly STAINEDGLASS_WINDOW_57745 = 57745;
+		static readonly STAINEDGLASS_WINDOW_57746 = 57746;
+		static readonly STAINEDGLASS_WINDOW_57747 = 57747;
+		static readonly STAINEDGLASS_WINDOW_57748 = 57748;
+		static readonly STAINEDGLASS_WINDOW_57749 = 57749;
+		static readonly STAINEDGLASS_WINDOW_57750 = 57750;
+		static readonly STAINEDGLASS_WINDOW_57751 = 57751;
+		static readonly STAINEDGLASS_WINDOW_57752 = 57752;
+		static readonly STAINEDGLASS_WINDOW_57753 = 57753;
+		static readonly STAINEDGLASS_WINDOW_57754 = 57754;
+		static readonly STAINEDGLASS_WINDOW_57755 = 57755;
+		static readonly STAINEDGLASS_WINDOW_57756 = 57756;
+		static readonly STAINEDGLASS_WINDOW_57757 = 57757;
+		static readonly STAINEDGLASS_WINDOW_57758 = 57758;
+		static readonly STAINEDGLASS_WINDOW_57759 = 57759;
 	}
 }

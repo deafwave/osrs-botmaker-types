@@ -14860,5 +14860,31 @@ declare namespace net.runelite.api {
 		static readonly BLOODBARK_ARMOUR_SET = 31163;
 		static readonly MIXED_HIDE_ARMOUR_SET = 31166;
 		static readonly HUEYCOATL_HIDE_ARMOUR_SET = 31169;
+		static readonly BATTLEHAT = 31172;
+		static readonly CORRUPTED_SHARK = 31174;
+		static readonly GRID_MASTER_TABARD = 31181;
+		static readonly GRID_MASTER_TABARD_B = 31184;
+		static readonly GRID_MASTER_TABARD_P = 31187;
+		static readonly GRID_MASTER_TABARD_G = 31190;
+		static readonly SWORDS_AND_EMBLEM = 31193;
+		static readonly SWORDS_AND_EMBLEM_B = 31196;
+		static readonly SWORDS_AND_EMBLEM_P = 31199;
+		static readonly SWORDS_AND_EMBLEM_G = 31202;
+		static readonly GRID_MASTER_ALTAR_ICON_SCROLL = 31205;
+		static readonly GRID_MASTER_TORCH_SCROLL = 31208;
+		static readonly EVENT_LAMP = 31211;
+		static readonly COMBATANT_SCROLL = 31212;
+		static readonly CRAFTSMAN_SCROLL = 31214;
+		static readonly GATHERER_SCROLL = 31216;
+		static readonly CABBAGE_31218 = 31218;
+		static readonly CABBAGE_31220 = 31220;
+		static readonly SPOOKY_PICTURE = 31222;
+		static readonly SPOOKY_WALL_LAMP = 31223;
+		static readonly SPOOKY_SCARECROW = 31224;
+		static readonly SPOOKY_CHAIR = 31225;
+		static readonly SPOOKY_PUMPKIN_LANTERN = 31227;
+		static readonly GRIM_REAPER_TOP = 31229;
+		static readonly GRIM_REAPER_BOTTOMS = 31231;
+		static readonly GRIM_REAPER_GLOVES = 31233;
 	}
 }

@@ -3458,5 +3458,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_CRAB_BOSS_SPAWN = 3453;
 		static readonly VFX_CRAB_BOSS_DEATH = 3454;
 		static readonly VFX_CRAB_BOSS_DISINTEGRATE = 3455;
+		static readonly BINGO_1_RELIC_UNLOCK_SPOT = 3456;
+		static readonly BINGO_1_MASTERY_UNLOCK_SPOT = 3457;
+		static readonly BINGO_1_XP_UNLOCK_SPOT = 3458;
 	}
 }

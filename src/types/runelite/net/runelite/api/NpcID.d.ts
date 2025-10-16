@@ -1360,7 +1360,6 @@ declare namespace net.runelite.api {
 		static readonly SMALL_ZOMBIE_MONKEY = 1467;
 		static readonly LARGE_ZOMBIE_MONKEY = 1468;
 		static readonly MONKEY_1469 = 1469;
-		static readonly RANTZ = 1470;
 		static readonly FYCIE = 1471;
 		static readonly BUGS = 1472;
 		static readonly SWAMP_TOAD = 1473;
@@ -4507,7 +4506,7 @@ declare namespace net.runelite.api {
 		static readonly GOBLIN_COOK_4852 = 4852;
 		static readonly SKRACH_UGLOGWEE_4853 = 4853;
 		static readonly SKRACH_UGLOGWEE_4854 = 4854;
-		static readonly RANTZ_4855 = 4855;
+		static readonly RANTZ = 4855;
 		static readonly RANTZ_4856 = 4856;
 		static readonly RANTZ_4857 = 4857;
 		static readonly OGRE_BOAT = 4858;
@@ -7438,7 +7437,6 @@ declare namespace net.runelite.api {
 		static readonly NYLOCAS_MATOMENOS = 8366;
 		static readonly BLOOD_SPAWN = 8367;
 		static readonly ABIGAILA = 8368;
-		static readonly VERZIK_VITUR_8369 = 8369;
 		static readonly VERZIK_VITUR_8370 = 8370;
 		static readonly VERZIK_VITUR_8371 = 8371;
 		static readonly VERZIK_VITUR_8372 = 8372;
@@ -9082,7 +9080,6 @@ declare namespace net.runelite.api {
 		static readonly NYLOCAS_HAGIOS_10843 = 10843;
 		static readonly NYLOCAS_ATHANATOS_10844 = 10844;
 		static readonly NYLOCAS_MATOMENOS_10845 = 10845;
-		static readonly VERZIK_VITUR_10847 = 10847;
 		static readonly VERZIK_VITUR_10848 = 10848;
 		static readonly VERZIK_VITUR_10849 = 10849;
 		static readonly VERZIK_VITUR_10850 = 10850;
@@ -12346,5 +12343,22 @@ declare namespace net.runelite.api {
 		static readonly HARVESTER = 14790;
 		static readonly HARVESTER_14791 = 14791;
 		static readonly WIZGUARD = 14792;
+		static readonly RANTZ_14793 = 14793;
+		static readonly RANTZ_14794 = 14794;
+		static readonly VERZIK_VITUR_14795 = 14795;
+		static readonly VERZIK_VITUR_14796 = 14796;
+		static readonly VERZIK_VITUR_14797 = 14797;
+		static readonly VERZIK_VITUR_14798 = 14798;
+		static readonly THE_SAGE_14799 = 14799;
+		static readonly NEVET = 14801;
+		static readonly NEVET_14802 = 14802;
+		static readonly SPOOKY_CHAIR = 14807;
+		static readonly SPOOKY_CHAIR_14808 = 14808;
+		static readonly SPOOKY_CHAIR_14809 = 14809;
+		static readonly STRAY_DOG_14810 = 14810;
+		static readonly STRAY_DOG_14811 = 14811;
+		static readonly DEATH_14812 = 14812;
+		static readonly SETH_GROATS_14813 = 14813;
+		static readonly FRED_THE_FARMER_14814 = 14814;
 	}
 }
