@@ -1,0 +1,48 @@
+name: Update RuneLite Types
+
+on:
+  schedule:
+    # Run every day at 7 AM PST (3 PM UTC)
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.repository }}-update-runelite
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: 'pnpm'
+          cache-dependency-path: 'scripts/runelite-to-ts/pnpm-lock.yaml'
+
+      - name: Run update script
+        run: ./scripts/update-data.sh
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: |
+            chore: update RuneLite TypeScript definitions
+
+            🤖 Automated update from runelite-to-ts script
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
+          add: '.'
+          push: true
