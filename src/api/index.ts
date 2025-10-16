@@ -8,6 +8,20 @@ import npcIdMap from '../rollup/NpcID.js';
 import objectIdMap from '../rollup/ObjectID.js';
 import parameterIdMap from '../rollup/ParamID.js';
 import spriteIdMap from '../rollup/SpriteID.js';
+// Gameval imports
+import gamevalAnimationIdMap from '../rollup/gameval/AnimationID.js';
+import gamevalDbTableIdMap from '../rollup/gameval/DBTableID.js';
+import gamevalInterfaceIdMap from '../rollup/gameval/InterfaceID.js';
+import gamevalInventoryIdMap from '../rollup/gameval/InventoryID.js';
+import gamevalItemIdMap from '../rollup/gameval/ItemID.js';
+import gamevalNpcIdMap from '../rollup/gameval/NpcID.js';
+import gamevalObjectIdMap from '../rollup/gameval/ObjectID.js';
+import gamevalObjectId1Map from '../rollup/gameval/ObjectID1.js';
+import gamevalSpotanimIdMap from '../rollup/gameval/SpotanimID.js';
+import gamevalSpriteIdMap from '../rollup/gameval/SpriteID.js';
+import gamevalVarbitIdMap from '../rollup/gameval/VarbitID.js';
+import gamevalVarClientIdMap from '../rollup/gameval/VarClientID.js';
+import gamevalVarPlayerIdMap from '../rollup/gameval/VarPlayerID.js';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function _zRhinoRuneliteRollupBugFixes() {
@@ -50,6 +64,59 @@ export function _zRhinoRuneliteRollupBugFixes() {
 				{
 					regex: /net\.runelite\.api\.ObjectID\.(.*?)([\n ),;\]])/g,
 					map: objectIdMap,
+				},
+				// Gameval replacements
+				{
+					regex: /net\.runelite\.api\.gameval\.AnimationID\.(.*?)([\n ),;\]])/g,
+					map: gamevalAnimationIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.DBTableID\.(.*?)([\n ),;\]])/g,
+					map: gamevalDbTableIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.InterfaceID\.(.*?)([\n ),;\]])/g,
+					map: gamevalInterfaceIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.InventoryID\.(.*?)([\n ),;\]])/g,
+					map: gamevalInventoryIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.ItemID\.(.*?)([\n ),;\]])/g,
+					map: gamevalItemIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.NpcID\.(.*?)([\n ),;\]])/g,
+					map: gamevalNpcIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.ObjectID\.(.*?)([\n ),;\]])/g,
+					map: gamevalObjectIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.ObjectID1\.(.*?)([\n ),;\]])/g,
+					map: gamevalObjectId1Map,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.SpotanimID\.(.*?)([\n ),;\]])/g,
+					map: gamevalSpotanimIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.SpriteID\.(.*?)([\n ),;\]])/g,
+					map: gamevalSpriteIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.VarbitID\.(.*?)([\n ),;\]])/g,
+					map: gamevalVarbitIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.VarClientID\.(.*?)([\n ),;\]])/g,
+					map: gamevalVarClientIdMap,
+				},
+				{
+					regex: /net\.runelite\.api\.gameval\.VarPlayerID\.(.*?)([\n ),;\]])/g,
+					map: gamevalVarPlayerIdMap,
 				},
 			];
 

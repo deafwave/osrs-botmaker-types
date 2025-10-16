@@ -127,6 +127,15 @@ async function processFile(url: string, outputPath: string, className: string, n
 			const rollupPath = path.join(ROLLUP_OUTPUT_DIR, `${className}.ts`);
 			fs.writeFileSync(rollupPath, rollupExport);
 			console.log(`Rollup export written to: ${rollupPath}`);
+		} else {
+			if (!fs.existsSync(GAMEVAL_OUTPUT_DIR)) {
+				fs.mkdirSync(GAMEVAL_OUTPUT_DIR, { recursive: true });
+			}
+
+			const rollupExport = generateRollupExport(constants, className);
+			const rollupPath = path.join(GAMEVAL_OUTPUT_DIR, `${className}.ts`);
+			fs.writeFileSync(rollupPath, rollupExport);
+			console.log(`Rollup export written to: ${rollupPath}`);
 		}
 
 		console.log(`${className}.d.ts has been successfully updated!`);
