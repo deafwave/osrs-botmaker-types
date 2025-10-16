@@ -8,6 +8,7 @@ const BASE_OUTPUT_DIR = path.join(__dirname, '../../../src/types/runelite/net/ru
 const ROLLUP_OUTPUT_DIR = path.join(__dirname, '../../../src/rollup');
 
 const GAMEVAL_OUTPUT_DIR = path.join(BASE_OUTPUT_DIR, 'gameval');
+const GAMEVAL_ROLLUP_OUTPUT_DIR = path.join(ROLLUP_OUTPUT_DIR, 'gameval');
 
 const FILES_TO_PROCESS = [
 	{ name: 'EnumID', url: `${BASE_URL}/EnumID.java`, outputDir: BASE_OUTPUT_DIR },
@@ -19,7 +20,6 @@ const FILES_TO_PROCESS = [
 	{ name: 'ObjectID', url: `${BASE_URL}/ObjectID.java`, outputDir: BASE_OUTPUT_DIR },
 	{ name: 'ParamID', url: `${BASE_URL}/ParamID.java`, outputDir: BASE_OUTPUT_DIR },
 	{ name: 'SpriteID', url: `${BASE_URL}/SpriteID.java`, outputDir: BASE_OUTPUT_DIR },
-	// Gameval files
 	{ name: 'AnimationID', url: `${BASE_URL}/gameval/AnimationID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
 	{ name: 'DBTableID', url: `${BASE_URL}/gameval/DBTableID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
 	{ name: 'InterfaceID', url: `${BASE_URL}/gameval/InterfaceID.java`, outputDir: GAMEVAL_OUTPUT_DIR },
@@ -116,9 +116,7 @@ async function processFile(url: string, outputPath: string, className: string, n
 		fs.writeFileSync(outputPath, tsDeclaration);
 		console.log(`TypeScript declaration written to: ${outputPath}`);
 
-		// Generate and write Rollup export (only for main API files, not gameval)
 		if (!isGameval) {
-			// Ensure rollup output directory exists
 			if (!fs.existsSync(ROLLUP_OUTPUT_DIR)) {
 				fs.mkdirSync(ROLLUP_OUTPUT_DIR, { recursive: true });
 			}
@@ -128,12 +126,12 @@ async function processFile(url: string, outputPath: string, className: string, n
 			fs.writeFileSync(rollupPath, rollupExport);
 			console.log(`Rollup export written to: ${rollupPath}`);
 		} else {
-			if (!fs.existsSync(GAMEVAL_OUTPUT_DIR)) {
-				fs.mkdirSync(GAMEVAL_OUTPUT_DIR, { recursive: true });
+			if (!fs.existsSync(GAMEVAL_ROLLUP_OUTPUT_DIR)) {
+				fs.mkdirSync(GAMEVAL_ROLLUP_OUTPUT_DIR, { recursive: true });
 			}
 
 			const rollupExport = generateRollupExport(constants, className);
-			const rollupPath = path.join(GAMEVAL_OUTPUT_DIR, `${className}.ts`);
+			const rollupPath = path.join(GAMEVAL_ROLLUP_OUTPUT_DIR, `${className}.ts`);
 			fs.writeFileSync(rollupPath, rollupExport);
 			console.log(`Rollup export written to: ${rollupPath}`);
 		}
