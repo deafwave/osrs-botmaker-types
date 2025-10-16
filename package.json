@@ -22,7 +22,8 @@
 	"scripts": {
 		"lint": "eslint . --quiet",
 		"build": "tsc && cpy src/index.d.ts dist && cpy src/types dist",
-		"prepublish": "tsc && cpy src/index.d.ts dist && cpy src/types dist"
+		"prepublish": "tsc && cpy src/index.d.ts dist && cpy src/types dist",
+		"generate:runelite-barrel": "tsx scripts/generate-runelite-barrel.ts"
 	},
 	"files": [
 		"dist"
