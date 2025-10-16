@@ -26,6 +26,7 @@ import { join, relative } from "path";
 async function findTypeScriptDeclarations(
 	dir: string,
 	baseDir: string = dir,
+	barrelFile?: string,
 ): Promise<string[]> {
 	const files: string[] = [];
 	const entries = await readdir(dir, { withFileTypes: true });
@@ -35,11 +36,11 @@ async function findTypeScriptDeclarations(
 
 		if (entry.isDirectory()) {
 			// Recursively search subdirectories
-			const subFiles = await findTypeScriptDeclarations(fullPath, baseDir);
+			const subFiles = await findTypeScriptDeclarations(fullPath, baseDir, barrelFile);
 			files.push(...subFiles);
 		} else if (entry.isFile() && entry.name.endsWith(".d.ts")) {
-			// Skip index.d.ts files
-			if (entry.name === "index.d.ts") continue;
+			// Skip only the root barrel file itself
+			if (barrelFile && fullPath === barrelFile) continue;
 
 			// Get relative path from base directory
 			const relativePath = relative(baseDir, fullPath);
@@ -75,7 +76,7 @@ async function main() {
 	const indexPath = join(runeliteTypesDir, "index.d.ts");
 
 	console.log("🔍 Scanning for TypeScript declaration files...");
-	const files = await findTypeScriptDeclarations(runeliteTypesDir);
+	const files = await findTypeScriptDeclarations(runeliteTypesDir, runeliteTypesDir, indexPath);
 
 	console.log(`✅ Found ${files.length} declaration files`);
 

@@ -1460,3 +1460,4 @@
 /// <reference path="./net/runelite/client/util/WildcardMatcher.d.ts" />
 /// <reference path="./net/runelite/client/util/WinUtil.d.ts" />
 /// <reference path="./net/runelite/client/util/WorldUtil.d.ts" />
+/// <reference path="./net/runelite/http/api/item/index.d.ts" />
