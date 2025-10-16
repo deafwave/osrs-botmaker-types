@@ -10,11 +10,13 @@ concurrency:
   group: ${{ github.repository }}-update-runelite
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     outputs:
       changes_committed: ${{ steps.commit.outputs.committed }}
 
