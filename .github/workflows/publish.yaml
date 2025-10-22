@@ -2,8 +2,8 @@ name: Build on Main
 on:
   push:
     branches: [main]
-  paths-ignore:
-    - '.github/**'
+    paths-ignore:
+      - '.github/**'
 
 concurrency:
   group: ${{ github.repository }}-${{ github.event.ref }}
