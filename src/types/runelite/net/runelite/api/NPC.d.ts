@@ -60,5 +60,25 @@ declare namespace net.runelite.api {
 		getTransformedComposition(): NPCComposition | null;
 		getModelOverrides(): NpcOverrides | null;
 		getChatheadOverrides(): NpcOverrides | null;
+
+			/**
+	 * Get the array of overhead icon archive ids.
+	 * Used in conjunction with {@link #getOverheadSpriteIds()}
+	 * to determine which icons are being rendered overhead.
+	 *
+	 * @return A sparse array of archive ids. Values of -1 are not used.
+	 * @see #getOverheadSpriteIds()
+	 */
+	getOverheadArchiveIds(): number[] | null;
+
+	/**
+	 * Get the array of overhead icon sprite indexes.
+	 * Used in conjunction with {@link #getOverheadArchiveIds()}
+	 * to determine which icons are being rendered overhead.
+	 *
+	 * @return A sparse array of archive ids. Values of -1 are not used.
+	 * @see #getOverheadArchiveIds()
+	 */
+	getOverheadSpriteIds(): number[] | null;
 	}
 }
