@@ -15,6 +15,8 @@ permissions:
 
 jobs:
   build_publish:
+    # Avoid double publish when updates are pushed by the bot workflow
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
@@ -40,13 +42,24 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@deafwave'
           cache: 'pnpm'
-      - name: ⏫ Bumping version
+      - name: ⏫ Bumping version (semantic)
         id: bumping-version
         uses: jpb06/bump-package@latest
+        continue-on-error: true
         with:
           major-keywords: BREAKING CHANGE
           minor-keywords: feat,minor
           patch-keywords: fix,chore
+
+      - name: 🔁 Fallback bump (patch)
+        if: steps.bumping-version.outcome == 'failure'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          pnpm version patch -m "chore: release %s"
+          git push
+          git push --tags
       - name: 🚀 Publishing package
         run: |
           pnpm i
