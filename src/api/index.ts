@@ -30,92 +30,92 @@ export function _zRhinoRuneliteRollupBugFixes() {
 		renderChunk(code: string, _chunk: any, _options: any) {
 			const replacements = [
 				{
-					regex: /net\.runelite\.api\.NpcID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.NpcID\.(.*?)([\n ),:;\]])/g,
 					map: npcIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.EnumID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.EnumID\.(.*?)([\n ),:;\]])/g,
 					map: enumIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.ItemID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.ItemID\.(.*?)([\n ),:;\]])/g,
 					map: itemIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.SpriteID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.SpriteID\.(.*?)([\n ),:;\]])/g,
 					map: spriteIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.CollisionDataFlag\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.CollisionDataFlag\.(.*?)([\n ),:;\]])/g,
 					map: collisionDataFlagMap,
 				},
 				{
-					regex: /net\.runelite\.api\.ParamID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.ParamID\.(.*?)([\n ),:;\]])/g,
 					map: parameterIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.widgets\.ComponentID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.widgets\.ComponentID\.(.*?)([\n ),:;\]])/g,
 					map: componentIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.widgets\.InterfaceID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.widgets\.InterfaceID\.(.*?)([\n ),:;\]])/g,
 					map: interfaceIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.ObjectID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.ObjectID\.(.*?)([\n ),:;\]])/g,
 					map: objectIdMap,
 				},
 				// Gameval replacements
 				{
-					regex: /net\.runelite\.api\.gameval\.AnimationID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.AnimationID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalAnimationIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.DBTableID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.DBTableID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalDbTableIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.InterfaceID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.InterfaceID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalInterfaceIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.InventoryID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.InventoryID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalInventoryIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.ItemID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.ItemID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalItemIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.NpcID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.NpcID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalNpcIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.ObjectID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.ObjectID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalObjectIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.ObjectID1\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.ObjectID1\.(.*?)([\n ),:;\]])/g,
 					map: gamevalObjectId1Map,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.SpotanimID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.SpotanimID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalSpotanimIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.SpriteID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.SpriteID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalSpriteIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.VarbitID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.VarbitID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalVarbitIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.VarClientID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.VarClientID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalVarClientIdMap,
 				},
 				{
-					regex: /net\.runelite\.api\.gameval\.VarPlayerID\.(.*?)([\n ),;\]])/g,
+					regex: /net\.runelite\.api\.gameval\.VarPlayerID\.(.*?)([\n ),:;\]])/g,
 					map: gamevalVarPlayerIdMap,
 				},
 			];
