@@ -60,13 +60,17 @@ jobs:
           add: '.'
           push: false
 
-      - name: Bump version & Push
+      - name: Bump patch version and push
         if: steps.commit.outputs.committed == 'true'
-        uses: jpb06/bump-package@latest
-        with:
-          major-keywords: BREAKING CHANGE
-          minor-keywords: feat,minor
-          patch-keywords: fix,chore
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Bump patch version, create tag and commit
+          pnpm version patch -m "chore: release %s"
+          # Push commit and tags
+          git push
+          git push --tags
 
   build_publish:
     needs: update
