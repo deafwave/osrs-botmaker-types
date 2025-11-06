@@ -312,7 +312,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly FOSSIL_DRIFTNET_SIDESTORE = 307;
 		static readonly CATA_BOSS = 308;
 		static readonly FOSSIL_DRIFTNET_STORE = 309;
-		static readonly POLL_HISTORY = 310;
+		static readonly GRYPHON_BOSS = 310;
 		static readonly LEAGUE_COMBAT_MASTERY = 311;
 		static readonly SMITHING = 312;
 		static readonly SMOKEOVERLAY = 313;
@@ -347,7 +347,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly TRAIL_CLUE_MEDIUM_MAP010 = 342;
 		static readonly TRAIL_CLUE_MEDIUM_MAP011 = 343;
 		static readonly TRAIL_CLUE_MEDIUM_MAP012 = 344;
-		static readonly POLL_RESULTS = 345;
+		static readonly SAILING_INTRO_HUD = 345;
 		static readonly TRAIL_MAP01 = 346;
 		static readonly TRAIL_MAP02 = 347;
 		static readonly TRAIL_MAP03 = 348;
@@ -402,7 +402,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_FURNITURE_CREATION_MENU = 397;
 		static readonly FAIRYRINGS = 398;
 		static readonly QUESTLIST = 399;
-		static readonly POLL_VOTING = 400;
+		static readonly TRR_DISPLAY = 400;
 		static readonly POH_RANGING = 401;
 		static readonly GE_COLLECT = 402;
 		static readonly TELETABS_CRAFT_IF = 403;
@@ -930,5 +930,22 @@ declare namespace net.runelite.api.gameval {
 		static readonly BINGO_WELCOME = 925;
 		static readonly BINGO_OVERLAY = 926;
 		static readonly EVENT_REWARDS = 927;
+		static readonly BALLOT = 928;
+		static readonly TUTORIAL_PLAYER_EXPERIENCE = 929;
+		static readonly FLETCHING_TABLE = 930;
+		static readonly SAILING_BT_HUD = 931;
+		static readonly SAILING_BT_SELECTION = 932;
+		static readonly SAILING_BT_STATISTICS = 933;
+		static readonly SAILING_BOAT_SELECTION = 934;
+		static readonly SAILING_LOG = 935;
+		static readonly SAILING_SPYGLASS = 936;
+		static readonly SAILING_SIDEPANEL = 937;
+		static readonly SAILING_CREW = 938;
+		static readonly SAILING_CUSTOMISATION = 939;
+		static readonly UNDERWATER = 940;
+		static readonly PORT_TASK_BOARD = 941;
+		static readonly PORT_TASK_INFO = 942;
+		static readonly SAILING_BOAT_CARGOHOLD = 943;
+		static readonly SAILING_BOAT_CARGOHOLD_SIDE = 944;
 	}
 }

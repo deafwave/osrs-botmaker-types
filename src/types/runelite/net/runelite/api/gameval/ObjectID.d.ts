@@ -2593,7 +2593,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly ORACLECHESTOPEN = 2588;
 		static readonly SHIPHOLE = 2589;
 		static readonly DRAGONSHIPLADDERTOP = 2590;
-		static readonly DRAGONSHIPLADDERTOP2 = 2591;
 		static readonly DRAGONSHIPLADDER = 2592;
 		static readonly DRAGONSHIPGANGPLANK_ON = 2593;
 		static readonly DRAGONSHIPGANGPLANK_OFF = 2594;
