@@ -192,7 +192,7 @@ async function processComponentFile() {
 	const componentIdTablesString = componentIdTables.map(table => table.join(" ")).join("\n");
 	const constants = parseComponentConstants(componentIdTablesString);
 	console.log(`Found ${constants.length} constants in the component ID table`);
-	const tsDeclaration = generateTypeScriptDeclaration(constants, "ComponentID", false, "net.runelite.api.Widgets");
+	const tsDeclaration = generateTypeScriptDeclaration(constants, "ComponentID", false, "net.runelite.api.widgets");
 	console.log(`Writing ComponentID.d.ts to ${path.join(BASE_OUTPUT_DIR, 'widgets', 'ComponentID.d.ts')}`);
 	fs.writeFileSync(path.join(BASE_OUTPUT_DIR, 'widgets', 'ComponentID.d.ts'), tsDeclaration);
 	console.log(`ComponentID.d.ts has been successfully updated!`);
