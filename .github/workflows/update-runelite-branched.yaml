@@ -1,0 +1,48 @@
+name: Update RuneLite Types (Branched)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.repository }}-update-runelite
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      changes_committed: ${{ steps.commit.outputs.committed }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # ensure the current branch is checked out for testing
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Ensure on current branch (testing branch)
+        shell: bash
+        run: |
+          BRANCH="${{ github.ref_name }}"
+          # Ensure on current branch (testing branch)
+          git checkout -B "$BRANCH"
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: 'pnpm'
+          cache-dependency-path: 'scripts/runelite-to-ts/pnpm-lock.yaml'
+
+      - name: Run update script
+        run: ./scripts/update-runelite.sh
