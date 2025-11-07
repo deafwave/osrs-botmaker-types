@@ -1,6 +1,6 @@
 /// <reference path="../../../../../../src/types/java/index.d.ts" />
 /// <reference path="../../../../../../src/types/runelite/index.d.ts" />
-declare namespace net.runelite.api.Widgets {
+declare namespace net.runelite.api.widgets {
 	export class ComponentID {
 		static readonly ACHIEVEMENT_DIARY_CONTAINER = 16973826;
 		static readonly ACHIEVEMENT_DIARY_SCROLL_TEXT = 48562179;
