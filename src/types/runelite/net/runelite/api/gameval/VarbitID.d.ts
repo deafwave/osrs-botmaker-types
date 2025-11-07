@@ -13836,4 +13836,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_UNLOCK_AQUANITES = 19605;
 		static readonly SAILING_CHARTING_DRINK_CRATE_WARNING = 19609;
 	}
-}
+  }

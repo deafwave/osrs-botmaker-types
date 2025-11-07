@@ -32002,4 +32002,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly UNGAEL_CRATER_SHORTCUT_BOTTOM_OP = 31998;
 		static readonly UNGAEL_LAB_ENTRANCE = 31999;
 	}
-}
+  }

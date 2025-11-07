@@ -12966,4 +12966,4 @@ declare namespace net.runelite.api {
 		static readonly TRADER_CREWMEMBER_15545 = 15545;
 		static readonly TRADER_CREWMEMBER_15546 = 15546;
 	}
-}
+  }

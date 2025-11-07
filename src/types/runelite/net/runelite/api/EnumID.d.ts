@@ -33,4 +33,4 @@ declare namespace net.runelite.api {
 		static readonly POTIONSTORE_POTIONS = 4826;
 		static readonly POTIONSTORE_UNFINISHED_POTIONS = 4829;
 	}
-}
+  }

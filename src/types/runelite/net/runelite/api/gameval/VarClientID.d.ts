@@ -1345,4 +1345,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly CAMERA_ZOOM_BIG_MIN = 1340;
 		static readonly CAMERA_ZOOM_BIG_MAX = 1341;
 	}
-}
+  }

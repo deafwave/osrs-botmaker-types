@@ -190,4 +190,4 @@ declare namespace net.runelite.api {
 		static readonly BANK_AUTOCHARGE = 2257;
 		static readonly CLUE_SCROLL = 623;
 	}
-}
+  }

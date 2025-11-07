@@ -1006,4 +1006,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly TRADER_SHOP_PORT_ROBERTS_UIM = 1001;
 		static readonly TRADER_SHOP_PORT_ROBERTS_GIM = 1002;
 	}
-}
+  }

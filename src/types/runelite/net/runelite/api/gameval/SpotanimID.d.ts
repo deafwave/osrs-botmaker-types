@@ -3563,4 +3563,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_STRYKEWYRM_WALK_EMERGED = 3558;
 		static readonly VFX_STRYKEWYRM_SUPERIOR_WALK_EMERGED = 3559;
 	}
-}
+  }

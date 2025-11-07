@@ -15528,4 +15528,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN2_PORT_ROBERTS = 15545;
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN3_PORT_ROBERTS = 15546;
 	}
-}
+  }

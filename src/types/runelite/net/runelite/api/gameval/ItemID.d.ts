@@ -32924,4 +32924,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly IRONWOOD_LOGS = 32909;
 		static readonly ROSEWOOD_LOGS = 32912;
 	}
-}
+  }

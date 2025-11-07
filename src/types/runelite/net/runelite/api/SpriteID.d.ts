@@ -1742,4 +1742,4 @@ declare namespace net.runelite.api {
 		static readonly HISCORE_YAMA = 6346;
 		static readonly HISCORE_COLLECTIONS_LOGGED = 6390;
 	}
-}
+  }

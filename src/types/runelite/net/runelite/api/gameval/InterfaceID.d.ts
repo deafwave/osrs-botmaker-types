@@ -948,4 +948,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_CARGOHOLD = 943;
 		static readonly SAILING_BOAT_CARGOHOLD_SIDE = 944;
 	}
-}
+  }

@@ -28529,4 +28529,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_GENERIC_SHIPPLANK_ON = 60524;
 		static readonly SAILING_GENERIC_SHIPPLANK_OFF = 60525;
 	}
-}
+  }

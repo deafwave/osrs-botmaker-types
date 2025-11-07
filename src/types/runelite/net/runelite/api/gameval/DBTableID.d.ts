@@ -10473,4 +10473,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly ID = 207;
 		static readonly CHARTERING_COSTS = 9454;
 	}
-}
+  }

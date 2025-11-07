@@ -29247,4 +29247,4 @@ declare namespace net.runelite.api {
 		static readonly GANGPLANK_60524 = 60524;
 		static readonly GANGPLANK_60525 = 60525;
 	}
-}
+  }

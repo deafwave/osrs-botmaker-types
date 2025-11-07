@@ -16012,4 +16012,4 @@ declare namespace net.runelite.api {
 		static readonly IRONWOOD_LOGS = 32907;
 		static readonly ROSEWOOD_LOGS = 32910;
 	}
-}
+  }

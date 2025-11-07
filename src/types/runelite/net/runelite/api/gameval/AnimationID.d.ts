@@ -13661,4 +13661,4 @@ declare namespace net.runelite.api.gameval {
 		static readonly FORESTRY_CAMPFIRE_BURNING_IRONWOOD_LOGS = 13668;
 		static readonly FORESTRY_CAMPFIRE_BURNING_ROSEWOOD_LOGS = 13669;
 	}
-}
+  }
