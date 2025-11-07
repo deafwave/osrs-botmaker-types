@@ -1,9 +1,11 @@
 import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as cheerio from "cheerio";
 
-const BASE_URL =
-	'https://raw.githubusercontent.com/runelite/runelite/refs/heads/master/runelite-api/src/main/java/net/runelite/api';
+
+const BASE_URL = 'https://raw.githubusercontent.com/runelite/runelite/refs/heads/master/runelite-api/src/main/java/net/runelite/api';
+const COMPONENT_BASE_URL = 'https://static.runelite.net/runelite-api/apidocs/constant-values.html';
 const BASE_OUTPUT_DIR = path.join(__dirname, '../../../src/types/runelite/net/runelite/api');
 const ROLLUP_OUTPUT_DIR = path.join(__dirname, '../../../src/rollup');
 
@@ -63,24 +65,38 @@ function parseItemConstants(javaContent: string): ItemConstant[] {
 	return constants;
 }
 
-function generateTypeScriptDeclaration(constants: ItemConstant[], className: string, isGameval: boolean = false): string {
-	const javaRefPath = isGameval ? '../../../../../../../src/types/java/index.d.ts' : '../../../../../../src/types/java/index.d.ts';
-	const runeliteRefPath = isGameval ? '../../../../../../../src/types/runelite/index.d.ts' : '../../../../../../src/types/runelite/index.d.ts';
-	const namespace = isGameval ? 'net.runelite.api.gameval' : 'net.runelite.api';
+function parseComponentConstants(tableData: string): ItemConstant[] {
+    const constants: ItemConstant[] = [];
+    const constantRegex = /public\s+static\s+final\s+int\s+(\w+)\s*=?\s*([\d]+);?/g;
+    let match;
+    while ((match = constantRegex.exec(tableData)) !== null) {
+      constants.push({
+        name: match[1],
+        value: parseInt(match[2], 10),
+      });
+    }
+    console.log(`Found ${constants.length} constants in the table data`);
+    return constants;
+}
 
-	const header = `/// <reference path="${javaRefPath}" />
+function generateTypeScriptDeclaration(constants: ItemConstant[], className: string,isGameval: boolean = false, namespace?: string): string {
+    const javaRefPath = isGameval ? '../../../../../../../src/types/java/index.d.ts' : '../../../../../../src/types/java/index.d.ts';
+    const runeliteRefPath = isGameval ? '../../../../../../../src/types/runelite/index.d.ts' : '../../../../../../src/types/runelite/index.d.ts';
+    const ns = namespace || (isGameval ? 'net.runelite.api.gameval' : 'net.runelite.api');
+  
+    const header = `/// <reference path="${javaRefPath}" />
 /// <reference path="${runeliteRefPath}" />
-declare namespace ${namespace} {
+declare namespace ${ns} {
 \texport class ${className} {`;
-
-	const constantDeclarations = constants
-		.map((constant) => `\t\tstatic readonly ${constant.name} = ${constant.value};`)
-		.join('\n');
-
-	const footer = `\t}
-}`;
-
-	return `${header}\n${constantDeclarations}\n${footer}\n`;
+  
+    const constantDeclarations = constants
+      .map((constant) => `\t\tstatic readonly ${constant.name} = ${constant.value};`)
+      .join('\n');
+  
+    const footer = `\t}
+  }`;
+  
+    return `${header}\n${constantDeclarations}\n${footer}\n`;
 }
 
 function generateRollupExport(constants: ItemConstant[], className: string): string {
@@ -153,6 +169,39 @@ async function processFile(url: string, outputPath: string, className: string, n
 	}
 }
 
+async function processComponentFile() {
+	const { data: html } = await axios.get(COMPONENT_BASE_URL);
+	const $htmlContent = cheerio.load(html);
+	const componentIdTables: string[][] = [];
+	$htmlContent("table.constantsSummary").each((i: number, tableElem: any) => {
+		// Optionally check the caption for "net.runelite.api.widgets.ComponentID"
+		const caption = $htmlContent(tableElem).find("caption").text().trim();
+		if (caption === "net.runelite.api.widgets.ComponentID") {
+		  console.log(`Table Caption Found: ${caption}`);
+		  const rows = $htmlContent(tableElem).find("tr");
+		  console.log(`  [MATCH] ComponentID table rows (constantsSummary table #${i}):`);
+		  rows.each((k, rowElem) => {
+			const cells = $htmlContent(rowElem)
+			  .find("th,td")
+			  .map((_: any, cell: any) => $htmlContent(cell).text().trim())
+			  .get();
+			componentIdTables.push(cells);
+		  });
+		}
+	  });
+	const componentIdTablesString = componentIdTables.map(table => table.join(" ")).join("\n");
+	const constants = parseComponentConstants(componentIdTablesString);
+	console.log(`Found ${constants.length} constants in the component ID table`);
+	const tsDeclaration = generateTypeScriptDeclaration(constants, "ComponentID", false, "net.runelite.api.Widgets");
+	console.log(`Writing ComponentID.d.ts to ${path.join(BASE_OUTPUT_DIR, 'widgets', 'ComponentID.d.ts')}`);
+	fs.writeFileSync(path.join(BASE_OUTPUT_DIR, 'widgets', 'ComponentID.d.ts'), tsDeclaration);
+	console.log(`ComponentID.d.ts has been successfully updated!`);
+	const rollupExport = generateRollupExport(constants, "ComponentID");
+	const rollupPath = path.join(ROLLUP_OUTPUT_DIR, 'ComponentID.ts');
+	fs.writeFileSync(rollupPath, rollupExport);
+	console.log(`Rollup export written to: ${rollupPath}`);
+}
+
 async function main() {
 	try {
 		console.log(`Processing ${FILES_TO_PROCESS.length} RuneLite API files...\n`);
@@ -163,7 +212,7 @@ async function main() {
 			await processFile(file.url, outputPath, file.name, `${file.name}.java`, isGameval);
 			console.log(''); // Add spacing between files
 		}
-
+		await processComponentFile();
 		console.log('All files processed successfully!');
 	} catch (error) {
 		console.error('Error:', error);
