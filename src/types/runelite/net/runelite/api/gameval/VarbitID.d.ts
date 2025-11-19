@@ -6119,6 +6119,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HALLOWED_TOME = 10361;
 		static readonly MYQ5_PUZZLE_COMPLETED = 10365;
 		static readonly ROUTE_HIDEOUT_NPCS = 10367;
+		static readonly SETTINGS_IRONMAN_CARGO_WARNING = 10385;
 		static readonly VARLAMORE_WYRM_AGILITY_LAP_LOOTTRACKER_INCREMENTED = 10386;
 		static readonly SLAYER_UNLOCK_VAMPYRES = 10388;
 		static readonly SLAYER_LONGER_VAMPYRES = 10389;
@@ -12670,6 +12671,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CRAB_TRAP_CROWN_JEWEL_3 = 18404;
 		static readonly CRAB_TRAP_CROWN_JEWEL_4 = 18405;
 		static readonly CRAB_TRAP_CROWN_JEWEL_5 = 18406;
+		static readonly DARKNESS_GRACE_PERIOD = 18408;
 		static readonly SAILING_BT_IN_TRIAL = 18410;
 		static readonly SAILING_BT_JUBBLY_JIVE_PILLAR_0_STATE_PLAYER = 18411;
 		static readonly SAILING_BT_JUBBLY_JIVE_PILLAR_1_STATE_PLAYER = 18412;
@@ -13745,7 +13747,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_CREW_FREMENNIK_VISIBILITY = 19499;
 		static readonly SAILING_CREW_SPIRIT_ANGLER_VISIBILITY = 19500;
 		static readonly SAILING_CREW_CAPTAIN_SIAD_VISIBILITY = 19501;
-		static readonly SAILING_CREW_GHOST_JENKINS_VISIBILITY = 19502;
 		static readonly SAILING_CREW_ON_DOCK = 19503;
 		static readonly SAILING_CREW_GENERIC_1_MET = 19504;
 		static readonly SAILING_CREW_GENERIC_2_MET = 19505;
@@ -13835,5 +13836,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_UNLOCK_GRYPHONS = 19604;
 		static readonly SLAYER_UNLOCK_AQUANITES = 19605;
 		static readonly SAILING_CHARTING_DRINK_CRATE_WARNING = 19609;
+		static readonly SAILING_CREW_GHOST_JENKINS_VISIBILITY_CRANDOR = 19610;
+		static readonly SETTINGS_IRONMAN_CARGO_WARNING_TEMP = 19612;
+		static readonly SAILING_CREW_GHOST_JENKINS_VISIBILITY_CONTROL = 19613;
 	}
   }

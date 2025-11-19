@@ -14995,8 +14995,8 @@ declare namespace net.runelite.api {
 		static readonly CAMPHOR_PLANK = 31432;
 		static readonly IRONWOOD_PLANK = 31435;
 		static readonly ROSEWOOD_PLANK = 31438;
-		static readonly TELEPORT_BOAT_TO_ME = 31441;
-		static readonly TELEPORT_ME_TO_BOAT = 31443;
+		static readonly SUMMON_BOAT = 31441;
+		static readonly TELEPORT_TO_BOAT = 31443;
 		static readonly MOUNTED_GIANT_BLUE_KRILL_31445 = 31445;
 		static readonly MOUNTED_GIANT_BLUE_KRILL_31446 = 31446;
 		static readonly MOUNTED_GOLDEN_HADDOCK_31447 = 31447;
@@ -16011,5 +16011,6 @@ declare namespace net.runelite.api {
 		static readonly CAMPHOR_LOGS = 32904;
 		static readonly IRONWOOD_LOGS = 32907;
 		static readonly ROSEWOOD_LOGS = 32910;
+		static readonly JAR_OF_FEATHERS = 32921;
 	}
   }

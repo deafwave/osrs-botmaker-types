@@ -896,6 +896,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUMAN_JADECUTTING = 891;
 		static readonly HUMAN_REDTOPAZCUTTING = 892;
 		static readonly HUMAN_SHEARING = 893;
+		static readonly GHOST_UPDATE_TENDRILL_READY_THRALL = 894;
 		static readonly HUMAN_FILLBUCKET_SANDPIT = 895;
 		static readonly HUMAN_COOKING = 896;
 		static readonly HUMAN_FIRECOOKING = 897;
@@ -10790,6 +10791,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUNTINGFOX_DEADFALL_CATCHING_SOUTH = 10789;
 		static readonly HUNTINGFOX_DEADFALL_FULL = 10790;
 		static readonly HUNTINGFOX_DEADFALL_CATCHINGTEST = 10791;
+		static readonly GHOST_UPDATE_TENDRILL_WALK_THRALL = 10792;
 		static readonly MINNOW_FISHING_SPOT_LOCATION_LOOP = 10793;
 		static readonly HUMAN_CRAFTING = 10794;
 		static readonly HUMAN_COOKING_WALKMERGE_NORESTART = 10795;
@@ -11095,6 +11097,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUMAN_FLETCHING_HUNTINGBOLTS_CHISEL_SINGLE = 11098;
 		static readonly HUMAN_CUTTING_RESTART = 11099;
 		static readonly HUMAN_FLETCHING_SINGLE = 11100;
+		static readonly GHOST_UPDATE_TENDRILL_ATTACK_THRALL = 11101;
 		static readonly HUMAN_PRAY_BLESSED_BONE_SHARDS_01 = 11102;
 		static readonly HUMAN_PUSHUP_01 = 11103;
 		static readonly NPC_HARPY_EAGLE_FLYING_IDLE_01 = 11104;
@@ -11588,6 +11591,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly WINE_JUG_SPLASH = 11592;
 		static readonly HUMAN_WALK_B_2LOOPS = 11593;
 		static readonly FX_BEAM_HUEY = 11594;
+		static readonly GHOST_UPDATE_TENDRILL_DEATH_THRALL = 11595;
 		static readonly SPOTANIM_ZEBAK_ATTACK_ROAR_SHORT = 11596;
 		static readonly NPC_PORCUPINE_COMBAT_MELEE = 11597;
 		static readonly NPC_PORCUPINE_COMBAT_DEATH = 11598;
@@ -11736,6 +11740,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly BREWING_FILL_GLASS = 11741;
 		static readonly BREWING_TURN_VALVE = 11742;
 		static readonly BREWING_ADD_INGREDIENT = 11743;
+		static readonly GHOST_UPDATE_TENDRILL_DEFEND_THRALL = 11744;
 		static readonly HUMAN_FISHING_CASTING_NPC = 11745;
 		static readonly NPC_MINOTAUR_BOSS_WALK_FAST = 11746;
 		static readonly NPC_MINOTAUR_BOSS_ATTACK_MELEE_LOUDER = 11747;
@@ -13660,5 +13665,31 @@ declare namespace net.runelite.api.gameval {
 		static readonly FORESTRY_CAMPFIRE_BURNING_CAMPHOR_LOGS = 13667;
 		static readonly FORESTRY_CAMPFIRE_BURNING_IRONWOOD_LOGS = 13668;
 		static readonly FORESTRY_CAMPFIRE_BURNING_ROSEWOOD_LOGS = 13669;
+		static readonly SKELETON_UPDATE_CHAMPION_READY_THRALL = 13670;
+		static readonly SKELETON_UPDATE_CHAMPION_WALK_THRALL = 13671;
+		static readonly SKELETON_UPDATE_CHAMPION_ATTACK_THRALL = 13672;
+		static readonly SKELETON_UPDATE_CHAMPION_DEFEND_THRALL = 13673;
+		static readonly SKELETON_UPDATE_CHAMPION_DEATH_THRALL = 13674;
+		static readonly ZOMBIE_UPDATE_READY_NORMAL_THRALL = 13675;
+		static readonly ZOMBIE_UPDATE_WALK_NORMAL_THRALL = 13676;
+		static readonly ZOMBIE_UPDATE_WALK_LEFT_NORMAL_THRALL = 13677;
+		static readonly ZOMBIE_UPDATE_WALK_RIGHT_NORMAL_THRALL = 13678;
+		static readonly ZOMBIE_UPDATE_WALKBACKWARDS_WEAPON_THRALL = 13679;
+		static readonly ZOMBIE_UPDATE_DEATH_NORMAL_THRALL = 13680;
+		static readonly ZOMBIE_UPDATE_ATTACK_NORMAL_THRALL = 13681;
+		static readonly ZOMBIE_UPDATE_DEFEND_NORMAL_THRALL = 13682;
+		static readonly GHOST_UPDATE_THRALL_SPAWN_RAISED = 13683;
+		static readonly SKELETON_UPDATE_THRALL_SPAWN_RAISED = 13684;
+		static readonly ZOMBIE_UPDATE_THRAWL_SPAWN_RAISED = 13685;
+		static readonly SAILING_BOAT_SAIL_KANDARIN_3X10_DOWN_TO_FULL_TRIM = 13686;
+		static readonly SAILING_BOAT_SAIL_KANDARIN_3X10_HALF_TO_FULL_TRIM = 13687;
+		static readonly SAILING_BOAT_SAIL_KANDARIN_3X10_FULL_TRIM = 13688;
+		static readonly SAILING_HUMAN_SAIL_KANDARIN_3X10_FURLED_TO_DOWN = 13689;
+		static readonly SAILING_HUMAN_SAIL_KANDARIN_3X10_DOWN_TO_FURLED = 13690;
+		static readonly SAILING_HUMAN_SAIL_KANDARIN_3X10_TRIM_SAILS = 13691;
+		static readonly VFX_WIND_SAIL_3X10_01 = 13692;
+		static readonly VFX_WIND_SAIL_3X10_SPEEDBOOST01 = 13693;
+		static readonly HUMAN_WORKBENCH_CRAFTING_LOOP = 13694;
+		static readonly TURTLE_IDLE01_LOOP = 13695;
 	}
   }

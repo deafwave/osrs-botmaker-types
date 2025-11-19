@@ -1395,6 +1395,7 @@ declare namespace net.runelite.api {
 		static readonly CHEST_2588 = 2588;
 		static readonly HOLE_2589 = 2589;
 		static readonly LADDER_2590 = 2590;
+		static readonly BUNK_BED = 2591;
 		static readonly LADDER_2592 = 2592;
 		static readonly GANGPLANK_2593 = 2593;
 		static readonly GANGPLANK_2594 = 2594;
@@ -8415,7 +8416,7 @@ declare namespace net.runelite.api {
 		static readonly CHAIR_14853 = 14853;
 		static readonly CHEST_14854 = 14854;
 		static readonly BED_14855 = 14855;
-		static readonly BUNK_BED = 14856;
+		static readonly BUNK_BED_14856 = 14856;
 		static readonly TRUNK = 14857;
 		static readonly LOCKER = 14858;
 		static readonly SARADOMIN_STAR = 14859;
@@ -28501,7 +28502,6 @@ declare namespace net.runelite.api {
 		static readonly ROCKS_58922 = 58922;
 		static readonly NICKEL_ROCKS = 58923;
 		static readonly ROCKS_58924 = 58924;
-		static readonly BARRACUDA_TRIAL_EXIT = 58925;
 		static readonly SCOREBOARD_58926 = 58926;
 		static readonly SCOREBOARD_58927 = 58927;
 		static readonly SCOREBOARD_58928 = 58928;
@@ -28711,7 +28711,6 @@ declare namespace net.runelite.api {
 		static readonly SAILS_59549 = 59549;
 		static readonly SAILS_59550 = 59550;
 		static readonly SAILS_59551 = 59551;
-		static readonly SAILS_59552 = 59552;
 		static readonly SAILS_59553 = 59553;
 		static readonly HELM = 59555;
 		static readonly HELM_59556 = 59556;
@@ -29246,5 +29245,35 @@ declare namespace net.runelite.api {
 		static readonly GANGPLANK_60523 = 60523;
 		static readonly GANGPLANK_60524 = 60524;
 		static readonly GANGPLANK_60525 = 60525;
+		static readonly TIN_BATH_60526 = 60526;
+		static readonly TABLE_60527 = 60527;
+		static readonly RED_CORAL = 60528;
+		static readonly RED_CORAL_60529 = 60529;
+		static readonly RED_CORAL_60530 = 60530;
+		static readonly SHELVES_60541 = 60541;
+		static readonly SHELVES_60542 = 60542;
+		static readonly HELM_60551 = 60551;
+		static readonly HELM_60552 = 60552;
+		static readonly HELM_60553 = 60553;
+		static readonly HELM_60554 = 60554;
+		static readonly HELM_60555 = 60555;
+		static readonly HELM_60556 = 60556;
+		static readonly HELM_60557 = 60557;
+		static readonly HELM_60558 = 60558;
+		static readonly HELM_60559 = 60559;
+		static readonly HELM_60560 = 60560;
+		static readonly HELM_60561 = 60561;
+		static readonly HELM_60562 = 60562;
+		static readonly HELM_60563 = 60563;
+		static readonly HELM_60564 = 60564;
+		static readonly CAT_60566 = 60566;
+		static readonly WORKBENCH_60567 = 60567;
+		static readonly BOOKCASE_60568 = 60568;
+		static readonly CURSED_REMAINS = 60570;
+		static readonly A_SINGULAR_CIRCLE = 60571;
+		static readonly KATANA = 60572;
+		static readonly SHRIMP = 60573;
+		static readonly HAROLD = 60574;
+		static readonly TENTACLE_60575 = 60575;
 	}
   }

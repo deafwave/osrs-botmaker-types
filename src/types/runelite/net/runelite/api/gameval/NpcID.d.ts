@@ -11,6 +11,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_ABERRANTSPECTRE_1_STRONGHOLDCAVE = 6;
 		static readonly SLAYER_ABERRANTSPECTRE_2_STRONGHOLDCAVE = 7;
 		static readonly SLAYER_NECHRYAEL = 8;
+		static readonly SAILING_SKYLARK = 9;
 		static readonly SLAYER_NECHRYAEL_SPAWN = 10;
 		static readonly SLAYER_NECHRYAEL_STRONGHOLDCAVE = 11;
 		static readonly GNOME_HUDO = 12;
@@ -287,6 +288,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly SEABIRD3 = 283;
 		static readonly GULL1 = 284;
 		static readonly GULL2 = 285;
+		static readonly CONCH_EAGLE_WINGED_LAND = 286;
+		static readonly PORT_ROBERTS_BAR_PATRON = 287;
+		static readonly SAILING_CHARTING_TUTOR_1OP = 288;
 		static readonly GHOUL = 289;
 		static readonly DWARF_NORMAL = 290;
 		static readonly DWARF_CHAOS = 291;
@@ -1552,6 +1556,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly JAIL_GUARD_SLEEPING = 1551;
 		static readonly JAIL_GUARD_LOOKOUT = 1552;
 		static readonly CRAB_1 = 1553;
+		static readonly SAILING_CHARTING_TUTOR_2OP = 1554;
+		static readonly SAILING_SHIPYARD_WORKER_10 = 1555;
 		static readonly FIRE_WIZARD = 1556;
 		static readonly WATER_WIZARD = 1557;
 		static readonly EARTH_WIZARD = 1558;
@@ -3900,6 +3906,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly VIKING_FOX = 3901;
 		static readonly VIKING_BUNNY_1 = 3902;
 		static readonly VIKING_BUNNY_2 = 3903;
+		static readonly SAILING_SHIPYARD_WORKER_11 = 3904;
+		static readonly SAILING_SHIPYARD_WORKER_12 = 3905;
+		static readonly SAILING_SHIPYARD_WORKER_13 = 3906;
+		static readonly SHIPYARD_DOG_NOBALL = 3907;
 		static readonly BROWNBEAR_CUB_1 = 3908;
 		static readonly BROWNBEAR_CUB_2 = 3909;
 		static readonly UNICORN_FOAL_1 = 3910;
@@ -4281,6 +4291,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly OSMAN = 4286;
 		static readonly BORDERGUARD1 = 4287;
 		static readonly BORDERGUARD2 = 4288;
+		static readonly SHIPYARD_DOG_BALL = 4289;
+		static readonly SHIPYARD_SAILING_CAT = 4290;
 		static readonly SWAN_HERMAN = 4291;
 		static readonly SWAN_FRANKLIN = 4292;
 		static readonly SWAN_ARNOLD = 4293;
@@ -4724,6 +4736,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly ZEP_MULTI_ASSISTANT_CRAFT = 4731;
 		static readonly ZEP_MULTI_ASSISTANT_VARR = 4732;
 		static readonly THURGO = 4733;
+		static readonly SHIPYARD_CHIEF_MOUSER01 = 4734;
+		static readonly SHIPYARD_CHIEF_MOUSER02 = 4735;
 		static readonly SIR_VYVIN = 4736;
 		static readonly SQUIRE = 4737;
 		static readonly ELID_GENIE = 4738;
@@ -14795,6 +14809,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly EVENTS_GUARDIAN_MAGE = 14804;
 		static readonly EVENTS_GUARDIAN_MELEE = 14805;
 		static readonly HW25_CHAIR_NPC_REWARD = 14806;
+		static readonly SHIPYARD_SPOTTED_RAE = 14807;
+		static readonly CURRENT_DUCK_ON_LAND = 14808;
+		static readonly BUCCANEERS_HAVEN_GECKO_BASEMENT = 14809;
+		static readonly HAIRY_GRUB = 14810;
+		static readonly RUSTY_PIRATE_THIEVING_CHEST_GLE = 14811;
+		static readonly TARNISHED_PIRATE_THIEVING_CHEST_GLE = 14812;
+		static readonly REINFORCED_PIRATE_THIEVING_CHEST_GLE = 14813;
 		static readonly POH_HW_CHAIR = 14815;
 		static readonly BARRACUDA_MAKO = 14816;
 		static readonly BARRACUDA_MORA = 14817;
@@ -14844,8 +14865,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_GRYPHON_GUARDIAN = 14861;
 		static readonly SLAYER_GRYPHON_BOSS_GUARDIAN = 14862;
 		static readonly SLAYER_GRYPHON_BOSS_GUARDIAN_VIS = 14863;
-		static readonly GRYPHON_PET_TEST = 14864;
-		static readonly GRYPHON_PET_DEAD_TEST = 14865;
 		static readonly PANDEMONIUM_FISHMONGER = 14866;
 		static readonly PANDEMONIUM_ROSALEE = 14867;
 		static readonly PANDEMONIUM_DAWSON = 14868;
@@ -15158,14 +15177,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_CHARTING_DRINK_CRATE_MONKFISH_STOUT_EFFECT = 15175;
 		static readonly SAILING_CHARTING_DRINK_CRATE_MONKFISH_STOUT_EFFECT_DEAD = 15176;
 		static readonly SAILING_CHARTING_DRINK_CRATE_SAILING_CAT_EFFECT = 15177;
-		static readonly SAILING_CASTAWAY_DOG_TEST = 15178;
-		static readonly SAILING_CASTAWAY_DOG_WALK_TEST = 15179;
-		static readonly SAILING_CASTAWAY_DOG_IDLE_TEST = 15180;
-		static readonly SAILING_WILSON_TEST = 15181;
-		static readonly SAILING_LOG_WOMAN_TEST = 15182;
-		static readonly SAILING_BARREL_WOMAN_TEST = 15183;
-		static readonly SAILING_BARRELBOAT_MAN_TEST = 15184;
-		static readonly SAILING_DEBRIS_MAN_TEST = 15185;
 		static readonly BOAT_HP_NPC_TINY = 15186;
 		static readonly BOAT_HP_NPC_SMALL = 15187;
 		static readonly BOAT_HP_NPC_MEDIUM = 15188;
@@ -15217,7 +15228,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_DOLPHIN = 15234;
 		static readonly SAILING_DOLPHIN_DEAD = 15235;
 		static readonly SAILING_DOLPHIN_BABY = 15236;
-		static readonly SAILING_OCEAN_MAN_TEST = 15237;
 		static readonly SAILING_ASSISTANT_LIMBO = 15238;
 		static readonly JUMBO_JIM = 15239;
 		static readonly SAILING_EMOTE_NPC = 15240;

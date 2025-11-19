@@ -8069,9 +8069,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_UNIQUE_ID = 0;
 		static readonly COL_HINT = 1;
 		static readonly COL_SAILING_SEA = 2;
-		static readonly COL_GIVE_REPEAT_XP = 3;
-		static readonly COL_CHARTING_TYPE = 4;
-		static readonly COL_HAZARD = 5;
+		static readonly COL_SAILING_SEA_SECONDARY = 3;
+		static readonly COL_GIVE_REPEAT_XP = 4;
+		static readonly COL_CHARTING_TYPE = 5;
+		static readonly COL_HAZARD = 6;
+		static readonly COL_REQUIRED_DOCK = 7;
 		static readonly SAILING_CHARTING_CURRENT_DUCK_FAIRY_RING_CORE = 7356;
 		static readonly SAILING_CHARTING_CURRENT_DUCK_MUSA_POINT_CORE = 7358;
 		static readonly SAILING_CHARTING_CURRENT_DUCK_KHARIDIAN_SEA_CORE = 7360;
@@ -8846,6 +8848,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_BOAT_TANGLED_KELP_RESISTANT = 31;
 		static readonly COL_BOAT_ICY_SEAS_RESISTANT = 32;
 		static readonly COL_BOAT_MAX_WIND_MOTES = 33;
+		static readonly COL_BOAT_ADDITIONAL_RECOVERY_COST_PERCENTAGE = 34;
 		static readonly SAILING_BOAT_STATS_MERMAID_BLESSING = 8091;
 		static readonly SAILING_COMBAT_STATS_RUNIC_SHIELD_LOW_INACTIVE = 8092;
 		static readonly SAILING_COMBAT_STATS_RUNIC_SHIELD_LOW_ACTIVE = 8093;
@@ -9567,6 +9570,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_DOCK_ID = 0;
 		static readonly COL_NICE_NAME = 1;
 		static readonly COL_INLINE_NAME = 2;
+		static readonly COL_LEVEL_REQUIRED = 4;
 		static readonly COL_DOCK_SPRITE_SMALL = 13;
 		static readonly SAILING_DOCK_PORT_SARIM = 8587;
 		static readonly SAILING_DOCK_THE_PANDEMONIUM = 8588;

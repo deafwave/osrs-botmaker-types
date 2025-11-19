@@ -18851,6 +18851,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SALVAGE_SPOT_ICON_DUMMY = 32918;
 		static readonly SALVAGE_TABLE_ICON_DUMMY = 32919;
 		static readonly TRAWLING_ICON_DUMMY = 32920;
+		static readonly JAR_OF_FEATHERS = 32921;
 		static readonly TWPART1 = 7;
 		static readonly TWPART2 = 9;
 		static readonly TWPART3 = 11;
@@ -32923,5 +32924,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CAMPHOR_LOGS = 32906;
 		static readonly IRONWOOD_LOGS = 32909;
 		static readonly ROSEWOOD_LOGS = 32912;
+		static readonly JAR_OF_FEATHERS = 32922;
 	}
   }

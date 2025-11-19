@@ -3562,5 +3562,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_STRYKEWYRM_BURROW_ATTACK01 = 3557;
 		static readonly VFX_STRYKEWYRM_WALK_EMERGED = 3558;
 		static readonly VFX_STRYKEWYRM_SUPERIOR_WALK_EMERGED = 3559;
+		static readonly SKILLCAPE_SAILING_EMOTE_SPOTANIM = 3560;
+		static readonly SKILLCAPE_AD_EMOTE_SPOTANIM = 3561;
+		static readonly VFX_WIND_SAIL_3X10_01 = 3562;
+		static readonly VFX_WIND_SAIL_3X10_SPEEDBOOST01 = 3563;
+		static readonly SHIPYARD_DOG_BALL = 3564;
 	}
   }

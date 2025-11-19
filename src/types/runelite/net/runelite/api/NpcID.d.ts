@@ -11,6 +11,7 @@ declare namespace net.runelite.api {
 		static readonly ABERRANT_SPECTRE_6 = 6;
 		static readonly ABERRANT_SPECTRE_7 = 7;
 		static readonly NECHRYAEL = 8;
+		static readonly SKYLARK = 9;
 		static readonly DEATH_SPAWN = 10;
 		static readonly NECHRYAEL_11 = 11;
 		static readonly HUDO = 12;
@@ -276,6 +277,9 @@ declare namespace net.runelite.api {
 		static readonly PELICAN = 283;
 		static readonly GULL_284 = 284;
 		static readonly GULL_285 = 285;
+		static readonly EAGLE = 286;
+		static readonly MERCENARY = 287;
+		static readonly CHARTIN_CHARLES_MCATLESS = 288;
 		static readonly GHOUL = 289;
 		static readonly DWARF = 290;
 		static readonly CHAOS_DWARF = 291;
@@ -1375,7 +1379,7 @@ declare namespace net.runelite.api {
 		static readonly DESERT_EAGLE = 1487;
 		static readonly JUNGLE_EAGLE = 1488;
 		static readonly POLAR_EAGLE = 1489;
-		static readonly EAGLE = 1490;
+		static readonly EAGLE_1490 = 1490;
 		static readonly KEBBIT = 1494;
 		static readonly CHARLIE_1495 = 1495;
 		static readonly BOULDER = 1496;
@@ -1436,6 +1440,8 @@ declare namespace net.runelite.api {
 		static readonly GUARD_1551 = 1551;
 		static readonly GUARD_1552 = 1552;
 		static readonly CRAB_1553 = 1553;
+		static readonly CHARTIN_CHARLES_MCATLESS_1554 = 1554;
+		static readonly LUKE = 1555;
 		static readonly FIRE_WIZARD = 1556;
 		static readonly WATER_WIZARD = 1557;
 		static readonly EARTH_WIZARD = 1558;
@@ -3631,6 +3637,10 @@ declare namespace net.runelite.api {
 		static readonly FOX = 3901;
 		static readonly BUNNY = 3902;
 		static readonly BUNNY_3903 = 3903;
+		static readonly SHIPYARD_WORKER_3904 = 3904;
+		static readonly SHIPYARD_WORKER_3905 = 3905;
+		static readonly SHIPYARD_ENGINEER = 3906;
+		static readonly JOE_3907 = 3907;
 		static readonly BEAR_CUB = 3908;
 		static readonly BEAR_CUB_3909 = 3909;
 		static readonly UNICORN_FOAL = 3910;
@@ -3976,6 +3986,8 @@ declare namespace net.runelite.api {
 		static readonly OSMAN_4286 = 4286;
 		static readonly BORDER_GUARD = 4287;
 		static readonly BORDER_GUARD_4288 = 4288;
+		static readonly JOE_4289 = 4289;
+		static readonly CAT_4290 = 4290;
 		static readonly HERMAN_CARANOS = 4291;
 		static readonly FRANKLIN_CARANOS = 4292;
 		static readonly ARNOLD_LYDSPOR = 4293;
@@ -4301,7 +4313,7 @@ declare namespace net.runelite.api {
 		static readonly MINE_CART_DRIVER = 4653;
 		static readonly ROWDY_GUARD = 4654;
 		static readonly BEDABIN_NOMAD_FIGHTER = 4655;
-		static readonly MERCENARY = 4656;
+		static readonly MERCENARY_4656 = 4656;
 		static readonly MERCENARY_4657 = 4657;
 		static readonly MERCENARY_4658 = 4658;
 		static readonly MERCENARY_4659 = 4659;
@@ -4374,6 +4386,8 @@ declare namespace net.runelite.api {
 		static readonly MOE = 4726;
 		static readonly LARRY_4727 = 4727;
 		static readonly THURGO = 4733;
+		static readonly JOINTCHIEF_MOUSER_TO_THE_SHIPYARD_OFFICE = 4734;
+		static readonly JOINTCHIEF_MOUSER_TO_THE_SHIPYARD_OFFICE_4735 = 4735;
 		static readonly SIR_VYVIN = 4736;
 		static readonly SQUIRE_4737 = 4737;
 		static readonly GENIE_4738 = 4738;
@@ -12333,6 +12347,13 @@ declare namespace net.runelite.api {
 		static readonly THE_SAGE_14799 = 14799;
 		static readonly NEVET = 14801;
 		static readonly NEVET_14802 = 14802;
+		static readonly SPOTTED_RAE = 14807;
+		static readonly DUCK_14808 = 14808;
+		static readonly GECKO = 14809;
+		static readonly GRUB = 14810;
+		static readonly RUSTY_CHEST = 14811;
+		static readonly TARNISHED_CHEST = 14812;
+		static readonly RUSTY_CHEST_14813 = 14813;
 		static readonly SPOOKY_CHAIR = 14815;
 		static readonly MAKO = 14816;
 		static readonly MORA = 14817;
@@ -12375,8 +12396,6 @@ declare namespace net.runelite.api {
 		static readonly SHELLBANE_GRYPHON = 14860;
 		static readonly ELDER_KELMO = 14861;
 		static readonly ELDER_NAMA = 14863;
-		static readonly GULL_14864 = 14864;
-		static readonly GULL_14865 = 14865;
 		static readonly HENDERSON = 14866;
 		static readonly ONE_EYED_ROSALEE = 14867;
 		static readonly CAPTAIN_DAWSON = 14868;
@@ -12621,7 +12640,6 @@ declare namespace net.runelite.api {
 		static readonly CASTAWAY_15148 = 15148;
 		static readonly CASTAWAY_15149 = 15149;
 		static readonly CASTAWAY_15150 = 15150;
-		static readonly CHARTIN_CHARLES_MCATLESS = 15151;
 		static readonly CURRENT_DUCK = 15152;
 		static readonly CURRENT_DUCK_15153 = 15153;
 		static readonly MEATY_AURA_LOGIST = 15154;
@@ -12648,14 +12666,6 @@ declare namespace net.runelite.api {
 		static readonly DRINK_TROLL_QUEEN = 15175;
 		static readonly DRINK_TROLL_QUEEN_15176 = 15176;
 		static readonly SAILING_CAT = 15177;
-		static readonly CASTAWAY_DOG = 15178;
-		static readonly CASTAWAY_DOG_15179 = 15179;
-		static readonly CASTAWAY_DOG_15180 = 15180;
-		static readonly WILSON_15181 = 15181;
-		static readonly LOG_GIRL = 15182;
-		static readonly BARREL_GIRL = 15183;
-		static readonly BARREL_DUDE = 15184;
-		static readonly DEBRIS_DUDE = 15185;
 		static readonly PUNCHING_BAG = 15191;
 		static readonly PUNCHING_BAG_15192 = 15192;
 		static readonly DPS_CALC = 15193;
@@ -12702,7 +12712,6 @@ declare namespace net.runelite.api {
 		static readonly DOLPHIN = 15234;
 		static readonly DOLPHIN_15235 = 15235;
 		static readonly DOLPHIN_CALF = 15236;
-		static readonly OCEAN_MAN_15237 = 15237;
 		static readonly JUNIOR_JIM_15238 = 15238;
 		static readonly JUMBO_JIM = 15239;
 		static readonly CREW_REGISTRAR = 15245;
@@ -12842,7 +12851,7 @@ declare namespace net.runelite.api {
 		static readonly CHAMELEON_15416 = 15416;
 		static readonly CHAMELEON_15417 = 15417;
 		static readonly CHAMELEON_15418 = 15418;
-		static readonly GECKO = 15419;
+		static readonly GECKO_15419 = 15419;
 		static readonly GECKO_15420 = 15420;
 		static readonly GECKO_15421 = 15421;
 		static readonly GECKO_15422 = 15422;
