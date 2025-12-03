@@ -18852,6 +18852,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly SALVAGE_TABLE_ICON_DUMMY = 32919;
 		static readonly TRAWLING_ICON_DUMMY = 32920;
 		static readonly JAR_OF_FEATHERS = 32921;
+		static readonly ANY_NAILS = 32923;
+		static readonly CARGO_CRATE_ARROWTIPS_RELLEKKA = 32924;
+		static readonly CARGO_CRATE_CLOTHES_VOID_KNIGHTS_OUTPOST = 32925;
 		static readonly TWPART1 = 7;
 		static readonly TWPART2 = 9;
 		static readonly TWPART3 = 11;

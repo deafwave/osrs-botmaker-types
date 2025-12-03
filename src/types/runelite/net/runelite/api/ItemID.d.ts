@@ -15110,17 +15110,17 @@ declare namespace net.runelite.api {
 		static readonly FETID_KEY = 31744;
 		static readonly CAPTURED_WIND_MOTE = 31745;
 		static readonly GURTOBS_FABRIC_ROLL = 31746;
-		static readonly NIFTY_HAT = 31748;
-		static readonly NIFTY_JACKET = 31750;
-		static readonly NIFTY_TROUSERS = 31752;
-		static readonly NIFTY_SHOES = 31754;
+		static readonly SWAMP_CRUISERS_HAT = 31748;
+		static readonly SWAMP_CRUISERS_JACKET = 31750;
+		static readonly SWAMP_CRUISERS_TROUSERS = 31752;
+		static readonly SWAMP_CRUISERS_SHOES = 31754;
 		static readonly SERRATED_KEY = 31756;
 		static readonly HEART_OF_ITHELL = 31757;
 		static readonly GWYNAS_FABRIC_ROLL = 31758;
-		static readonly SLEEK_HAT = 31760;
-		static readonly SLEEK_JACKET = 31762;
-		static readonly SLEEK_TROUSERS = 31764;
-		static readonly SLEEK_SHOES = 31766;
+		static readonly CRYSTAL_GLIDERS_HAT = 31760;
+		static readonly CRYSTAL_GLIDERS_JACKET = 31762;
+		static readonly CRYSTAL_GLIDERS_TROUSERS = 31764;
+		static readonly CRYSTAL_GLIDERS_SHOES = 31766;
 		static readonly SUNKEN_RUM = 31768;
 		static readonly TINY_PEARL = 31770;
 		static readonly SMALL_PEARL = 31773;
@@ -15346,8 +15346,8 @@ declare namespace net.runelite.api {
 		static readonly TEAK_MAST_AND_LINEN_SAILS = 32167;
 		static readonly TEAK_MAST_AND_LINEN_SAILS_32168 = 32168;
 		static readonly MAHOGANY_MAST_AND_CANVAS_SAILS = 32169;
-		static readonly MAHOGANY_MAST_AND_LINEN_SAILS = 32170;
-		static readonly MAHOGANY_MAST_AND_LINEN_SAILS_32171 = 32171;
+		static readonly MAHOGANY_MAST_AND_CANVAS_SAILS_32170 = 32170;
+		static readonly MAHOGANY_MAST_AND_CANVAS_SAILS_32171 = 32171;
 		static readonly CAMPHOR_MAST_AND_CANVAS_SAILS = 32172;
 		static readonly CAMPHOR_MAST_AND_LINEN_SAILS = 32173;
 		static readonly CAMPHOR_MAST_AND_LINEN_SAILS_32174 = 32174;
@@ -16012,5 +16012,8 @@ declare namespace net.runelite.api {
 		static readonly IRONWOOD_LOGS = 32907;
 		static readonly ROSEWOOD_LOGS = 32910;
 		static readonly JAR_OF_FEATHERS = 32921;
+		static readonly STEEL_NAILS_32923 = 32923;
+		static readonly CRATE_OF_ARROWTIPS_32924 = 32924;
+		static readonly CRATE_OF_CLOTHES_32925 = 32925;
 	}
   }

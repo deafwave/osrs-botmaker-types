@@ -947,5 +947,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly PORT_TASK_INFO = 942;
 		static readonly SAILING_BOAT_CARGOHOLD = 943;
 		static readonly SAILING_BOAT_CARGOHOLD_SIDE = 944;
+		static readonly REUSABLE_FLOATER = 945;
 	}
   }

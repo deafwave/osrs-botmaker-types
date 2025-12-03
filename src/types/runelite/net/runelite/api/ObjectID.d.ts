@@ -28502,6 +28502,7 @@ declare namespace net.runelite.api {
 		static readonly ROCKS_58922 = 58922;
 		static readonly NICKEL_ROCKS = 58923;
 		static readonly ROCKS_58924 = 58924;
+		static readonly CABINET_58925 = 58925;
 		static readonly SCOREBOARD_58926 = 58926;
 		static readonly SCOREBOARD_58927 = 58927;
 		static readonly SCOREBOARD_58928 = 58928;
@@ -28711,6 +28712,7 @@ declare namespace net.runelite.api {
 		static readonly SAILS_59549 = 59549;
 		static readonly SAILS_59550 = 59550;
 		static readonly SAILS_59551 = 59551;
+		static readonly CREVICE_59552 = 59552;
 		static readonly SAILS_59553 = 59553;
 		static readonly HELM = 59555;
 		static readonly HELM_59556 = 59556;

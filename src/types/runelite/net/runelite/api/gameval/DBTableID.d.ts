@@ -1301,9 +1301,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly CLUEHELPER_HOTCOLD_MASTER_VARLAMORE_SUNSET = 3488;
 		static readonly CLUEHELPER_HOTCOLD_MASTER_VARLAMORE_BAZAAR = 3489;
 		static readonly CLUEHELPER_HOTCOLD_MASTER_VARLAMORE_ALDARIN_THEATRE = 3689;
+		static readonly CLUEHELPER_HOTCOLD_MASTER_SAIL_BUCCANEERS_HAVEN = 4963;
 		static readonly CLUEHELPER_HOTCOLD_MASTER_VARLAMORE_RAINFOREST_CENTRE = 5182;
 		static readonly CLUEHELPER_HOTCOLD_MASTER_SAIL_GREAT_CONCH = 7051;
-		static readonly CLUEHELPER_HOTCOLD_MASTER_SAIL_ISLE_OF_SERPENTS = 7052;
 		static readonly CLUEHELPER_HOTCOLD_MASTER_SAIL_DRUMSTICK_ISLE = 7053;
 		static readonly ID = 13;
 		static readonly COL_ID = 0;
@@ -2270,6 +2270,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CLUEHELPER_TARGET_COORD_0_26_50_30_47 = 3810;
 		static readonly CLUEHELPER_TARGET_COORD_0_25_51_10_38 = 3811;
 		static readonly CLUEHELPER_TARGET_COORD_1_25_83_40_54 = 3936;
+		static readonly CLUEHELPER_TARGET_COORD_0_32_57_30_17 = 4964;
 		static readonly CLUEHELPER_TARGET_COORD_VARLAMORE_RAINFOREST_CENTRE = 5172;
 		static readonly CLUEHELPER_TARGET_COORD_0_20_51_41_59 = 5173;
 		static readonly CLUEHELPER_TARGET_COORD_0_58_60_52_60 = 6152;
@@ -2281,7 +2282,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CLUEHELPER_TARGET_COORD_0_32_49_33_48 = 7064;
 		static readonly CLUEHELPER_TARGET_COORD_0_30_63_26_42 = 7065;
 		static readonly CLUEHELPER_TARGET_COORD_0_50_36_49_45 = 7066;
-		static readonly CLUEHELPER_TARGET_COORD_0_29_37_0_47 = 7067;
 		static readonly CLUEHELPER_TARGET_COORD_0_33_55_27_42 = 7068;
 		static readonly CLUEHELPER_TARGET_COORD_0_32_40_21_48 = 7069;
 		static readonly ID = 19;
@@ -4567,6 +4567,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUEY_SPECIAL_ATTACK_P2 = 3777;
 		static readonly HUEY_SPECIAL_ATTACK_P3 = 3778;
 		static readonly HUEY_SPECIAL_ATTACK_P4 = 3779;
+		static readonly ID = 76;
+		static readonly COL_BUTTON_STYLES = 0;
+		static readonly DYNAMIC_BUILDERS_DEMO = 4965;
 		static readonly ID = 77;
 		static readonly COL_LOADOUT_ID = 0;
 		static readonly COL_CONTAINER_COM = 1;
@@ -9678,6 +9681,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_BOUNTY_OBJECT_RARITY = 23;
 		static readonly COL_TASK_BOARD_GRAPHIC = 24;
 		static readonly COL_FLAVOUR_TEXT = 25;
+		static readonly PORT_TASK_RELLEKKA_COURIER_19 = 4966;
+		static readonly PORT_TASK_RELLEKKA_COURIER_20 = 4967;
 		static readonly PORT_TASK_PORT_SARIM_COURIER_0 = 8664;
 		static readonly PORT_TASK_PORT_SARIM_COURIER_1 = 8665;
 		static readonly PORT_TASK_PORT_SARIM_COURIER_2 = 8666;

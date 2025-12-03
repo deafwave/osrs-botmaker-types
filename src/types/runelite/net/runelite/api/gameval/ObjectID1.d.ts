@@ -26529,6 +26529,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CAVEKIT_SNOW03_DEFAULT01_DARK02_WALLTOP = 58524;
 		static readonly TOA_ZEBAK_BUBBLES_BLUE = 58525;
 		static readonly BGSOUND_SAILING_OCEAN_WATER_LOOP_01 = 58526;
+		static readonly CASTLEARROWSLIT_OFFSET = 58527;
 		static readonly BGSOUND_SAILING_COOKING_LOOP_2 = 58528;
 		static readonly BGSOUND_SAILING_NORTHERN_OCEAN_WIND_LOOP = 58529;
 		static readonly BGSOUND_SAILING_CLOCK = 58530;
@@ -26926,6 +26927,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly RUBIUMDEPOSIT1_EMPTY = 58922;
 		static readonly NICKELROCK1 = 58923;
 		static readonly NICKELROCK1_EMPTY = 58924;
+		static readonly CABINET_OFFSET1 = 58925;
 		static readonly SAILING_BT_SCOREBOARD_TEMPOR_TANTRUM = 58926;
 		static readonly SAILING_BT_SCOREBOARD_JUBBLY_JIVE = 58927;
 		static readonly SAILING_BT_SCOREBOARD_GWENITH_GLIDE = 58928;
@@ -27552,6 +27554,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_SAIL_KANDARIN_3X8_IRONWOOD = 59549;
 		static readonly SAILING_BOAT_SAIL_KANDARIN_3X8_ROSEWOOD = 59550;
 		static readonly SAILING_BOAT_SAILS_COLOSSAL_REGULAR = 59551;
+		static readonly GRIMSTONE_CAVE_WALL_UPPER_CREVICE = 59552;
 		static readonly SAILING_BOAT_SAILS_INTRO = 59553;
 		static readonly SAILING_BOAT_STEERING_KANDARIN_1X3_WOOD = 59554;
 		static readonly SAILING_BOAT_STEERING_KANDARIN_1X3_WOOD_IN_USE = 59555;
