@@ -13691,5 +13691,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_WIND_SAIL_3X10_SPEEDBOOST01 = 13693;
 		static readonly HUMAN_WORKBENCH_CRAFTING_LOOP = 13694;
 		static readonly TURTLE_IDLE01_LOOP = 13695;
+		static readonly HUMAN_XMAS25_CHRISTMAS_DINNER_READY = 13696;
+		static readonly HUMAN_XMAS25_CHRISTMAS_DINNER_WALK_F = 13697;
+		static readonly HUMAN_XMAS25_CHRISTMAS_DINNER_WALK_B = 13698;
+		static readonly HUMAN_XMAS25_CHRISTMAS_DINNER_RUN = 13699;
+		static readonly HUMAN_XMAS25_CHRISTMAS_DINNER_ATTACK = 13700;
 	}
   }

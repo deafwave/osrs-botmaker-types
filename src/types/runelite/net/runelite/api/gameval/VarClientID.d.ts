@@ -1346,5 +1346,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CAMERA_ZOOM_BIG_MAX = 1341;
 		static readonly SAILING_LAST_BOAT_HP = 1342;
 		static readonly SETTINGS_DEV_EXAMPLE_INT = 1343;
+		static readonly FAIRYRINGS_SEARCHSTRING = 1344;
 	}
   }

@@ -11120,6 +11120,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SETTINGS_HD_NEW_RENDERER_TOGGLE = 16617;
 		static readonly SETTINGS_HD_WARNING_SHOWN = 16618;
 		static readonly SETTINGS_SD_BETA_ENABLED = 16619;
+		static readonly SAILING_WARNING_TELEPORTOFFBOAT = 16620;
 		static readonly SETTINGS_WORLD_MAP_HOTKEY_DISABLED = 16621;
 		static readonly CHARGES_EYE_OF_AYAK_QUANTITY = 16623;
 		static readonly PMOON_EYATLALLI_VIS = 16624;
@@ -13840,7 +13841,33 @@ declare namespace net.runelite.api.gameval {
 		static readonly SETTINGS_IRONMAN_CARGO_WARNING_TEMP = 19612;
 		static readonly SAILING_CREW_GHOST_JENKINS_VISIBILITY_CONTROL = 19613;
 		static readonly SETTINGS_CARGO_HOLD_PRIVACY = 19614;
-		static readonly SAILING_LIKELY_BOTTER_IDENTIFIED = 19615;
 		static readonly BOAT_REPAIR_COST_WARNING_DISMISSED = 19616;
+		static readonly XMAS_25_MAIN = 19618;
+		static readonly XMAS_25_NPC_QUEUE = 19619;
+		static readonly XMAS_25_SEAT_ID_1 = 19620;
+		static readonly XMAS_25_SEAT_ID_2 = 19621;
+		static readonly XMAS_25_SEAT_ID_3 = 19622;
+		static readonly XMAS_25_SEAT_ID_4 = 19623;
+		static readonly XMAS25_CURRENT_TABLE = 19624;
+		static readonly XMAS25_FOOD_CORRECT_MAIN = 19625;
+		static readonly XMAS25_FOOD_CORRECT_SIDE_1 = 19626;
+		static readonly XMAS_25_TABLE_ID_1 = 19627;
+		static readonly XMAS_25_TABLE_ID_2 = 19628;
+		static readonly XMAS_25_TABLE_ID_3 = 19629;
+		static readonly XMAS_25_TABLE_ID_4 = 19630;
+		static readonly XMAS_25_BAR_INTERACTABLE = 19631;
+		static readonly XMAS_25_BAR_DRINKS = 19632;
+		static readonly XMAS_25_BAR_CORRECT_DRINK = 19633;
+		static readonly XMAS25_TABLE_1_STATE = 19634;
+		static readonly XMAS25_TABLE_2_STATE = 19635;
+		static readonly XMAS25_TABLE_3_STATE = 19636;
+		static readonly XMAS25_TABLE_4_STATE = 19637;
+		static readonly XMAS25_FOOD_CORRECT_SIDE_2 = 19638;
+		static readonly XMAS25_FOOD_CORRECT_SIDE_3 = 19639;
+		static readonly XMAS25_FOOD_MAIN = 19640;
+		static readonly XMAS25_FOOD_SIDE_1 = 19641;
+		static readonly XMAS25_FOOD_SIDE_2 = 19642;
+		static readonly XMAS25_FOOD_SIDE_3 = 19643;
+		static readonly SAILING_UNEXPECTED_INPUT_LOGGED = 19645;
 	}
   }

@@ -18855,6 +18855,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly ANY_NAILS = 32923;
 		static readonly CARGO_CRATE_ARROWTIPS_RELLEKKA = 32924;
 		static readonly CARGO_CRATE_CLOTHES_VOID_KNIGHTS_OUTPOST = 32925;
+		static readonly XMAS25_SERVING_PLATTER = 32926;
+		static readonly XMAS25_BIB = 32928;
+		static readonly XMAS25_BEER_BELLY_SWEATER = 32930;
+		static readonly XMAS25_CONTEST_JUMPER = 32932;
+		static readonly XMAS25_CHRISTMAS_DINNER = 32934;
 		static readonly TWPART1 = 7;
 		static readonly TWPART2 = 9;
 		static readonly TWPART3 = 11;
@@ -32928,5 +32933,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly IRONWOOD_LOGS = 32909;
 		static readonly ROSEWOOD_LOGS = 32912;
 		static readonly JAR_OF_FEATHERS = 32922;
+		static readonly XMAS25_SERVING_PLATTER = 32927;
+		static readonly XMAS25_BIB = 32929;
+		static readonly XMAS25_BEER_BELLY_SWEATER = 32931;
+		static readonly XMAS25_CONTEST_JUMPER = 32933;
+		static readonly XMAS25_CHRISTMAS_DINNER = 32935;
 	}
   }

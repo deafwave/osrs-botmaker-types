@@ -266,6 +266,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HALLOWEEN_2024 = 3935;
 		static readonly XMAS_2024 = 4228;
 		static readonly BIRTHDAY_2025 = 4318;
+		static readonly XMAS_2025 = 4968;
 		static readonly EASTER_2025 = 5107;
 		static readonly HALLOWEEN_2025 = 6989;
 		static readonly ID = 2;
@@ -4184,6 +4185,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly MUSIC_THE_HEIST = 3971;
 		static readonly MUSIC_HEAVY_SECURITY = 3972;
 		static readonly MUSIC_THE_PLUNDERED_TOMB = 3973;
+		static readonly MUSIC_CHRISTMAS_2025 = 4969;
 		static readonly MUSIC_YAMA_COMBAT = 5154;
 		static readonly MUSIC_TLATI_RAINFOREST = 5377;
 		static readonly MUSIC_AUBURN_VALLEY_1 = 5378;

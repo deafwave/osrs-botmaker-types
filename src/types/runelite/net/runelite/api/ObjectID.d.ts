@@ -29277,5 +29277,34 @@ declare namespace net.runelite.api {
 		static readonly SHRIMP = 60573;
 		static readonly HAROLD = 60574;
 		static readonly TENTACLE_60575 = 60575;
+		static readonly TABLE_60576 = 60576;
+		static readonly TABLE_60577 = 60577;
+		static readonly TABLE_60578 = 60578;
+		static readonly TABLE_60579 = 60579;
+		static readonly TABLE_60580 = 60580;
+		static readonly BAR_60585 = 60585;
+		static readonly BAR_60586 = 60586;
+		static readonly BAR_60587 = 60587;
+		static readonly BAR_60588 = 60588;
+		static readonly BAR_60589 = 60589;
+		static readonly BAR_60590 = 60590;
+		static readonly BAR_60591 = 60591;
+		static readonly BAR_60592 = 60592;
+		static readonly BAR_60593 = 60593;
+		static readonly BAR_60594 = 60594;
+		static readonly BAR_60595 = 60595;
+		static readonly BAR_60596 = 60596;
+		static readonly BAR_60597 = 60597;
+		static readonly BAR_60598 = 60598;
+		static readonly BAR_60599 = 60599;
+		static readonly BAR_60600 = 60600;
+		static readonly CRATE_60608 = 60608;
+		static readonly CRATE_60609 = 60609;
+		static readonly CRATE_60610 = 60610;
+		static readonly CRATE_60611 = 60611;
+		static readonly CRATE_60612 = 60612;
+		static readonly CRATE_60613 = 60613;
+		static readonly CRATE_60614 = 60614;
+		static readonly SNOWBALL_PILE_60616 = 60616;
 	}
   }

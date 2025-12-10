@@ -2580,5 +2580,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_CARGOHOLD_SIDE_WHITELIST = 5205;
 		static readonly PORT_TASKS_COMPLETED = 5207;
 		static readonly SAILING_SHIPWRECK_RAREITEMS = 5208;
+		static readonly XMAS_25_1 = 5214;
+		static readonly XMAS_25_2 = 5215;
+		static readonly XMAS_25_3 = 5216;
 	}
   }
