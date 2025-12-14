@@ -47,6 +47,7 @@
 /// <reference path="./swing/JComboBox.d.ts" />
 /// <reference path="./swing/JComponent.d.ts" />
 /// <reference path="./swing/JFrame.d.ts" />
+/// <reference path="./swing/JDialog.d.ts" />
 /// <reference path="./swing/JLabel.d.ts" />
 /// <reference path="./swing/JList.d.ts" />
 /// <reference path="./swing/JMenu.d.ts" />
