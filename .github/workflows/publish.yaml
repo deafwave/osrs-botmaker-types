@@ -10,6 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
+  id-token: write  # NPM Publish
   contents: write
   packages: write
 
@@ -66,5 +67,3 @@ jobs:
           pnpm lint
           pnpm build
           pnpm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
