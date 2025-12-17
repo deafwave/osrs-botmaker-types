@@ -43,6 +43,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@deafwave'
           cache: 'pnpm'
+      - name: Update NPM for Trusted Publishing
+        run: npm install -g npm@latest
       - name: ⏫ Bumping version (semantic)
         id: bumping-version
         uses: jpb06/bump-package@latest
