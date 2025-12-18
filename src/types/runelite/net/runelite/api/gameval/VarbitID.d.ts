@@ -13841,6 +13841,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SETTINGS_IRONMAN_CARGO_WARNING_TEMP = 19612;
 		static readonly SAILING_CREW_GHOST_JENKINS_VISIBILITY_CONTROL = 19613;
 		static readonly SETTINGS_CARGO_HOLD_PRIVACY = 19614;
+		static readonly SETTINGS_NEW_MENU_INTERFACE = 19615;
 		static readonly BOAT_REPAIR_COST_WARNING_DISMISSED = 19616;
 		static readonly XMAS_25_MAIN = 19618;
 		static readonly XMAS_25_NPC_QUEUE = 19619;
@@ -13869,5 +13870,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly XMAS25_FOOD_SIDE_2 = 19642;
 		static readonly XMAS25_FOOD_SIDE_3 = 19643;
 		static readonly SAILING_UNEXPECTED_INPUT_LOGGED = 19645;
+		static readonly SETTINGS_NEW_MENU_TRANSPARENT_INTERFACE_DISABLED = 19646;
+		static readonly SETTINGS_RUNEPOUCH_LOADOUT_NAMES_DISABLED = 19647;
+		static readonly SETTINGS_FAIRYRING_MOBILE_KEYBOARD_AUTOOPEN_DISABLED = 19648;
+		static readonly MY2ARM_STRONGHOLD_TELE_TOGGLE = 19649;
+		static readonly SAILING_SIDEPANEL_BOAT_CRYSTALHELM_RESISTANCE = 19652;
 	}
   }

@@ -28619,5 +28619,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly XMAS25_CRATE01_MEAT01 = 60614;
 		static readonly XMAS22_DECORATION_HOLLYWREATH01_WALL01 = 60615;
 		static readonly XMAS25_SNOWBALL_PILE = 60616;
+		static readonly AGILITY_ONEWAY_RIGHT_ICON = 60617;
+		static readonly AGILITY_ONEWAY_LEFT_ICON = 60618;
+		static readonly POH_DISPLAY_GRYPHON = 60619;
 	}
   }

@@ -421,7 +421,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CANOEING = 416;
 		static readonly BREW_TOOLS = 417;
 		static readonly BREW_WAITING_ROOM_OVERLAY = 418;
-		static readonly PATCHY_INTERFACE = 419;
 		static readonly BEEHIVE = 420;
 		static readonly PVP_ARENA_STAGINGAREA_SHARELOADOUT = 421;
 		static readonly POH_VIEWER = 422;
@@ -948,5 +947,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_CARGOHOLD = 943;
 		static readonly SAILING_BOAT_CARGOHOLD_SIDE = 944;
 		static readonly REUSABLE_FLOATER = 945;
+		static readonly PATCHY = 946;
+		static readonly MENU_NEW = 947;
 	}
   }

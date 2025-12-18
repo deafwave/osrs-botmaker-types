@@ -29306,5 +29306,6 @@ declare namespace net.runelite.api {
 		static readonly CRATE_60613 = 60613;
 		static readonly CRATE_60614 = 60614;
 		static readonly SNOWBALL_PILE_60616 = 60616;
+		static readonly SHELLBANE_GRYPHON_DISPLAY = 60619;
 	}
   }
