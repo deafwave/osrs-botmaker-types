@@ -5,6 +5,8 @@ declare namespace javax.swing {
 		getSelectedValuesList(): string[];
 		setSelectionMode(mode: number): void;
 		getSelectionMode(): number;
+		getSelectedIndex(): number;
+		getSelectedIndices(): number[];
 		setPreferredSize(size: java.awt.Dimension): void;
 		setMinimumSize(dimension: java.awt.Dimension): void;
 		setMaximumSize(dimension: java.awt.Dimension): void;

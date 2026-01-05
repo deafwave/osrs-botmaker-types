@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JCheckBox {
+	export class JRadioButton extends javax.swing.AbstractButton {
 		constructor(label: string, selected?: boolean);
 		getText(): string;
 		setText(text: string): void;
@@ -18,4 +18,4 @@ declare namespace javax.swing {
 	}
 }
 
-type JCheckBox = javax.swing.JCheckBox;
+type JRadioButton = javax.swing.JRadioButton;
