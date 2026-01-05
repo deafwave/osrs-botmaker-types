@@ -15,12 +15,12 @@ declare namespace javax.swing {
 	}
 
 	export class ScrollPaneConstants {
-		static readonly VERTICAL_SCROLLBAR_AS_NEEDED: number;
-		static readonly VERTICAL_SCROLLBAR_ALWAYS: number;
-		static readonly VERTICAL_SCROLLBAR_NEVER: number;
-		static readonly HORIZONTAL_SCROLLBAR_AS_NEEDED: number;
-		static readonly HORIZONTAL_SCROLLBAR_ALWAYS: number;
-		static readonly HORIZONTAL_SCROLLBAR_NEVER: number;
+		static readonly VERTICAL_SCROLLBAR_AS_NEEDED: number = 20;
+		static readonly VERTICAL_SCROLLBAR_NEVER: number = 21;
+		static readonly VERTICAL_SCROLLBAR_ALWAYS: number = 22;
+		static readonly HORIZONTAL_SCROLLBAR_AS_NEEDED: number = 30;
+		static readonly HORIZONTAL_SCROLLBAR_NEVER: number = 31;
+		static readonly HORIZONTAL_SCROLLBAR_ALWAYS: number = 32;
 	}
 }
 

@@ -17,5 +17,15 @@ declare namespace javax.swing {
 		abstract paintChildren(g: java.awt.Graphics2D): void;
 
 		abstract setPreferredSize(dimension: java.awt.Dimension): void;
+		abstract getPreferredSize(): java.awt.Dimension;
+		abstract setMinimumSize(dimension: java.awt.Dimension): void;
+		abstract getMinimumSize(): java.awt.Dimension;
+		abstract setMaximumSize(dimension: java.awt.Dimension): void;
+		abstract getMaximumSize(): java.awt.Dimension;
+		abstract setSize(width: number, height: number): void;
+		abstract setSize(dimension: java.awt.Dimension): void;
+		abstract getSize(): java.awt.Dimension;
+		abstract getWidth(): number;
+		abstract getHeight(): number;
 	}
 }
