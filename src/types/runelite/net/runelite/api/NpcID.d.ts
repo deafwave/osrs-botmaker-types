@@ -12974,24 +12974,5 @@ declare namespace net.runelite.api {
 		static readonly TRADER_CREWMEMBER_15544 = 15544;
 		static readonly TRADER_CREWMEMBER_15545 = 15545;
 		static readonly TRADER_CREWMEMBER_15546 = 15546;
-		static readonly STOOL = 15548;
-		static readonly SIR_PRYSIN_15549 = 15549;
-		static readonly AGGIE_15550 = 15550;
-		static readonly JOBLESS_JIM_15551 = 15551;
-		static readonly HANS_15552 = 15552;
-		static readonly KARIM_15553 = 15553;
-		static readonly OZIACH_15554 = 15554;
-		static readonly ROMMIK_15555 = 15555;
-		static readonly DORIS_15556 = 15556;
-		static readonly HERQUIN_15557 = 15557;
-		static readonly PUFFIN_15558 = 15558;
-		static readonly COOK_15559 = 15559;
-		static readonly COOK_15560 = 15560;
-		static readonly BARTENDER_15561 = 15561;
-		static readonly WOMAN_15562 = 15562;
-		static readonly JONNY_THE_BEARD_15563 = 15563;
-		static readonly DR_HARLOW_15564 = 15564;
-		static readonly BARBARIAN_15565 = 15565;
-		static readonly MOD_FREDDIE = 15566;
 	}
   }

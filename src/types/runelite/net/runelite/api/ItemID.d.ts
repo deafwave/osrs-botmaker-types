@@ -16015,7 +16015,6 @@ declare namespace net.runelite.api {
 		static readonly STEEL_NAILS_32923 = 32923;
 		static readonly CRATE_OF_ARROWTIPS_32924 = 32924;
 		static readonly CRATE_OF_CLOTHES_32925 = 32925;
-		static readonly SERVING_PLATTER = 32926;
 		static readonly LOVLEY_JUBBLY_BIB = 32928;
 		static readonly BEER_BELLY_SWEATER = 32930;
 		static readonly JAD_JUMPER = 32932;

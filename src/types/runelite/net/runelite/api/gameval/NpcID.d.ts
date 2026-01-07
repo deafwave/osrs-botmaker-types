@@ -14816,7 +14816,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly RUSTY_PIRATE_THIEVING_CHEST_GLE = 14811;
 		static readonly TARNISHED_PIRATE_THIEVING_CHEST_GLE = 14812;
 		static readonly REINFORCED_PIRATE_THIEVING_CHEST_GLE = 14813;
-		static readonly XMAS25_QUEUE_NPC_1 = 14814;
 		static readonly POH_HW_CHAIR = 14815;
 		static readonly BARRACUDA_MAKO = 14816;
 		static readonly BARRACUDA_MORA = 14817;
@@ -14866,8 +14865,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_GRYPHON_GUARDIAN = 14861;
 		static readonly SLAYER_GRYPHON_BOSS_GUARDIAN = 14862;
 		static readonly SLAYER_GRYPHON_BOSS_GUARDIAN_VIS = 14863;
-		static readonly XMAS25_QUEUE_NPC_2 = 14864;
-		static readonly XMAS25_QUEUE_NPC_3 = 14865;
 		static readonly PANDEMONIUM_FISHMONGER = 14866;
 		static readonly PANDEMONIUM_ROSALEE = 14867;
 		static readonly PANDEMONIUM_DAWSON = 14868;
@@ -15180,14 +15177,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_CHARTING_DRINK_CRATE_MONKFISH_STOUT_EFFECT = 15175;
 		static readonly SAILING_CHARTING_DRINK_CRATE_MONKFISH_STOUT_EFFECT_DEAD = 15176;
 		static readonly SAILING_CHARTING_DRINK_CRATE_SAILING_CAT_EFFECT = 15177;
-		static readonly XMAS25_QUEUE_NPC_4 = 15178;
-		static readonly XMAS25_QUEUE_NPC_5 = 15179;
-		static readonly XMAS25_QUEUE_NPC_6 = 15180;
-		static readonly XMAS25_QUEUE_NPC_7 = 15181;
-		static readonly XMAS25_QUEUE_NPC_8 = 15182;
-		static readonly XMAS25_QUEUE_NPC_9 = 15183;
-		static readonly XMAS25_TABLE_NPC_1 = 15184;
-		static readonly XMAS25_TABLE_NPC_2 = 15185;
 		static readonly BOAT_HP_NPC_TINY = 15186;
 		static readonly BOAT_HP_NPC_SMALL = 15187;
 		static readonly BOAT_HP_NPC_MEDIUM = 15188;
@@ -15239,7 +15228,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_DOLPHIN = 15234;
 		static readonly SAILING_DOLPHIN_DEAD = 15235;
 		static readonly SAILING_DOLPHIN_BABY = 15236;
-		static readonly XMAS25_TABLE_NPC_3 = 15237;
 		static readonly SAILING_ASSISTANT_LIMBO = 15238;
 		static readonly JUMBO_JIM = 15239;
 		static readonly SAILING_EMOTE_NPC = 15240;
@@ -15549,25 +15537,5 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN1_PORT_ROBERTS = 15544;
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN2_PORT_ROBERTS = 15545;
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN3_PORT_ROBERTS = 15546;
-		static readonly XMAS25_TABLE_NPC_4 = 15547;
-		static readonly XMAS25_STOOL_EMPTY = 15548;
-		static readonly XMAS25_SIR_PRYSIN = 15549;
-		static readonly XMAS25_AGGIE = 15550;
-		static readonly XMAS25_JOBLESS_JIM = 15551;
-		static readonly XMAS25_HANS = 15552;
-		static readonly XMAS25_KARIM = 15553;
-		static readonly XMAS25_OZIACH = 15554;
-		static readonly XMAS25_ROMMIK = 15555;
-		static readonly XMAS25_DORIS = 15556;
-		static readonly XMAS25_HERQUIN = 15557;
-		static readonly XMAS25_PUFFIN = 15558;
-		static readonly XMAS25_CUTSCENE_CHEF_WITH_PLATE = 15559;
-		static readonly XMAS25_CUTSCENE_CHEF_NO_PLATE = 15560;
-		static readonly XMAS25_CUTSCENE_BARTENDER = 15561;
-		static readonly XMAS25_CUTSCENE_WOMAN1 = 15562;
-		static readonly XMAS25_CUTSCENE_JONNY = 15563;
-		static readonly XMAS25_CUTSCENE_DR_HARLOW = 15564;
-		static readonly XMAS25_CUTSCENE_BARBARIAN = 15565;
-		static readonly XMAS25_CUTSCENE_FREDDIE = 15566;
 	}
   }

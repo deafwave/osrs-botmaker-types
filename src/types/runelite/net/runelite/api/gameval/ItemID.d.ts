@@ -32999,7 +32999,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly IRONWOOD_LOGS = 32909;
 		static readonly ROSEWOOD_LOGS = 32912;
 		static readonly JAR_OF_FEATHERS = 32922;
-		static readonly XMAS25_SERVING_PLATTER = 32927;
 		static readonly XMAS25_BIB = 32929;
 		static readonly XMAS25_BEER_BELLY_SWEATER = 32931;
 		static readonly XMAS25_CONTEST_JUMPER = 32933;
