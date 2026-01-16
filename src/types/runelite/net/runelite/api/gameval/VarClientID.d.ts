@@ -1347,5 +1347,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_LAST_BOAT_HP = 1342;
 		static readonly SETTINGS_DEV_EXAMPLE_INT = 1343;
 		static readonly FAIRYRINGS_SEARCHSTRING = 1344;
+		static readonly SKILL_GUIDE_V2_OVERVIEW_CURRENT_TAB = 1345;
 	}
   }

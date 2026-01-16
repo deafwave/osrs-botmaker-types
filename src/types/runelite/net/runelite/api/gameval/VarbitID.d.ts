@@ -13875,5 +13875,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SETTINGS_FAIRYRING_MOBILE_KEYBOARD_AUTOOPEN_DISABLED = 19648;
 		static readonly MY2ARM_STRONGHOLD_TELE_TOGGLE = 19649;
 		static readonly SAILING_SIDEPANEL_BOAT_CRYSTALHELM_RESISTANCE = 19652;
+		static readonly DRAGONSLAYER_MET_SAWMILL = 19653;
+		static readonly DRAGONSLAYER_PLANKS_MADE = 19654;
+		static readonly ERNESTHANDIN_COMPLETE = 19655;
 	}
   }

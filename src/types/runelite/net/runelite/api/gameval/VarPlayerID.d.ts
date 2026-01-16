@@ -2585,5 +2585,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly XMAS_25_3 = 5216;
 		static readonly COLLECTION_PERSONAL_BEST_TRANSMIT = 5217;
 		static readonly COLLECTION_PERSONAL_BEST_TRANSMIT_2 = 5218;
+		static readonly ERNESTHANDIN = 5219;
 	}
   }
