@@ -3567,5 +3567,15 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_WIND_SAIL_3X10_01 = 3562;
 		static readonly VFX_WIND_SAIL_3X10_SPEEDBOOST01 = 3563;
 		static readonly SHIPYARD_DOG_BALL = 3564;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_FULL = 3565;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_01 = 3566;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_02 = 3567;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_03 = 3568;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_04 = 3569;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_05 = 3570;
+		static readonly DEADMAN_2026_HOME_TELE_SPOTANIM_06 = 3571;
+		static readonly DEADMAN_2026_SOTD_SPECIAL_START = 3572;
+		static readonly DEADMAN_2026_SOTD_SPECIAL_EXTRA = 3573;
+		static readonly SARADOMIN_LIGHTNING_DEADMAN = 3574;
 	}
   }

@@ -421,6 +421,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CANOEING = 416;
 		static readonly BREW_TOOLS = 417;
 		static readonly BREW_WAITING_ROOM_OVERLAY = 418;
+		static readonly DEADMAN_TUTORIAL = 419;
 		static readonly BEEHIVE = 420;
 		static readonly PVP_ARENA_STAGINGAREA_SHARELOADOUT = 421;
 		static readonly POH_VIEWER = 422;
@@ -949,5 +950,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly REUSABLE_FLOATER = 945;
 		static readonly PATCHY = 946;
 		static readonly MENU_NEW = 947;
+		static readonly DEADMANSKULL_INTERFACE = 948;
 	}
   }

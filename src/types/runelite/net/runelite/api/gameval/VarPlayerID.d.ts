@@ -2586,5 +2586,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly COLLECTION_PERSONAL_BEST_TRANSMIT = 5217;
 		static readonly COLLECTION_PERSONAL_BEST_TRANSMIT_2 = 5218;
 		static readonly ERNESTHANDIN = 5219;
+		static readonly DEADMAN_POINTS_2026 = 5220;
+		static readonly DEADMAN_TUTORIAL = 5224;
+		static readonly DEADMAN_SKULL_POINTS = 5225;
+		static readonly DEADMAN_SKULL_POINTS_USED = 5226;
+		static readonly DEADMAN_SKULL_GENERAL = 5227;
+		static readonly SIGIL_STATE_1 = 5228;
+		static readonly SIGIL_TOGGLE_1 = 5229;
 	}
   }

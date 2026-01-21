@@ -14816,6 +14816,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly RUSTY_PIRATE_THIEVING_CHEST_GLE = 14811;
 		static readonly TARNISHED_PIRATE_THIEVING_CHEST_GLE = 14812;
 		static readonly REINFORCED_PIRATE_THIEVING_CHEST_GLE = 14813;
+		static readonly WILD_CAVE_IMP_DEADMAN = 14814;
 		static readonly POH_HW_CHAIR = 14815;
 		static readonly BARRACUDA_MAKO = 14816;
 		static readonly BARRACUDA_MORA = 14817;
@@ -14865,6 +14866,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_GRYPHON_GUARDIAN = 14861;
 		static readonly SLAYER_GRYPHON_BOSS_GUARDIAN = 14862;
 		static readonly SLAYER_GRYPHON_BOSS_GUARDIAN_VIS = 14863;
+		static readonly WILD_CAVE_GOBLIN_DEADMAN = 14864;
+		static readonly WILD_CAVE_PYREFIEND_DEADMAN = 14865;
 		static readonly PANDEMONIUM_FISHMONGER = 14866;
 		static readonly PANDEMONIUM_ROSALEE = 14867;
 		static readonly PANDEMONIUM_DAWSON = 14868;
@@ -15177,6 +15180,14 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_CHARTING_DRINK_CRATE_MONKFISH_STOUT_EFFECT = 15175;
 		static readonly SAILING_CHARTING_DRINK_CRATE_MONKFISH_STOUT_EFFECT_DEAD = 15176;
 		static readonly SAILING_CHARTING_DRINK_CRATE_SAILING_CAT_EFFECT = 15177;
+		static readonly WILD_CAVE_HOBGOBLIN_DEADMAN = 15178;
+		static readonly WILD_CAVE_CYCLOPS_DEADMAN = 15179;
+		static readonly WILD_CAVE_HELLHOUND_DEADMAN = 15180;
+		static readonly WILD_CAVE_DEMON_DEADMAN = 15181;
+		static readonly WILD_CAVE_ORK_DEADMAN = 15182;
+		static readonly WILD_CAVE_DARKBEAST_DEADMAN = 15183;
+		static readonly WILD_CAVE_KNIGHT_DEADMAN = 15184;
+		static readonly WILD_CAVE_DRAGON_DEADMAN = 15185;
 		static readonly BOAT_HP_NPC_TINY = 15186;
 		static readonly BOAT_HP_NPC_SMALL = 15187;
 		static readonly BOAT_HP_NPC_MEDIUM = 15188;
@@ -15228,6 +15239,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_DOLPHIN = 15234;
 		static readonly SAILING_DOLPHIN_DEAD = 15235;
 		static readonly SAILING_DOLPHIN_BABY = 15236;
+		static readonly DEADMAN_BREACH_LUCIEN = 15237;
 		static readonly SAILING_ASSISTANT_LIMBO = 15238;
 		static readonly JUMBO_JIM = 15239;
 		static readonly SAILING_EMOTE_NPC = 15240;
@@ -15537,5 +15549,30 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN1_PORT_ROBERTS = 15544;
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN2_PORT_ROBERTS = 15545;
 		static readonly SAILING_TRANSPORT_TRADER_STAN_CREW_WOMAN3_PORT_ROBERTS = 15546;
+		static readonly DEADMAN_BREACH_EVIL_CHICKEN = 15547;
+		static readonly DEADMAN_BREACH_SCURRIUS = 15548;
+		static readonly DEADMAN_BREACH_MUSPAH = 15549;
+		static readonly DEADMAN_BREACH_SPLATTER = 15550;
+		static readonly DEADMAN_BREACH_WARDEN_TUMEKEN_RANGE = 15551;
+		static readonly DEADMAN_BREACH_WARDEN_TUMEKEN_MAGE = 15552;
+		static readonly DEADMAN_BREACH_DSCIM_NPC = 15553;
+		static readonly DEADMAN_BREACH_SOL_HEREDIT = 15554;
+		static readonly DEADMAN_BREACH_YAMA = 15555;
+		static readonly DEADMAN_BREACH_BLOAT = 15556;
+		static readonly DEADMAN_BREACH_JAD_MINION = 15557;
+		static readonly DEADMAN_BREACH_MUMMY_MINION = 15558;
+		static readonly DEADMAN_BREACH_SHADE_MINION = 15559;
+		static readonly DEADMAN_BREACH_UNDEAD_ONE_MINION = 15560;
+		static readonly DEADMAN_BREACH_PIRATE_MINION = 15561;
+		static readonly DEADMAN_BREACH_ULFRIC_MINION = 15562;
+		static readonly DEADMAN_BREACH_KHAZARD_MINION = 15563;
+		static readonly DEADMAN_CHEST_ZEMOUREGAL = 15564;
+		static readonly DEADMAN_GUARD_UNKAH = 15565;
+		static readonly DEADMAN_GUARD_UNKAH_VIS = 15566;
+		static readonly DEADMAN_GUARD_WINTERTODT = 15567;
+		static readonly DEADMAN_GUARD_WINTERTODT_VIS = 15568;
+		static readonly DEADMAN_THRALL_ZOMBIE_GREATER_ZUK = 15569;
+		static readonly DEADMAN_THRALL_SKELETAL_GREATER_PRINCESS = 15570;
+		static readonly DEADMAN_THRALL_GHOSTLY_GREATER_WISP = 15571;
 	}
   }

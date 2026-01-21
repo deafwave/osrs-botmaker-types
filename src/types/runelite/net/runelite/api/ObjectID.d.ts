@@ -29101,6 +29101,9 @@ declare namespace net.runelite.api {
 		static readonly HELM_60242 = 60242;
 		static readonly SAILS_60243 = 60243;
 		static readonly SAILS_60244 = 60244;
+		static readonly DEADMANS_CHEST = 60246;
+		static readonly DEADMANS_CHEST_60248 = 60248;
+		static readonly DEADMANS_CHEST_60250 = 60250;
 		static readonly NOTICE_BOARD_60287 = 60287;
 		static readonly NOTICE_BOARD_60288 = 60288;
 		static readonly NOTICE_BOARD_60289 = 60289;
@@ -29299,5 +29302,19 @@ declare namespace net.runelite.api {
 		static readonly IRONWOOD_CARGO_HOLD_60640 = 60640;
 		static readonly ROSEWOOD_CARGO_HOLD_60641 = 60641;
 		static readonly ROSEWOOD_CARGO_HOLD_60642 = 60642;
+		static readonly STAINEDGLASS_WINDOW_60647 = 60647;
+		static readonly STAINEDGLASS_WINDOW_60648 = 60648;
+		static readonly SHUTTERED_WINDOW_60649 = 60649;
+		static readonly DECORATIVE_WINDOW_60650 = 60650;
+		static readonly STAINEDGLASS_WINDOW_60651 = 60651;
+		static readonly DECORATIVE_WINDOW_60652 = 60652;
+		static readonly STAINEDGLASS_WINDOW_60653 = 60653;
+		static readonly DECORATIVE_WINDOW_60654 = 60654;
+		static readonly STAINEDGLASS_WINDOW_60655 = 60655;
+		static readonly DECORATIVE_WINDOW_60656 = 60656;
+		static readonly STAINEDGLASS_WINDOW_60657 = 60657;
+		static readonly DECORATIVE_WINDOW_60658 = 60658;
+		static readonly STAINEDGLASS_WINDOW_60659 = 60659;
+		static readonly WINDOW_SPACE_60660 = 60660;
 	}
   }

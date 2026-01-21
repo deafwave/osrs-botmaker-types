@@ -12354,6 +12354,7 @@ declare namespace net.runelite.api {
 		static readonly RUSTY_CHEST = 14811;
 		static readonly TARNISHED_CHEST = 14812;
 		static readonly RUSTY_CHEST_14813 = 14813;
+		static readonly REVENANT_IMP_14814 = 14814;
 		static readonly SPOOKY_CHAIR = 14815;
 		static readonly MAKO = 14816;
 		static readonly MORA = 14817;
@@ -12396,6 +12397,8 @@ declare namespace net.runelite.api {
 		static readonly SHELLBANE_GRYPHON = 14860;
 		static readonly ELDER_KELMO = 14861;
 		static readonly ELDER_NAMA = 14863;
+		static readonly REVENANT_GOBLIN_14864 = 14864;
+		static readonly REVENANT_PYREFIEND_14865 = 14865;
 		static readonly HENDERSON = 14866;
 		static readonly ONE_EYED_ROSALEE = 14867;
 		static readonly CAPTAIN_DAWSON = 14868;
@@ -12666,6 +12669,14 @@ declare namespace net.runelite.api {
 		static readonly DRINK_TROLL_QUEEN = 15175;
 		static readonly DRINK_TROLL_QUEEN_15176 = 15176;
 		static readonly SAILING_CAT = 15177;
+		static readonly REVENANT_HOBGOBLIN_15178 = 15178;
+		static readonly REVENANT_CYCLOPS_15179 = 15179;
+		static readonly REVENANT_HELLHOUND_15180 = 15180;
+		static readonly REVENANT_DEMON_15181 = 15181;
+		static readonly REVENANT_ORK_15182 = 15182;
+		static readonly REVENANT_DARK_BEAST_15183 = 15183;
+		static readonly REVENANT_KNIGHT_15184 = 15184;
+		static readonly REVENANT_DRAGON_15185 = 15185;
 		static readonly PUNCHING_BAG = 15191;
 		static readonly PUNCHING_BAG_15192 = 15192;
 		static readonly DPS_CALC = 15193;
@@ -12712,6 +12723,7 @@ declare namespace net.runelite.api {
 		static readonly DOLPHIN = 15234;
 		static readonly DOLPHIN_15235 = 15235;
 		static readonly DOLPHIN_CALF = 15236;
+		static readonly ZEMOUREGAL_15237 = 15237;
 		static readonly JUNIOR_JIM_15238 = 15238;
 		static readonly JUMBO_JIM = 15239;
 		static readonly CREW_REGISTRAR = 15245;
@@ -12974,5 +12986,25 @@ declare namespace net.runelite.api {
 		static readonly TRADER_CREWMEMBER_15544 = 15544;
 		static readonly TRADER_CREWMEMBER_15545 = 15545;
 		static readonly TRADER_CREWMEMBER_15546 = 15546;
+		static readonly BIG_EVIL_CHICKEN = 15547;
+		static readonly SCURRIUS_15548 = 15548;
+		static readonly PHANTOM_MUSPAH_15549 = 15549;
+		static readonly SPLATTER_15550 = 15550;
+		static readonly TUMEKENS_WARDEN_15551 = 15551;
+		static readonly ELIDINIS_WARDEN_15552 = 15552;
+		static readonly I_DSCIM_YOU = 15553;
+		static readonly SOL_HEREDIT_15554 = 15554;
+		static readonly YAMA_15555 = 15555;
+		static readonly PESTILENT_BLOAT_15556 = 15556;
+		static readonly TZTOKJADREK = 15557;
+		static readonly ZEMOUREGAL_SUMMON = 15558;
+		static readonly ZEMOUREGAL_SUMMON_15559 = 15559;
+		static readonly ZEMOUREGAL_SUMMON_15560 = 15560;
+		static readonly ZEMOUREGAL_SUMMON_15561 = 15561;
+		static readonly ZEMOUREGAL_SUMMON_15562 = 15562;
+		static readonly ZEMOUREGAL_SUMMON_15563 = 15563;
+		static readonly ZEMOUREGAL_15564 = 15564;
+		static readonly GUARD_15566 = 15566;
+		static readonly GUARD_15568 = 15568;
 	}
   }
