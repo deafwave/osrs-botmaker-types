@@ -2,13 +2,6 @@
 /// <reference path="./types.d.ts" />
 
 declare namespace bot {
-
-    interface TileItemInfo {
-        id: number;
-        name: string;
-        quantity: number;
-        location: net.runelite.api.coords.WorldPoint;
-    }
     /**
      * Interface for interacting with items on the ground (tile items)
      * Provides methods to find and loot items from the ground
@@ -41,25 +34,29 @@ declare namespace bot {
          */
         lootItem: (tileItemInfo: TileItemInfo) => void;
 
-        /**
-         * Loots all items of the specified minimum value within the maximum distance
-         * @param value The minimum value of items to loot
-         * @param maxDistance The maximum distance to loot items from
-         */
-        lootItemsOfValue: (value: number, maxDistance: number) => void;
-
-        /**
-         * Loots all items with the specified IDs within the maximum distance
-         * @param lootIds Array of item IDs to loot
-         * @param maxDistance The maximum distance to loot items from
-         */
-        lootItemsWithIds: (lootIds: number[], maxDistance: number) => void;
 
         /**
          * Loots all items with the specified names within the maximum distance
          * @param lootNames Array of item names to loot
          * @param maxDistance The maximum distance to loot items from
+         * @returns True if the operation was successful, false otherwise
          */
-        lootItemsWithNames: (lootNames: string[], maxDistance: number) => void;
+        lootItemsWithNames: (lootNames: string[], maxDistance: number) => boolean;
+
+        /**
+         * Loots the nearest ground item matching the given IDs within the max distance
+         * @param lootIds Array of item IDs to loot
+         * @param maxDistance The maximum distance to loot items from
+         * @returns True if the operation was successful, false otherwise
+         */
+        lootItemsWithIds: (lootIds: number[], maxDistance: number) => boolean;
+
+        /**
+         * Loots the nearest ground item of the given value or higher within the max distance
+         * @param value The minimum value of items to loot
+         * @param maxDistance The maximum distance to loot items from
+         * @returns True if the operation was successful, false otherwise
+         */
+        lootItemsOfValue: (value: number, maxDistance: number) => boolean;
     }
 }

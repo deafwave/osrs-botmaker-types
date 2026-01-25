@@ -60,18 +60,18 @@ declare namespace bot {
         getNotedMode: () => boolean;
 
         /**
-         * Gets the quantities of all specified item IDs in the bank.
-         * @param itemIds - The array of item IDs to check.
-         * @returns An array of quantities corresponding to the provided item IDs.
+         * Returns the item quantities of all the given item IDs in the bank
+         * @param ids The array of item IDs to check
+         * @returns The total quantity of all specified items
          */
-        getQuantityOfAllIds: (itemIds: number[]) => number[];
+        getQuantityOfAllIds: (ids: number[]) => number;
 
         /**
-         * Gets the quantities of all specified item names in the bank.
-         * @param itemNames - The array of item names to check.
-         * @returns An array of quantities corresponding to the provided item names.
+         * Returns the item quantities of all the given item names in the bank
+         * @param names The array of item names to check
+         * @returns The total quantity of all specified items
          */
-        getQuantityOfAllNames: (itemNames: string[]) => number[];
+        getQuantityOfAllNames: (names: string[]) => number;
 
         /**
          * Gets the quantity of a specific item ID in the bank.

@@ -61,5 +61,43 @@ declare namespace bot {
          * @param worldPoint The WorldPoint destination to walk to
          */
         webWalkStart: (worldPoint: net.runelite.api.coords.WorldPoint) => void;
+
+        /**
+         * Web walks to the nearest bank
+         */
+        webWalkToNearestBank: () => void;
+
+        /**
+         * Starts web walking with full configuration options for food, stamina, teleports, and more
+         * @param worldPoint The WorldPoint destination to walk to
+         * @param eatFood Whether to eat food during the walk
+         * @param useStamina Whether to use stamina potions
+         * @param runEnergyMin Minimum run energy before stopping to rest
+         * @param useTransports Whether to use transport methods
+         * @param useTeleports Whether to use teleports
+         * @param useEquipmentJewellery Whether to use equipment jewellery for teleports
+         * @param useMinigameTeleports Whether to use minigame teleports
+         * @param avoidWilderness Whether to avoid the wilderness
+         * @param usePoh Whether to use Player Owned House
+         * @param useCharterShips Whether to use charter ships
+         */
+        webWalkStartWithConfig: (
+            worldPoint: net.runelite.api.coords.WorldPoint,
+            eatFood: boolean,
+            useStamina: boolean,
+            runEnergyMin: number,
+            useTransports: boolean,
+            useTeleports: boolean,
+            useEquipmentJewellery: boolean,
+            useMinigameTeleports: boolean,
+            avoidWilderness: boolean,
+            usePoh: boolean,
+            useCharterShips: boolean
+        ) => void;
+
+        /**
+         * Refreshes the available transports for web walking
+         */
+        refreshTransports: () => void;
     }
 }
