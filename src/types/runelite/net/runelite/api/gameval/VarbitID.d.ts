@@ -13895,7 +13895,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_2026_INITIAL_SETUP_DONE = 19678;
 		static readonly DEADMAN_2026_TUTORIAL_END = 19679;
 		static readonly DEADMAN_2026_TUTORIAL_TELEPORT_DEST = 19680;
-		static readonly DEADMAN_FACTION_CHARACTER_CREATION_COMPLETE = 19681;
 		static readonly DEADMAN_SKULL_TAB = 19682;
 		static readonly SIGIL_OF_AGILE_FORTUNE_STATE = 19683;
 		static readonly SIGIL_OF_HOARDING_STATE = 19684;
@@ -13935,5 +13934,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly SIGIL_OF_REMOTE_STORAGE_TOGGLE = 19718;
 		static readonly SIGIL_OF_DEVOTION_TOGGLE = 19719;
 		static readonly SLAYER_UNLOCK_HELM_HOODED = 19720;
+		static readonly BANK_HIDEDEPOSITCONTAINERS = 19721;
+		static readonly BANK_POPUPTAB_OPEN = 19722;
+		static readonly BANK_SETTING_FORGET_POPUP = 19723;
+		static readonly DEADMAN_2026_GE_WIPE = 19724;
 	}
   }

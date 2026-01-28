@@ -16126,5 +16126,7 @@ declare namespace net.runelite.api {
 		static readonly HOODED_SLAYER_HELMET_I = 33068;
 		static readonly HOODED_SLAYER_HELMET_I_33070 = 33070;
 		static readonly HOODED_SLAYER_HELMET_I_33072 = 33072;
+		static readonly FACILITY_BOTTLE_EMPTY = 33074;
+		static readonly FACILITY_BOTTLE_FULL = 33077;
 	}
   }

@@ -28646,8 +28646,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_CARGO_HOLD_ROSEWOOD_LARGE_NO_CARGO = 60641;
 		static readonly SAILING_BOAT_CARGO_HOLD_ROSEWOOD_LARGE_CARGO = 60642;
 		static readonly DEADMAN_DUNGEON_CORRIDORFILLER = 60643;
-		static readonly DEADMAN_DUNGEON_CORRIDORFILLERL = 60644;
-		static readonly DEADMAN_DUNGEON_CORRIDORFILLERR = 60645;
 		static readonly BLACK_WALL02 = 60646;
 		static readonly POH_DEADMAN_WINDOW_BINGO_01 = 60647;
 		static readonly POH_DEADMAN_WINDOW_BINGO_02 = 60648;
@@ -28663,5 +28661,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_DEADMAN_WINDOW_GNOMECHILD = 60658;
 		static readonly POH_DEADMAN_WINDOW_GNOMECHILD2 = 60659;
 		static readonly POH_CHAPELWINDOW_HOTSPOT_DEADMAN = 60660;
+		static readonly DEADMAN_DUNGEON_INSIDEWALL_SIDER = 60661;
+		static readonly DEADMAN_DUNGEON_INSIDEWALL_SIDEL = 60662;
 	}
   }
