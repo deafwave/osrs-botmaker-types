@@ -5,7 +5,7 @@ declare namespace bot {
      * Interface for interacting with the Bot Maker's cache system
      * Allows storing and retrieving persistent data between bot sessions
      */
-    interface bmCache {
+    interface bmGlobalCache {
         /**
          * Gets a boolean value from the BM cache
          * @param key The key to retrieve the value for
