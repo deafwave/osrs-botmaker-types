@@ -55,18 +55,18 @@ declare namespace bot {
         getEmptySlots: () => number;
 
         /**
-         * Gets the quantities of all items with the specified IDs
-         * @param itemIds Array of item IDs to get quantities for
-         * @returns Array of quantities corresponding to the input IDs
+         * Returns the total quantity of all items matching the given IDs in the inventory
+         * @param ids Array of item IDs to check
+         * @returns The total quantity of all specified items
          */
-        getQuantityOfAllIds: (itemIds: number[]) => number[];
+        getQuantityOfAllIds: (ids: number[]) => number;
 
         /**
-         * Gets the quantities of all items with the specified names
-         * @param itemNames Array of item names to get quantities for
-         * @returns Array of quantities corresponding to the input names
+         * Returns the total quantity of all items matching the given names in the inventory
+         * @param names Array of item names to check
+         * @returns The total quantity of all specified items
          */
-        getQuantityOfAllNames: (itemNames: string[]) => number[];
+        getQuantityOfAllNames: (names: string[]) => number;
 
         /**
          * Gets the quantity of an item with the specified ID
@@ -152,9 +152,9 @@ declare namespace bot {
         isFull: () => boolean;
 
         /**
-         * Gets all widgets in the inventory
+         * Returns an array of all inventory item widgets
          * @returns An array of all inventory widgets
          */
-        getAllWidgets(): net.runelite.api.widgets.Widget[];
+        getAllWidgets: () => net.runelite.api.widgets.Widget[];
     }
 }

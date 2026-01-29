@@ -1,3 +1,5 @@
+/// <reference path="./accountMaker.d.ts" />
+/// <reference path="./attackStyle.d.ts" />
 /// <reference path="./bank.d.ts" />
 /// <reference path="./bmCache.d.ts" />
 /// <reference path="./bmGlobalCache.d.ts" />
@@ -18,6 +20,8 @@
 /// <reference path="./plugins.d.ts" />
 /// <reference path="./prayer.d.ts" />
 /// <reference path="./projectiles.d.ts" />
+/// <reference path="./sailing.d.ts" />
+/// <reference path="./shop.d.ts" />
 /// <reference path="./task.d.ts" />
 /// <reference path="./tileItems.d.ts" />
 /// <reference path="./types.d.ts" />
@@ -25,11 +29,14 @@
 /// <reference path="./walking.d.ts" />
 /// <reference path="./web.d.ts" />
 /// <reference path="./widgets.d.ts" />
+/// <reference path="../../../runelite/index.d.ts" />
+/// <reference path="../../java/awt/Rectangle.d.ts" />
 
 declare namespace bot {
 	// Core methods are accessed directly on the bot object
-	interface SoxBotApi extends bot {
+	interface SoxBotApi {
 		// Namespaces
+		accountMaker: bot.accountMaker;
 		attackStyle: bot.attackStyle;
 		bank: bot.bank;
 		bmCache: bot.bmCache;
@@ -50,6 +57,8 @@ declare namespace bot {
 		plugins: bot.plugins;
 		prayer: bot.prayer;
 		projectiles: bot.projectiles;
+		sailing: bot.sailing;
+		shop: bot.shop;
 		task: bot.task;
 		tileItems: bot.tileItems;
 		variables: bot.variables;
@@ -59,15 +68,74 @@ declare namespace bot {
 
 		// Direct methods
 		/**
-		 * Performs a menu action.
-		 * @param p0 The first parameter for the menu action
-		 * @param p1 The second parameter for the menu action
+		 * Terminates the execution of the current script
+		 */
+		terminate: () => void;
+
+		/**
+		 * Returns true if the local player has an animation of -1 and is not moving
+		 * @returns True if the local player is idle, false otherwise
+		 */
+		localPlayerIdle: () => boolean;
+
+		/**
+		 * Returns true if the local player is moving
+		 * @returns True if the local player is moving, false otherwise
+		 */
+		localPlayerMoving: () => boolean;
+
+		/**
+		 * Performs a MenuAction
+		 * @param p0 The first parameter
+		 * @param p1 The second parameter
 		 * @param action The menu action to perform
-		 * @param identifier The identifier for the menu action
-		 * @param itemId The item ID for the menu action
-		 * @param option The option for the menu action
-		 * @param target The target for the menu action
-		 * @param bounds The bounds for the menu action
+		 * @param identifier The identifier
+		 * @param itemId The item ID
+		 * @param option The option text
+		 * @param target The target text
+		 */
+		menuAction(
+			p0: number,
+			p1: number,
+			action: net.runelite.api.MenuAction,
+			identifier: number,
+			itemId: number,
+			option: string,
+			target: string
+		): void;
+
+		/**
+		 * Performs a MenuAction with world view
+		 * @param p0 The first parameter
+		 * @param p1 The second parameter
+		 * @param action The menu action to perform
+		 * @param identifier The identifier
+		 * @param itemId The item ID
+		 * @param worldView The world view
+		 * @param option The option text
+		 * @param target The target text
+		 */
+		menuAction(
+			p0: number,
+			p1: number,
+			action: net.runelite.api.MenuAction,
+			identifier: number,
+			itemId: number,
+			worldView: number,
+			option: string,
+			target: string
+		): void;
+
+		/**
+		 * Performs a MenuAction with the bounds of the given rectangle
+		 * @param p0 The first parameter
+		 * @param p1 The second parameter
+		 * @param action The menu action to perform
+		 * @param identifier The identifier
+		 * @param itemId The item ID
+		 * @param option The option text
+		 * @param target The target text
+		 * @param bounds The bounds rectangle
 		 */
 		menuAction(
 			p0: number,
@@ -77,41 +145,61 @@ declare namespace bot {
 			itemId: number,
 			option: string,
 			target: string,
-			bounds?: java.awt.Rectangle,
+			bounds: java.awt.Rectangle
 		): void;
+
 		/**
-		 * Clears the game chat.
+		 * Performs a MenuAction with world view and the bounds of the given rectangle
+		 * @param p0 The first parameter
+		 * @param p1 The second parameter
+		 * @param action The menu action to perform
+		 * @param identifier The identifier
+		 * @param itemId The item ID
+		 * @param worldView The world view
+		 * @param option The option text
+		 * @param target The target text
+		 * @param bounds The bounds rectangle
 		 */
-		clearGameChat: () => void;
+		menuAction(
+			p0: number,
+			p1: number,
+			action: net.runelite.api.MenuAction,
+			identifier: number,
+			itemId: number,
+			worldView: number,
+			option: string,
+			target: string,
+			bounds: java.awt.Rectangle
+		): void;
+
 		/**
-		 * Checks if the local player is idle.
-		 * @returns True if the local player is idle, false otherwise.
-		 */
-		localPlayerIdle: () => boolean;
-		/**
-		 * Checks if the local player is moving.
-		 * @returns True if the local player is moving, false otherwise.
-		 */
-		localPlayerMoving: () => boolean;
-		/**
-		 * Prints a message to the game chat.
-		 * @param message The message to print.
-		 */
-		printGameMessage: (message: string) => void;
-		/**
-		 * Prints a message to the log.
-		 * @param message The message to print.
+		 * Prints a message in the bm logger
+		 * @param message The message to print
 		 */
 		printLogMessage: (message: string) => void;
+
 		/**
-		 * Runs a client script.
-		 * @param ints The integer parameters for the script.
+		 * Returns true if the local player has an animation of -1 and is not moving for a given number of ticks
+		 * @param ticks The number of ticks to check
+		 * @returns True if the local player has been idle for the specified ticks, false otherwise
+		 */
+		localPlayerIdleFor: (ticks: number) => boolean;
+
+		/**
+		 * Clears the in game chat
+		 */
+		clearGameChat: () => void;
+
+		/**
+		 * Runs a client script
+		 * @param ints The integer parameters for the script
 		 */
 		runClientScript: (ints: number[]) => void;
 
 		/**
-		 * Terminates the bot.
+		 * Prints a message in game
+		 * @param message The message to print
 		 */
-		terminate: () => void;
+		printGameMessage: (message: string) => void;
 	}
 }
