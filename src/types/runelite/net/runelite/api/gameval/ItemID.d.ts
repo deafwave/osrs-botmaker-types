@@ -18967,6 +18967,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_HELM_I_HOODED = 33068;
 		static readonly SW_SLAYER_HELM_I_HOODED = 33070;
 		static readonly PVPA_SLAYER_HELM_I_HOODED = 33072;
+		static readonly SAILING_FACILITY_BOTTLE_EMPTY = 33074;
+		static readonly SAILING_FACILITY_BOTTLE_FULL = 33077;
 		static readonly TWPART1 = 7;
 		static readonly TWPART2 = 9;
 		static readonly TWPART3 = 11;
@@ -23545,6 +23547,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly MAGIC_ROCK_OF_AVARICE = 33045;
 		static readonly MAGIC_ROCK_OF_FORTUITY_INACTIVE = 33048;
 		static readonly MAGIC_ROCK_OF_FORTUITY_ACTIVE = 33051;
+		static readonly SAILING_FACILITY_BOTTLE_EMPTY = 33075;
 		static readonly STAFFORB = 13694;
 		static readonly FIRE_ORB = 13695;
 		static readonly WATER_ORB = 13696;
@@ -32993,5 +32996,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_HELM_I_HOODED = 33069;
 		static readonly SW_SLAYER_HELM_I_HOODED = 33071;
 		static readonly PVPA_SLAYER_HELM_I_HOODED = 33073;
+		static readonly SAILING_FACILITY_BOTTLE_EMPTY = 33076;
 	}
   }

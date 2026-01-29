@@ -9203,6 +9203,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_CREW_STAT_REQUIREMENT = 23;
 		static readonly COL_COMBAT_FACILITY_DATA = 24;
 		static readonly COL_FACILITY_CUSTOMISATION_ORDER = 25;
+		static readonly COL_FACILITY_BOTTLE_ID = 26;
 		static readonly SAILING_BOAT_FACILITY_BRONZE_CANNON = 8427;
 		static readonly SAILING_BOAT_FACILITY_IRON_CANNON = 8428;
 		static readonly SAILING_BOAT_FACILITY_STEEL_CANNON = 8429;

@@ -1,12 +1,15 @@
-name: Build on Main
+name: Build and Publish
 on:
   push:
     branches: [main]
     paths-ignore:
       - '.github/**'
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+'
 
 concurrency:
-  group: ${{ github.repository }}-${{ github.event.ref }}
+  group: ${{ github.repository }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
@@ -16,26 +19,27 @@ permissions:
 
 jobs:
   build_publish:
-    # Avoid double publish when updates are pushed by the bot workflow
-    if: github.actor != 'github-actions[bot]'
+    if: github.ref_type == 'tag' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
         with:
-          # ensure default is checked out with full history, hopefully this fixes version bumping
-          ref: ${{ github.event.repository.default_branch }}
+          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Ensure on default branch (not detached HEAD)
+        if: github.ref_type != 'tag'
         shell: bash
         run: |
           BRANCH="${{ github.event.repository.default_branch }}"
           git checkout -B "$BRANCH"
+
       - name: Setup PNPM
         uses: pnpm/action-setup@v4
         with:
           version: 10
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -43,9 +47,12 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@deafwave'
           cache: 'pnpm'
+
       - name: Update NPM for Trusted Publishing
         run: npm install -g npm@latest
+
       - name: ⏫ Bumping version (semantic)
+        if: github.ref_type != 'tag' && github.actor != 'github-actions[bot]'
         id: bumping-version
         uses: jpb06/bump-package@latest
         continue-on-error: true
@@ -55,7 +62,7 @@ jobs:
           patch-keywords: fix,chore
 
       - name: 🔁 Fallback bump (patch)
-        if: steps.bumping-version.outcome == 'failure'
+        if: github.ref_type != 'tag' && github.actor != 'github-actions[bot]' && steps.bumping-version.outcome == 'failure'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -63,6 +70,7 @@ jobs:
           pnpm version patch -m "chore: release %s"
           git push
           git push --tags
+
       - name: 🚀 Publishing package
         run: |
           pnpm i
