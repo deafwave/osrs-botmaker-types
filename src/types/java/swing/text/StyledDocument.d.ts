@@ -1,6 +1,3 @@
-/// <reference path="./Document.d.ts" />
-/// <reference path="./AttributeSet.d.ts" />
-
 declare namespace javax.swing.text {
 	export interface StyledDocument extends javax.swing.text.Document {
 		setCharacterAttributes(offset: number, length: number, s: javax.swing.text.AttributeSet | null, replace: boolean): void;

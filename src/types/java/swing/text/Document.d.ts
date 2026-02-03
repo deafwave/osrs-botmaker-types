@@ -1,5 +1,3 @@
-/// <reference path="./AttributeSet.d.ts" />
-
 declare namespace javax.swing.text {
 	export interface Document {
 		getText(offset: number, length: number): string;
