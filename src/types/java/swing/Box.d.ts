@@ -10,6 +10,10 @@ declare namespace javax.swing {
 		static createGlue(): java.awt.Component;
 		static createHorizontalGlue(): java.awt.Component;
 		static createVerticalGlue(): java.awt.Component;
+
+		getAccessibleContext(): javax.accessibility.AccessibleContext;
+		paintComponent(g: java.awt.Graphics): void;
+		setLayout(l: java.awt.LayoutManager): void;
 	}
 }
 
