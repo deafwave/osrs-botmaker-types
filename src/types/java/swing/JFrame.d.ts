@@ -23,6 +23,7 @@ declare namespace javax.swing {
 		getContentPane(): JPanel;
 		setResizable(resizable: boolean): void;
 		repaint(): void;
+		revalidate(): void;
 		dispose(): void;
 		getContentPane(): JPanel;
 	}

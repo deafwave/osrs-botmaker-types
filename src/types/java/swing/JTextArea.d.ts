@@ -6,6 +6,7 @@ declare namespace javax.swing {
 		getText(): string;
 		setEditable(editable: boolean): void;
 		isEditable(): boolean;
+		setCaretColor(color: java.awt.Color): void;
 		setLineWrap(wrap: boolean): void;
 		getLineWrap(): boolean;
 		setWrapStyleWord(word: boolean): void;
