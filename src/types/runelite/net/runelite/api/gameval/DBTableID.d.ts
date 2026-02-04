@@ -6753,8 +6753,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_NAME_LOWERCASE = 9;
 		static readonly COL_NAME_UPPERCASE = 10;
 		static readonly COL_EXTENSION_MIN_MAX = 15;
-		static readonly COL_BLOCK_UNLOCK = 16;
-		static readonly COL_RELATED_CONTENT = 17;
+		static readonly COL_EXTENSION_ADDITIVE = 16;
+		static readonly COL_BLOCK_UNLOCK = 17;
+		static readonly COL_RELATED_CONTENT = 18;
 		static readonly SLAYER_TASK_KREEARRA = 545;
 		static readonly SLAYER_TASK_ZILYANA = 6155;
 		static readonly SLAYER_TASK_GRAARDOR = 6157;
@@ -7259,6 +7260,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_AREA_ID = 0;
 		static readonly COL_AREA_TEXT = 2;
 		static readonly COL_AREA_NAME_IN_HELPER = 3;
+		static readonly COL_AREA_HINT = 4;
 		static readonly COL_RELATED_CONTENT = 8;
 		static readonly SLAYERAREA_CRYPTOFTONALI = 4099;
 		static readonly SLAYERAREA_ZEAHCATACOMBS = 6341;
@@ -7422,6 +7424,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_REWARDS_LONGER_WYRMS = 9419;
 		static readonly SLAYER_REWARDS_UNLOCK_GRYPHONS = 9420;
 		static readonly SLAYER_REWARDS_UNLOCK_HELM_HOODED = 9641;
+		static readonly SLAYER_REWARDS_LONGER_GRYPHONS = 9642;
 		static readonly ID = 118;
 		static readonly COL_ACTION_NAME = 0;
 		static readonly COL_ACTION_DISPLAY_GRAPHIC = 1;
@@ -9648,6 +9651,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly COL_NICE_NAME = 1;
 		static readonly COL_INLINE_NAME = 2;
 		static readonly COL_LEVEL_REQUIRED = 4;
+		static readonly COL_QUEST_REQUIRED = 5;
 		static readonly COL_DOCK_SPRITE_SMALL = 13;
 		static readonly SAILING_DOCK_PORT_SARIM = 8587;
 		static readonly SAILING_DOCK_THE_PANDEMONIUM = 8588;

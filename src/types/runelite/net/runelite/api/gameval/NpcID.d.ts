@@ -15574,5 +15574,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_THRALL_ZOMBIE_GREATER_ZUK = 15569;
 		static readonly DEADMAN_THRALL_SKELETAL_GREATER_PRINCESS = 15570;
 		static readonly DEADMAN_THRALL_GHOSTLY_GREATER_WISP = 15571;
+		static readonly TZHAAR_FIGHTPIT_SWARM_4A = 15572;
+		static readonly TZHAAR_FIGHTPIT_SWARM_4B = 15573;
+		static readonly TZHAAR_FIGHTPIT_SWARM_BOSS = 15574;
 	}
   }

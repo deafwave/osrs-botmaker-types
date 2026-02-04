@@ -23548,6 +23548,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly MAGIC_ROCK_OF_FORTUITY_INACTIVE = 33048;
 		static readonly MAGIC_ROCK_OF_FORTUITY_ACTIVE = 33051;
 		static readonly SAILING_FACILITY_BOTTLE_EMPTY = 33075;
+		static readonly BREW_RED_RUM = 33078;
+		static readonly BREW_BLUE_RUM = 33079;
 		static readonly STAFFORB = 13694;
 		static readonly FIRE_ORB = 13695;
 		static readonly WATER_ORB = 13696;

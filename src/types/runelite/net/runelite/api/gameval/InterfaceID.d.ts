@@ -951,5 +951,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly PATCHY = 946;
 		static readonly MENU_NEW = 947;
 		static readonly DEADMANSKULL_INTERFACE = 948;
+		static readonly QUETZALWHISTLE_MENU = 949;
 	}
   }

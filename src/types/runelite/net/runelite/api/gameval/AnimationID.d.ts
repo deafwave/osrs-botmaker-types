@@ -13713,5 +13713,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_2026_SOTD_SPECIAL_TOXIC_UNCHARGED = 13715;
 		static readonly DEADMAN_2026_SOTD_SPECIAL_TOXIC_CHARGED = 13716;
 		static readonly ZUK_SPAWN_NO_ROCK = 13717;
+		static readonly FEVER_SPIDER_DEATH = 13718;
 	}
   }

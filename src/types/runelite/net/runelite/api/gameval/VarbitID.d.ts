@@ -13895,6 +13895,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_2026_INITIAL_SETUP_DONE = 19678;
 		static readonly DEADMAN_2026_TUTORIAL_END = 19679;
 		static readonly DEADMAN_2026_TUTORIAL_TELEPORT_DEST = 19680;
+		static readonly SETTINGS_QUETZALWHISTLE_DEFAULT_TP = 19681;
 		static readonly DEADMAN_SKULL_TAB = 19682;
 		static readonly SIGIL_OF_AGILE_FORTUNE_STATE = 19683;
 		static readonly SIGIL_OF_HOARDING_STATE = 19684;
