@@ -13,8 +13,8 @@ declare namespace javax.swing {
 		getMaximumSize(): java.awt.Dimension;
 		setBackground(color: java.awt.Color): void;
 		setForeground(color: any): void;
-		setBorder(border: any): void;
-		getBorder(): any;
+		setBorder(border: javax.swing.border.Border | null): void;
+		getBorder(): javax.swing.border.Border | null;
 		repaint(): void;
 		revalidate(): void;
 		validate(): void;

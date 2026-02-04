@@ -5,6 +5,7 @@
 /// <reference path="../awt/Color.d.ts" />
 /// <reference path="../awt/Graphics2D.d.ts" />
 /// <reference path="../awt/Insets.d.ts" />
+/// <reference path="./Border.d.ts" />
 
 declare namespace javax.swing {
 	export abstract class JComponent extends java.awt.Container {
@@ -45,8 +46,8 @@ declare namespace javax.swing {
 		isOpaque(): boolean;
 
 		// Border and insets
-		setBorder(border: any): void;
-		getBorder(): any;
+		setBorder(border: javax.swing.border.Border | null): void;
+		getBorder(): javax.swing.border.Border | null;
 		getInsets(): java.awt.Insets;
 
 		// Painting methods
