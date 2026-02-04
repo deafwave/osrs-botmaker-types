@@ -18,6 +18,7 @@ declare namespace javax.swing {
 		setSelectionStart(index: number): void;
 		getSelectionEnd(): number;
 		setSelectionEnd(index: number): void;
+		setCaretColor(color: java.awt.Color): void;
 	}
 }
 
