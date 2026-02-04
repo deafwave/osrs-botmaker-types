@@ -37,6 +37,7 @@
 /// <reference path="./io/FileWriter.d.ts" />
 /// <reference path="./swing/Border.d.ts" />
 /// <reference path="./swing/BorderFactory.d.ts" />
+/// <reference path="./swing/Box.d.ts" />
 /// <reference path="./swing/BoxLayout.d.ts" />
 /// <reference path="./swing/createToggleboxDropdownPanel.d.ts" />
 /// <reference path="./swing/Component.d.ts" />
