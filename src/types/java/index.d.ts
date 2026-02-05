@@ -36,6 +36,7 @@
 /// <reference path="./util/function/Predicate.d.ts" />
 /// <reference path="./io/FileWriter.d.ts" />
 /// <reference path="./swing/Border.d.ts" />
+/// <reference path="./swing/border/TitledBorder.d.ts" />
 /// <reference path="./swing/BorderFactory.d.ts" />
 /// <reference path="./swing/Box.d.ts" />
 /// <reference path="./swing/BoxLayout.d.ts" />

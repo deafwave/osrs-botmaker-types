@@ -26,7 +26,11 @@ declare namespace javax.swing {
 			highlight?: java.awt.Color,
 			shadow?: java.awt.Color,
 		): javax.swing.border.Border;
-		static createTitledBorder(title: string): javax.swing.border.Border;
+		static createTitledBorder(title: string): javax.swing.border.TitledBorder;
+		static createTitledBorder(
+			border: javax.swing.border.Border,
+			title: string,
+		): javax.swing.border.TitledBorder;
 	}
 }
 
