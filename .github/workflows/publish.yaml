@@ -144,16 +144,9 @@ jobs:
           pnpm i
           pnpm build
 
-      - name: Override registry for GitHub Packages
-        shell: bash
+      - name: 🚀 Publish to GitHub Packages
         run: |
           npm pkg set publishConfig.registry="https://npm.pkg.github.com"
-          sed -i 's|@deafwave:registry=https://registry.npmjs.org|@deafwave:registry=https://npm.pkg.github.com|' .npmrc
-          echo "//npm.pkg.github.com/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: 🚀 Publish to GitHub Packages
-        run: pnpm publish --no-git-checks
+          pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
