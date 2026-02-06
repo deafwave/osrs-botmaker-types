@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	RS2_CHATBOX_BUTTONS: 0,
 	RS2_TABS_ROW_BOTTOM: 1,
 	RS2_TABS_ROW_TOP: 2,
@@ -1740,3 +1740,5 @@ export default {
 	HISCORE_YAMA: 6346,
 	HISCORE_COLLECTIONS_LOGGED: 6390,
 };
+
+export default data;

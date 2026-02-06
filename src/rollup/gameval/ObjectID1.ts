@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	VORKATH_ACID: 32000,
 	DS2_UNGAEL_BRIDGE: 32001,
 	DS2_UNGAEL_BRIDGE_M: 32002,
@@ -28662,3 +28662,5 @@ export default {
 	DEADMAN_DUNGEON_INSIDEWALL_SIDER: 60661,
 	DEADMAN_DUNGEON_INSIDEWALL_SIDEL: 60662,
 };
+
+export default data;

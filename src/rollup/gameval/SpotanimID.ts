@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	SOUL_WARS_IMMUNE: 0,
 	FIREBREATH_ATTACK: 1,
 	OSB8_SKILLCAPE_BANANA_SPOTANIM: 2,
@@ -3576,3 +3576,5 @@ export default {
 	DEADMAN_2026_SOTD_SPECIAL_EXTRA: 3573,
 	SARADOMIN_LIGHTNING_DEADMAN: 3574,
 };
+
+export default data;

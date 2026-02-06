@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	NULL: 0,
 	NULL_65: 65,
 	NULL_66: 66,
@@ -31325,3 +31325,5 @@ export default {
 	NULL_60661: 60661,
 	NULL_60662: 60662,
 };
+
+export default data;

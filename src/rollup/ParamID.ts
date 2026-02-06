@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	OC_ITEM_OP1: 451,
 	OC_ITEM_OP2: 452,
 	OC_ITEM_OP3: 453,
@@ -188,3 +188,5 @@ export default {
 	BANK_AUTOCHARGE: 2257,
 	CLUE_SCROLL: 623,
 };
+
+export default data;

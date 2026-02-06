@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	TROLL_FREED_EADGAR: 0,
 	TROLL_OPENED_BACK_EXIT: 1,
 	TROLL_ENTERED_STRONGHOLD: 2,
@@ -13938,3 +13938,5 @@ export default {
 	BANK_SETTING_FORGET_POPUP: 19723,
 	DEADMAN_2026_GE_WIPE: 19724,
 };
+
+export default data;

@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	RUNEPOUCH_RUNE: 982,
 	XPDROP_COLORS: 1169,
 	FRIENDS_CHAT_RANK_ICONS: 1543,
@@ -31,3 +31,5 @@ export default {
 	POTIONSTORE_POTIONS: 4826,
 	POTIONSTORE_UNFINISHED_POTIONS: 4829,
 };
+
+export default data;

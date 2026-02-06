@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	TRAWLER_REWARDINV: 0,
 	AXESHOP: 1,
 	ARMOURSHOP: 2,
@@ -1007,3 +1007,5 @@ export default {
 	RAZMIREBUILDINGSTORE_UIM: 1004,
 	RAZMIREBUILDINGSTORE_GIM: 1005,
 };
+
+export default data;

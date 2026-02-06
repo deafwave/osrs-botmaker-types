@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	TOOL_LEPRECHAUN: 0,
 	MOLANISK: 1,
 	ABERRANT_SPECTRE: 2,
@@ -13008,3 +13008,5 @@ export default {
 	KETZEK_15573: 15573,
 	TZTOKJAD_15574: 15574,
 };
+
+export default data;

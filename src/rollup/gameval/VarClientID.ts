@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	FAIRYRINGS_SCROLLPOS: 0,
 	TOOLTIP_TIME: 1,
 	TOOLTIP_BUILT: 2,
@@ -1347,3 +1347,5 @@ export default {
 	FAIRYRINGS_SEARCHSTRING: 1344,
 	SKILL_GUIDE_V2_OVERVIEW_CURRENT_TAB: 1345,
 };
+
+export default data;
