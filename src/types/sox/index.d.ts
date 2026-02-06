@@ -3,3 +3,4 @@
 /// <reference path="./api/client.d.ts" />
 /// <reference path="./api/clientThread.d.ts" />
 /// <reference path="./api/configManager.d.ts" />
+/// <reference path="./api/log.d.ts" />
