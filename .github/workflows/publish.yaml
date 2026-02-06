@@ -13,14 +13,17 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  id-token: write  # NPM Publish
-  contents: write
-  packages: write
+  id-token: write   # NPM Trusted Publishing (OIDC)
+  contents: write    # Bump commit / tag push
+  packages: write    # GitHub Packages publish
 
 jobs:
-  build_publish:
+  bump_version:
     if: github.ref_type == 'tag' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    outputs:
+      ref: ${{ steps.set-ref.outputs.ref }}
+      should-publish: ${{ steps.set-ref.outputs.should-publish }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -44,12 +47,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@deafwave'
           cache: 'pnpm'
 
-      - name: Update NPM for Trusted Publishing
-        run: npm install -g npm@latest
+      - name: Install & lint
+        if: github.ref_type != 'tag'
+        run: |
+          pnpm i
+          pnpm lint
 
       - name: ⏫ Bumping version (semantic)
         if: github.ref_type != 'tag' && github.actor != 'github-actions[bot]'
@@ -71,9 +75,85 @@ jobs:
           git push
           git push --tags
 
-      - name: 🚀 Publishing package
+      - name: Set outputs
+        id: set-ref
+        shell: bash
+        run: |
+          echo "ref=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "should-publish=true"       >> "$GITHUB_OUTPUT"
+
+  publish_npm:
+    needs: bump_version
+    if: needs.bump_version.outputs.should-publish == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.bump_version.outputs.ref || github.ref }}
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@deafwave'
+          cache: 'pnpm'
+
+      - name: Update NPM for Trusted Publishing
+        run: npm install -g npm@latest
+
+      - name: 🚀 Publish to npm
         run: |
           pnpm i
-          pnpm lint
           pnpm build
-          pnpm publish
+          pnpm publish --no-git-checks
+
+  publish_github:
+    needs: bump_version
+    if: needs.bump_version.outputs.should-publish == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.bump_version.outputs.ref || github.ref }}
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@deafwave'
+          cache: 'pnpm'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install & Build
+        run: |
+          pnpm i
+          pnpm build
+
+      - name: Override registry for GitHub Packages
+        shell: bash
+        run: |
+          npm pkg set publishConfig.registry="https://npm.pkg.github.com"
+          sed -i 's|@deafwave:registry=https://registry.npmjs.org|@deafwave:registry=https://npm.pkg.github.com|' .npmrc
+          echo "//npm.pkg.github.com/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🚀 Publish to GitHub Packages
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
