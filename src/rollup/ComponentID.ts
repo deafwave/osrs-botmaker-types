@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	ACHIEVEMENT_DIARY_CONTAINER: 16973826,
 	ACHIEVEMENT_DIARY_SCROLL_TEXT: 48562179,
 	ACHIEVEMENT_DIARY_SCROLL_TITLE: 48562178,
@@ -455,3 +455,5 @@ export default {
 	WORLD_SWITCHER_WORLD_LIST: 4522002,
 	ZEAH_MESS_HALL_COOKING_DISPLAY: 15400962,
 };
+
+export default data;

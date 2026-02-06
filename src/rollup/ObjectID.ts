@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	CRATE: 1,
 	CAVE_ENTRANCE: 2,
 	DOOR: 3,
@@ -29315,3 +29315,5 @@ export default {
 	STAINEDGLASS_WINDOW_60659: 60659,
 	WINDOW_SPACE_60660: 60660,
 };
+
+export default data;

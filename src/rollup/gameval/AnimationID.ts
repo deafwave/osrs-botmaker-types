@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	SWARM_WALK: 0,
 	SWARM_ATTACK: 1,
 	SWARM_BLOCK: 2,
@@ -13713,3 +13713,5 @@ export default {
 	ZUK_SPAWN_NO_ROCK: 13717,
 	FEVER_SPIDER_DEATH: 13718,
 };
+
+export default data;

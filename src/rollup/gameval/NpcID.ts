@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	FARMING_TOOLS_LEPRECHAUN: 0,
 	MOLANISK: 1,
 	SLAYER_ABBERANT_SPECTRE_1: 2,
@@ -15576,3 +15576,5 @@ export default {
 	TZHAAR_FIGHTPIT_SWARM_4B: 15573,
 	TZHAAR_FIGHTPIT_SWARM_BOSS: 15574,
 };
+
+export default data;

@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	MCANNONREMAINS_MULTILOC: 0,
 	MCANNONCRATEBOY: 1,
 	MCANNONCAVE: 2,
@@ -32001,3 +32001,5 @@ export default {
 	UNGAEL_CRATER_SHORTCUT_BOTTOM_OP: 31998,
 	UNGAEL_LAB_ENTRANCE: 31999,
 };
+
+export default data;

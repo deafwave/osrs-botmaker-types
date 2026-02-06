@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	MCANNON: 0,
 	MCANNONMULTI: 1,
 	DROPCANNON: 2,
@@ -2592,3 +2592,5 @@ export default {
 	SIGIL_STATE_1: 5228,
 	SIGIL_TOGGLE_1: 5229,
 };
+
+export default data;

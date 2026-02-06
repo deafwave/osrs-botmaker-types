@@ -50,20 +50,47 @@ async function fetchJavaFile(url: string, name: string): Promise<string> {
 
 function parseItemConstants(javaContent: string): ItemConstant[] {
 	const constants: ItemConstant[] = [];
-
-	// Match static final int constants
-	const constantRegex = /static\s+final\s+int\s+(\w+)\s*=\s*(\d+);/g;
-	let match;
-
-	while ((match = constantRegex.exec(javaContent)) !== null) {
-		constants.push({
-			name: match[1],
-			value: parseInt(match[2], 10),
-		});
+	const lines = javaContent.split('\n');
+  
+	let currentInnerClass: string | null = null;
+  
+	for (const line of lines) {
+	  const classMatch = line.match(/public\s+static\s+final\s+class\s+(\w+)/);
+	  if (classMatch) {
+		currentInnerClass = classMatch[1];
+		continue;
+	  }
+  
+	  if (/^\s*}\s*$/.test(line)) {
+		currentInnerClass = null;
+		continue;
+	  }
+  
+	  const constMatch = line.match(
+		/static\s+final\s+int\s+(\w+)\s*=\s*(0x[0-9a-fA-F_]+|\d+);/,
+	  );
+	  if (!constMatch) continue;
+  
+	  const originalName = constMatch[1];        // e.g. "RUNECRAFT"
+	  const rawValue = constMatch[2].replace(/_/g, '');
+	  const value =
+		rawValue.startsWith('0x') || rawValue.startsWith('0X')
+		  ? parseInt(rawValue, 16)
+		  : parseInt(rawValue, 10);
+  
+	  const prefixedName =
+		currentInnerClass != null
+		  ? `${currentInnerClass.toUpperCase()}_${originalName}`
+		  : originalName;
+  
+	  constants.push({
+		name: prefixedName,
+		value,
+	  });
 	}
-
+  
 	return constants;
-}
+  }
 
 function parseComponentConstants(tableData: string): ItemConstant[] {
     const constants: ItemConstant[] = [];
@@ -116,7 +143,9 @@ function generateRollupExport(constants: ItemConstant[], className: string): str
 		.map((constant) => `\t${constant.name}: ${constant.value},`)
 		.join('\n');
 
-	return `${header}export default {\n${constantExports}\n};\n`;
+	// Use an explicit, simple type annotation so TypeScript
+	// doesn’t attempt to serialize the enormous literal type.
+	return `${header}const data: Record<string, number> = {\n${constantExports}\n};\n\nexport default data;\n`;
 }
 
 async function processFile(url: string, outputPath: string, className: string, name: string, isGameval: boolean = false) {
@@ -223,3 +252,5 @@ async function main() {
 if (require.main === module) {
 	main();
 }
+
+

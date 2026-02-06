@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-export default {
+const data: Record<string, number> = {
 	DWARF_REMAINS: 0,
 	TOOLKIT: 1,
 	STEEL_CANNONBALL: 2,
@@ -16127,3 +16127,5 @@ export default {
 	FACILITY_BOTTLE_EMPTY: 33074,
 	FACILITY_BOTTLE_FULL: 33077,
 };
+
+export default data;
