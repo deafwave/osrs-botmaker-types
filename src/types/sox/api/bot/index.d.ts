@@ -173,22 +173,11 @@ declare namespace bot {
 		): void;
 
 		/**
-		 * Prints a message in the bm logger
-		 * @param message The message to print
-		 */
-		printLogMessage: (message: string) => void;
-
-		/**
 		 * Returns true if the local player has an animation of -1 and is not moving for a given number of ticks
 		 * @param ticks The number of ticks to check
 		 * @returns True if the local player has been idle for the specified ticks, false otherwise
 		 */
 		localPlayerIdleFor: (ticks: number) => boolean;
-
-		/**
-		 * Clears the in game chat
-		 */
-		clearGameChat: () => void;
 
 		/**
 		 * Runs a client script
@@ -197,8 +186,17 @@ declare namespace bot {
 		runClientScript: (ints: number[]) => void;
 
 		/**
-		 * Prints a message in game
-		 * @param message The message to print
+		 @deprecated use log.clearGameChat()
+		 */
+		clearGameChat: () => void;
+
+		/**
+		@deprecated use log.print()
+		 */
+		printLogMessage: (message: string) => void;
+
+		/**
+		 @deprecated use log.printGameMessage()
 		 */
 		printGameMessage: (message: string) => void;
 	}
