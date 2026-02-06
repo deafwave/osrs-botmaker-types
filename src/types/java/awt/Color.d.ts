@@ -1,22 +1,28 @@
 declare namespace java.awt {
 	export class Color {
+		/**
+		 * Creates a color from a packed RGB int (`0xRRGGBB`) or a hex string.
+		 * Use `constructor(rgba, true)` when alpha is packed in the top byte.
+		 */
 		constructor(hexString: string | number);
+		/** Creates a color from a packed int (`0xAARRGGBB` when `hasAlpha` is `true`). */
+		constructor(rgba: number, hasAlpha: boolean);
 		constructor(
-			/** 0.00 - 1.00 */
+			/** 0 - 255 integer OR 0.00 - 1.00 normalized float */
 			r: number,
-			/** 0.00 - 1.00 */
+			/** 0 - 255 integer OR 0.00 - 1.00 normalized float */
 			g: number,
-			/** 0.00 - 1.00 */
+			/** 0 - 255 integer OR 0.00 - 1.00 normalized float */
 			b: number,
 		);
 		constructor(
-			/** 0.00 - 1.00 */
+			/** 0 - 255 integer OR 0.00 - 1.00 normalized float */
 			r: number,
-			/** 0.00 - 1.00 */
+			/** 0 - 255 integer OR 0.00 - 1.00 normalized float */
 			g: number,
-			/** 0.00 - 1.00 */
+			/** 0 - 255 integer OR 0.00 - 1.00 normalized float */
 			b: number,
-			/** 0.00 - 1.00 */
+			/** Must match channel scale: 0 - 255 with int RGB, or 0.00 - 1.00 with normalized RGB */
 			a: number,
 		);
 
