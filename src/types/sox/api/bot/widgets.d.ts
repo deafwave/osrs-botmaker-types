@@ -34,7 +34,7 @@ declare namespace bot {
         ): void;
 
         /**
-         * Interacts with a widget by matching its text content. Sends a click within the coordinates of the first widget found to contain the specified text.
+         * Interacts with a widget by matching its text content.
          * @param text The text to search for in widgets
          */
         interactWidgetText: (text: string) => void;

@@ -13,10 +13,6 @@ declare namespace bot {
         isFound: () => boolean;
     }
 
-    /**
-     * Information about a tile item (ground item).
-     * Mirrors com.theplug.plugins.botmaker.scripting.js.api.TileItemInfo
-     */
     interface TileItemInfo {
         /** The tile where the item is located */
         tile: net.runelite.api.Tile;
@@ -79,10 +75,6 @@ declare namespace bot {
         stop: () => void;
     }
 
-    /**
-     * Type cast helpers for autocomplete support in callbacks.
-     * Mirrors com.theplug.plugins.botmaker.scripting.js.api types API.
-     */
     interface types {
         asActor: (obj: unknown) => net.runelite.api.Actor;
         asExchangeRequest: (obj: unknown) => bot.ExchangeRequest;
