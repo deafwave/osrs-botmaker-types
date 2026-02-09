@@ -61,6 +61,7 @@ declare namespace bot {
 		shop: bot.shop;
 		task: bot.task;
 		tileItems: bot.tileItems;
+		types: bot.types;
 		variables: bot.variables;
 		walking: bot.walking;
 		web: bot.web;

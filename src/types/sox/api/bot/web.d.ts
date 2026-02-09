@@ -1,15 +1,21 @@
 
 
-declare namespace bot {
+/// <reference path="../../../java/BufferedImage.d.ts" />
 
+declare namespace bot {
     interface web {
+        /**
+         * Fetches the content of the given URL as a string. Only allows http/https URLs from whitelisted domains. Returns an empty string on error.
+         * @param requestURL The URL to fetch
+         * @returns The response body as a string, or empty string on error
+         */
+        readString: (requestURL: string) => string;
 
         /**
-         * Reads a string from the web
-         * Whitelisted URLs: github.com, pastebin
-         * @param requestURL The URL to read the string from
-         * @returns The string read from the web
+         * Fetches an image from a whitelisted URL. Returns null on error.
+         * @param requestURL The URL to fetch the image from
+         * @returns The image as a BufferedImage, or null on error
          */
-        readString(requestURL: string): string;
+        readImage: (requestURL: string) => BufferedImage | null;
     }
 }

@@ -7,9 +7,9 @@ declare namespace bot {
      */
     interface prayer {
         /**
-         * Toggles a prayer on or off
-         * @param prayer The Prayer enum value to toggle
-         * @param bypassMouseClicks Whether to bypass using mouse clicks and toggle directly (true) or use mouse clicks (false)
+         * Enables the specified prayer. Use bypassMouseClicks to send the action without a click.
+         * @param prayer The Prayer enum value to enable
+         * @param bypassMouseClicks True to toggle without mouse clicks, false to use mouse clicks
          */
         togglePrayer: (prayer: net.runelite.api.Prayer, bypassMouseClicks: boolean) => void;
     }
