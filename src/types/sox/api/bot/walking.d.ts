@@ -1,4 +1,5 @@
 /// <reference path="../../../runelite/index.d.ts" />
+/// <reference path="./types.d.ts" />
 
 declare namespace bot {
     /**
@@ -66,6 +67,22 @@ declare namespace bot {
          * Web walks to the nearest bank
          */
         webWalkToNearestBank: () => void;
+
+        /**
+         * Web walks to the nearest point from an array of destinations
+         * @param destinations Array of WorldPoint destinations to choose from
+         */
+        webWalkToNearest: (destinations: net.runelite.api.coords.WorldPoint[]) => void;
+
+        /**
+         * Finds the nearest reachable point from an array of destinations. Callback receives NearestPointResult (or null on error).
+         * @param destinations Array of WorldPoint destinations to choose from
+         * @param callback Called with the result or null on error
+         */
+        findNearestPointAsync: (
+            destinations: net.runelite.api.coords.WorldPoint[],
+            callback: (result: bot.NearestPointResult | null) => void
+        ) => void;
 
         /**
          * Starts web walking with full configuration options for food, stamina, teleports, and more

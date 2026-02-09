@@ -2,8 +2,17 @@
 
 declare namespace bot {
     /**
-     * Information about a tile item (ground item)
+     * Result of finding the nearest reachable point (e.g. from findNearestPointAsync).
      */
+    interface NearestPointResult {
+        /** The nearest reachable world point */
+        getDestination: () => net.runelite.api.coords.WorldPoint;
+        getPathCost: () => number;
+        getPathDistance: () => number;
+        getStartPoint: () => net.runelite.api.coords.WorldPoint;
+        isFound: () => boolean;
+    }
+
     interface TileItemInfo {
         /** The tile where the item is located */
         tile: net.runelite.api.Tile;
@@ -64,5 +73,36 @@ declare namespace bot {
          * Stops the current task, preventing any further scheduled actions from executing.
          */
         stop: () => void;
+    }
+
+    interface types {
+        asActor: (obj: unknown) => net.runelite.api.Actor;
+        asExchangeRequest: (obj: unknown) => bot.ExchangeRequest;
+        asGraphicsObject: (obj: unknown) => net.runelite.api.GraphicsObject;
+        asGraphicsObjectArray: (obj: unknown) => net.runelite.api.GraphicsObject[];
+        asGrandExchangeOffer: (obj: unknown) => net.runelite.api.GrandExchangeOffer;
+        asHeadIcon: (obj: unknown) => net.runelite.api.HeadIcon;
+        asItem: (obj: unknown) => net.runelite.api.Item;
+        asItemArray: (obj: unknown) => net.runelite.api.Item[];
+        asNearestPointResult: (obj: unknown) => bot.NearestPointResult;
+        asNPC: (obj: unknown) => net.runelite.api.NPC;
+        asNPCArray: (obj: unknown) => net.runelite.api.NPC[];
+        asObjectComposition: (obj: unknown) => net.runelite.api.ObjectComposition;
+        asPlayer: (obj: unknown) => net.runelite.api.Player;
+        asPlayerArray: (obj: unknown) => net.runelite.api.Player[];
+        asPrayer: (obj: unknown) => net.runelite.api.Prayer;
+        asProjectile: (obj: unknown) => net.runelite.api.Projectile;
+        asProjectileArray: (obj: unknown) => net.runelite.api.Projectile[];
+        asTile: (obj: unknown) => net.runelite.api.Tile;
+        asTileItem: (obj: unknown) => net.runelite.api.TileItem;
+        asTileItemInfo: (obj: unknown) => bot.TileItemInfo;
+        asTileItemInfoArray: (obj: unknown) => bot.TileItemInfo[];
+        asTileObject: (obj: unknown) => net.runelite.api.TileObject;
+        asTileObjectArray: (obj: unknown) => net.runelite.api.TileObject[];
+        asWidget: (obj: unknown) => net.runelite.api.widgets.Widget;
+        asWidgetArray: (obj: unknown) => net.runelite.api.widgets.Widget[];
+        asWorldPoint: (obj: unknown) => net.runelite.api.coords.WorldPoint;
+        asWorldPointArray: (obj: unknown) => net.runelite.api.coords.WorldPoint[];
+        createWorldPoint: (x: number, y: number, plane: number) => net.runelite.api.coords.WorldPoint;
     }
 }

@@ -7,15 +7,23 @@ declare namespace bot {
      */
     interface net {
         /**
-         * Sends a message to specified targets via the network
-         * @param targetIds Array of target IDs to send the message to
+         * Sends a BotMaker message to the specified Discord IDs via the socket server
+         * @param targetIds Array of Discord IDs to send the message to
          * @param message The message content to send
          * @param includeSelf Whether to include the sender in the recipients
          */
         sendMessage: (targetIds: string[], message: string, includeSelf: boolean) => void;
 
         /**
-         * Sends a message to local players
+         * Sends a BotMaker message to the specified RuneScape names via the socket server
+         * @param rsNames Array of RuneScape display names to send the message to
+         * @param message The message content to send
+         * @param includeSelf Whether to include the sender in the recipients
+         */
+        sendMessageToRsns: (rsNames: string[], message: string, includeSelf: boolean) => void;
+
+        /**
+         * Sends a BotMaker message to all nearby local players via the socket server
          * @param message The message content to send
          * @param includeSelf Whether to include the sender in the recipients
          */

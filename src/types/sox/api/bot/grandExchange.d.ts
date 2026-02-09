@@ -12,7 +12,7 @@ declare namespace bot {
         /** Gets the quantity of the item being bought or sold */
         getQuantity(): number;
         /** Gets the slot number used for this exchange request */
-        getSlot(): GrandExchangeOffer;
+        getSlot(): net.runelite.api.GrandExchangeOffer;
         /** Checks if the request has been aborted */
         isAborted(): boolean;
         /** Checks if the request is in the process of being aborted */
@@ -24,6 +24,7 @@ declare namespace bot {
         /** Sets the maximum number of attempts for this exchange request */
         setMaxAttempts(maxAttempts: number): void;
     }
+
 
     /**
      * Interface for interacting with the Grand Exchange
@@ -38,7 +39,7 @@ declare namespace bot {
          * @param walkToAndOpenGE Whether to automatically walk to and open the GE
          * @returns An ExchangeRequest object representing the buy order
          */
-        addBuyToQueue: (itemId: number, quantity: number, walkToAndOpenGE: boolean) => net.runelite.api.GrandExchangeOffer;
+        addBuyToQueue: (itemId: number, quantity: number, walkToAndOpenGE: boolean) => bot.ExchangeRequest;
 
         /**
          * Gets the current size of the Grand Exchange queue

@@ -1,15 +1,12 @@
 
 
+/// <reference path="../../../runelite/index.d.ts" />
+
 declare namespace bot {
     /**
      * Interface for interacting with the player's equipped items
      * Provides methods to check and manage equipment
      */
-    type Item = {
-        id: number;
-        quantity: number;
-    };
-
     interface equipment {
         /**
          * Checks if the player has all the specified items equipped by their IDs
@@ -54,9 +51,16 @@ declare namespace bot {
         containsName: (name: string) => boolean;
 
         /**
-         * Gets an array of all currently equipped items
-         * @returns Array of equipped items
+         * Returns an array of all equipped items
+         * @returns Array of equipped items (net.runelite.api.Item)
          */
-        getEquipment: () => Item[];
+        getEquipment: () => net.runelite.api.Item[];
+
+        /**
+         * Unequips an item with the given ID from the equipment
+         * @param id The item ID to unequip
+         * @returns True if the item was unequipped, false otherwise
+         */
+        unequip: (id: number) => boolean;
     }
 }

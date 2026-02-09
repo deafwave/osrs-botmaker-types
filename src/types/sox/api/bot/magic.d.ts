@@ -107,7 +107,7 @@ declare namespace bot {
          * @param spellName The name of the spell to cast
          * @param tileItem The tile item to cast the spell on
          */
-        castOnTileItem: (spellName: SpellName, tileItem: bot.TileItemInfo) => void;
+        castOnTileItem: (spellName: SpellName, tileItem: net.runelite.api.TileItem) => void;
 
         /**
          * Casts a magic spell on a tile object (game object in the world)
