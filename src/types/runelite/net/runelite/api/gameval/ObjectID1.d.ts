@@ -10652,7 +10652,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly EGGS_SPIDER02_FALLOFF05 = 42647;
 		static readonly EGGS_SPIDER02_FALLOFF06 = 42648;
 		static readonly REGICIDE_TREE_DEAD1SWAMP_WEB = 42649;
-		static readonly QUEST_START_ICON_TUTORIAL = 42650;
 		static readonly QUEST_START_ICON_ANIMALMAGNETISM = 42651;
 		static readonly QUEST_START_ICON_ANOTHERSLICEOFHAM = 42652;
 		static readonly QUEST_START_ICON_ASCENTOFARCEUUS = 42653;
@@ -26504,10 +26503,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly TRR_CORAL_DREDGER_BROKEN = 58499;
 		static readonly TRR_CORAL_DREDGER_BROKEN_OP = 58500;
 		static readonly TRR_CORAL_DREDGER_FIXED = 58501;
-		static readonly TRR_CORAL_REFINER = 58502;
-		static readonly TRR_ANCHOR_BOTTOM = 58503;
-		static readonly TRR_ANCHOR_MIDDLE = 58504;
-		static readonly TRR_ANCHOR_TOP = 58505;
 		static readonly TRR_PIER_SUPPORT_PILLAR01A = 58506;
 		static readonly TRR_PIER_SUPPORT_STRAIGHT01A = 58507;
 		static readonly TRR_PIER_SUPPORT_CORNER_OUTSIDE01A = 58508;
@@ -28646,6 +28641,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_CARGO_HOLD_ROSEWOOD_LARGE_NO_CARGO = 60641;
 		static readonly SAILING_BOAT_CARGO_HOLD_ROSEWOOD_LARGE_CARGO = 60642;
 		static readonly DEADMAN_DUNGEON_CORRIDORFILLER = 60643;
+		static readonly QUEST_START_ICON_LEARNINGTHEROPES = 60644;
+		static readonly TRR_DIVING_BELL = 60645;
 		static readonly BLACK_WALL02 = 60646;
 		static readonly POH_DEADMAN_WINDOW_BINGO_01 = 60647;
 		static readonly POH_DEADMAN_WINDOW_BINGO_02 = 60648;
@@ -28663,5 +28660,24 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_CHAPELWINDOW_HOTSPOT_DEADMAN = 60660;
 		static readonly DEADMAN_DUNGEON_INSIDEWALL_SIDER = 60661;
 		static readonly DEADMAN_DUNGEON_INSIDEWALL_SIDEL = 60662;
+		static readonly TRR_DIVING_BELL_CRANE = 60663;
+		static readonly _100_CORAL_LACE_CORNER1_PURPLE = 60664;
+		static readonly _100_CORAL_LACE_CORNER2_PURPLE = 60665;
+		static readonly _100_CORAL_LACE_INVERSE_PURPLE = 60666;
+		static readonly _100_CORAL_LACE_ROCK1_PURPLE = 60667;
+		static readonly _100_CORAL_LACE_ROCK2_PURPLE = 60668;
+		static readonly _100_CORAL_LACE_SIDE1_PURPLE = 60669;
+		static readonly _100_CORAL_LACE_SIDE2_PURPLE = 60670;
+		static readonly _100_CORAL_LACE_TOP1_PURPLE = 60671;
+		static readonly _100_CORAL_LACE_TOP2_PURPLE = 60672;
+		static readonly _100_CORAL_LACE_TOP3_PURPLE = 60673;
+		static readonly TRR_ROCKS_BIG01 = 60674;
+		static readonly TRR_ROCKS_BIG02 = 60675;
+		static readonly OCEAN_OUTCROP_UNDERWATER01 = 60676;
+		static readonly OCEAN_OUTCROP_UNDERWATER02 = 60677;
+		static readonly OCEAN_OUTCROP_UNDERWATER03 = 60678;
+		static readonly OCEAN_OUTCROP_UNDERWATER04 = 60679;
+		static readonly CORAL_SEABED_LOW_WALL = 60680;
+		static readonly FOUNTAIN_2X3 = 60681;
 	}
   }

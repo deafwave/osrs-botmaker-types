@@ -15577,5 +15577,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly TZHAAR_FIGHTPIT_SWARM_4A = 15572;
 		static readonly TZHAAR_FIGHTPIT_SWARM_4B = 15573;
 		static readonly TZHAAR_FIGHTPIT_SWARM_BOSS = 15574;
+		static readonly SAILING_TIGER_SHARK_NOOP = 15575;
 	}
   }

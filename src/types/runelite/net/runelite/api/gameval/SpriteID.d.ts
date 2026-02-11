@@ -755,6 +755,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly MINIMAP_BOAT_SLOOP = 7290;
 		static readonly MINIMAP_BOAT_COLOSSAL = 7291;
 		static readonly MINIMAP_BOAT_CLASSIC_LARGE = 7292;
+		static readonly STOP_OUTLINED = 7426;
 		static readonly _2XSTANDARDSPELLSON__0 = 0;
 		static readonly _2XSTANDARDSPELLSON__1 = 1;
 		static readonly _2XSTANDARDSPELLSON__2 = 2;
@@ -7428,5 +7429,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly BANKSTORAGE__5 = 7423;
 		static readonly BANKSTORAGE__6 = 7424;
 		static readonly BANKSTORAGE__7 = 7425;
+		static readonly MUSICICONS__0 = 7427;
+		static readonly MUSICICONS__1 = 7428;
+		static readonly MUSICICONS__2 = 7429;
+		static readonly MUSICICONS__3 = 7430;
 	}
   }

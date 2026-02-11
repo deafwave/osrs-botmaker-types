@@ -27408,10 +27408,10 @@ declare namespace net.runelite.api {
 		static readonly STRANGE_TILE_56670 = 56670;
 		static readonly TELEPORT_SPELL = 56671;
 		static readonly TELEPORT_SPELL_56672 = 56672;
-		static readonly SHRINE_56674 = 56674;
+		static readonly STATUE_56674 = 56674;
 		static readonly STATUE_56675 = 56675;
-		static readonly SHRINE_56677 = 56677;
-		static readonly SHRINE_56678 = 56678;
+		static readonly STATUE_56677 = 56677;
+		static readonly STATUE_56678 = 56678;
 		static readonly SUN_STATUE = 56680;
 		static readonly SUN_STATUE_56681 = 56681;
 		static readonly URN_56683 = 56683;
@@ -28243,8 +28243,6 @@ declare namespace net.runelite.api {
 		static readonly CORAL_DREDGER = 58499;
 		static readonly CORAL_DREDGER_58500 = 58500;
 		static readonly CORAL_DREDGER_58501 = 58501;
-		static readonly CORAL_REFINER = 58502;
-		static readonly ANCHOR_58503 = 58503;
 		static readonly CHAIR_58519 = 58519;
 		static readonly CACTUS_58520 = 58520;
 		static readonly BUBBLES_58525 = 58525;
@@ -29302,6 +29300,7 @@ declare namespace net.runelite.api {
 		static readonly IRONWOOD_CARGO_HOLD_60640 = 60640;
 		static readonly ROSEWOOD_CARGO_HOLD_60641 = 60641;
 		static readonly ROSEWOOD_CARGO_HOLD_60642 = 60642;
+		static readonly DIVING_BELL = 60645;
 		static readonly STAINEDGLASS_WINDOW_60647 = 60647;
 		static readonly STAINEDGLASS_WINDOW_60648 = 60648;
 		static readonly SHUTTERED_WINDOW_60649 = 60649;
@@ -29316,5 +29315,17 @@ declare namespace net.runelite.api {
 		static readonly DECORATIVE_WINDOW_60658 = 60658;
 		static readonly STAINEDGLASS_WINDOW_60659 = 60659;
 		static readonly WINDOW_SPACE_60660 = 60660;
+		static readonly CRANE_60663 = 60663;
+		static readonly CORAL_60664 = 60664;
+		static readonly CORAL_60665 = 60665;
+		static readonly CORAL_60666 = 60666;
+		static readonly CORAL_60667 = 60667;
+		static readonly CORAL_60668 = 60668;
+		static readonly CORAL_60669 = 60669;
+		static readonly CORAL_60670 = 60670;
+		static readonly CORAL_60671 = 60671;
+		static readonly CORAL_60672 = 60672;
+		static readonly CORAL_60673 = 60673;
+		static readonly FOUNTAIN_60681 = 60681;
 	}
   }

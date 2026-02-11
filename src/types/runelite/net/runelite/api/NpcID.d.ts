@@ -13009,5 +13009,6 @@ declare namespace net.runelite.api {
 		static readonly KETZEK_15572 = 15572;
 		static readonly KETZEK_15573 = 15573;
 		static readonly TZTOKJAD_15574 = 15574;
+		static readonly TIGER_SHARK_15575 = 15575;
 	}
   }

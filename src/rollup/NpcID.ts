@@ -13007,6 +13007,7 @@ const data: Record<string, number> = {
 	KETZEK_15572: 15572,
 	KETZEK_15573: 15573,
 	TZTOKJAD_15574: 15574,
+	TIGER_SHARK_15575: 15575,
 };
 
 export default data;
