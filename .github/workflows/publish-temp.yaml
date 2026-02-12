@@ -1,0 +1,53 @@
+name: Publish PR Pre-release
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: pr-prerelease-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish_prerelease:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@deafwave'
+          cache: 'pnpm'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install & Build
+        run: |
+          pnpm i
+          pnpm build
+
+      - name: Set pre-release version
+        run: |
+          BASE_VERSION=$(node -p "require('./package.json').version")
+          PRE_VERSION="${BASE_VERSION}-pr.${{ github.event.pull_request.number }}.${{ github.run_number }}"
+          npm version "$PRE_VERSION" --no-git-tag-version
+          echo "Publishing version: $PRE_VERSION"
+
+      - name: 🚀 Publish pre-release to GitHub Packages
+        run: |
+          npm pkg set publishConfig.registry="https://npm.pkg.github.com"
+          pnpm publish --no-git-checks --tag pr-${{ github.event.pull_request.number }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
