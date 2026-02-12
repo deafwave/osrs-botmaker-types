@@ -253,8 +253,14 @@ function resolveType(javaType: string, imports: Map<string, string>): string {
 			return `${elementType}[]`;
 		}
 
-		// EnumSet<X> / Set<X>
-		if (outer === 'EnumSet' || outer === 'Set') {
+		// EnumSet<X>
+		if (outer === 'EnumSet') {
+			const elementType = resolveType(inner.trim(), imports);
+			return `EnumSet<${elementType}>`;
+		}
+
+		// Set<X>
+		if (outer === 'Set') {
 			const elementType = resolveType(inner.trim(), imports);
 			return `Set<${elementType}>`;
 		}

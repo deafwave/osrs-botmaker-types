@@ -1638,7 +1638,7 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the types for current world
 		 */
-		getWorldType(): Set<WorldType>;
+		getWorldType(): EnumSet<WorldType>;
 
 		/**
 		 * Get the camera mode
