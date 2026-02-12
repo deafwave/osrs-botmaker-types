@@ -1,65 +1,91 @@
-# Rosa - TypeScript .d.ts Expert 🌹
+# CLAUDE.md
 
-You are Rosa, a specialist in TypeScript declaration files for RuneLite and OSRS botmaker projects. You excel at creating clean interfaces, proper namespacing, and bulletproof type safety.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Your Core Mission
+## Project Overview
 
-Help create, maintain, and perfect TypeScript declaration files for the OSRS botmaker ecosystem. Work with RuneLite APIs, Java interop types, and custom bot functionality.
+TypeScript declaration files (`.d.ts`) for Sox's Botmaker, a bot scripting framework built on RuneLite for Old School RuneScape. This package bridges Java APIs (RuneLite, Java standard library, Jagex) into TypeScript so bot scripts get full type safety. Published as `@deafwave/osrs-botmaker-types` on npm.
 
-### Your Expertise:
-- **RuneLite API Types**: Convert Java classes to TypeScript declarations
-- **Namespace Organization**: Maintain clean `declare namespace` structures  
-- **Java-to-TypeScript Mapping**: Bridge Java and TypeScript seamlessly
-- **Bot API Definitions**: Create type-safe interfaces for bot scripting
-- **Event System Types**: Define proper event interfaces and handlers
+## Commands
 
-## Your Workflow
+- **Build**: `pnpm build` (runs `tsc`, then copies `src/index.d.ts` and `src/types/` to `dist/`)
+- **Lint**: `pnpm lint` (ESLint in quiet mode; note: all `.d.ts` files are excluded from linting)
+- **Regenerate RuneLite barrel**: `pnpm generate:runelite-barrel` (auto-generates `src/types/runelite/index.d.ts` from all `.d.ts` files in the runelite directory)
 
-For TypeScript definition tasks:
+There are no tests in this project.
 
-1. **Analyze First**: Examine existing patterns in the codebase
-2. **Plan Efficiently**: Use TodoWrite for complex requests (never write plans to files)
-3. **Code Consistently**: Follow established conventions and patterns
-4. **Maintain Quality**: Match existing code style and structure
+## Architecture
 
-### Type Definition Standards:
-- Use proper namespace declarations (`declare namespace net.runelite.api`)
-- Include comprehensive JSDoc comments for complex methods
-- Maintain consistent parameter and return type patterns
-- Handle Java-specific concepts like overloaded methods properly
-- Keep related types logically grouped together
+### Type Declaration Files (`src/types/`)
 
-## Repository Structure Knowledge
+The core of this project. These `.d.ts` files are **not compiled by TypeScript** -- they are simply copied to `dist/` during build. They use `/// <reference path="..." />` directives to chain dependencies.
 
-You understand this project structure:
+- **`runelite/`** -- RuneLite API types (~1,463 files). Mirrors the Java package structure (`net.runelite.api`, `net.runelite.client`, `com.jagex`). Many files under `api/gameval/` (ItemID, NpcID, ObjectID, etc.) are **auto-generated** daily by `scripts/runelite-to-ts/` from RuneLite's Java source on GitHub.
+- **`java/`** -- Java standard library type stubs (awt, lang, swing, util, etc.)
+- **`sox/`** -- Sox Bot API types. Declares global variables (`bot`, `client`, `clientThread`, `configManager`, `log`) and the `bot.*` sub-API interfaces (inventory, npcs, bank, walking, etc.)
+- **`rhino/`** -- Mozilla Rhino engine adapter type (`JavaAdapter`)
+- **`Packages/`** -- Third-party Java package types (okhttp3)
+
+### Rollup Plugin (`src/api/index.ts`)
+
+Exports a Rollup plugin that replaces dotted namespace references like `net.runelite.api.NpcID.SOME_NPC` with their numeric values at build time. This works around limitations of the Rhino JavaScript engine used by Botmaker.
+
+### Rollup ID Maps (`src/rollup/`)
+
+Auto-generated `Record<string, number>` maps (ItemID.ts, NpcID.ts, etc.) used by the Rollup plugin for runtime constant resolution.
+
+### Auto-Generation Pipeline (`scripts/`)
+
+- `scripts/runelite-to-ts/` -- Standalone sub-project that fetches Java source from RuneLite's GitHub, parses `static final int` constants, and generates both `.d.ts` declarations and rollup `.ts` mapping files.
+- `scripts/generate-runelite-barrel.ts` -- Generates the `runelite/index.d.ts` barrel file with all `/// <reference path>` directives.
+- CI runs the update daily (`.github/workflows/update-runelite.yaml`), auto-commits, bumps patch version, and publishes.
+
+## Type Definition Conventions
+
+### Namespace Pattern
+
+All types use Java-style dotted namespaces via `declare namespace`:
+
+```typescript
+declare namespace net.runelite.api {
+    export class Client extends GameEngine { ... }
+}
+declare namespace net.runelite.api.events {
+    export class GameTick {}
+}
+declare namespace bot {
+    interface inventory { ... }
+}
 ```
-src/types/
-├── runelite/           # RuneLite API types
-│   ├── net/runelite/   # Main API namespace
-│   │   ├── api/        # Core API types (Client, events, etc.)
-│   │   └── client/     # Client-specific functionality
-│   └── com/jagex/      # Jagex-specific APIs
-├── java/               # Java standard library types
-└── sox/                # SOX bot API types
-```
 
-## Your Behavioral Guidelines
+### Java-to-TypeScript Mapping
 
-**Personality**: Be enthusiastic but focused, detail-oriented but not overwhelming. Excel at solving complex typing challenges while keeping the development experience smooth.
+| Java | TypeScript |
+|------|-----------|
+| `int`, `long`, `double`, `float` | `number` |
+| `String` | `string` |
+| `boolean` | `boolean` |
+| Nullable return | `Type \| null` |
+| `int[]` | `number[]` |
+| `static final int NAME = 42` | `static readonly NAME = 42;` |
+| Enum values | `static MEMBER: EnumType;` |
+| Method overloading | Multiple method signatures |
+| `@Deprecated` | `/** @deprecated */` JSDoc |
 
-**Philosophy**: Good type definitions are like good documentation - they make code self-explanatory and the IDE the developer's best friend.
+### Key Patterns
 
-**Communication Style**:
-- Concise and solution-focused
-- Technical precision when needed, friendly approach always
-- Use TodoWrite for planning complex tasks
-- Execute efficiently without unnecessary explanations
+- **RuneLite types** use `export class` inside `declare namespace` (representing Java classes)
+- **Sox bot API types** use `interface` inside `declare namespace bot`
+- **Enum-like Java classes** are represented as classes with `static` members (e.g., `GameState.LOGGED_IN`)
+- **Reference paths** must be used to establish dependencies between `.d.ts` files
+- **JSDoc comments** are copied from Java source for RuneLite types; use them consistently for Sox API types
+- **Copyright headers** from RuneLite's BSD 2-clause license are preserved in derived types
+- After adding/removing RuneLite `.d.ts` files, run `pnpm generate:runelite-barrel` to update the barrel
 
-**Quality Standards**:
-- Create crystal-clear type definitions
-- Solve tricky Java-to-TypeScript conversion challenges
-- Help catch bugs at compile-time instead of runtime
-- Make bot scripting type-safe and enjoyable
+## Code Style
 
----
-**Mission**: Make OSRS bot development type-safe, one declaration at a time.
+- **Tabs** for indentation (not spaces)
+- **Single quotes**, trailing commas, semicolons
+- **Print width**: 120
+- **LF** line endings
+- **ES Modules**: `"type": "module"` in package.json, NodeNext module resolution
