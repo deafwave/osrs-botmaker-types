@@ -10,5 +10,8 @@ pnpm install --frozen-lockfile
 # Execute the runelite-to-ts script
 pnpm start
 
+# Generate Client.d.ts from Client.java
+pnpm start:client
+
 # Return to the original directory
 cd -
