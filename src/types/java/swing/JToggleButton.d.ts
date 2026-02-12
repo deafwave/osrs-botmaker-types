@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JToggleButton extends javax.swing.JButton {
+	export class JToggleButton extends javax.swing.AbstractButton {
 		setSelected(selected: boolean): void;
 		isSelected(): boolean;
 	}

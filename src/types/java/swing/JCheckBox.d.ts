@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JCheckBox {
+	export class JCheckBox extends javax.swing.JToggleButton {
 		constructor(label: string, selected?: boolean);
 		getText(): string;
 		setText(text: string): void;

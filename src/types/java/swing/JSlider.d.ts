@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JSlider {
+	export class JSlider extends javax.swing.JComponent {
 		constructor(orientation: number, min: number, max: number, value: number);
 		setValue(value: number): void;
 		getValue(): number;
