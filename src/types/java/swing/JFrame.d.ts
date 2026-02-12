@@ -1,3 +1,5 @@
+/// <reference path="../awt/Frame.d.ts" />
+
 declare namespace javax.swing {
 	export enum JFrameCloseOperation {
 		DO_NOTHING_ON_CLOSE = 0,
@@ -5,26 +7,12 @@ declare namespace javax.swing {
 		DISPOSE_ON_CLOSE = 2,
 		EXIT_ON_CLOSE = 3,
 	}
-	export class JFrame extends java.awt.Component {
+	export class JFrame extends java.awt.Frame {
 		constructor(title?: string);
-		setTitle(title: string): void;
-		getTitle(): string;
-		setSize(width: number, height: number): void;
 		setDefaultCloseOperation(operation: JFrameCloseOperation | Number): void;
-		addWindowListener(listener: java.awt.event.WindowListener): void;
-		setVisible(visible: boolean): void;
-		add(component: any, position?: string): void;
 		setJMenuBar(menuBar: JMenuBar): void;
 		getJMenuBar(): JMenuBar;
-		pack(): void;
-		setLocation(x: number, y: number): void;
-		setLocationRelativeTo(component: any): void;
 		setContentPane(contentPane: JPanel): void;
-		getContentPane(): JPanel;
-		setResizable(resizable: boolean): void;
-		repaint(): void;
-		revalidate(): void;
-		dispose(): void;
 		getContentPane(): JPanel;
 	}
 
