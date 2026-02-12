@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JProgressBar {
+	export class JProgressBar extends javax.swing.JComponent {
 		constructor();
 		setMinimum(min: number): void;
 		getMinimum(): number;

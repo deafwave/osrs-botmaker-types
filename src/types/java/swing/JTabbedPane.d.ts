@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JTabbedPane {
+	export class JTabbedPane extends javax.swing.JComponent {
 		constructor();
 
 		// Tab control

@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JMenu {
+	export class JMenu extends javax.swing.JMenuItem {
 		constructor(label: string);
 		add(item: JMenuItem): void;
 		remove(item: JMenuItem): void;

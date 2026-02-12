@@ -1,5 +1,5 @@
 declare namespace javax.swing {
-	export class JToolBar {
+	export class JToolBar extends javax.swing.JComponent {
 		constructor();
 		add(component: any): void;
 		remove(component: any): void;
