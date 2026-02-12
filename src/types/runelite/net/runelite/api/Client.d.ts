@@ -78,7 +78,7 @@ declare namespace net.runelite.api {
 		 * @param sender the sender/channel name
 		 * @return the message node for the message
 		 */
-		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string | null): MessageNode;
+		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string): MessageNode;
 
 		/**
 		 * Adds a new chat message to the chatbox.
@@ -90,7 +90,7 @@ declare namespace net.runelite.api {
 		 * @param postEvent whether to post the chat message event
 		 * @return the message node for the message
 		 */
-		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string | null, postEvent: boolean): MessageNode;
+		addChatMessage(type: ChatMessageType, name: string, message: string, sender: string, postEvent: boolean): MessageNode;
 
 		/**
 		 * Gets the current game state.
@@ -107,8 +107,7 @@ declare namespace net.runelite.api {
 		setGameState(gameState: GameState): void;
 
 		/**
-		 * Causes the client to shutdown. It is faster than
-		 * {@link java.applet.Applet#stop()} because it doesn't wait for 4000ms.
+		 * Causes the client to shutdown.
 		 * This will call {@link System#exit} when it is done
 		 */
 		stopNow(): void;
@@ -126,7 +125,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the logged in username
 		 * @see OAuthApi#getAccountHash()
-		 * @deprecated
 		 */
 		getUsername(): string;
 
@@ -359,15 +357,7 @@ declare namespace net.runelite.api {
 		 * @param scale the scale of the sprite
 		 * @return the created sprite
 		 */
-		createItemSprite(
-			itemId: number,
-			quantity: number,
-			border: number,
-			shadowColor: number,
-			stackable: number,
-			noted: boolean,
-			scale: number
-		): SpritePixels | null;
+		createItemSprite(itemId: number, quantity: number, border: number, shadowColor: number, stackable: number, noted: boolean, scale: number): SpritePixels | null;
 
 		/**
 		 * Get the item model cache. These models are used for drawing widgets of type {@link net.runelite.api.widgets.WidgetType#MODEL}
@@ -476,7 +466,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @param widget the widget info
 		 * @return the widget
-		 * @deprecated
 		 */
 		getWidget(widget: net.runelite.api.widgets.WidgetInfo): net.runelite.api.widgets.Widget | null;
 
@@ -568,7 +557,6 @@ declare namespace net.runelite.api {
 		 * @return the newly created menu entry
 		 * @see #getMenu()
 		 * @see Menu#createMenuEntry(int)
-		 * @deprecated
 		 */
 		createMenuEntry(idx: number): MenuEntry;
 
@@ -579,7 +567,6 @@ declare namespace net.runelite.api {
 		 * @return array of open menu entries
 		 * @see #getMenu()
 		 * @see Menu#getMenuEntries()
-		 * @deprecated
 		 */
 		getMenuEntries(): MenuEntry[];
 
@@ -592,7 +579,6 @@ declare namespace net.runelite.api {
 		 * @param entries new array of open menu entries
 		 * @see #getMenu()
 		 * @see Menu#setMenuEntries(MenuEntry[])
-		 * @deprecated
 		 */
 		setMenuEntries(entries: MenuEntry[]): void;
 
@@ -626,7 +612,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the menu x location
 		 * @see Menu#getMenuX()
-		 * @deprecated
 		 */
 		getMenuX(): number;
 
@@ -635,7 +620,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the menu y location
 		 * @see Menu#getMenuY()
-		 * @deprecated
 		 */
 		getMenuY(): number;
 
@@ -644,7 +628,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the menu height
 		 * @see Menu#getMenuHeight()
-		 * @deprecated
 		 */
 		getMenuHeight(): number;
 
@@ -653,7 +636,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the menu width
 		 * @see Menu#getMenuWidth()
-		 * @deprecated
 		 */
 		getMenuWidth(): number;
 
@@ -662,7 +644,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the map angle
 		 * @see #getCameraYawTarget()
-		 * @deprecated
 		 */
 		getMapAngle(): number;
 
@@ -706,7 +687,6 @@ declare namespace net.runelite.api {
 		 * @param varbit the varbit id
 		 * @return the value
 		 * @see Client#getVarbitValue(int)
-		 * @deprecated
 		 */
 		getVar(varbit: number): number;
 
@@ -1072,9 +1052,11 @@ declare namespace net.runelite.api {
 		loadModelData(id: number): ModelData | null;
 
 		mergeModels(models: ModelData[], length: number): ModelData;
+
 		mergeModels(...models: ModelData[]): ModelData;
 
 		mergeModels(models: Model[], length: number): Model;
+
 		mergeModels(...models: Model[]): Model;
 
 		/**
@@ -1394,7 +1376,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the world map overview
 		 * @see #getWorldMap()
-		 * @deprecated
 		 */
 		getRenderOverview(): RenderOverview;
 
@@ -1530,13 +1511,6 @@ declare namespace net.runelite.api {
 		hasHintArrow(): boolean;
 
 		/**
-		 * Gets the type of hint arrow currently displayed.
-		 *
-		 * @return the hint arrow type
-		 */
-		getHintArrowType(): number;
-
-		/**
 		 * Clears the current hint arrow.
 		 */
 		clearHintArrow(): void;
@@ -1591,6 +1565,7 @@ declare namespace net.runelite.api {
 		getHintArrowNpc(): NPC;
 
 		getAnimationInterpolationFilter(): (id: number) => boolean;
+
 		setAnimationInterpolationFilter(filter: (id: number) => boolean): void;
 
 		getBoostedSkillLevels(): number[];
@@ -1649,7 +1624,6 @@ declare namespace net.runelite.api {
 		 * Sets the inventory drag delay in client game cycles (20ms).
 		 *
 		 * @param delay the number of game cycles to delay dragging
-		 * @deprecated
 		 */
 		setInventoryDragDelay(delay: number): void;
 
@@ -1724,7 +1698,6 @@ declare namespace net.runelite.api {
 
 		/**
 		 * Gets the enabled state for the Oculus orb mode
-		 * @deprecated
 		 */
 		getOculusOrbState(): number;
 
@@ -1732,25 +1705,21 @@ declare namespace net.runelite.api {
 		 * Sets the enabled state for the Oculus orb state
 		 *
 		 * @param state boolean enabled value
-		 * @deprecated
 		 */
 		setOculusOrbState(state: number): void;
 
 		/**
 		 * Sets the normal moving speed when using oculus orb (default value is 12)
-		 * @deprecated
 		 */
 		setOculusOrbNormalSpeed(speed: number): void;
 
 		/**
 		 * Gets local X coord where the camera is pointing when the Oculus orb is active
-		 * @deprecated
 		 */
 		getOculusOrbFocalPointX(): number;
 
 		/**
 		 * Gets local Y coord where the camera is pointing when the Oculus orb is active
-		 * @deprecated
 		 */
 		getOculusOrbFocalPointY(): number;
 
@@ -1776,31 +1745,30 @@ declare namespace net.runelite.api {
 		getSkyboxColor(): number;
 
 		isGpu(): boolean;
+
 		setGpuFlags(gpuflags: number): void;
 
 		setExpandedMapLoading(chunks: number): void;
+
 		getExpandedMapLoading(): number;
 
 		get3dZoom(): number;
+
 		getCenterX(): number;
+
 		getCenterY(): number;
 
 		getTextureProvider(): TextureProvider;
 
 		getRasterizer3D_clipMidX2(): number;
+
 		getRasterizer3D_clipNegativeMidX(): number;
+
 		getRasterizer3D_clipNegativeMidY(): number;
+
 		getRasterizer3D_clipMidY2(): number;
 
-		checkClickbox(
-			projection: Projection,
-			model: Model,
-			orientation: number,
-			x: number,
-			y: number,
-			z: number,
-			hash: number
-		): void;
+		checkClickbox(projection: Projection, model: Model, orientation: number, x: number, y: number, z: number, hash: number): void;
 
 		/**
 		 * Is a widget is in target mode?
@@ -1817,6 +1785,11 @@ declare namespace net.runelite.api {
 		 * @return the selected widget
 		 */
 		getSelectedWidget(): net.runelite.api.widgets.Widget | null;
+
+		/**
+		 * Gets the current active {@link net.runelite.api.widgets.WidgetType#INPUT_FIELD} Widget
+		 */
+		getFocusedInputFieldWidget(): net.runelite.api.widgets.Widget | null;
 
 		/**
 		 * Returns client item composition cache
@@ -1958,12 +1931,12 @@ declare namespace net.runelite.api {
 		getClanSettings(clanId: number): net.runelite.api.clan.ClanSettings | null;
 
 		setUnlockedFps(unlock: boolean): void;
+
 		setUnlockedFpsTarget(fps: number): void;
 
 		/**
 		 * Gets the ambient sound effects
 		 * @return
-		 * @deprecated
 		 */
 		getAmbientSoundEffects(): java.util.Deque<AmbientSoundEffect>;
 
@@ -2011,15 +1984,7 @@ declare namespace net.runelite.api {
 
 		getRasterizer(): Rasterizer;
 
-		menuAction(
-			p0: number,
-			p1: number,
-			action: MenuAction,
-			id: number,
-			itemId: number,
-			option: string,
-			target: string
-		): void;
+		menuAction(p0: number, p1: number, action: MenuAction, id: number, itemId: number, option: string, target: string): void;
 
 		/**
 		 * Get worldview by id
@@ -2047,7 +2012,27 @@ declare namespace net.runelite.api {
 		setCameraShakeDisabled(disabled: boolean): void;
 
 		/**
-		 * Gets the current draw2D mask. 
+		 * Draw all 2D extras. This is the default.
+		 */
+		static readonly DRAW_2D_ALL: number;
+
+		/**
+		 * Hide all 2D extras.
+		 */
+		static readonly DRAW_2D_NONE: number;
+
+		/**
+		 * Render overhead text.
+		 */
+		static readonly DRAW_2D_OVERHEAD_TEXT: number;
+
+		/**
+		 * Render elements not otherwise specified in this bitflag.
+		 */
+		static readonly DRAW_2D_OTHERS: number;
+
+		/**
+		 * Gets the current draw2D mask.
 		 * @return the current mask
 		 * @see Client#setDraw2DMask(int)
 		 */
@@ -2080,7 +2065,6 @@ declare namespace net.runelite.api {
 		 * @see Constants#CHUNK_SIZE
 		 * @see InstanceTemplates
 		 * @see WorldView#getInstanceTemplateChunks()
-		 * @deprecated
 		 */
 		getInstanceTemplateChunks(): number[][][];
 
@@ -2095,14 +2079,12 @@ declare namespace net.runelite.api {
 		 * spread across 4 integers.
 		 *
 		 * @return the XTEA encryption keys
-		 * @deprecated
 		 */
 		getXteaKeys(): number[][];
 
 		/**
 		 * Checks whether the scene is in an instanced region.
 		 * @see WorldView#isInstance()
-		 * @deprecated
 		 */
 		isInInstancedRegion(): boolean;
 
@@ -2110,23 +2092,20 @@ declare namespace net.runelite.api {
 		 * Gets an array of map region IDs that are currently loaded.
 		 *
 		 * @return the map regions
-		 * @deprecated
 		 */
 		getMapRegions(): number[];
 
 		/**
 		 * Gets the current scene
 		 * @see WorldView#getScene()
-		 * @deprecated
 		 */
-		getScene(): Scene | null;
+		getScene(): Scene;
 
 		/**
 		 * Gets a list of all valid players from the player cache.
 		 *
 		 * @return a list of all players
 		 * @see WorldView#players()
-		 * @deprecated
 		 */
 		getPlayers(): Player[];
 
@@ -2135,7 +2114,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return a list of all NPCs
 		 * @see WorldView#npcs()
-		 * @deprecated
 		 */
 		getNpcs(): NPC[];
 
@@ -2146,7 +2124,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the collision data
 		 * @see WorldView#getCollisionMaps()
-		 * @deprecated
 		 */
 		getCollisionMaps(): CollisionData[] | null;
 
@@ -2162,7 +2139,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the plane
 		 * @see WorldView#getPlane()
-		 * @deprecated
 		 */
 		getPlane(): number;
 
@@ -2172,7 +2148,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the tile heights
 		 * @see WorldView#getTileHeights()
-		 * @deprecated
 		 */
 		getTileHeights(): number[][][];
 
@@ -2182,7 +2157,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the tile settings
 		 * @see WorldView#getTileSettings()
-		 * @deprecated
 		 */
 		getTileSettings(): number[][][];
 
@@ -2194,7 +2168,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the base x-axis coordinate
 		 * @see WorldView#getBaseX()
-		 * @deprecated
 		 */
 		getBaseX(): number;
 
@@ -2206,7 +2179,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the base y-axis coordinate
 		 * @see WorldView#getBaseY()
-		 * @deprecated
 		 */
 		getBaseY(): number;
 
@@ -2226,23 +2198,8 @@ declare namespace net.runelite.api {
 		 * @param targetX target x - if an actor target is supplied should be the target x
 		 * @param targetY target y - if an actor target is supplied should be the target y
 		 * @return the new projectile
-		 * @deprecated
 		 */
-		createProjectile(
-			id: number,
-			plane: number,
-			startX: number,
-			startY: number,
-			startZ: number,
-			startCycle: number,
-			endCycle: number,
-			slope: number,
-			startHeight: number,
-			endHeight: number,
-			target: Actor | null,
-			targetX: number,
-			targetY: number
-		): Projectile;
+		createProjectile(id: number, plane: number, startX: number, startY: number, startZ: number, startCycle: number, endCycle: number, slope: number, startHeight: number, endHeight: number, target: Actor | null, targetX: number, targetY: number): Projectile;
 
 		/**
 		 * Create a projectile.
@@ -2260,19 +2217,7 @@ declare namespace net.runelite.api {
 		 * @see net.runelite.api.gameval.SpotanimID
 		 * @return the new projectile
 		 */
-		createProjectile(
-			spotanimId: number,
-			source: net.runelite.api.coords.WorldPoint,
-			sourceHeightOffset: number,
-			sourceActor: Actor | null,
-			target: net.runelite.api.coords.WorldPoint,
-			targetHeightOffset: number,
-			targetActor: Actor | null,
-			startCycle: number,
-			endCycle: number,
-			slope: number,
-			startPos: number
-		): Projectile;
+		createProjectile(spotanimId: number, source: net.runelite.api.coords.WorldPoint, sourceHeightOffset: number, sourceActor: Actor | null, target: net.runelite.api.coords.WorldPoint, targetHeightOffset: number, targetActor: Actor | null, startCycle: number, endCycle: number, slope: number, startPos: number): Projectile;
 
 		/**
 		 * Gets a list of all projectiles currently spawned.
@@ -2286,7 +2231,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return all graphics objects
 		 * @see WorldView#getGraphicsObjects()
-		 * @deprecated
 		 */
 		getGraphicsObjects(): java.util.Deque<GraphicsObject>;
 
@@ -2295,7 +2239,6 @@ declare namespace net.runelite.api {
 		 *
 		 * @return the selected tile
 		 * @see WorldView#getSelectedSceneTile()
-		 * @deprecated
 		 */
 		getSelectedSceneTile(): Tile | null;
 
@@ -2305,12 +2248,38 @@ declare namespace net.runelite.api {
 		 * Vertices are cloned from the source model. Face transparencies are copied if either animation
 		 * animates transparency, otherwise it will share a reference. All other fields share a reference.
 		 */
-		applyTransformations(
-			model: Model,
-			animA: Animation | null,
-			frameA: number,
-			animB: Animation | null,
-			frameB: number
-		): Model;
+		applyTransformations(model: Model, animA: Animation | null, frameA: number, animB: Animation | null, frameB: number): Model;
+
+		/**
+		 * Creates a SceneTilePaint instance, which can be attached to a Tile to control its appearance.
+		 *
+		 * @see Tile#setSceneTilePaint(SceneTilePaint)
+		 *
+		 * @param swColor the color of the south-west corner of the tile
+		 * @param seColor the color of the south-east corner of the tile
+		 * @param neColor the color of the north-east corner of the tile
+		 * @param nwColor the color of the north-west corner of the tile
+		 * @param texture the texture to render for the tile, or -1 to use the colors
+		 * @param minimapRgb the color to use when rendering the minimap
+		 * @param flatShade whether the tile is flat
+		 * @return the newly created SceneTilePaint
+		 */
+		createSceneTilePaint(swColor: number, seColor: number, neColor: number, nwColor: number, texture: number, minimapRgb: number, flatShade: boolean): SceneTilePaint;
+
+		/**
+		 * Get the entity that the camera is focused on
+		 *
+		 * @return
+		 */
+		getCameraFocusEntity(): CameraFocusableEntity;
+
+		/**
+		 * Find the worldview a given worldpoint belongs in
+		 * @param point
+		 * @return
+		 */
+		findWorldViewFromWorldPoint(point: net.runelite.api.coords.WorldPoint): WorldView;
+
+		getSocketFD(): java.io.FileDescriptor | null;
 	}
 }
