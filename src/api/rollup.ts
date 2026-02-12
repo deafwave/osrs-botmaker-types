@@ -10,9 +10,9 @@ import { _zRhinoRuneliteRollupBugFixes } from './index.js';
 function removeExports() {
 	return {
 		name: 'remove-exports',
-		renderChunk(code: string, _chunk: any, _options: any) {
-			const exportRegex = /export\s+\{[^}]*\};?/g;
-			const modifiedCode = code.replace(exportRegex, '');
+		renderChunk(code: string) {
+			const exportRegex = /export\s+{[^}]*};?/g;
+			const modifiedCode = code.replaceAll(exportRegex, '');
 			return {
 				code: modifiedCode,
 				map: null,
@@ -24,7 +24,7 @@ function removeExports() {
 function removeHalfTreeshaken() {
 	return {
 		name: 'remove-half-treeshaken',
-		renderChunk(code: string, _chunk: any, _options: any) {
+		renderChunk(code: string) {
 			const linesToRemove = code.split('\n').filter((line) => !line.startsWith('[') && !line.startsWith('net.runelite.'));
 			const modifiedCode = linesToRemove.join('\n');
 			return {
@@ -37,14 +37,14 @@ function removeHalfTreeshaken() {
 
 export interface CreateRhinoRollupConfigOptions {
 	entries?: string[];
-	outputDir?: string;
+	outputDirectory?: string;
 }
 
 export default createRhinoRollupConfig();
 
 export function createRhinoRollupConfig(options?: CreateRhinoRollupConfigOptions): RollupOptions[] {
 	const osPath = process.platform === 'win32' ? path.win32 : path.posix;
-	const outputDir = options?.outputDir ?? 'dist';
+	const outputDirectory = options?.outputDirectory ?? 'dist';
 	const entries = options?.entries
 		?? (process.env.ROLLUP_ENTRY
 			? [process.env.ROLLUP_ENTRY]
@@ -54,7 +54,7 @@ export function createRhinoRollupConfig(options?: CreateRhinoRollupConfigOptions
 		return {
 			input: file,
 			output: {
-				file: osPath.join(outputDir, `${path.basename(path.dirname(file))}.js`),
+				file: osPath.join(outputDirectory, `${path.basename(path.dirname(file))}.js`),
 				plugins: [removeExports(), removeHalfTreeshaken()],
 			},
 			plugins: [
@@ -65,7 +65,7 @@ export function createRhinoRollupConfig(options?: CreateRhinoRollupConfigOptions
 					extensions: ['.js', '.jsx', '.ts', '.tsx'],
 					include: '**',
 				}),
-				/** @ts-expect-error */
+				/** @ts-expect-error rollup plugin type mismatch */
 				typescript(),
 				_zRhinoRuneliteRollupBugFixes(),
 				babel({
