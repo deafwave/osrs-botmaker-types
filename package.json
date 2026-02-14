@@ -27,8 +27,14 @@
 		"registry": "https://registry.npmjs.org"
 	},
 	"exports": {
-		"types": "./dist/src/index.d.ts",
-		"default": "./dist/src/api/index.js"
+		".": {
+			"types": "./dist/src/index.d.ts",
+			"default": "./dist/src/api/index.js"
+		},
+		"./rollup": {
+			"types": "./dist/src/api/rollup.d.ts",
+			"default": "./dist/src/api/rollup.js"
+		}
 	},
 	"main": "./dist/src/api/index.js",
 	"types": "./dist/src/index.d.ts",
