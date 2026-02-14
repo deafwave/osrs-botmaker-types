@@ -5,7 +5,11 @@ import { babel } from '@rollup/plugin-babel';
 import typescript from '@rollup/plugin-typescript';
 import { glob } from 'glob';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 import { _zRhinoRuneliteRollupBugFixes } from './index.js';
+
+const require = createRequire(import.meta.url);
+const presetEnvironmentPath = require.resolve('@babel/preset-env');
 
 function removeExports() {
 	return {
@@ -71,7 +75,7 @@ export function createRhinoRollupConfig(options?: CreateRhinoRollupConfigOptions
 				babel({
 					babelHelpers: 'bundled',
 					extensions: ['.js', '.ts'],
-					presets: [['@babel/preset-env', { targets: { rhino: '1.7.14' }, modules: false }]],
+					presets: [[presetEnvironmentPath, { targets: { rhino: '1.7.14' }, modules: false }]],
 				}),
 			],
 		};
