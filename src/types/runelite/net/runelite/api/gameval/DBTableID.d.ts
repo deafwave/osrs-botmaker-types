@@ -254,6 +254,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_QUEST_REDREEF = 7107;
 		static readonly ROW_QUEST_BURIALATSEA = 7108;
 		static readonly ROW_QUEST_LEARNINGTHEROPES = 9643;
+		static readonly ROW_QUEST_IDESOFMILK = 9645;
 		static readonly EVENTS_ID = 1;
 		static readonly ROW_XMAS_2022 = 2331;
 		static readonly ROW_BIRTHDAY_2023 = 2341;
@@ -270,6 +271,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_XMAS_2025 = 4968;
 		static readonly ROW_EASTER_2025 = 5107;
 		static readonly ROW_HALLOWEEN_2025 = 6989;
+		static readonly ROW_BIRTHDAY_2026 = 7033;
 		static readonly CRMODULE_ID = 2;
 		static readonly CRMODULE_COL_DISPLAYNAME = 0;
 		static readonly CRMODULE_COL_ICON = 1;
@@ -4294,6 +4296,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_MUSIC_GREAT_CONCH_2 = 7094;
 		static readonly ROW_MUSIC_GREAT_CONCH_UNDERGROUND = 7095;
 		static readonly ROW_MUSIC_SCAPE_SAIL = 7096;
+		static readonly ROW_MUSIC_BRUTUS_COW_BOSS = 8662;
 		static readonly WOODCUTTINGRESOURCE_ID = 45;
 		static readonly ROW_WOODCUTTING_RESOURCE_YEW_TREE = 3251;
 		static readonly ROW_WOODCUTTING_RESOURCE_YEW_TREE_FARMING_PATCH = 3252;
@@ -4802,6 +4805,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_HISCORES_BOSSES_YAMA = 5130;
 		static readonly ROW_HISCORES_BOSSES_DOOM_OF_MOKHAIOTL = 5484;
 		static readonly ROW_HISCORES_BOSSES_GRYPHON_BOSS = 9447;
+		static readonly ROW_HISCORES_BOSSES_COWBOSS = 9655;
 		static readonly REGIONDATA_ID = 82;
 		static readonly REGIONDATA_COL_REGION_ID = 0;
 		static readonly REGIONDATA_COL_NAME = 1;
@@ -5002,6 +5006,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_CHARGES_EYE_OF_AYAK_RUNES = 5188;
 		static readonly ROW_CHARGES_HORN_OF_PLENTY = 7039;
 		static readonly ROW_CHARGES_SAILORS_AMULET = 7040;
+		static readonly ROW_CHARGES_COWBELL_AMULET = 9644;
 		static readonly SYNTH_ID = 88;
 		static readonly SYNTH_COL_NAME = 0;
 		static readonly SYNTH_COL_SUB_MENU = 1;
@@ -6575,6 +6580,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_POH_TROPHY_HALIBUT = 7125;
 		static readonly ROW_POH_TROPHY_BLUEFIN = 7126;
 		static readonly ROW_POH_TROPHY_MARLIN = 7127;
+		static readonly ROW_POH_GARDEN_CENTREPIECE_6 = 9654;
 		static readonly POHROOM_ID = 111;
 		static readonly POHROOM_COL_NAME = 0;
 		static readonly POHROOM_COL_NAME_UPPERCASE = 1;
@@ -7741,6 +7747,14 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_CATHERBY_TELEPORT = 7021;
 		static readonly ROW_GHORROCK_TELEPORT = 7022;
 		static readonly ROW_CARRALLANGAR_TELEPORT = 7023;
+		static readonly ROW_TROLLHEIM_TELEPORT = 9646;
+		static readonly ROW_PADDEWWA_TELEPORT = 9647;
+		static readonly ROW_LASSAR_TELEPORT = 9648;
+		static readonly ROW_DAREEYAK_TELEPORT = 9649;
+		static readonly ROW_OURANIA_TELEPORT = 9650;
+		static readonly ROW_BARBARIAN_TELEPORT = 9651;
+		static readonly ROW_KHAZARD_TELEPORT = 9652;
+		static readonly ROW_ICEPLATEAU_TELEPORT = 9653;
 		static readonly POLLFILTERS_ID = 124;
 		static readonly POLLFILTERS_COL_CATEGORY = 0;
 		static readonly POLLFILTERS_COL_ID = 1;
@@ -8922,13 +8936,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_ACCELERATION = 26;
 		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_SPEEDBOOST_DURATION = 27;
 		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_CARGOHOLD_SIZE = 28;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_CARGOHOLD_SIZE_UIM = 29;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_FETID_WATER_RESISTANT = 30;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_CRYSTAL_FLECKED_RESISTANT = 31;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_TANGLED_KELP_RESISTANT = 32;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_ICY_SEAS_RESISTANT = 33;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_MAX_WIND_MOTES = 34;
-		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_ADDITIONAL_RECOVERY_COST_PERCENTAGE = 35;
+		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_FETID_WATER_RESISTANT = 29;
+		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_CRYSTAL_FLECKED_RESISTANT = 30;
+		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_TANGLED_KELP_RESISTANT = 31;
+		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_ICY_SEAS_RESISTANT = 32;
+		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_MAX_WIND_MOTES = 33;
+		static readonly SAILINGBOATFACILITYSTATS_COL_BOAT_ADDITIONAL_RECOVERY_COST_PERCENTAGE = 34;
 		static readonly ROW_SAILING_BOAT_STATS_MERMAID_BLESSING = 8091;
 		static readonly ROW_SAILING_COMBAT_STATS_RUNIC_SHIELD_LOW_INACTIVE = 8092;
 		static readonly ROW_SAILING_COMBAT_STATS_RUNIC_SHIELD_LOW_ACTIVE = 8093;
@@ -10699,5 +10712,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_DEADMANSKULL_INTERFACE_TAB_PERMANENT = 9638;
 		static readonly ROW_DEADMANSKULL_INTERFACE_TAB_TOGGLE = 9639;
 		static readonly ROW_DEADMANSKULL_INTERFACE_TAB_ATTUNE = 9640;
+		static readonly COWBOSSSCENERYNPCS_ID = 211;
+		static readonly ROW_COWBOSS_SCENERYNPCS = 8661;
 	}
   }

@@ -16128,5 +16128,36 @@ declare namespace net.runelite.api {
 		static readonly HOODED_SLAYER_HELMET_I_33072 = 33072;
 		static readonly FACILITY_BOTTLE_EMPTY = 33074;
 		static readonly FACILITY_BOTTLE_FULL = 33077;
+		static readonly _25TH_ANNIVERSARY_HELMET = 33080;
+		static readonly _25TH_ANNIVERSARY_WARRIOR_TABARD = 33082;
+		static readonly _25TH_ANNIVERSARY_SKELETON_TABARD = 33084;
+		static readonly _25TH_ANNIVERSARY_5X5_HAT = 33086;
+		static readonly GARY = 33088;
+		static readonly BOTTOMLESS_MILK_BUCKET = 33089;
+		static readonly BOTTOMLESS_MILK_BUCKET_EMPTY = 33091;
+		static readonly COW_SLIPPERS = 33093;
+		static readonly COW_SLIPPERS_33096 = 33096;
+		static readonly COW_SLIPPERS_33097 = 33097;
+		static readonly COW_SLIPPERS_33098 = 33098;
+		static readonly BRUTUS_SLIPPERS = 33099;
+		static readonly MOOLETA = 33101;
+		static readonly COWBELL_AMULET = 33103;
+		static readonly COWBELL_AMULET_33104 = 33104;
+		static readonly RAW_TBONE_STEAK = 33106;
+		static readonly COOKED_TBONE_STEAK = 33109;
+		static readonly BURNT_TBONE_STEAK = 33112;
+		static readonly BULL_BONES = 33115;
+		static readonly MAGIC_LAMP = 33117;
+		static readonly ABYSSAL_POTATO = 33118;
+		static readonly PERFECTED_QUETZAL_WHISTLEI = 33120;
+		static readonly ANNIHILATION_EXIT_PORTAL_BLUEPRINTS = 33122;
+		static readonly BEEF = 33124;
+		static readonly THE_GROATS_PRINCIPLES = 33126;
+		static readonly MILK_SAMPLE = 33128;
+		static readonly MILK_SAMPLE_33130 = 33130;
+		static readonly EXIT_PORTAL_33132 = 33132;
+		static readonly PRISTINE_SPIDER_SILK = 33133;
+		static readonly SILKLINED_HERB_SACK = 33135;
+		static readonly OPEN_SILKLINED_HERB_SACK = 33137;
 	}
   }

@@ -2748,5 +2748,18 @@ declare namespace net.runelite.api.gameval {
 		static readonly MUSIC_PLAYLIST_3_48 = 5386;
 		static readonly MUSIC_PLAYLIST_3_49 = 5387;
 		static readonly MUSIC_PLAYLIST_3_50 = 5388;
+		static readonly OPTIONS_VOLUMES_SAVED_DESKTOP_1 = 5396;
+		static readonly OPTIONS_VOLUMES_SAVED_DESKTOP_2 = 5397;
+		static readonly OPTIONS_VOLUMES_SAVED_MOBILE_1 = 5398;
+		static readonly OPTIONS_VOLUMES_SAVED_MOBILE_2 = 5399;
+		static readonly MUSIC_PLAYER_COLOUR_PLAYING = 5401;
+		static readonly COWBOSS_MISC = 5405;
+		static readonly TOTAL_COWBOSS_KILLS = 5407;
+		static readonly TOTAL_COWBOSS_HARDMODE_KILLS = 5408;
+		static readonly COWQUEST_MAIN = 5412;
+		static readonly POH_NEXUS_TELEPORT8 = 5413;
+		static readonly POH_NEXUS_TELEPORT9 = 5414;
+		static readonly POH_NEXUS_TELEPORT8_TEMP = 5415;
+		static readonly POH_NEXUS_TELEPORT9_TEMP = 5416;
 	}
   }

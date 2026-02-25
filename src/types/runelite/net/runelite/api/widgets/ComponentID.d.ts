@@ -128,7 +128,7 @@ declare namespace net.runelite.api.widgets {
 		static readonly COMBAT_STYLE_THREE = 38862862;
 		static readonly COMBAT_STYLE_TWO = 38862858;
 		static readonly COMBAT_WEAPON_NAME = 38862851;
-		static readonly DEPOSIT_BOX_INVENTORY_ITEM_CONTAINER = 12582935;
+		static readonly DEPOSIT_BOX_INVENTORY_ITEM_CONTAINER = 12582936;
 		static readonly DESTROY_ITEM_NAME = 38273030;
 		static readonly DESTROY_ITEM_NO = 38273027;
 		static readonly DESTROY_ITEM_YES = 38273025;
