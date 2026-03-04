@@ -3577,16 +3577,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_2026_SOTD_SPECIAL_START = 3572;
 		static readonly DEADMAN_2026_SOTD_SPECIAL_EXTRA = 3573;
 		static readonly SARADOMIN_LIGHTNING_DEADMAN = 3574;
-		static readonly DRAGON_FIREBREATH_OLD = 3575;
-		static readonly DRAGON_RANGED_FIRE_ATTACK_OLD = 3576;
-		static readonly DRAGON_ICEBREATH_OLD = 3577;
-		static readonly DRAGON_ACIDBREATH_OLD = 3578;
-		static readonly DRAGON_TRIPLE_FIREBREATH_ATTACK_OLD = 3579;
-		static readonly KALPHITE_GLOW_OLD = 3580;
-		static readonly KALPHITE_QUEEN_GLOW_OLD = 3581;
-		static readonly KALPHITE_GLOW_TRAVEL_OLD = 3582;
-		static readonly KALPHITE_GLOW_IMPACT_OLD = 3583;
-		static readonly _25TH_PORTAL_TELEPORT = 3584;
 		static readonly VFX_WHITE_PARTICLES = 3585;
 		static readonly VFX_WHITE_PARTICLES_REVERSE = 3586;
 		static readonly VFX_BEEF_TORNADO = 3587;

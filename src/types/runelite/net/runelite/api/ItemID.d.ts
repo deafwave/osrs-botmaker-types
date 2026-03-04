@@ -4549,6 +4549,7 @@ declare namespace net.runelite.api {
 		static readonly EMPTY_SPICE_SHAKER = 7496;
 		static readonly DIRTY_BLAST = 7497;
 		static readonly ANTIQUE_LAMP_7498 = 7498;
+		static readonly RED_CRAB = 7505;
 		static readonly ASGOLDIAN_ALE = 7508;
 		static readonly DWARVEN_ROCK_CAKE = 7509;
 		static readonly DWARVEN_ROCK_CAKE_7510 = 7510;
@@ -15078,7 +15079,7 @@ declare namespace net.runelite.api {
 		static readonly ELKHORN_POTION_UNF = 31662;
 		static readonly PILLAR_POTION_UNF = 31665;
 		static readonly UMBRAL_POTION_UNF = 31668;
-		static readonly RED_CRAB = 31671;
+		static readonly RED_CRAB_31671 = 31671;
 		static readonly BLUE_CRAB = 31674;
 		static readonly RAINBOW_CRAB = 31677;
 		static readonly RAINBOW_CRAB_31680 = 31680;
@@ -16132,7 +16133,6 @@ declare namespace net.runelite.api {
 		static readonly _25TH_ANNIVERSARY_WARRIOR_TABARD = 33082;
 		static readonly _25TH_ANNIVERSARY_SKELETON_TABARD = 33084;
 		static readonly _25TH_ANNIVERSARY_5X5_HAT = 33086;
-		static readonly GARY = 33088;
 		static readonly BOTTOMLESS_MILK_BUCKET = 33089;
 		static readonly BOTTOMLESS_MILK_BUCKET_EMPTY = 33091;
 		static readonly COW_SLIPPERS = 33093;

@@ -286,6 +286,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEAL_QUEST = 600;
 		static readonly DEAL_VAR = 601;
 		static readonly AGRITH_QUEST_VARP = 602;
+		static readonly AGRITH_REGION = 603;
 		static readonly MAKINGHISTORY = 604;
 		static readonly MAIN_RATCATCH_VAR = 607;
 		static readonly RATCATCH_VAR_MULTI = 609;
@@ -2761,5 +2762,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_NEXUS_TELEPORT9 = 5414;
 		static readonly POH_NEXUS_TELEPORT8_TEMP = 5415;
 		static readonly POH_NEXUS_TELEPORT9_TEMP = 5416;
+		static readonly LEVELUP_LISTS_A = 5459;
+		static readonly LEVELUP_LISTS_B = 5460;
+		static readonly LEVELUP_LISTS_C = 5461;
+		static readonly LEVELUP_LISTS_D = 5462;
 	}
   }

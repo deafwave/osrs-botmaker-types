@@ -26197,9 +26197,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly RCU_OUTER_MULTI6 = 26192;
 		static readonly FAI_FALADOR_PARTY_ROOM_CHEST_CLOSED = 26193;
 		static readonly FAI_FALADOR_PARTY_ROOM_LEVER = 26194;
-		static readonly BIRTHDAYBANNERL = 26195;
-		static readonly BIRTHDAYBANNERR = 26196;
-		static readonly BIRTHDAYBANNERM = 26197;
 		static readonly BIRTHDAYCAKE_FULL = 26198;
 		static readonly GRINDER_MACHINE = 26199;
 		static readonly WILD_DOOR_INACTIVE = 26200;

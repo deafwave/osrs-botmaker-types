@@ -7433,5 +7433,29 @@ declare namespace net.runelite.api.gameval {
 		static readonly MUSICICONS__1 = 7428;
 		static readonly MUSICICONS__2 = 7429;
 		static readonly MUSICICONS__3 = 7430;
+		static readonly STATSILHOUETTE__0 = 7431;
+		static readonly STATSILHOUETTE__1 = 7432;
+		static readonly STATSILHOUETTE__2 = 7433;
+		static readonly STATSILHOUETTE__3 = 7434;
+		static readonly STATSILHOUETTE__4 = 7435;
+		static readonly STATSILHOUETTE__5 = 7436;
+		static readonly STATSILHOUETTE__6 = 7437;
+		static readonly STATSILHOUETTE__7 = 7438;
+		static readonly STATSILHOUETTE__8 = 7439;
+		static readonly STATSILHOUETTE__9 = 7440;
+		static readonly STATSILHOUETTE__10 = 7441;
+		static readonly STATSILHOUETTE__11 = 7442;
+		static readonly STATSILHOUETTE__12 = 7443;
+		static readonly STATSILHOUETTE__13 = 7444;
+		static readonly STATSILHOUETTE__14 = 7445;
+		static readonly STATSILHOUETTE__15 = 7446;
+		static readonly STATSILHOUETTE__16 = 7447;
+		static readonly STATSILHOUETTE__17 = 7448;
+		static readonly STATSILHOUETTE__18 = 7449;
+		static readonly STATSILHOUETTE__19 = 7450;
+		static readonly STATSILHOUETTE__20 = 7451;
+		static readonly STATSILHOUETTE__21 = 7452;
+		static readonly STATSILHOUETTE__22 = 7453;
+		static readonly STATSILHOUETTE__23 = 7454;
 	}
   }

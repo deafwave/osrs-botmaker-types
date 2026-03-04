@@ -3184,8 +3184,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_MENAGERIE_SMOKEPET = 4366;
 		static readonly POH_MENAGERIE_KRAKENPET = 4367;
 		static readonly DAN_RAGS_THE_RAGGERS_OH_DAN = 4370;
-		static readonly SKILL_GUIDE_SKILL = 4371;
-		static readonly SKILL_GUIDE_SUBSECTION = 4372;
 		static readonly TRADE_THIS_PLAYER_REMOVED = 4374;
 		static readonly TRADE_OTHER_PLAYER_REMOVED = 4375;
 		static readonly TRADINGPOST_TOGGLES = 4378;
@@ -5538,7 +5536,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_BOARD_FILTERED = 9448;
 		static readonly POH_BOARD_LAST_LOC = 9449;
 		static readonly POH_CLOCKWORK_RECENTDROP = 9450;
-		static readonly OPTION_LEVEL_UP_MESSAGE = 9452;
 		static readonly SLAYER_LONGER_BASILISK = 9455;
 		static readonly SLAYER_UNLOCK_BASILISK = 9456;
 		static readonly VIKINGEXILE = 9459;
@@ -14322,5 +14319,33 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_NEXUS_TELE_43_TEMP = 20128;
 		static readonly POH_NEXUS_TELE_44_TEMP = 20129;
 		static readonly POH_NEXUS_TELE_45_TEMP = 20130;
+		static readonly OPTION_LEVEL_UP_MESSAGE_DISABLED = 20157;
+		static readonly OPTION_LEVEL_UP_CHATBOX_LIST = 20158;
+		static readonly OPTION_LEVEL_UP_GUIDE_LIST_DISABLED = 20159;
+		static readonly COWBOSS_REGULAR_DONTASKAGAIN = 20160;
+		static readonly LEVELUP_LIST_STRENGTH = 20161;
+		static readonly LEVELUP_LIST_AGILITY = 20162;
+		static readonly LEVELUP_LIST_FIREMAKING = 20163;
+		static readonly LEVELUP_LIST_FISHING = 20164;
+		static readonly LEVELUP_LIST_HITPOINTS = 20165;
+		static readonly LEVELUP_LIST_MINING = 20166;
+		static readonly LEVELUP_LIST_RUNECRAFT = 20167;
+		static readonly LEVELUP_LIST_THIEVING = 20168;
+		static readonly LEVELUP_LIST_WOODCUTTING = 20169;
+		static readonly LEVELUP_LIST_PRAYER = 20170;
+		static readonly LEVELUP_LIST_MAGIC = 20171;
+		static readonly LEVELUP_LIST_SAILING = 20172;
+		static readonly LEVELUP_LIST_SLAYER = 20173;
+		static readonly LEVELUP_LIST_CONSTRUCTION = 20174;
+		static readonly LEVELUP_LIST_ATTACK = 20175;
+		static readonly LEVELUP_LIST_COOKING = 20176;
+		static readonly LEVELUP_LIST_CRAFTING = 20177;
+		static readonly LEVELUP_LIST_DEFENCE = 20178;
+		static readonly LEVELUP_LIST_FARMING = 20179;
+		static readonly LEVELUP_LIST_FLETCHING = 20180;
+		static readonly LEVELUP_LIST_HERBLORE = 20181;
+		static readonly LEVELUP_LIST_HUNTER = 20182;
+		static readonly LEVELUP_LIST_RANGED = 20183;
+		static readonly LEVELUP_LIST_SMITHING = 20184;
 	}
   }
