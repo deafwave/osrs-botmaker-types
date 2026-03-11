@@ -19000,6 +19000,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_SPIDER_SILK = 33133;
 		static readonly SLAYER_HERB_SACK_SILK = 33135;
 		static readonly SLAYER_HERB_SACK_SILK_OPEN = 33137;
+		static readonly MINIGAME_TELEPORT = 33138;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;

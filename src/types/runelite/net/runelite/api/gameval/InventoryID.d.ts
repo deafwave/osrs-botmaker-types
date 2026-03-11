@@ -1008,5 +1008,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly RAZMIREBUILDINGSTORE_IRON = 1003;
 		static readonly RAZMIREBUILDINGSTORE_UIM = 1004;
 		static readonly RAZMIREBUILDINGSTORE_GIM = 1005;
+		static readonly ITEMGRANT_NOTRACKING = 1006;
 	}
   }

@@ -97,6 +97,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SHEEP = 179;
 		static readonly FLUFFS = 180;
 		static readonly HEROQUEST = 188;
+		static readonly PRAYGUILD = 190;
 		static readonly MURDERQUEST = 192;
 		static readonly MURDERSUS = 195;
 		static readonly DESERTRESCUE = 197;
@@ -297,6 +298,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CHAMPIONS_DEFEATED = 617;
 		static readonly DEVIOUS_BASE = 622;
 		static readonly WIN05_VAR = 623;
+		static readonly MAGICTRAINING5 = 628;
 		static readonly MAGICTRAINING6 = 629;
 		static readonly HANDSAND = 635;
 		static readonly HANDSAND_TRANSMIT = 636;

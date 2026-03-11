@@ -1124,6 +1124,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly WIN05_DECO_COUNT_PINK = 1482;
 		static readonly WIN05_DECO_SHAPE = 1483;
 		static readonly DEADMAN_TOURNAMENT_FINALAREA = 1497;
+		static readonly MAGICTRAINING_TELE_POINTS_OLD = 1498;
+		static readonly MAGICTRAINING_ENTRA_NOOB = 1499;
+		static readonly MAGICTRAINING_GRAVE_BONE1COUNT = 1500;
+		static readonly MAGICTRAINING_GRAVE_BONE2COUNT = 1501;
+		static readonly MAGICTRAINING_GRAVE_BONE3COUNT = 1502;
 		static readonly MAGICTRAINING_ENCHAN_ORBTOTAL = 1503;
 		static readonly MAGICTRAINING_ALCHEM_COINREWARD = 1504;
 		static readonly MAGICTRAINING_BONESPEACHES = 1505;
@@ -3184,6 +3189,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_MENAGERIE_SMOKEPET = 4366;
 		static readonly POH_MENAGERIE_KRAKENPET = 4367;
 		static readonly DAN_RAGS_THE_RAGGERS_OH_DAN = 4370;
+		static readonly OPTION_LEVEL_UP_POPUP_LIST = 4371;
 		static readonly TRADE_THIS_PLAYER_REMOVED = 4374;
 		static readonly TRADE_OTHER_PLAYER_REMOVED = 4375;
 		static readonly TRADINGPOST_TOGGLES = 4378;
@@ -3512,6 +3518,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly PISCARILIUS_BURGLARY_TARGET = 4903;
 		static readonly SHAYZIEN_ARMOUR_CHALLENGE = 4904;
 		static readonly PISCARILIUS_BURGLARY_COMPLETED = 4905;
+		static readonly MONASTERY_ENTER = 4907;
+		static readonly ZEAH_WATERINGCAN_CHARGES = 4908;
+		static readonly ZEAH_TITHE_MINIGAME_UNLOCKED = 4909;
+		static readonly ZEAH_BLOOD_ALTAR_UNLOCKED = 4910;
+		static readonly ZEAH_SOUL_ALTAR_UNLOCKED = 4911;
+		static readonly ZEAH_LIBRARY_FETCHBOOK = 4912;
+		static readonly ZEAH_LIBRARY_BOOKHUNTER = 4913;
+		static readonly ZEAH_LIBRARY_SHUFFLEMANUSCRIPT = 4914;
+		static readonly ZEAH_LIBRARY_METMANUSCRIPTSEEKER = 4915;
+		static readonly ZEAH_TELEPORT_UNLOCKED = 4916;
+		static readonly ZEAH_SHAYZIEN_METCRIMEFIGHTER = 4917;
 		static readonly RC_NO_TALLY_REQUIRED_SOUL_UNUSED = 4918;
 		static readonly RC_NO_TALLY_REQUIRED_BLOOD_UNUSED = 4919;
 		static readonly MILL_FLOUR = 4920;
