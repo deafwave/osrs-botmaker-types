@@ -19001,6 +19001,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_HERB_SACK_SILK = 33135;
 		static readonly SLAYER_HERB_SACK_SILK_OPEN = 33137;
 		static readonly MINIGAME_TELEPORT = 33138;
+		static readonly ANCIENT_MINIGAME_TELEPORT = 33139;
+		static readonly ARCEUUS_MINIGAME_TELEPORT = 33140;
+		static readonly LUNAR_MINIGAME_TELEPORT = 33141;
+		static readonly SAILING_SKILLGUIDE_BALLISTIC_ATTRACTOR = 33142;
+		static readonly LOST_SCHEMATIC_BALLISTIC_ATTRACTOR = 33143;
+		static readonly SAILING_VEILED_KRAKEN_TENTACLE = 33144;
+		static readonly SAILING_VEILED_KRAKEN_INK_SAC = 33145;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;

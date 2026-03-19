@@ -2768,5 +2768,18 @@ declare namespace net.runelite.api.gameval {
 		static readonly LEVELUP_LISTS_B = 5460;
 		static readonly LEVELUP_LISTS_C = 5461;
 		static readonly LEVELUP_LISTS_D = 5462;
+		static readonly SAILING_BOAT_1_CUSTOMISATION_5 = 5463;
+		static readonly SAILING_BOAT_1_CUSTOMISATION_EXTRA_DATA_4 = 5464;
+		static readonly SAILING_BOAT_2_CUSTOMISATION_5 = 5465;
+		static readonly SAILING_BOAT_2_CUSTOMISATION_EXTRA_DATA_4 = 5466;
+		static readonly SAILING_BOAT_3_CUSTOMISATION_5 = 5467;
+		static readonly SAILING_BOAT_3_CUSTOMISATION_EXTRA_DATA_4 = 5468;
+		static readonly SAILING_BOAT_4_CUSTOMISATION_5 = 5469;
+		static readonly SAILING_BOAT_4_CUSTOMISATION_EXTRA_DATA_4 = 5470;
+		static readonly SAILING_BOAT_5_CUSTOMISATION_5 = 5471;
+		static readonly SAILING_BOAT_5_CUSTOMISATION_EXTRA_DATA_4 = 5472;
+		static readonly SAILING_SIDEPANEL_FACILITY_STATES_6 = 5473;
+		static readonly SAILING_SIDEPANEL_AMMUNITION_COUNT_11 = 5474;
+		static readonly SAILING_SIDEPANEL_AMMUNITION_COUNT_12 = 5475;
 	}
   }

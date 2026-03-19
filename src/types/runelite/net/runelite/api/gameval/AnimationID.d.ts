@@ -1178,7 +1178,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly KALPHITE_GLOW = 1173;
 		static readonly KALPHITE_EGG_OPEN = 1174;
 		static readonly KALPHITE_EGG_CLOSE = 1175;
+		static readonly SAILING_BALLISTIC_ATTRACTOR_IDLE_OFF = 1176;
+		static readonly SAILING_BALLISTIC_ATTRACTOR_IDLE_ON = 1177;
 		static readonly KALPHITE_QUEEN_ATTACK_CLAWS = 1178;
+		static readonly SAILING_HUMAN_SALVAGE_HOOK_KANDARIN_1X3_DROP01_CREW = 1179;
+		static readonly SAILING_HUMAN_SALVAGE_HOOK_KANDARIN_2X5_DROP01_CREW = 1180;
+		static readonly SAILING_HUMAN_SALVAGE_HOOK_KANDARIN_3X8_DROP01_CREW = 1181;
 		static readonly KALPHITE_READY = 1183;
 		static readonly KALPHITE_ATTACK_MANDIBLES = 1184;
 		static readonly KALPHITE_ATTACK_CLAWS = 1185;

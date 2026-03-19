@@ -29327,6 +29327,9 @@ declare namespace net.runelite.api {
 		static readonly CORAL_60672 = 60672;
 		static readonly CORAL_60673 = 60673;
 		static readonly FOUNTAIN_60681 = 60681;
+		static readonly FACILITY_HOTSPOT_60720 = 60720;
+		static readonly FACILITY_HOTSPOT_60721 = 60721;
+		static readonly BALLISTIC_ATTRACTOR = 60722;
 		static readonly LADDER_60731 = 60731;
 		static readonly LADDER_60732 = 60732;
 		static readonly BIRTHDAY_BANNER = 60745;

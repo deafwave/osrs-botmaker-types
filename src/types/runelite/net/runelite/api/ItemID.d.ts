@@ -16159,5 +16159,9 @@ declare namespace net.runelite.api {
 		static readonly PRISTINE_SPIDER_SILK = 33133;
 		static readonly SILKLINED_HERB_SACK = 33135;
 		static readonly OPEN_SILKLINED_HERB_SACK = 33137;
+		static readonly BALLISTIC_ATTRACTOR = 33142;
+		static readonly BALLISTIC_ATTRACTOR_SCHEMATIC = 33143;
+		static readonly VEILED_KRAKEN_TENTACLE = 33144;
+		static readonly VEILED_KRAKEN_INK_SAC = 33145;
 	}
   }
