@@ -66,3 +66,9 @@ jobs:
           # Push commit and tags
           git push
           git push --tags
+
+      - name: Trigger publish workflow
+        if: steps.commit.outputs.committed == 'true'
+        run: gh workflow run publish.yaml --ref ${{ github.event.repository.default_branch }}
+        env:
+          GH_TOKEN: ${{ github.token }}
