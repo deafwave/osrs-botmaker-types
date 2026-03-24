@@ -486,22 +486,6 @@ declare namespace net.runelite.api {
 		getWidget(componentId: number): net.runelite.api.widgets.Widget | null;
 
 		/**
-		 * Gets an array containing the x-axis canvas positions
-		 * of all widgets.
-		 *
-		 * @return array of x-axis widget coordinates
-		 */
-		getWidgetPositionsX(): number[];
-
-		/**
-		 * Gets an array containing the y-axis canvas positions
-		 * of all widgets.
-		 *
-		 * @return array of y-axis widget coordinates
-		 */
-		getWidgetPositionsY(): number[];
-
-		/**
 		 * Gets the current run energy of the logged in player.
 		 *
 		 * @return the run energy in units of 1/100th of an percentage
@@ -1496,12 +1480,12 @@ declare namespace net.runelite.api {
 		runScript(...args: any[]): void;
 
 		/**
-		 * Creates a blank ScriptEvent for executing a ClientScript2 script
+		 * Creates a blank ScriptEventBuilder for building a ScriptEvent to execute a ClientScript2 script
 		 *
 		 * @param args the script id, then any additional arguments to execute the script with
 		 * @see ScriptID
 		 */
-		createScriptEvent(...args: any[]): ScriptEvent;
+		createScriptEventBuilder(...args: any[]): ScriptEventBuilder;
 
 		/**
 		 * Checks whether or not there is any active hint arrow.
