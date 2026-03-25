@@ -272,6 +272,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_EASTER_2025 = 5107;
 		static readonly ROW_HALLOWEEN_2025 = 6989;
 		static readonly ROW_BIRTHDAY_2026 = 7033;
+		static readonly ROW_EASTER_2026 = 13319;
 		static readonly CRMODULE_ID = 2;
 		static readonly CRMODULE_COL_DISPLAYNAME = 0;
 		static readonly CRMODULE_COL_ICON = 1;
@@ -2926,6 +2927,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_GREENMAN_MASK_MAPLE_TRANSMOG = 5394;
 		static readonly ROW_GREENMAN_MASK_YEW_TRANSMOG = 5395;
 		static readonly ROW_GREENMAN_MASK_MAGIC_TRANSMOG = 5396;
+		static readonly ROW_EASTER26_EGG_COMPANION_ARCHIBALD = 13312;
+		static readonly ROW_EASTER26_EGG_COMPANION_GRID = 13313;
+		static readonly ROW_EASTER26_EGG_COMPANION_BUNNY = 13314;
+		static readonly ROW_EASTER26_EGG_COMPANION_DIAMONDS = 13315;
+		static readonly ROW_EASTER26_EGG_COMPANION_CHICK = 13316;
+		static readonly ROW_EASTER26_EGG_COMPANION_MELTED = 13317;
+		static readonly ROW_EASTER26_EGG_COMPANION_DRAGON = 13318;
 		static readonly COMBINATIONLOCKDATASET_ID = 35;
 		static readonly COMBINATIONLOCKDATASET_COL_MIN_LENGTH = 0;
 		static readonly COMBINATIONLOCKDATASET_COL_MAX_LENGTH = 1;
@@ -2939,6 +2947,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_COMBINATION_LOCK_DATASET_ALPHABETIC_REVERSED = 3511;
 		static readonly ROW_VMQ3_TOWER_LOCK_DATASET_ALPHABETIC = 3783;
 		static readonly ROW_COMBINATION_LOCK_DATASET_VMQ4_JANUS_LOCK = 5195;
+		static readonly ROW_COMBINATION_LOCK_DATASET_ALPHABETIC_EASTER26 = 13320;
 		static readonly COMBINATIONLOCKVALUES_ID = 36;
 		static readonly COMBINATIONLOCKVALUES_COL_STRING_VALUE = 0;
 		static readonly COMBINATIONLOCKVALUES_COL_GRAPHIC_VALUE = 1;

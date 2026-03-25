@@ -12802,7 +12802,7 @@ declare namespace net.runelite.api {
 		static readonly ANCIENT_GODSWORD_27184 = 27184;
 		static readonly RUNE_DEFENDER_27185 = 27185;
 		static readonly ZARYTE_CROSSBOW_27186 = 27186;
-		static readonly BOW_OF_FAERDHINEN_27187 = 27187;
+		static readonly BOW_OF_FAERDHINEN_C_27187 = 27187;
 		static readonly LIGHT_BALLISTA_27188 = 27188;
 		static readonly VERACS_FLAIL_27189 = 27189;
 		static readonly VERACS_BRASSARD_27190 = 27190;
@@ -16163,5 +16163,35 @@ declare namespace net.runelite.api {
 		static readonly BALLISTIC_ATTRACTOR_SCHEMATIC = 33143;
 		static readonly VEILED_KRAKEN_TENTACLE = 33144;
 		static readonly VEILED_KRAKEN_INK_SAC = 33145;
+		static readonly SCRIBBLED_NOTES = 33146;
+		static readonly EGG_BOX = 33147;
+		static readonly EGG_BOX_33148 = 33148;
+		static readonly ARCHIBALD = 33149;
+		static readonly ARCHIBALD_33151 = 33151;
+		static readonly ARCHIBALD_33153 = 33153;
+		static readonly ARCHIBALD_33155 = 33155;
+		static readonly ARCHIBALD_33157 = 33157;
+		static readonly ARCHIBALD_33159 = 33159;
+		static readonly ARCHIBALD_33161 = 33161;
+		static readonly ARCHIBALD_33163 = 33163;
+		static readonly CRYSTAL_BODY_33166 = 33166;
+		static readonly CRYSTAL_LEGS_33168 = 33168;
+		static readonly CRYSTAL_HELM_33170 = 33170;
+		static readonly AVERNIC_TREADS_MAX_33172 = 33172;
+		static readonly OSMUMTENS_FANG_33174 = 33174;
+		static readonly ELIDINIS_WARD_F_33176 = 33176;
+		static readonly NOXIOUS_HALBERD_33178 = 33178;
+		static readonly MAGUS_RING_33180 = 33180;
+		static readonly ULTOR_RING_33182 = 33182;
+		static readonly PURGING_STAFF_33184 = 33184;
+		static readonly DRAGONFIRE_SHIELD_33186 = 33186;
+		static readonly TWISTED_BUCKLER_33188 = 33188;
+		static readonly MASORI_BODY_F_33190 = 33190;
+		static readonly MASORI_CHAPS_F_33192 = 33192;
+		static readonly TORVA_PLATELEGS_33194 = 33194;
+		static readonly VIRTUS_ROBE_TOP_33196 = 33196;
+		static readonly VIRTUS_ROBE_BOTTOM_33198 = 33198;
+		static readonly BURNING_CLAWS_33200 = 33200;
+		static readonly ARANEA_BOOTS_33202 = 33202;
 	}
   }

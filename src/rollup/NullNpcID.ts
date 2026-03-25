@@ -2542,6 +2542,7 @@ const data: Record<string, number> = {
 	NULL_15569: 15569,
 	NULL_15570: 15570,
 	NULL_15571: 15571,
+	NULL_15579: 15579,
 	NULL_15624: 15624,
 	NULL_15630: 15630,
 };

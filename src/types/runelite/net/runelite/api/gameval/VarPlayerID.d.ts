@@ -2781,5 +2781,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_SIDEPANEL_FACILITY_STATES_6 = 5473;
 		static readonly SAILING_SIDEPANEL_AMMUNITION_COUNT_11 = 5474;
 		static readonly SAILING_SIDEPANEL_AMMUNITION_COUNT_12 = 5475;
+		static readonly EASTER26_MAIN = 5476;
 	}
   }

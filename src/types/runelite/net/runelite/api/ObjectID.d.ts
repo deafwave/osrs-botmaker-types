@@ -29330,8 +29330,16 @@ declare namespace net.runelite.api {
 		static readonly FACILITY_HOTSPOT_60720 = 60720;
 		static readonly FACILITY_HOTSPOT_60721 = 60721;
 		static readonly BALLISTIC_ATTRACTOR = 60722;
+		static readonly CRATE_60727 = 60727;
+		static readonly CRATE_60728 = 60728;
 		static readonly LADDER_60731 = 60731;
 		static readonly LADDER_60732 = 60732;
+		static readonly NOTE_ON_A_TABLE = 60737;
+		static readonly TABLE_WITHOUT_A_NOTE = 60738;
+		static readonly SHELVES_60740 = 60740;
+		static readonly SHELVES_60741 = 60741;
+		static readonly STEPLADDER_60743 = 60743;
+		static readonly STEPLADDER_60744 = 60744;
 		static readonly BIRTHDAY_BANNER = 60745;
 		static readonly BIRTHDAY_BANNER_60756 = 60756;
 		static readonly WEB_60759 = 60759;
@@ -29389,5 +29397,15 @@ declare namespace net.runelite.api {
 		static readonly ICE_PLATEAU_PORTAL_60817 = 60817;
 		static readonly RESPAWN_PORTAL_60818 = 60818;
 		static readonly BOAT_PORTAL_60819 = 60819;
+		static readonly WALL_60826 = 60826;
+		static readonly WALL_60827 = 60827;
+		static readonly TABLE_60829 = 60829;
+		static readonly TABLE_60830 = 60830;
+		static readonly OAK_CHAIR_60832 = 60832;
+		static readonly OAK_CHAIR_60833 = 60833;
+		static readonly BED_60835 = 60835;
+		static readonly BED_60836 = 60836;
+		static readonly SUIT_OF_ARMOUR_60838 = 60838;
+		static readonly SUIT_OF_ARMOUR_60839 = 60839;
 	}
   }

@@ -1184,10 +1184,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_HUMAN_SALVAGE_HOOK_KANDARIN_1X3_DROP01_CREW = 1179;
 		static readonly SAILING_HUMAN_SALVAGE_HOOK_KANDARIN_2X5_DROP01_CREW = 1180;
 		static readonly SAILING_HUMAN_SALVAGE_HOOK_KANDARIN_3X8_DROP01_CREW = 1181;
+		static readonly CHAT_BAFFLED = 1182;
 		static readonly KALPHITE_READY = 1183;
 		static readonly KALPHITE_ATTACK_MANDIBLES = 1184;
 		static readonly KALPHITE_ATTACK_CLAWS = 1185;
 		static readonly KALPHITE_BLOCK = 1186;
+		static readonly CHAT_BAFFLED_IDLE = 1187;
 		static readonly KALPHITE_HATCHING = 1188;
 		static readonly KALPHITE_WALK = 1189;
 		static readonly KALPHITE_DEATH = 1190;
@@ -1774,6 +1776,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly MDAUGHTER_ABSAIL_COMBI_OLD = 1771;
 		static readonly MDAUGHTER_ABSAIL_COMBI = 1772;
 		static readonly GIANT_EAGLE_FLY = 1773;
+		static readonly HUMAN_EGG_ROLL = 1774;
+		static readonly HUMAN_EGG_ROLL_FAST = 1775;
+		static readonly ARCHIBALD_EGG_FALL01 = 1776;
+		static readonly ARCHIBALD_EGG_IDLE01 = 1777;
 		static readonly CAVE_LITTLEBUG_WALK = 1781;
 		static readonly CAVE_LITTLEBUG_READY = 1782;
 		static readonly CAVE_GOBLIN_READY = 1783;

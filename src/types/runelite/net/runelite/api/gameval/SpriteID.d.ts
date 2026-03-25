@@ -756,6 +756,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly MINIMAP_BOAT_COLOSSAL = 7291;
 		static readonly MINIMAP_BOAT_CLASSIC_LARGE = 7292;
 		static readonly STOP_OUTLINED = 7426;
+		static readonly TITLEBUTTON_ARROWS_47X41 = 7529;
+		static readonly TITLE_ICON_STAR_12X12 = 7530;
 		static readonly _2XSTANDARDSPELLSON__0 = 0;
 		static readonly _2XSTANDARDSPELLSON__1 = 1;
 		static readonly _2XSTANDARDSPELLSON__2 = 2;

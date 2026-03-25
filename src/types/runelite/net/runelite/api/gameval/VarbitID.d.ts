@@ -13483,15 +13483,25 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_SIDEPANEL_REPAIRKITS = 19210;
 		static readonly SAILING_SIDEPANEL_WEAPON_0_HAS_TARGET = 19211;
 		static readonly SAILING_SIDEPANEL_WEAPON_1_HAS_TARGET = 19213;
+		static readonly EASTER26_HUNT_TRACKING = 19214;
 		static readonly SAILING_SIDEPANEL_WEAPON_2_HAS_TARGET = 19215;
+		static readonly EASTER26_HUNT_LOC1 = 19216;
 		static readonly SAILING_SIDEPANEL_WEAPON_3_HAS_TARGET = 19217;
+		static readonly EASTER26_HUNT_LOC2 = 19218;
 		static readonly SAILING_SIDEPANEL_WEAPON_4_HAS_TARGET = 19219;
+		static readonly EASTER26_HUNT_LOC3 = 19220;
 		static readonly SAILING_SIDEPANEL_WEAPON_5_HAS_TARGET = 19221;
+		static readonly EASTER26_HUNT_LOC4 = 19222;
 		static readonly SAILING_SIDEPANEL_WEAPON_6_HAS_TARGET = 19223;
+		static readonly EASTER26_HUNT_LOC5 = 19224;
 		static readonly SAILING_SIDEPANEL_WEAPON_7_HAS_TARGET = 19225;
+		static readonly EASTER26_HUNT_LOC6 = 19226;
 		static readonly SAILING_SIDEPANEL_WEAPON_8_HAS_TARGET = 19227;
+		static readonly EASTER26_HUNT_LOC7 = 19228;
 		static readonly SAILING_SIDEPANEL_WEAPON_9_HAS_TARGET = 19229;
+		static readonly EASTER26_HUNT_LOC8 = 19230;
 		static readonly SAILING_SIDEPANEL_WEAPON_10_HAS_TARGET = 19231;
+		static readonly EASTER26_EGG_BOX_STATE = 19232;
 		static readonly SAILING_SIDEPANEL_PLAYER_ROLE = 19233;
 		static readonly SAILING_SIDEPANEL_CREW_PLAYER_VIEW = 19234;
 		static readonly SAILING_SIDEPANEL_PLAYERS_ON_BOARD_TOTAL = 19235;
@@ -14396,5 +14406,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_5_HOTSPOT_11_EXTRA_DATA = 20225;
 		static readonly SAILING_BOAT_5_HOTSPOT_12_EXTRA_DATA = 20226;
 		static readonly LOST_SCHEMATIC_BALLISTIC_ATTRACTOR = 20227;
+		static readonly EASTER26_FIRST_CLUE_PICKED = 20228;
+		static readonly SOUL_WARS_XP_DISABLE = 20230;
+		static readonly CLAN_WARS_XP_DISABLE = 20231;
 	}
   }
