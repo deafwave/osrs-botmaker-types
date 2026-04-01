@@ -1007,6 +1007,7 @@ const data: Record<string, number> = {
 	RAZMIREBUILDINGSTORE_UIM: 1004,
 	RAZMIREBUILDINGSTORE_GIM: 1005,
 	ITEMGRANT_NOTRACKING: 1006,
+	CANOE_AXE: 1007,
 };
 
 export default data;

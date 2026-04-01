@@ -15603,6 +15603,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_06 = 15598;
 		static readonly POH_EASTER26_EGG_07 = 15599;
 		static readonly DAGANNOTH_DUNGEON_PRESSURE_PET_EASTER26_EGG_07 = 15600;
+		static readonly CANOEING_KAIQUIR = 15601;
+		static readonly CANOEING_AMERGIN = 15602;
+		static readonly CANOEING_PETE = 15603;
+		static readonly CANOEING_PORKAI = 15604;
+		static readonly CANOEING_LARA = 15605;
 		static readonly COWBOSS_MAPPED = 15624;
 		static readonly COWBOSS_UNNAMED = 15625;
 		static readonly COWBOSS = 15626;

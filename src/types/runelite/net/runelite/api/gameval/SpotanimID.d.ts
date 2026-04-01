@@ -3577,6 +3577,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_2026_SOTD_SPECIAL_START = 3572;
 		static readonly DEADMAN_2026_SOTD_SPECIAL_EXTRA = 3573;
 		static readonly SARADOMIN_LIGHTNING_DEADMAN = 3574;
+		static readonly XBOWS_FIRE_AND_CLIMBED_GRAPPLE_SPOT_ANIM_FAST = 3575;
 		static readonly VFX_WHITE_PARTICLES = 3585;
 		static readonly VFX_WHITE_PARTICLES_REVERSE = 3586;
 		static readonly VFX_BEEF_TORNADO = 3587;

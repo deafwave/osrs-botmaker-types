@@ -1780,6 +1780,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUMAN_EGG_ROLL_FAST = 1775;
 		static readonly ARCHIBALD_EGG_FALL01 = 1776;
 		static readonly ARCHIBALD_EGG_IDLE01 = 1777;
+		static readonly XBOWS_FIRE_AND_CLIMBED_GRAPPLE_FAST = 1778;
+		static readonly XBOWS_HUMAN_FIRE_AND_CLIMB_GRAPPLE_FAST = 1779;
+		static readonly XBOWS_HUMAN_SHOOT_GRAPPLE_UP_CLIFF_FAST = 1780;
 		static readonly CAVE_LITTLEBUG_WALK = 1781;
 		static readonly CAVE_LITTLEBUG_READY = 1782;
 		static readonly CAVE_GOBLIN_READY = 1783;

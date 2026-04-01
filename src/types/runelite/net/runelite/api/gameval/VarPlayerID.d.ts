@@ -653,6 +653,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_TRANSMITTING_PERM = 1327;
 		static readonly ZEAH_PERM_TRANSMIT = 1329;
 		static readonly EOC_BITS = 1336;
+		static readonly FAIRYRING_FAVOURITES = 1337;
 		static readonly MUSICMULTI_17 = 1338;
 		static readonly MM2_QUEST = 1339;
 		static readonly MM2_QUEST_TEMP = 1340;
@@ -2291,6 +2292,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly WORN_ITEM_BONUS4 = 4852;
 		static readonly WORN_ITEM_BONUS5 = 4853;
 		static readonly WORN_ITEM_BONUS6 = 4854;
+		static readonly FAIRYRING_FAVOURITES_2 = 4855;
+		static readonly FAIRYRING_FAVOURITES_3 = 4856;
 		static readonly RUNE_POUCH_LOADOUT_1 = 4857;
 		static readonly RUNE_POUCH_LOADOUT_2 = 4858;
 		static readonly RUNE_POUCH_LOADOUT_3 = 4859;
@@ -2444,6 +2447,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_COMBAT_PERM_TRANSMIT_NO_PROTECT = 5040;
 		static readonly SAILING_COMBAT_TEMP_TRANSMIT_NO_PROTECT = 5041;
 		static readonly SAILING_COMBAT_FACILITY_IN_USE = 5042;
+		static readonly SAILING_COMBAT_FACILITY_DATA = 5043;
 		static readonly SAILING_BOARDED_BOAT_NAME = 5053;
 		static readonly SAILING_TEMP_TRANSMIT_NO_PROTECT_1 = 5056;
 		static readonly SAILING_TEMP_TRANSMIT_NO_PROTECT_2 = 5057;
@@ -2782,5 +2786,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_SIDEPANEL_AMMUNITION_COUNT_11 = 5474;
 		static readonly SAILING_SIDEPANEL_AMMUNITION_COUNT_12 = 5475;
 		static readonly EASTER26_MAIN = 5476;
+		static readonly SPIRITTREE = 5478;
+		static readonly CANOEING_RIVER_DOUGNE = 5479;
+		static readonly CANOEING_RIVER_DOUGNE_2 = 5480;
+		static readonly CANOEING_MENU_2 = 5481;
 	}
   }

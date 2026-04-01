@@ -16193,5 +16193,12 @@ declare namespace net.runelite.api {
 		static readonly VIRTUS_ROBE_BOTTOM_33198 = 33198;
 		static readonly BURNING_CLAWS_33200 = 33200;
 		static readonly ARANEA_BOOTS_33202 = 33202;
+		static readonly BRONZE_CANNON_33204 = 33204;
+		static readonly IRON_CANNON_33205 = 33205;
+		static readonly STEEL_CANNON_33206 = 33206;
+		static readonly MITHRIL_CANNON_33207 = 33207;
+		static readonly ADAMANT_CANNON_33208 = 33208;
+		static readonly RUNE_CANNON_33209 = 33209;
+		static readonly DRAGON_CANNON_33210 = 33210;
 	}
   }

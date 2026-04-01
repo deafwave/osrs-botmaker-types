@@ -19038,6 +19038,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly BR_VIRTUS_LEGS = 33198;
 		static readonly BR_BONE_CLAWS = 33200;
 		static readonly BR_ARANEA_BOOTS = 33202;
+		static readonly SAILING_COMBAT_BRONZE_CANNON_DUMMY = 33204;
+		static readonly SAILING_COMBAT_IRON_CANNON_DUMMY = 33205;
+		static readonly SAILING_COMBAT_STEEL_CANNON_DUMMY = 33206;
+		static readonly SAILING_COMBAT_MITHRIL_CANNON_DUMMY = 33207;
+		static readonly SAILING_COMBAT_ADAMANT_CANNON_DUMMY = 33208;
+		static readonly SAILING_COMBAT_RUNE_CANNON_DUMMY = 33209;
+		static readonly SAILING_COMBAT_DRAGON_CANNON_DUMMY = 33210;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
