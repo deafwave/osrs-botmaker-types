@@ -1348,5 +1348,34 @@ declare namespace net.runelite.api.gameval {
 		static readonly SETTINGS_DEV_EXAMPLE_INT = 1343;
 		static readonly FAIRYRINGS_SEARCHSTRING = 1344;
 		static readonly SKILL_GUIDE_V2_OVERVIEW_CURRENT_TAB = 1345;
+		static readonly TALENT_TREE_SELECTED_NODE = 1346;
+		static readonly TALENT_TREE_OVERLAY_X = 1347;
+		static readonly TALENT_TREE_OVERLAY_Y = 1348;
+		static readonly TALENT_TREE_OVERLAY_WIDTH = 1349;
+		static readonly TALENT_TREE_OVERLAY_HEIGHT = 1350;
+		static readonly TALENT_TREE_ZOOM_SCALAR = 1351;
+		static readonly TALENT_TREE_SELECTED_NODE_AMOUNT = 1352;
+		static readonly TALENT_TREE_VERTICAL_SCROLL_POS = 1353;
+		static readonly TALENT_TREE_HORIZONTAL_SCROLL_POS = 1354;
+		static readonly TALENT_TREE_DRAG_FOCUS_X = 1355;
+		static readonly TALENT_TREE_DRAG_FOCUS_Y = 1356;
+		static readonly TALENT_TREE_DRAG_DELAY = 1357;
+		static readonly TALENT_TREE_MOBILE_OP_TOGGLE = 1358;
+		static readonly TALENT_TREE_SHOWING_INFO_PANEL = 1359;
+		static readonly LEAGUE_TWISTED_POINTS_VARC = 1360;
+		static readonly LEAGUE_TRAILBLAZER_POINTS_VARC = 1361;
+		static readonly LEAGUE_3_POINTS_VARC = 1362;
+		static readonly LEAGUE_TRAILBLAZER_RELOADED_POINTS_VARC = 1363;
+		static readonly LEAGUE_5_POINTS_VARC = 1364;
+		static readonly LEAGUE_6_POINTS_VARC = 1365;
+		static readonly LEAGUE_TASK_MENU_SELECTED_TASK = 1366;
+		static readonly LEAGUE_TASK_MENU_SELECTED_TASK_ID = 1367;
+		static readonly LEAGUE_TASK_MENU_SELECTED_TASK_CC_ID = 1368;
+		static readonly LEAGUE_TASK_MENU_ENTRY_ID = 1369;
+		static readonly LEAGUE_TASK_MENU_COMPONENT_ID = 1370;
+		static readonly LEAGUE_TASK_MENU_YPOS = 1371;
+		static readonly LEAGUE_TASK_MENU_COMPLETED_COUNT = 1372;
+		static readonly LEAGUE_TASK_MENU_TOTAL_COUNT = 1373;
+		static readonly LEAGUE_TASK_MENU_BUILD_IS_ACTIVE = 1374;
 	}
   }

@@ -1010,5 +1010,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly RAZMIREBUILDINGSTORE_GIM = 1005;
 		static readonly ITEMGRANT_NOTRACKING = 1006;
 		static readonly CANOE_AXE = 1007;
+		static readonly LEAGUES_NAMEDOBJ_BYPASS = 1008;
+		static readonly LEAGUES_TRANSMUTE_NAMEDOBJ_BYPASS = 1009;
+		static readonly BUTLERS_BELL_COLLECTION = 1010;
+		static readonly ADVENTURERSHOP_LEAGUES = 1011;
+		static readonly BARBARIAN_KNAPSACK = 1012;
+		static readonly FORTIS_SHOP_GENERAL_LEAGUE_6 = 1013;
+		static readonly FORTIS_SHOP_BLACKSMITH_LEAGUE_6 = 1014;
+		static readonly TAL_TEKLAN_ARCHERSHOP_LEAGUE_6 = 1015;
 	}
   }

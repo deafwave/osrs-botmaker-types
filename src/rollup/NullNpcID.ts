@@ -2077,6 +2077,7 @@ const data: Record<string, number> = {
 	NULL_13326: 13326,
 	NULL_13327: 13327,
 	NULL_13328: 13328,
+	NULL_13340: 13340,
 	NULL_13355: 13355,
 	NULL_13356: 13356,
 	NULL_13357: 13357,
@@ -2545,6 +2546,9 @@ const data: Record<string, number> = {
 	NULL_15579: 15579,
 	NULL_15624: 15624,
 	NULL_15630: 15630,
+	NULL_15642: 15642,
+	NULL_15643: 15643,
+	NULL_15644: 15644,
 };
 
 export default data;
