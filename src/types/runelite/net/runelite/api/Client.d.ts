@@ -2053,20 +2053,6 @@ declare namespace net.runelite.api {
 		getInstanceTemplateChunks(): number[][][];
 
 		/**
-		 * Returns a 2D array containing XTEA encryption keys used to decrypt
-		 * map region files.
-		 * <p>
-		 * The array maps the region keys at index {@code n} to the region
-		 * ID held in {@link #getMapRegions()} at {@code n}.
-		 * <p>
-		 * The array of keys for the region make up a 128-bit encryption key
-		 * spread across 4 integers.
-		 *
-		 * @return the XTEA encryption keys
-		 */
-		getXteaKeys(): number[][];
-
-		/**
 		 * Checks whether the scene is in an instanced region.
 		 * @see WorldView#isInstance()
 		 */
@@ -2255,7 +2241,7 @@ declare namespace net.runelite.api {
 		 *
 		 * @return
 		 */
-		getCameraFocusEntity(): CameraFocusableEntity;
+		getCameraFocusEntity(): CameraFocusableEntity | null;
 
 		/**
 		 * Find the worldview a given worldpoint belongs in
