@@ -15566,6 +15566,7 @@ declare namespace net.runelite.api {
 		static readonly BANNER_STAND = 29457;
 		static readonly ORNATE_BANNER_STAND = 29458;
 		static readonly THRONE_29459 = 29459;
+		static readonly SPADE_29460 = 29460;
 		static readonly GATE_29486 = 29486;
 		static readonly GATE_29487 = 29487;
 		static readonly GATE_29488 = 29488;

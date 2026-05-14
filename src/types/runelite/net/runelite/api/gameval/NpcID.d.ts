@@ -15580,10 +15580,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_TIGER_SHARK_NOOP = 15575;
 		static readonly SAILING_VEILED_KRAKEN = 15576;
 		static readonly SAILING_VEILED_KRAKEN_DEAD = 15577;
-		static readonly EASTER26_EASTER_BUNNY = 15578;
-		static readonly EASTER26_EGG_LAST_SPOT = 15579;
-		static readonly EASTER26_EGG_LAST_SPOT_FOUND = 15580;
-		static readonly EASTER26_EGG_CHURCH_CUTSCENE = 15581;
+		static readonly GRIMSTONE_UNCERTER_OP1 = 15578;
+		static readonly GRIMSTONE_UNCERTER_OP5 = 15579;
+		static readonly GRIMSTONE_UNCERTER_BANK = 15580;
+		static readonly GRIMSTONE_UNCERTER_BOAT = 15581;
 		static readonly CASTLEWARS_BARRICADE_SARADOMIN_RENDER_UNDER = 15582;
 		static readonly CASTLEWARS_BARRICADE_BURNING_SARADOMIN_RENDER_UNDER = 15583;
 		static readonly CASTLEWARS_BARRICADE_ZAMORAK_RENDER_UNDER = 15584;
@@ -15672,5 +15672,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly LEAGUE6_GREATER_DEMON_GUARD_02 = 15667;
 		static readonly LEAGUE6_IMPLIMGS = 15668;
 		static readonly DPS_CALC_NPC_RECOIL = 15669;
+		static readonly GRIMSTONE_UNCERTER_GRIMSTONE = 15670;
+		static readonly GRIMSTONE_UNCERTER_ACTIVE = 15671;
 	}
   }

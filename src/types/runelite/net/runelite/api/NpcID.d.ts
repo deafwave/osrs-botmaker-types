@@ -13011,9 +13011,8 @@ declare namespace net.runelite.api {
 		static readonly TIGER_SHARK_15575 = 15575;
 		static readonly VEILED_KRAKEN = 15576;
 		static readonly VEILED_KRAKEN_15577 = 15577;
-		static readonly EASTER_BUNNY = 15578;
-		static readonly ARCHIBALD_15580 = 15580;
-		static readonly ARCHIBALD_15581 = 15581;
+		static readonly ISLES = 15578;
+		static readonly ISLES_15579 = 15579;
 		static readonly BARRICADE_15582 = 15582;
 		static readonly BARRICADE_15583 = 15583;
 		static readonly BARRICADE_15584 = 15584;

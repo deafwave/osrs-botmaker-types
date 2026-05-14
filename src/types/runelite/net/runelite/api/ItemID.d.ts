@@ -16267,5 +16267,16 @@ declare namespace net.runelite.api {
 		static readonly DEMONIC_PACTS_DEMON_BUTLER_SCROLL = 33368;
 		static readonly MARK_OF_GRACE_33371 = 33371;
 		static readonly DEMONIC_CONTRACTOR_THRONE = 33373;
+		static readonly INCOMING_DAMAGE_MODIFIER = 33378;
+		static readonly INCOMING_DAMAGE_CLAMPING = 33380;
+		static readonly IMMACULATE_MOLE_SKIN = 33382;
+		static readonly GEM_POUCH = 33384;
+		static readonly OPEN_GEM_POUCH = 33386;
+		static readonly GEM_SATCHEL = 33387;
+		static readonly OPEN_GEM_SATCHEL = 33389;
+		static readonly GEM_TOTE = 33390;
+		static readonly OPEN_GEM_TOTE = 33392;
+		static readonly GEM_SACK = 33393;
+		static readonly OPEN_GEM_SACK = 33395;
 	}
   }

@@ -19126,6 +19126,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly TRANSMUTE_UPGRADE = 33375;
 		static readonly TRANSMUTE_DOWNGRADE = 33376;
 		static readonly FANG_OF_THE_HOUND_FIRE = 33377;
+		static readonly NOSAVE_WORLD_INCOMING_PRAYER_DAMAGE_MODIFIER = 33378;
+		static readonly NOSAVE_WORLD_DAMAGE_CLAMPING = 33380;
+		static readonly IMMACULATE_MOLE_SKIN = 33382;
+		static readonly GEM_POUCH = 33384;
+		static readonly GEM_POUCH_OPEN = 33386;
+		static readonly GEM_SATCHEL = 33387;
+		static readonly GEM_SATCHEL_OPEN = 33389;
+		static readonly GEM_TOTE = 33390;
+		static readonly GEM_TOTE_OPEN = 33392;
+		static readonly GEM_SACK = 33393;
+		static readonly GEM_SACK_OPEN = 33395;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -33297,5 +33308,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_LEAGUE_6_THRALL_CONTRACT = 33367;
 		static readonly PLACEHOLDER_LEAGUE_6_BUTLER_SCROLL = 33370;
 		static readonly PLACEHOLDER_GRACE_HOTFOOT = 33372;
+		static readonly PLACEHOLDER_NOSAVE_WORLD_INCOMING_PRAYER_DAMAGE_MODIFIER = 33379;
+		static readonly PLACEHOLDER_NOSAVE_WORLD_DAMAGE_CLAMPING = 33381;
+		static readonly PLACEHOLDER_IMMACULATE_MOLE_SKIN = 33383;
+		static readonly PLACEHOLDER_GEM_POUCH = 33385;
+		static readonly PLACEHOLDER_GEM_SATCHEL = 33388;
+		static readonly PLACEHOLDER_GEM_TOTE = 33391;
+		static readonly PLACEHOLDER_GEM_SACK = 33394;
 	}
   }

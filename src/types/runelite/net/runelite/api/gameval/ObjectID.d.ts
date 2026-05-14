@@ -29462,6 +29462,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly POH_LEAGUEHALL_BANNERSTAND_SIMPLE_LEAGUE06 = 29457;
 		static readonly POH_LEAGUEHALL_BANNERSTAND_DECORATIVE_LEAGUE06 = 29458;
 		static readonly POH_THRONE_8 = 29459;
+		static readonly MOLE_HILL_SPADE = 29460;
 		static readonly HILLGIANT_BOSS_ENTRANCE_R = 29486;
 		static readonly HILLGIANT_BOSS_ENTRANCE_L = 29487;
 		static readonly HILLGIANT_BOSS_EXIT_R = 29488;
