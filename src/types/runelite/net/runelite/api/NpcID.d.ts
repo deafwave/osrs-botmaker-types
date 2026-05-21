@@ -13096,5 +13096,21 @@ declare namespace net.runelite.api {
 		static readonly SAGEGUARD_MELACAR = 15667;
 		static readonly IMPLIMGS = 15668;
 		static readonly DPS_CALC_15669 = 15669;
+		static readonly PIRATE_15672 = 15672;
+		static readonly PIRATE_15673 = 15673;
+		static readonly PIRATE_15674 = 15674;
+		static readonly PIRATE_15675 = 15675;
+		static readonly OAKY_DOAK = 15677;
+		static readonly BOATSWAIN_BILL_TEAK = 15678;
+		static readonly MISTER_U = 15679;
+		static readonly OLD_JACK = 15680;
+		static readonly MUTE_JACK = 15681;
+		static readonly BLOODY_JACK = 15682;
+		static readonly CAPTAIN_RUBAN_ACER = 15683;
+		static readonly CAPTAIN_JACK = 15684;
+		static readonly TEST_PIRATE_RANGER = 15685;
+		static readonly TEST_PIRATE_MAGE = 15686;
+		static readonly TEST_PIRATE_CAPTAIN = 15687;
+		static readonly PIRATE_WRECKAGE = 15688;
 	}
   }

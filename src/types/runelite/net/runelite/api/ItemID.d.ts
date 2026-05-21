@@ -16278,5 +16278,10 @@ declare namespace net.runelite.api {
 		static readonly OPEN_GEM_TOTE = 33392;
 		static readonly GEM_SACK = 33393;
 		static readonly OPEN_GEM_SACK = 33395;
+		static readonly GRANITE_CANNONBALL_33404 = 33404;
+		static readonly BOSUNS_WORKBENCH = 33420;
+		static readonly RECOLOURED_SAIL = 33421;
+		static readonly DYES = 33422;
+		static readonly BOSUNS_WORKBENCH_SCHEMATIC = 33423;
 	}
   }

@@ -7394,6 +7394,14 @@ declare namespace net.runelite.api.gameval {
 		static readonly ICONSAILINGFACILITIES16X16__21 = 7199;
 		static readonly ICONSAILINGFACILITIES16X16__22 = 7200;
 		static readonly ICONSAILINGFACILITIES16X16__23 = 7201;
+		static readonly ICONSAILINGFACILITIES16X16__24 = 8343;
+		static readonly ICONSAILINGFACILITIES16X16__25 = 8344;
+		static readonly ICONSAILINGFACILITIES16X16__26 = 8345;
+		static readonly ICONSAILINGFACILITIES16X16__27 = 8346;
+		static readonly ICONSAILINGFACILITIES16X16__28 = 8347;
+		static readonly ICONSAILINGFACILITIES16X16__29 = 8348;
+		static readonly ICONSAILINGFACILITIES16X16__30 = 8349;
+		static readonly ICONSAILINGFACILITIES16X16__31 = 8350;
 		static readonly HEADBARICE40__0 = 6838;
 		static readonly HEADBARICE40__1 = 6839;
 		static readonly SIDEICONS18X18__0 = 7319;

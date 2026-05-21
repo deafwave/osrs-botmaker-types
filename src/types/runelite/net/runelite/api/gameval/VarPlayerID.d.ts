@@ -2852,5 +2852,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_SIDEPANEL_FACILITY_ORDERS_K = 5567;
 		static readonly SAILING_SIDEPANEL_FACILITY_ORDERS_L = 5568;
 		static readonly SAILING_SIDEPANEL_FACILITY_ORDERS_M = 5569;
+		static readonly SAILING_BOAT_TELEPORT_BOAT_TO_ME_LAST = 5570;
+		static readonly SAILING_BOAT_TELEPORT_ME_TO_BOAT_LAST = 5571;
+		static readonly SAILING_SIDEPANEL_FACILITY_STATES_10 = 5572;
+		static readonly SAILING_SIDEPANEL_FACILITY_STATES_11 = 5573;
+		static readonly SAILING_SIDEPANEL_FACILITY_STATES_12 = 5574;
 	}
   }

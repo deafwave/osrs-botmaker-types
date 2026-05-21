@@ -15674,5 +15674,22 @@ declare namespace net.runelite.api.gameval {
 		static readonly DPS_CALC_NPC_RECOIL = 15669;
 		static readonly GRIMSTONE_UNCERTER_GRIMSTONE = 15670;
 		static readonly GRIMSTONE_UNCERTER_ACTIVE = 15671;
+		static readonly TRR_PIRATE_1_NOOP = 15672;
+		static readonly TRR_PIRATE_2_NOOP = 15673;
+		static readonly TRR_PIRATE_3_NOOP = 15674;
+		static readonly TRR_PIRATE_4_NOOP = 15675;
+		static readonly SAILING_BOAT_SPAWN_MARKER = 15676;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TRR_1 = 15677;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TRR_2 = 15678;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TRR_3 = 15679;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TRR_4 = 15680;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TRR_5 = 15681;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TRR_6 = 15682;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_CAPTAIN_1 = 15683;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_CAPTAIN_2 = 15684;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TEST_RANGE = 15685;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TEST_MAGE = 15686;
+		static readonly SAILING_NPC_BOAT_COMBAT_CREW_TEST_CAPTAIN = 15687;
+		static readonly SAILING_NPC_BOAT_COMBAT_PIRATE_WRECKAGE = 15688;
 	}
   }
