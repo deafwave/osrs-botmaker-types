@@ -19164,6 +19164,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_SKILLGUIDE_RECOLOURED_SAIL = 33421;
 		static readonly SAILING_SKILLGUIDE_MYSTERY_DYES = 33422;
 		static readonly LOST_SCHEMATIC_BOSUNS_WORKBENCH = 33423;
+		static readonly DEADMAN_ALL_STAR_MISSION_TOTEM = 33424;
+		static readonly SPECTATOR_OCULUS = 33427;
+		static readonly MAGIC_ROCK_OF_VENGEANCE_2_USE = 33428;
+		static readonly MAGIC_ROCK_OF_VENGEANCE_1_USE = 33431;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -23797,6 +23801,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_LEAGUE_6_THRONE = 33363;
 		static readonly CERT_LEAGUE_6_THRALL_CONTRACT = 33366;
 		static readonly CERT_LEAGUE_6_BUTLER_SCROLL = 33369;
+		static readonly CERT_DEADMAN_ALL_STAR_MISSION_TOTEM = 33425;
+		static readonly CERT_MAGIC_ROCK_OF_VENGEANCE_2_USE = 33429;
+		static readonly CERT_MAGIC_ROCK_OF_VENGEANCE_1_USE = 33432;
 		static readonly PLACEHOLDER_STAFFORB = 13694;
 		static readonly PLACEHOLDER_FIRE_ORB = 13695;
 		static readonly PLACEHOLDER_WATER_ORB = 13696;
@@ -33343,5 +33350,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_GEM_TOTE = 33391;
 		static readonly PLACEHOLDER_GEM_SACK = 33394;
 		static readonly PLACEHOLDER_GRANITE_CANNONBALL_SIDEPANEL = 33405;
+		static readonly PLACEHOLDER_DEADMAN_ALL_STAR_MISSION_TOTEM = 33426;
+		static readonly PLACEHOLDER_MAGIC_ROCK_OF_VENGEANCE_2_USE = 33430;
+		static readonly PLACEHOLDER_MAGIC_ROCK_OF_VENGEANCE_1_USE = 33433;
 	}
   }

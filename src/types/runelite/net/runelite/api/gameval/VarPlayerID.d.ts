@@ -2857,5 +2857,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_SIDEPANEL_FACILITY_STATES_10 = 5572;
 		static readonly SAILING_SIDEPANEL_FACILITY_STATES_11 = 5573;
 		static readonly SAILING_SIDEPANEL_FACILITY_STATES_12 = 5574;
+		static readonly DEADMAN_ALLSTAR_DATA = 5575;
+		static readonly DEADMAN_ALLSTAR_DATA_2 = 5576;
+		static readonly DEADMAN_ALLSTAR_DATA_3 = 5577;
 	}
   }

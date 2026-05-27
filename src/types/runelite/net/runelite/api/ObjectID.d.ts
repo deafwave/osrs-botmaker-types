@@ -15617,6 +15617,14 @@ declare namespace net.runelite.api {
 		static readonly BOSUNS_WORKBENCH_29543 = 29543;
 		static readonly BOSUNS_WORKBENCH_29544 = 29544;
 		static readonly HELM_29545 = 29545;
+		static readonly SHIELD_29551 = 29551;
+		static readonly BRAZIER_29552 = 29552;
+		static readonly BRAZIER_29553 = 29553;
+		static readonly BRAZIER_29554 = 29554;
+		static readonly BRAZIER_29555 = 29555;
+		static readonly BRAZIER_29556 = 29556;
+		static readonly HEROIC_STATUE = 29557;
+		static readonly DEATH = 29559;
 		static readonly FAIRY_RING_29560 = 29560;
 		static readonly MOUNTED_MAX_CAPE_29625 = 29625;
 		static readonly CRACK_29626 = 29626;
@@ -17379,7 +17387,7 @@ declare namespace net.runelite.api {
 		static readonly PORTAL_33443 = 33443;
 		static readonly PORTAL_33444 = 33444;
 		static readonly BRAZIER_33454 = 33454;
-		static readonly HEROIC_STATUE = 33455;
+		static readonly HEROIC_STATUE_33455 = 33455;
 		static readonly CHALICE_33456 = 33456;
 		static readonly ICE_THRONE_33477 = 33477;
 		static readonly PEAR_TREE = 33480;
@@ -18149,7 +18157,7 @@ declare namespace net.runelite.api {
 		static readonly REDWOOD_TREE_34314 = 34314;
 		static readonly REDWOOD_TREE_34315 = 34315;
 		static readonly SPIKE_DEFENCE_34316 = 34316;
-		static readonly DEATH = 34318;
+		static readonly DEATH_34318 = 34318;
 		static readonly GLASS_TABLE_34319 = 34319;
 		static readonly DEAD_TREE_34334 = 34334;
 		static readonly SULPHUR_VENT_34335 = 34335;

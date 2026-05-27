@@ -16283,5 +16283,9 @@ declare namespace net.runelite.api {
 		static readonly RECOLOURED_SAIL = 33421;
 		static readonly DYES = 33422;
 		static readonly BOSUNS_WORKBENCH_SCHEMATIC = 33423;
+		static readonly MISSION_TOTEM = 33424;
+		static readonly SPECTATOR_OCULUS = 33427;
+		static readonly TRINKET_OF_VENGEANCE_2 = 33428;
+		static readonly TRINKET_OF_VENGEANCE_1 = 33431;
 	}
   }

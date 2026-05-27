@@ -1377,5 +1377,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly LEAGUE_TASK_MENU_COMPLETED_COUNT = 1372;
 		static readonly LEAGUE_TASK_MENU_TOTAL_COUNT = 1373;
 		static readonly LEAGUE_TASK_MENU_BUILD_IS_ACTIVE = 1374;
+		static readonly ALLSTAR_OCULUS_HIDEHINT = 1375;
+		static readonly SPECTATOR_SEARCH_STRING = 1376;
 	}
   }

@@ -13112,5 +13112,17 @@ declare namespace net.runelite.api {
 		static readonly TEST_PIRATE_MAGE = 15686;
 		static readonly TEST_PIRATE_CAPTAIN = 15687;
 		static readonly PIRATE_WRECKAGE = 15688;
+		static readonly WARRIOR_15689 = 15689;
+		static readonly NUGGET = 15690;
+		static readonly RHINO = 15691;
+		static readonly FRIEND = 15692;
+		static readonly WEASEL = 15693;
+		static readonly REBEL = 15694;
+		static readonly SCURRIUS_15695 = 15695;
+		static readonly SOL_HEREDIT_15696 = 15696;
+		static readonly KREEARRA_15697 = 15697;
+		static readonly ELIDINIS_WARDEN_15698 = 15698;
+		static readonly TZTOKJAD_15699 = 15699;
+		static readonly YAMA_15700 = 15700;
 	}
   }

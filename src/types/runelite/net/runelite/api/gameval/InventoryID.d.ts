@@ -1018,5 +1018,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly FORTIS_SHOP_GENERAL_LEAGUE_6 = 1013;
 		static readonly FORTIS_SHOP_BLACKSMITH_LEAGUE_6 = 1014;
 		static readonly TAL_TEKLAN_ARCHERSHOP_LEAGUE_6 = 1015;
+		static readonly DMM_ALL_STAR_WARRIORS_SHOP = 1016;
+		static readonly DMM_ALL_STAR_RHINOS_SHOP = 1017;
+		static readonly DMM_ALL_STAR_NUGGETS_SHOP = 1018;
+		static readonly DMM_ALL_STAR_REBELS_SHOP = 1019;
+		static readonly DMM_ALL_STAR_WEASELS_SHOP = 1020;
+		static readonly DMM_ALL_STAR_FRIENDS_SHOP = 1021;
 	}
   }
