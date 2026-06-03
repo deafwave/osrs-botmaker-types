@@ -19168,6 +19168,18 @@ declare namespace net.runelite.api.gameval {
 		static readonly SPECTATOR_OCULUS = 33427;
 		static readonly MAGIC_ROCK_OF_VENGEANCE_2_USE = 33428;
 		static readonly MAGIC_ROCK_OF_VENGEANCE_1_USE = 33431;
+		static readonly TOTS_UNCHARGED_ORN = 33434;
+		static readonly POH_DUMMY_THRONE_8 = 33436;
+		static readonly BUCKET_SULPHUROUS_FERTILISER = 33437;
+		static readonly LEAGUE_6_SLAYER_HELM1_I = 33439;
+		static readonly SW_LEAGUE_6_SLAYER_HELM1_I = 33441;
+		static readonly PVPA_LEAGUE_6_SLAYER_HELM1_I = 33443;
+		static readonly LEAGUE_6_SLAYER_HELM2_I = 33445;
+		static readonly SW_LEAGUE_6_SLAYER_HELM2_I = 33447;
+		static readonly PVPA_LEAGUE_6_SLAYER_HELM2_I = 33449;
+		static readonly SET_LEAGUE_6_RELICHUNTER_T1 = 33451;
+		static readonly SET_LEAGUE_6_RELICHUNTER_T2 = 33454;
+		static readonly SET_LEAGUE_6_RELICHUNTER_T3 = 33457;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -23791,11 +23803,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_DEMONIC_AXE_ORNAMENT_KIT = 33306;
 		static readonly CERT_DEMONIC_STAFF_ORNAMENT_KIT = 33309;
 		static readonly CERT_DEMONIC_TRIDENT_ORNAMENT_KIT = 33312;
-		static readonly CERT_TOXIC_TOTS_UNCHARGED_ORN = 33317;
-		static readonly CERT_TOXIC_TOTS_I_UNCHARGED_ORN = 33321;
-		static readonly CERT_TOTS_ORN = 33324;
-		static readonly CERT_TOTS_I_UNCHARGED_ORN = 33329;
-		static readonly CERT_SOULREAPER_AXE_ORN = 33336;
 		static readonly CERT_LEAGUE_6_DEMONIC_QUILL = 33343;
 		static readonly CERT_LEAGUE_6_RITUAL_KIT = 33360;
 		static readonly CERT_LEAGUE_6_THRONE = 33363;
@@ -23804,6 +23811,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_DEADMAN_ALL_STAR_MISSION_TOTEM = 33425;
 		static readonly CERT_MAGIC_ROCK_OF_VENGEANCE_2_USE = 33429;
 		static readonly CERT_MAGIC_ROCK_OF_VENGEANCE_1_USE = 33432;
+		static readonly CERT_SET_LEAGUE_6_RELICHUNTER_T1 = 33452;
+		static readonly CERT_SET_LEAGUE_6_RELICHUNTER_T2 = 33455;
+		static readonly CERT_SET_LEAGUE_6_RELICHUNTER_T3 = 33458;
 		static readonly PLACEHOLDER_STAFFORB = 13694;
 		static readonly PLACEHOLDER_FIRE_ORB = 13695;
 		static readonly PLACEHOLDER_WATER_ORB = 13696;
@@ -33353,5 +33363,16 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_DEADMAN_ALL_STAR_MISSION_TOTEM = 33426;
 		static readonly PLACEHOLDER_MAGIC_ROCK_OF_VENGEANCE_2_USE = 33430;
 		static readonly PLACEHOLDER_MAGIC_ROCK_OF_VENGEANCE_1_USE = 33433;
+		static readonly PLACEHOLDER_TOTS_UNCHARGED_ORN = 33435;
+		static readonly PLACEHOLDER_BUCKET_SULPHUROUS_FERTILISER = 33438;
+		static readonly PLACEHOLDER_LEAGUE_6_SLAYER_HELM1_I = 33440;
+		static readonly PLACEHOLDER_SW_LEAGUE_6_SLAYER_HELM1_I = 33442;
+		static readonly PLACEHOLDER_PVPA_LEAGUE_6_SLAYER_HELM1_I = 33444;
+		static readonly PLACEHOLDER_LEAGUE_6_SLAYER_HELM2_I = 33446;
+		static readonly PLACEHOLDER_SW_LEAGUE_6_SLAYER_HELM2_I = 33448;
+		static readonly PLACEHOLDER_PVPA_LEAGUE_6_SLAYER_HELM2_I = 33450;
+		static readonly PLACEHOLDER_SET_LEAGUE_6_RELICHUNTER_T1 = 33453;
+		static readonly PLACEHOLDER_SET_LEAGUE_6_RELICHUNTER_T2 = 33456;
+		static readonly PLACEHOLDER_SET_LEAGUE_6_RELICHUNTER_T3 = 33459;
 	}
   }

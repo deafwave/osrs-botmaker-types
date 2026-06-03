@@ -4870,6 +4870,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_VENGEANCE_ANIM_TOGGLE_LIST = 4094;
 		static readonly ROW_ALCHEMY_ANIM_TOGGLE_LIST = 4095;
 		static readonly ROW_NPC_CONTACT_ANIM_TOGGLE_LIST = 4096;
+		static readonly ROW_RESURRECTION_COSMETIC_TOGGLE_LIST_ZOMBIE = 8114;
+		static readonly ROW_RESURRECTION_COSMETIC_TOGGLE_LIST_SKELETON = 8115;
+		static readonly ROW_RESURRECTION_COSMETIC_TOGGLE_LIST_GHOST = 8116;
 		static readonly LEAGUESECHOBOSSES_ID = 85;
 		static readonly LEAGUESECHOBOSSES_COL_ECHO_ORB_DROPRATE = 0;
 		static readonly LEAGUESECHOBOSSES_COL_ECHO_ORB_OBJECT = 1;
@@ -6602,6 +6605,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_POH_TROPHY_BLUEFIN = 7126;
 		static readonly ROW_POH_TROPHY_MARLIN = 7127;
 		static readonly ROW_POH_GARDEN_CENTREPIECE_6 = 9654;
+		static readonly ROW_POH_THRONE_8 = 16324;
 		static readonly POHROOM_ID = 111;
 		static readonly POHROOM_COL_NAME = 0;
 		static readonly POHROOM_COL_NAME_UPPERCASE = 1;
@@ -7455,6 +7459,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_SLAYER_REWARDS_UNLOCK_GRYPHONS = 9420;
 		static readonly ROW_SLAYER_REWARDS_UNLOCK_HELM_HOODED = 9641;
 		static readonly ROW_SLAYER_REWARDS_LONGER_GRYPHONS = 9642;
+		static readonly ROW_SLAYER_REWARDS_UNLOCK_HELM_LEAGUE_6 = 16325;
 		static readonly ACTION_ID = 118;
 		static readonly ACTION_COL_ACTION_NAME = 0;
 		static readonly ACTION_COL_ACTION_DESC = 1;
@@ -17042,6 +17047,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_SKILL_FEATURE_MAGIC_ANCIENT_LEAGUES_6_HOME_TELEPORT = 16262;
 		static readonly ROW_SKILL_FEATURE_MAGIC_LUNAR_LEAGUES_6_HOME_TELEPORT = 16263;
 		static readonly ROW_SKILL_FEATURE_MAGIC_ARCEUUS_LEAGUES_6_HOME_TELEPORT = 16264;
+		static readonly ROW_SKILL_FEATURE_FARMING_SULPHUROUS_FERTILISER = 16323;
 		static readonly MINIGAMETELEPORT_ID = 214;
 		static readonly MINIGAMETELEPORT_COL_ID = 0;
 		static readonly MINIGAMETELEPORT_COL_NAME = 1;

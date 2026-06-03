@@ -221,7 +221,6 @@ declare namespace net.runelite.api {
 		static readonly MAID = 223;
 		static readonly COOK = 225;
 		static readonly BUTLER = 227;
-		static readonly DEMON_BUTLER = 229;
 		static readonly WOLF_231 = 231;
 		static readonly JUNGLE_WOLF = 232;
 		static readonly MACARONI_PENGUIN = 233;
@@ -6553,7 +6552,7 @@ declare namespace net.runelite.api {
 		static readonly MAID_7328 = 7328;
 		static readonly COOK_7329 = 7329;
 		static readonly BUTLER_7330 = 7330;
-		static readonly DEMON_BUTLER_7331 = 7331;
+		static readonly DEMON_BUTLER = 7331;
 		static readonly FAIRY_FIXIT = 7332;
 		static readonly FAIRY_FIXIT_7333 = 7333;
 		static readonly GIANT_SQUIRREL = 7334;
@@ -13124,5 +13123,7 @@ declare namespace net.runelite.api {
 		static readonly ELIDINIS_WARDEN_15698 = 15698;
 		static readonly TZTOKJAD_15699 = 15699;
 		static readonly YAMA_15700 = 15700;
+		static readonly DEMON_BUTLER_15710 = 15710;
+		static readonly DEMON_BUTLER_15711 = 15711;
 	}
   }

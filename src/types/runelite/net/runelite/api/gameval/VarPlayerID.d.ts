@@ -901,6 +901,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly KEBOS_BLESSING_TRACKER = 2088;
 		static readonly MOLCH_BARRIERS = 2090;
 		static readonly KEBOS_FARMGUILD = 2091;
+		static readonly FARMGUILD_CONTRACT = 2094;
 		static readonly SLAYER_AREA = 2096;
 		static readonly CLUEQUEST_MAIN = 2111;
 		static readonly SEED_VAULT_TEMP = 2194;
@@ -2860,5 +2861,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_ALLSTAR_DATA = 5575;
 		static readonly DEADMAN_ALLSTAR_DATA_2 = 5576;
 		static readonly DEADMAN_ALLSTAR_DATA_3 = 5577;
+		static readonly RESURRECTION_COSMETIC_TOGGLES = 5581;
+		static readonly LEAGUE_6_REWARDS = 5582;
+		static readonly AUTO_BANK_LOOT = 5583;
+		static readonly POH_BUTLER_COSMETICS = 5584;
+		static readonly PORT_TASKS_BOUNTY_ITEM_COUNTER = 5586;
+		static readonly SLAYER_REWARDS_UNLOCKS2 = 5587;
 	}
   }

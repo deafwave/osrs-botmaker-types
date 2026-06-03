@@ -2476,6 +2476,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly WORLDSWITCHERFLAGS__9 = 4936;
 		static readonly WORLDSWITCHERFLAGS__10 = 4937;
 		static readonly WORLDSWITCHERFLAGS__11 = 4938;
+		static readonly WORLDSWITCHERFLAGS__12 = 8351;
+		static readonly WORLDSWITCHERFLAGS__13 = 8352;
+		static readonly WORLDSWITCHERFLAGS__14 = 8353;
+		static readonly WORLDSWITCHERFLAGS__15 = 8354;
+		static readonly WORLDSWITCHERFLAGS__16 = 8355;
+		static readonly WORLDSWITCHERFLAGS__17 = 8356;
 		static readonly WINDOWMODEICONS__0 = 1169;
 		static readonly WINDOWMODEICONS__1 = 1170;
 		static readonly WINDOWMODEICONS__2 = 1171;

@@ -15703,5 +15703,16 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_ALL_STARS_MISSION_WARDEN_TUMEKEN_MAGE = 15698;
 		static readonly DEADMAN_ALL_STARS_MISSION_JAD = 15699;
 		static readonly DEADMAN_ALL_STARS_MISSION_YAMA = 15700;
+		static readonly THRALL_IMP_MAGIC_LESSER = 15701;
+		static readonly THRALL_IMP_MAGIC_SUPERIOR = 15702;
+		static readonly THRALL_IMP_MAGIC_GREATER = 15703;
+		static readonly THRALL_IMP_RANGED_LESSER = 15704;
+		static readonly THRALL_IMP_RANGED_SUPERIOR = 15705;
+		static readonly THRALL_IMP_RANGED_GREATER = 15706;
+		static readonly THRALL_IMP_MELEE_LESSER = 15707;
+		static readonly THRALL_IMP_MELEE_SUPERIOR = 15708;
+		static readonly THRALL_IMP_MELEE_GREATER = 15709;
+		static readonly POH_SERVANT_DEMON_BASE = 15710;
+		static readonly POH_SERVANT_DEMON_LEAGUES_6 = 15711;
 	}
   }

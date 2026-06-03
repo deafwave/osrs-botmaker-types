@@ -4825,6 +4825,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly FGUILD_BOOK_HERBS = 7956;
 		static readonly FGUILD_BOOK_TREES = 7957;
 		static readonly FGUILD_BOOK_FRUIT = 7958;
+		static readonly FARMGUILD_CONTRACT_COMPLETE = 7961;
+		static readonly FARMGUILD_CONTRACT_LEVEL = 7962;
+		static readonly FARMGUILD_CONTRACT_TYPE = 7963;
+		static readonly FARMGUILD_CONTRACT_COUNT = 7964;
 		static readonly PLAYER_HAS_HIT_200M_ALL = 7969;
 		static readonly HH_CONSTRUCTED_MEDIUM_EXP10 = 7970;
 		static readonly WINT_TRANSMIT_RESPAWNDELAY = 7980;
@@ -8454,6 +8458,14 @@ declare namespace net.runelite.api.gameval {
 		static readonly SPECTATOR_STAT_TRACK_TARGET = 13326;
 		static readonly SPECTATOR_TOTAL_PLAYER = 13327;
 		static readonly SPECTATOR_PLAYERLIST_IS_SEARCHING = 13328;
+		static readonly RESURRECTION_COSMETIC_TOGGLES_ZOMBIE = 13329;
+		static readonly RESURRECTION_COSMETIC_TOGGLES_SKELETON = 13330;
+		static readonly RESURRECTION_COSMETIC_TOGGLES_GHOST = 13331;
+		static readonly LEAGUE_6_HOME_TELEPORT_UNLOCKED = 13332;
+		static readonly LEAGUE_6_THRALL_OVERRIDE_UNLOCKED = 13333;
+		static readonly LEAGUE_6_RED_SKIN_UNLOCKED = 13334;
+		static readonly LEAGUE_6_BUTLER_UNLOCKED = 13335;
+		static readonly POH_DEMON_BUTLER_COSMETICS = 13336;
 		static readonly LEAGUE_TASK_FILTER_SKILL = 13340;
 		static readonly LEAGUE_REWARD_POINTS_BUFFER = 13341;
 		static readonly LEAGUE_UNLOCK_POINTS_BUFFER = 13342;
@@ -9535,6 +9547,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly CA_TASK_TOA_KILLCOUNT_1 = 14659;
 		static readonly CA_TASK_TOA_KILLCOUNT_2 = 14660;
 		static readonly CA_TASK_TOA_KILLCOUNT_3 = 14661;
+		static readonly BOUNTY_TASK_ITEM_COUNTER_1 = 14662;
+		static readonly BOUNTY_TASK_ITEM_COUNTER_2 = 14663;
 		static readonly CA_TASK_TOA_KILLCOUNT_6 = 14664;
 		static readonly CA_TASK_TOA_KILLCOUNT_7 = 14665;
 		static readonly CA_TASK_TOA_KILLCOUNT_8 = 14666;
@@ -9666,6 +9680,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SETTINGS_TEXTFIELD_CSV_MODAL_OPENED = 14816;
 		static readonly OPTION_MASTER_VOLUME_SAVED = 14817;
 		static readonly AB_GROUP_RESET6 = 14818;
+		static readonly BOUNTY_TASK_ITEM_COUNTER_3 = 14819;
 		static readonly SLAYER_LONGER_REVENANTS = 14822;
 		static readonly SLAYER_TOGGLEOFF_LONGERREVENANTS = 14823;
 		static readonly SLAYER_TOGGLEOFF_FOSSILWYVERNBLOCK = 14824;
@@ -9991,11 +10006,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly STAR_LAST_MINED_LOCATION = 15352;
 		static readonly STAR_LAST_MINED_SIZE = 15353;
 		static readonly STAR_TIME_SINCE_LANDED = 15354;
+		static readonly BOUNTY_TASK_ITEM_COUNTER_4 = 15370;
 		static readonly POH_DECOR_LEAGUES_4_POOL = 15372;
 		static readonly RUNE_POUCH_TYPE_5 = 15373;
 		static readonly RUNE_POUCH_TYPE_6 = 15374;
 		static readonly RUNE_POUCH_QUANTITY_5 = 15375;
 		static readonly RUNE_POUCH_QUANTITY_6 = 15376;
+		static readonly BOUNTY_TASK_ITEM_COUNTER_5 = 15397;
 		static readonly XMAS24_INVITE_HAIRDRESSER = 15522;
 		static readonly XMAS24_INVITE_SARAH = 15524;
 		static readonly LEAGUE_HASNT_USED_BOOTS_FOR_MOUNT_QUID = 15647;

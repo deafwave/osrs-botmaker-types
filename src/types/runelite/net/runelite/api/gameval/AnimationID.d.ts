@@ -13897,5 +13897,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_BOAT_SAIL_KANDARIN_3X8_FULL_OFFSET = 13899;
 		static readonly SAILING_BOAT_SAIL_KANDARIN_3X8_DOWN_TO_FULL_OFFSET = 13900;
 		static readonly SAILING_BOAT_SAIL_KANDARIN_3X8_HALF_TO_FULL_OFFSET = 13901;
+		static readonly LEAGUE_6_HOME_TELEPORT_SCROLL_READ = 13902;
+		static readonly CHAIR_SIT_READY_THRONE_8 = 13903;
+		static readonly CHAIR_EAT_THRONE_8 = 13904;
+		static readonly SLAYER_TOTS_CHARGE_ORN = 13905;
+		static readonly SLAYER_TOTS_CHARGE_TOXIC_ORN = 13906;
+		static readonly SLAYER_TOTS_I_CHARGE_ORN = 13907;
+		static readonly SLAYER_TOTS_I_CHARGE_TOXIC_ORN = 13908;
 	}
   }

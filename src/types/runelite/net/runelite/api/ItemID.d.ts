@@ -16242,17 +16242,17 @@ declare namespace net.runelite.api {
 		static readonly TRIDENT_OF_THE_SWAMP_O = 33314;
 		static readonly UNCHARGED_TOXIC_TRIDENT_O = 33316;
 		static readonly TRIDENT_OF_THE_SWAMP_E_O = 33318;
-		static readonly UNCHARGED_TOXIC_TRIDENT_E_33320 = 33320;
+		static readonly UNCHARGED_TOXIC_TRIDENT_E_O = 33320;
 		static readonly TRIDENT_OF_THE_SEAS_O = 33322;
 		static readonly TRIDENT_OF_THE_SEAS_FULL_O = 33323;
 		static readonly TRIDENT_OF_THE_SEAS_E_O = 33326;
 		static readonly UNCHARGED_TRIDENT_E_O = 33328;
-		static readonly IBANS_STAFF_33330 = 33330;
+		static readonly IBANS_STAFF_O = 33330;
 		static readonly IBANS_STAFF_U_O = 33332;
-		static readonly IBANS_STAFF_O = 33333;
+		static readonly IBANS_STAFF_BO = 33333;
 		static readonly SOULREAPER_AXE_O = 33335;
-		static readonly DEMONIC_SLAYER_HELMET = 33338;
-		static readonly DEMONIC_SLAYER_HELMET_33340 = 33340;
+		static readonly OATHPLATE_SLAYER_HELMET = 33338;
+		static readonly RADIANT_SLAYER_HELMET = 33340;
 		static readonly DEMONIC_QUILL = 33342;
 		static readonly DEMONIC_PACTS_DRAGON_TROPHY = 33345;
 		static readonly DEMONIC_PACTS_RUNE_TROPHY = 33347;
@@ -16261,7 +16261,7 @@ declare namespace net.runelite.api {
 		static readonly DEMONIC_PACTS_STEEL_TROPHY = 33353;
 		static readonly DEMONIC_PACTS_IRON_TROPHY = 33355;
 		static readonly DEMONIC_PACTS_BRONZE_TROPHY = 33357;
-		static readonly IMPISH_RITUAL_KIT = 33359;
+		static readonly IMPISH_RITUAL_SCROLL = 33359;
 		static readonly DEMONIC_PACTS_THRONE_SCROLL = 33362;
 		static readonly IMPISH_WHISTLE = 33365;
 		static readonly DEMONIC_PACTS_DEMON_BUTLER_SCROLL = 33368;
@@ -16287,5 +16287,16 @@ declare namespace net.runelite.api {
 		static readonly SPECTATOR_OCULUS = 33427;
 		static readonly TRINKET_OF_VENGEANCE_2 = 33428;
 		static readonly TRINKET_OF_VENGEANCE_1 = 33431;
+		static readonly UNCHARGED_TRIDENT_O = 33434;
+		static readonly SULPHUROUS_FERTILISER_33437 = 33437;
+		static readonly OATHPLATE_SLAYER_HELMET_I = 33439;
+		static readonly OATHPLATE_SLAYER_HELMET_I_33441 = 33441;
+		static readonly OATHPLATE_SLAYER_HELMET_I_33443 = 33443;
+		static readonly RADIANT_SLAYER_HELMET_I = 33445;
+		static readonly RADIANT_SLAYER_HELMET_I_33447 = 33447;
+		static readonly RADIANT_SLAYER_HELMET_I_33449 = 33449;
+		static readonly DEMONIC_PACTS_RELIC_HUNTER_T1_ARMOUR_SET = 33451;
+		static readonly DEMONIC_PACTS_RELIC_HUNTER_T2_ARMOUR_SET = 33454;
+		static readonly DEMONIC_PACTS_RELIC_HUNTER_T3_ARMOUR_SET = 33457;
 	}
   }

@@ -394,9 +394,9 @@ declare namespace net.runelite.api.widgets {
 		static readonly RESIZABLE_VIEWPORT_STATS_TAB = 10551356;
 		static readonly SANITY_OVERLAY = 54657027;
 		static readonly SEED_VAULT_INVENTORY_ITEM_CONTAINER = 41287681;
-		static readonly SEED_VAULT_ITEM_CONTAINER = 41353231;
-		static readonly SEED_VAULT_ITEM_TEXT = 41353232;
-		static readonly SEED_VAULT_SEARCH_BUTTON = 41353240;
+		static readonly SEED_VAULT_ITEM_CONTAINER = 41353232;
+		static readonly SEED_VAULT_ITEM_TEXT = 41353233;
+		static readonly SEED_VAULT_SEARCH_BUTTON = 41353242;
 		static readonly SEED_VAULT_TITLE_CONTAINER = 41353218;
 		static readonly SETTINGS_INIT = 8781825;
 		static readonly SETTINGS_SIDE_AREA_SOUND_SLIDER = 7602300;
