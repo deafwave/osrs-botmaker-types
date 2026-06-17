@@ -10013,6 +10013,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly RUNE_POUCH_QUANTITY_5 = 15375;
 		static readonly RUNE_POUCH_QUANTITY_6 = 15376;
 		static readonly BOUNTY_TASK_ITEM_COUNTER_5 = 15397;
+		static readonly SLAYER_UNLOCK_LONGER_GRYPHON = 15398;
+		static readonly SLAYER_UNLOCK_LONGER_FROST_DRAGONS = 15399;
+		static readonly SLAYER_WEIGHTED_LONGER_FROST_DRAGONS = 15400;
 		static readonly XMAS24_INVITE_HAIRDRESSER = 15522;
 		static readonly XMAS24_INVITE_SARAH = 15524;
 		static readonly LEAGUE_HASNT_USED_BOOTS_FOR_MOUNT_QUID = 15647;

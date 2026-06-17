@@ -15712,7 +15712,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly THRALL_IMP_MELEE_LESSER = 15707;
 		static readonly THRALL_IMP_MELEE_SUPERIOR = 15708;
 		static readonly THRALL_IMP_MELEE_GREATER = 15709;
-		static readonly POH_SERVANT_DEMON_BASE = 15710;
 		static readonly POH_SERVANT_DEMON_LEAGUES_6 = 15711;
 	}
   }

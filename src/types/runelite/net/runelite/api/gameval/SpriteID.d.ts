@@ -2366,6 +2366,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly BANKTABICONS__1 = 1082;
 		static readonly BANKTABICONS__2 = 1083;
 		static readonly BANKTABICONS__3 = 2417;
+		static readonly BANKTABICONS__4 = 8357;
 		static readonly SPEEDRUNTROPHIES__4 = 1103;
 		static readonly SPEEDRUNTROPHIES__0 = 3581;
 		static readonly SPEEDRUNTROPHIES__1 = 3582;
