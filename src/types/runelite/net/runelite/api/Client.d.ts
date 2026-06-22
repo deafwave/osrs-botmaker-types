@@ -234,8 +234,8 @@ declare namespace net.runelite.api {
 		/**
 		 * Gets the pitch of the camera.
 		 * <p>
-		 * The value returned by this method is measured in JAU, or Jagex
-		 * Angle Unit, which is 1/1024 of a revolution.
+		 * The value returned by this method is measured in JAU14, or Jagex
+		 * Angle Unit (14 bit), where each unit is equivalent to 2π/(2^14) radians.
 		 *
 		 * @return the camera pitch
 		 */
@@ -250,6 +250,9 @@ declare namespace net.runelite.api {
 
 		/**
 		 * Gets the yaw of the camera.
+		 * <p>
+		 * The value returned by this method is measured in JAU14, or Jagex
+		 * Angle Unit (14 bit), where each unit is equivalent to 2π/(2^14) radians.
 		 *
 		 * @return the camera yaw
 		 */
@@ -622,14 +625,6 @@ declare namespace net.runelite.api {
 		 * @see Menu#getMenuWidth()
 		 */
 		getMenuWidth(): number;
-
-		/**
-		 * Gets the angle of the map, or target camera yaw.
-		 *
-		 * @return the map angle
-		 * @see #getCameraYawTarget()
-		 */
-		getMapAngle(): number;
 
 		/**
 		 * Checks whether the client window is currently resized.
