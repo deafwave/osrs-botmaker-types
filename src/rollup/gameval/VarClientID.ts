@@ -1502,6 +1502,7 @@ const data: Record<string, number> = {
 	BANKTAGS_T19_ITEMS: 1499,
 	BANKTAGS_T19_XCOORDS: 1500,
 	BANKTAGS_T19_YCOORDS: 1501,
+	REUSABLE_FLOATER_SELECTED: 1502,
 };
 
 export default data;

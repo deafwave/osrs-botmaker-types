@@ -1504,5 +1504,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly BANKTAGS_T19_ITEMS = 1499;
 		static readonly BANKTAGS_T19_XCOORDS = 1500;
 		static readonly BANKTAGS_T19_YCOORDS = 1501;
+		static readonly REUSABLE_FLOATER_SELECTED = 1502;
 	}
   }
