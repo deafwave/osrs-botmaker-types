@@ -1505,5 +1505,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly BANKTAGS_T19_XCOORDS = 1500;
 		static readonly BANKTAGS_T19_YCOORDS = 1501;
 		static readonly REUSABLE_FLOATER_SELECTED = 1502;
+		static readonly MUSIC_CLIENT_SYNC_TIMER_LAST_INTERVAL = 1503;
+		static readonly MUSIC_CLIENT_SYNC_TIMER_TIME_PER_INTERVAL = 1504;
+		static readonly CASTLE_DRAKAN_WORLD_MAP_X = 1505;
+		static readonly CASTLE_DRAKAN_WORLD_MAP_Y = 1506;
 	}
   }

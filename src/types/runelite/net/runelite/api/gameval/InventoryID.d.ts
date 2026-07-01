@@ -1024,5 +1024,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly DMM_ALL_STAR_REBELS_SHOP = 1019;
 		static readonly DMM_ALL_STAR_WEASELS_SHOP = 1020;
 		static readonly DMM_ALL_STAR_FRIENDS_SHOP = 1021;
+		static readonly GARLIC_COCKTAIL_SHOP = 1022;
+		static readonly EFARITAY_WEAPON_SHOP = 1023;
+		static readonly SKILLING_MODE_HOLDING_INV = 1024;
+		static readonly PUB_BURGH_DE_ROTT = 1025;
 	}
   }

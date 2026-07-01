@@ -10050,7 +10050,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly FAI_VARROCK_COOK_GUILD_DOOR = 10045;
 		static readonly FAI_VARROCK_COOK_GUILD_DOOR_INACTIVE = 10046;
 		static readonly MOTHERLODE_SHORTCUT = 10047;
-		static readonly WIN05_TRAPDOOR_OPEN = 10048;
 		static readonly MACRO_DIGGER_OPEN_GRAVE_COFFIN_5 = 10049;
 		static readonly MACRO_DIGGER_OPEN_GRAVE_EMPTY_1 = 10050;
 		static readonly MACRO_DIGGER_OPEN_GRAVE_EMPTY_2 = 10051;
@@ -10806,7 +10805,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SHAYZIEN_SILK_STALL = 10801;
 		static readonly CW_BANK_BOXES_1 = 10802;
 		static readonly CW_BANK_BOXES_2 = 10803;
-		static readonly WIN05_TRAPDOOR_CLOSED = 10804;
 		static readonly HANDSAND_DESK = 10805;
 		static readonly HANDSAND_COFFEE_MULTILOC = 10806;
 		static readonly HANDSAND_COFFEE = 10807;
@@ -29615,6 +29613,18 @@ declare namespace net.runelite.api.gameval {
 		static readonly HERB_HUASCA_DISEASED_1 = 29610;
 		static readonly HERB_HUASCA_DISEASED_2 = 29611;
 		static readonly HERB_HUASCA_DISEASED_3 = 29612;
+		static readonly DARKM_CASTLE_DOOR_OUTSIDE_OP = 29613;
+		static readonly DARKM_CASTLE_DOOR_OUTSIDE_NOOP = 29614;
+		static readonly VAMPYRIUM_CASTLE_WALL = 29615;
+		static readonly VAMPYRIUM_CASTLE_WALL_OUTSIDE_CORNER = 29616;
+		static readonly VAMPYRIUM_CASTLE_WALL_WINDOW = 29617;
+		static readonly VAMPYRIUM_CASTLE_WALL_DIAGONAL_WINDOW_LEFT = 29618;
+		static readonly VAMPYRIUM_CASTLE_WALL_DIAGONAL_WINDOW_RIGHT = 29619;
+		static readonly VAMPYRIUM_CASTLE_WALL_DIAGONAL_WINDOW = 29620;
+		static readonly VAMPYRIUM_CASTLE_FRONT_DOOR_01 = 29621;
+		static readonly VAMPYRIUM_CASTLE_FRONT_DOOR_02 = 29622;
+		static readonly VAMPYRIUM_CASTLE_FRONT_DOOR_03 = 29623;
+		static readonly VAMPYRIUM_CASTLE_FRONT_DOOR_04 = 29624;
 		static readonly POH_MOUNTED_MAX_CAPE_ARDY = 29625;
 		static readonly RC_ZMI_DUNGEON_WALL_CRACK_ENTRANCE = 29626;
 		static readonly RC_ZMI_DUNGEON_WALL_CRACK_ENTRANCE_EXIT = 29627;
