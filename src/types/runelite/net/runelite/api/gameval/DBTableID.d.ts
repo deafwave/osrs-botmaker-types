@@ -3479,8 +3479,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly MUSIC_COL_HIDDEN = 9;
 		static readonly MUSIC_COL_HOLIDAY = 10;
 		static readonly MUSIC_COL_SECONDARY_TRACK = 11;
-		static readonly MUSIC_COL_RELEASE_TYPE = 12;
-		static readonly MUSIC_COL_RELATED_CONTENT = 13;
+		static readonly MUSIC_COL_PARENT_TRACK = 12;
+		static readonly MUSIC_COL_RELEASE_TYPE = 13;
+		static readonly MUSIC_COL_RELATED_CONTENT = 14;
 		static readonly ROW_MUSIC_RAT_BOSS = 2;
 		static readonly ROW_MUSIC_7TH_REALM = 2511;
 		static readonly ROW_MUSIC_A_FARMERS_GRIND = 2512;
@@ -16968,7 +16969,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_SKILL_FEATURE_AGILITY_VAMPYRIUM_CRAWL = 16895;
 		static readonly ROW_SKILL_FEATURE_AGILITY_VAMPYRIUM_PILLAR_JUMPS = 16896;
 		static readonly ROW_SKILL_FEATURE_AGILITY_VAMPYRIUM_SLIDES = 16897;
-		static readonly ROW_SKILL_FEATURE_CRAFTING_NECKLACE_OF_RUPTURE = 16898;
 		static readonly ROW_SKILL_FEATURE_FISHING_LEECHFIN = 16899;
 		static readonly ROW_SKILL_FEATURE_HITPOINTS_NECKLACEOFRUPTURE = 16900;
 		static readonly ROW_SKILL_FEATURE_HUNTER_STYMPHIKE = 16901;
@@ -17775,6 +17775,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly CASTLEDRAKANDOOR_ID = 247;
 		static readonly CASTLEDRAKANDOOR_COL_ID = 0;
 		static readonly CASTLEDRAKANDOOR_COL_MAP_DETAILS = 9;
+		static readonly CASTLEDRAKANDOOR_COL_UNLOCK_SIDE = 10;
+		static readonly CASTLEDRAKANDOOR_COL_KEY = 11;
 		static readonly CASTLEDRAKANDOOR_COL_EMBLEM = 12;
 		static readonly ROW_CASTLE_DRAKAN_ENTRANCE_HALL_TO_DINING_ROOM = 16745;
 		static readonly ROW_CASTLE_DRAKAN_ENTRANCE_HALL_TO_DINING_ROOM_HALLWAY = 16746;

@@ -568,6 +568,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CHATBORED2 = 563;
 		static readonly CHATBORED3 = 564;
 		static readonly CHATBORED4 = 565;
+		static readonly HUMAN_WEAPONS_CRIMSON_KISTEN_ATTACK_ALT = 566;
 		static readonly CHATHAP1 = 567;
 		static readonly CHATHAP2 = 568;
 		static readonly CHATHAP3 = 569;

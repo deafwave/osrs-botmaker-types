@@ -8623,6 +8623,9 @@ declare namespace net.runelite.api {
 		static readonly CABBAGE_RUNE = 13680;
 		static readonly CRUCIFEROUS_CODEX = 13681;
 		static readonly PHARAOHS_SCEPTRE_16176 = 16176;
+		static readonly STAKE_16492 = 16492;
+		static readonly GOLDEN_KEY_16494 = 16494;
+		static readonly IRON_KEY_16495 = 16495;
 		static readonly USELESS_KEY_16684 = 16684;
 		static readonly NEW_CRYSTAL_BOW_16888 = 16888;
 		static readonly NEW_CRYSTAL_BOW_I_16889 = 16889;
@@ -16389,8 +16392,8 @@ declare namespace net.runelite.api {
 		static readonly TARNISHED_BATTLEAXE = 33683;
 		static readonly TARNISHED_HALBERD = 33685;
 		static readonly TARNISHED_RING = 33687;
-		static readonly TARNISHED_NECKLACE = 33689;
-		static readonly TARNISHED_NECKLACE_33691 = 33691;
+		static readonly TARNISHED_BRACELET = 33689;
+		static readonly TARNISHED_NECKLACE = 33691;
 		static readonly TARNISHED_AMULET = 33693;
 		static readonly VENATOR_HEART = 33695;
 		static readonly DRIED_OUT_VENATOR_HEART = 33697;
@@ -16513,5 +16516,7 @@ declare namespace net.runelite.api {
 		static readonly STYMPHIKE = 33824;
 		static readonly LETVEK_33825 = 33825;
 		static readonly VENATOR = 33826;
+		static readonly ANCIENT_SCEPTRE_L_BROKEN = 33827;
+		static readonly ANCIENT_SCEPTRE_L_MANGLED = 33829;
 	}
   }

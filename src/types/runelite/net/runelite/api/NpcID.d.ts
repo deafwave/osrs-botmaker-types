@@ -13102,7 +13102,7 @@ declare namespace net.runelite.api {
 		static readonly VENATOR_15767 = 15767;
 		static readonly VENATOR_15768 = 15768;
 		static readonly VENATOR_15769 = 15769;
-		static readonly SUPERIOR_VENATOR = 15770;
+		static readonly BLOODSTARVED_VENATOR = 15770;
 		static readonly VASILE = 15772;
 		static readonly VASILE_15773 = 15773;
 		static readonly OLD_MAN_RAL = 15774;

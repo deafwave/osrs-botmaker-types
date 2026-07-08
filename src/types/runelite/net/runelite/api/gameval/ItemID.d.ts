@@ -10461,6 +10461,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_SKILLPETHUNTER_BLACK = 15345;
 		static readonly PLACEHOLDER_SKILLPETHUNTER_GOLD = 15346;
 		static readonly PLACEHOLDER_NTK_JEWELLED_SCEPTRE_8 = 16176;
+		static readonly PLACEHOLDER_STAKE = 16492;
+		static readonly PLACEHOLDER_PIPKEY_GOLD = 16494;
+		static readonly PLACEHOLDER_PIPKEY_IRON = 16495;
 		static readonly PLACEHOLDER_MYQ3_SHORTCUT_REWARDKEY = 16684;
 		static readonly PLACEHOLDER_ROVING_CRYSTAL_BOW_NEW = 16888;
 		static readonly PLACEHOLDER_NZONE_CRYSTAL_BOW_NEW = 16889;
@@ -19444,6 +19447,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly HUNTGUIDE_STYMPHIKE = 33824;
 		static readonly HUNTGUIDE_LETVEK = 33825;
 		static readonly SLAYERGUIDE_VENATOR = 33826;
+		static readonly ANCIENT_SCEPTRE_TROUVER_BROKEN = 33827;
+		static readonly ANCIENT_SCEPTRE_TROUVER_MANGLED = 33829;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -33738,5 +33743,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_HALLOWED_FLAIL = 33719;
 		static readonly PLACEHOLDER_SUNSPEAR = 33723;
 		static readonly PLACEHOLDER_RAW_IMPALER_MEAT = 33823;
+		static readonly PLACEHOLDER_ANCIENT_SCEPTRE_TROUVER_BROKEN = 33828;
+		static readonly PLACEHOLDER_ANCIENT_SCEPTRE_TROUVER_MANGLED = 33830;
 	}
   }

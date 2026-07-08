@@ -828,6 +828,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CASTLE_DRAKAN_ROOM_51 = 8511;
 		static readonly LEAFYTREE_DARKWOOD = 8512;
 		static readonly LEAFYTREE_DARKWOOD_TILED = 8513;
+		static readonly SANGVESTI = 8515;
 		static readonly _2XSTANDARDSPELLSON__0 = 0;
 		static readonly _2XSTANDARDSPELLSON__1 = 1;
 		static readonly _2XSTANDARDSPELLSON__2 = 2;
@@ -8515,5 +8516,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CASTLEDRAKANROOMICONS__1 = 8455;
 		static readonly CASTLEDRAKANROOMICONS__2 = 8456;
 		static readonly CASTLEDRAKANROOMICONS__3 = 8457;
+		static readonly CASTLEDRAKANROOMICONS__4 = 8514;
 	}
   }

@@ -2916,5 +2916,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly MAGGOT_KING_ATTEMPTS = 5665;
 		static readonly DRAKAN_ENCOUNTER_ATTEMPTS = 5666;
 		static readonly DRAKAN_FINAL_MIN_HP = 5667;
+		static readonly SANGVESTI_GENERAL_3 = 5668;
+		static readonly SANGVESTI_PLAYER_POS = 5669;
+		static readonly SANGVESTI_PLAYER_LAST_DEATH_POS = 5670;
 	}
   }

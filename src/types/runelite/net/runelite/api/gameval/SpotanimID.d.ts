@@ -1794,6 +1794,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ELDRITCH_SMOKE_IMPACT = 1789;
 		static readonly VANSTROM_BLOODVELD_BURST = 1790;
 		static readonly VANSTROM_ORB_EXPLODE = 1791;
+		static readonly MAGGOT_KING_POISON_PROJECTILE = 1792;
 		static readonly VANSTROM_ENRAGE_POWERUP = 1793;
 		static readonly VANSTROM_LIGHTNING = 1794;
 		static readonly HALLOWED_GRAPPLE_SPOT = 1795;
