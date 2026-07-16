@@ -2919,5 +2919,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SANGVESTI_GENERAL_3 = 5668;
 		static readonly SANGVESTI_PLAYER_POS = 5669;
 		static readonly SANGVESTI_PLAYER_LAST_DEATH_POS = 5670;
+		static readonly AFK_BLOODWOOD_TREE = 5671;
 	}
   }

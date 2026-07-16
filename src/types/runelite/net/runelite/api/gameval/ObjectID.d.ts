@@ -10050,6 +10050,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly FAI_VARROCK_COOK_GUILD_DOOR = 10045;
 		static readonly FAI_VARROCK_COOK_GUILD_DOOR_INACTIVE = 10046;
 		static readonly MOTHERLODE_SHORTCUT = 10047;
+		static readonly AFK_BLOODWOOD_TREE = 10048;
 		static readonly MACRO_DIGGER_OPEN_GRAVE_COFFIN_5 = 10049;
 		static readonly MACRO_DIGGER_OPEN_GRAVE_EMPTY_1 = 10050;
 		static readonly MACRO_DIGGER_OPEN_GRAVE_EMPTY_2 = 10051;

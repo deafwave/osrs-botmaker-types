@@ -2917,6 +2917,7 @@ const data: Record<string, number> = {
 	SANGVESTI_GENERAL_3: 5668,
 	SANGVESTI_PLAYER_POS: 5669,
 	SANGVESTI_PLAYER_LAST_DEATH_POS: 5670,
+	AFK_BLOODWOOD_TREE: 5671,
 };
 
 export default data;

@@ -5874,8 +5874,10 @@ declare namespace net.runelite.api {
 		static readonly UNFINISHED_BATTA_9484 = 9484;
 		static readonly HALF_MADE_BATTA_9485 = 9485;
 		static readonly UNFINISHED_BATTA_9486 = 9486;
-		static readonly WIZARD_BLIZZARD_9487 = 9487;
-		static readonly WIZARD_BLIZZARD_9489 = 9489;
+		static readonly COCKTAIL_GLASS_9487 = 9487;
+		static readonly COCKTAIL_GLASS_9488 = 9488;
+		static readonly COCKTAIL_GLASS_9489 = 9489;
+		static readonly COCKTAIL_GLASS_9490 = 9490;
 		static readonly WIZARD_BLIZZARD_9508 = 9508;
 		static readonly SHORT_GREEN_GUY_9510 = 9510;
 		static readonly PINEAPPLE_PUNCH_9512 = 9512;

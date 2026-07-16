@@ -4359,6 +4359,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_MUSIC_SANGVESTI = 16411;
 		static readonly ROW_MUSIC_BRIDGE_ATTACK = 16412;
 		static readonly WOODCUTTINGRESOURCE_ID = 45;
+		static readonly ROW_WOODCUTTING_RESOURCE_ENGORGED_BLOODWOOD_TREE = 510;
 		static readonly ROW_WOODCUTTING_RESOURCE_YEW_TREE = 3251;
 		static readonly ROW_WOODCUTTING_RESOURCE_YEW_TREE_FARMING_PATCH = 3252;
 		static readonly ROW_WOODCUTTING_RESOURCE_TEAK_TREE = 3256;

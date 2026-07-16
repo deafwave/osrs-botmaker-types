@@ -10287,6 +10287,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly SANGVESTI_HINT_CLOTHES_SHOP = 15681;
 		static readonly SANGVESTI_HINT_FANCY_HOUSE_1 = 15682;
 		static readonly SANGVESTI_HINT_BLACKSMITH = 15683;
+		static readonly AFK_BLOODWOOD_TREE_PROGRESS = 15684;
+		static readonly AFK_BLOODWOOD_TREE_DRAINING = 15685;
+		static readonly CRIMSON_KISTEN_WARNING = 15686;
+		static readonly SAILING_PLAYER_TRAWLING_SHOAL_BAITED_STEP = 15687;
 		static readonly XMAS24_INVITE_CHARLIE = 15796;
 		static readonly XMAS24_INVITES = 15800;
 		static readonly XMAS24_MATCH_AMIK = 15892;

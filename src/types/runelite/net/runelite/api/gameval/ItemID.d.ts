@@ -7129,7 +7129,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly ALUFT_HALF_MADE_VEG_BATTA = 9485;
 		static readonly ALUFT_BAKED_VEG_BATTA = 9486;
 		static readonly ALUFT_COCTAIL_GLASS_EMPTY = 9487;
+		static readonly CERT_ALUFT_COCTAIL_GLASS_EMPTY = 9488;
 		static readonly ALUFT_COCTAIL_GLASS_EMPTY_DUMMY = 9489;
+		static readonly CERT_ALUFT_COCTAIL_GLASS_EMPTY_DUMMY = 9490;
 		static readonly ALUFT_BOTTLE_DUMMY = 9491;
 		static readonly ALUFT_LEMON_DUMMY = 9492;
 		static readonly ALUFT_ORANGE_DUMMY = 9493;
@@ -21810,8 +21812,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_ALUFT_GNOME_SCARF = 9471;
 		static readonly CERT_ALUFT_GNOME_GOGGLES = 9473;
 		static readonly CERT_ALUFT_GNOME_MINT_CAKE = 9476;
-		static readonly CERT_ALUFT_COCTAIL_GLASS_EMPTY = 9488;
-		static readonly CERT_ALUFT_COCTAIL_GLASS_EMPTY_DUMMY = 9490;
 		static readonly CERT_ALUFT_WIZARD_BLIZZARD = 9509;
 		static readonly CERT_ALUFT_SGG = 9511;
 		static readonly CERT_ALUFT_PINEAPPLE_PUNCH = 9513;
@@ -33745,5 +33745,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_RAW_IMPALER_MEAT = 33823;
 		static readonly PLACEHOLDER_ANCIENT_SCEPTRE_TROUVER_BROKEN = 33828;
 		static readonly PLACEHOLDER_ANCIENT_SCEPTRE_TROUVER_MANGLED = 33830;
+		static readonly PLACEHOLDER_CERT_ALUFT_COCTAIL_GLASS_EMPTY = 33831;
+		static readonly PLACEHOLDER_CERT_ALUFT_COCTAIL_GLASS_EMPTY_DUMMY = 33832;
 	}
   }

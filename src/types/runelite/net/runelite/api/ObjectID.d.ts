@@ -5801,6 +5801,7 @@ declare namespace net.runelite.api {
 		static readonly DOOR_10043 = 10043;
 		static readonly DOOR_10045 = 10045;
 		static readonly DARK_TUNNEL_10047 = 10047;
+		static readonly ENGORGED_BLOODWOOD_TREE = 10048;
 		static readonly GRAVE_10049 = 10049;
 		static readonly GRAVE_10050 = 10050;
 		static readonly GRAVE_10051 = 10051;
