@@ -570,6 +570,18 @@ declare namespace net.runelite.api {
 		setMenuEntries(entries: MenuEntry[]): void;
 
 		/**
+		 * Gets whether the mouse over text in top-left corner of the screen is enabled
+		 * @return
+		 */
+		isMouseoverTextEnabled(): boolean;
+
+		/**
+		 * Sets whether the mouse over text in top-left corner of the screen is enabled
+		 * @param enabled
+		 */
+		setMouseoverTextEnabled(enabled: boolean): void;
+
+		/**
 		 * Checks whether a right-click menu is currently open.
 		 *
 		 * @return true if a menu is open, false otherwise
