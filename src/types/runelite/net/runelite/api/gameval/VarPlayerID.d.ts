@@ -1237,6 +1237,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CLAN_EVENTS_GENERAL4 = 3081;
 		static readonly OPTION_HIGHLIGHTING_PLAYER_TILE_COLOUR = 3108;
 		static readonly OPTIONS_SAVE_SOUNDS = 3109;
+		static readonly SLAYER_STORED_VARP = 3113;
 		static readonly ACHIEVEMENT_TASK_COMPLETED_0 = 3115;
 		static readonly CA_TASK_COMPLETED_0 = 3116;
 		static readonly CA_TASK_COMPLETED_1 = 3117;
@@ -2920,5 +2921,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly SANGVESTI_PLAYER_POS = 5669;
 		static readonly SANGVESTI_PLAYER_LAST_DEATH_POS = 5670;
 		static readonly AFK_BLOODWOOD_TREE = 5671;
+		static readonly CA_TASK_COMPLETED_20 = 5673;
+		static readonly WYRMSCRAIG_VARP = 5705;
+		static readonly GOAT_PIT_VARP = 5706;
+		static readonly GOLEM_CRAFTING_CORE = 5709;
+		static readonly GOLEM_CRAFTING_SIDE = 5710;
+		static readonly TOTAL_MAD_ANGEL_KILLS = 5712;
+		static readonly FFG_PRIMARY = 5715;
+		static readonly SLAYER_MODIFIERS = 5719;
+		static readonly SLAYER_REWARDS_BLOCKED_14 = 5721;
+		static readonly SLAYER_MISC_PERM = 5722;
+		static readonly SLAYER_MISC_PERM_2 = 5723;
+		static readonly SLAYER_MISC_PERM_3 = 5724;
 	}
   }

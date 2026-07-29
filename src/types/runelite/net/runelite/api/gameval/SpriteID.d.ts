@@ -829,6 +829,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly LEAFYTREE_DARKWOOD = 8512;
 		static readonly LEAFYTREE_DARKWOOD_TILED = 8513;
 		static readonly SANGVESTI = 8515;
+		static readonly LEAFYTREE_AUTUMN01 = 8556;
+		static readonly LEAFYTREE_TILED_AUTUMN01 = 8557;
+		static readonly LEAFYTREE_AUTUMN02 = 8558;
+		static readonly LEAFYTREE_TILED_AUTUMN02 = 8559;
 		static readonly _2XSTANDARDSPELLSON__0 = 0;
 		static readonly _2XSTANDARDSPELLSON__1 = 1;
 		static readonly _2XSTANDARDSPELLSON__2 = 2;
@@ -1846,6 +1850,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly EMOTES__57 = 5246;
 		static readonly EMOTES__58 = 5247;
 		static readonly EMOTES__59 = 5248;
+		static readonly EMOTES__60 = 8516;
+		static readonly EMOTES__61 = 8517;
+		static readonly EMOTES__62 = 8518;
+		static readonly EMOTES__63 = 8519;
 		static readonly EMOTESLOCKED__0 = 740;
 		static readonly EMOTESLOCKED__1 = 741;
 		static readonly EMOTESLOCKED__2 = 742;
@@ -2539,6 +2547,21 @@ declare namespace net.runelite.api.gameval {
 		static readonly WORLDSWITCHERFLAGS__15 = 8354;
 		static readonly WORLDSWITCHERFLAGS__16 = 8355;
 		static readonly WORLDSWITCHERFLAGS__17 = 8356;
+		static readonly WORLDSWITCHERFLAGS__18 = 8520;
+		static readonly WORLDSWITCHERFLAGS__19 = 8521;
+		static readonly WORLDSWITCHERFLAGS__20 = 8522;
+		static readonly WORLDSWITCHERFLAGS__21 = 8523;
+		static readonly WORLDSWITCHERFLAGS__22 = 8524;
+		static readonly WORLDSWITCHERFLAGS__23 = 8525;
+		static readonly WORLDSWITCHERFLAGS__24 = 8526;
+		static readonly WORLDSWITCHERFLAGS__25 = 8527;
+		static readonly WORLDSWITCHERFLAGS__26 = 8528;
+		static readonly WORLDSWITCHERFLAGS__27 = 8529;
+		static readonly WORLDSWITCHERFLAGS__28 = 8530;
+		static readonly WORLDSWITCHERFLAGS__29 = 8531;
+		static readonly WORLDSWITCHERFLAGS__30 = 8532;
+		static readonly WORLDSWITCHERFLAGS__31 = 8533;
+		static readonly WORLDSWITCHERFLAGS__32 = 8534;
 		static readonly WINDOWMODEICONS__0 = 1169;
 		static readonly WINDOWMODEICONS__1 = 1170;
 		static readonly WINDOWMODEICONS__2 = 1171;
@@ -7458,6 +7481,16 @@ declare namespace net.runelite.api.gameval {
 		static readonly ICONSAILINGDOCKS18X18__57 = 7172;
 		static readonly ICONSAILINGDOCKS18X18__58 = 7173;
 		static readonly ICONSAILINGDOCKS18X18__59 = 7174;
+		static readonly ICONSAILINGDOCKS18X18__60 = 8535;
+		static readonly ICONSAILINGDOCKS18X18__61 = 8536;
+		static readonly ICONSAILINGDOCKS18X18__62 = 8537;
+		static readonly ICONSAILINGDOCKS18X18__63 = 8538;
+		static readonly ICONSAILINGDOCKS18X18__64 = 8539;
+		static readonly ICONSAILINGDOCKS18X18__65 = 8540;
+		static readonly ICONSAILINGDOCKS18X18__66 = 8541;
+		static readonly ICONSAILINGDOCKS18X18__67 = 8542;
+		static readonly ICONSAILINGDOCKS18X18__68 = 8543;
+		static readonly ICONSAILINGDOCKS18X18__69 = 8544;
 		static readonly ICONSAILINGSTATUS18X18__0 = 7175;
 		static readonly ICONSAILINGSTATUS18X18__1 = 7176;
 		static readonly ICONSAILINGSTATUS18X18__2 = 7177;
@@ -8517,5 +8550,16 @@ declare namespace net.runelite.api.gameval {
 		static readonly CASTLEDRAKANROOMICONS__2 = 8456;
 		static readonly CASTLEDRAKANROOMICONS__3 = 8457;
 		static readonly CASTLEDRAKANROOMICONS__4 = 8514;
+		static readonly BACKINGSLAYERMODIFIERS01_35X35__0 = 8545;
+		static readonly BACKINGSLAYERMODIFIERS01_35X35__1 = 8546;
+		static readonly BACKINGSLAYERMODIFIERS01_35X35__2 = 8547;
+		static readonly BACKINGSLAYERMODIFIERS01_35X35__3 = 8548;
+		static readonly BACKINGSLAYERMODIFIERS01_35X35__4 = 8549;
+		static readonly BACKINGSLAYERMODIFIERS01_35X35__5 = 8550;
+		static readonly ICONSLAYERMODIFIERS01_25X25__0 = 8551;
+		static readonly ICONSLAYERMODIFIERS01_25X25__1 = 8552;
+		static readonly ICONSLAYERMODIFIERS01_25X25__2 = 8553;
+		static readonly ICONSLAYERMODIFIERS01_25X25__3 = 8554;
+		static readonly ICONSLAYERMODIFIERS01_25X25__4 = 8555;
 	}
   }

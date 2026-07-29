@@ -4010,5 +4010,15 @@ declare namespace net.runelite.api.gameval {
 		static readonly GARGBOSS_DEBRIS_SHADOW_240_DARK = 4005;
 		static readonly GARGBOSS_DEBRIS_SHADOW_270_DARK = 4006;
 		static readonly GARGBOSS_DEBRIS_SHADOW_300_DARK = 4007;
+		static readonly ANCIENT_AXE_SPECIAL_SPOTANIM_ORN = 4008;
+		static readonly ANCIENT_AXE_SPECIAL_SPOTANIM_OLD = 4009;
+		static readonly VFX_MAD_ANGEL_SPAWN = 4010;
+		static readonly VFX_MAD_ANGEL_ATTACK_SMITE = 4011;
+		static readonly VFX_MAD_ANGEL_ATTACK_SMITE_ENRAGED = 4012;
+		static readonly VFX_MAD_ANGEL_ATTACK_SMITE_IMPACT = 4013;
+		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW = 4014;
+		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW_PROJECTILE = 4015;
+		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW_IMPACT_01 = 4016;
+		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW_IMPACT_02 = 4017;
 	}
   }

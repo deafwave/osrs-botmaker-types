@@ -1028,5 +1028,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly EFARITAY_WEAPON_SHOP = 1023;
 		static readonly SKILLING_MODE_HOLDING_INV = 1024;
 		static readonly PUB_BURGH_DE_ROTT = 1025;
+		static readonly WYRMSCRAIG_GENERAL_SHOP = 1026;
+		static readonly WYRMSCRAIG_CLOTHES_SHOP = 1027;
 	}
   }

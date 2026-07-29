@@ -10806,6 +10806,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SHAYZIEN_SILK_STALL = 10801;
 		static readonly CW_BANK_BOXES_1 = 10802;
 		static readonly CW_BANK_BOXES_2 = 10803;
+		static readonly WALLKIT_WOODEN01_WINDOW01_UPPER = 10804;
 		static readonly HANDSAND_DESK = 10805;
 		static readonly HANDSAND_COFFEE_MULTILOC = 10806;
 		static readonly HANDSAND_COFFEE = 10807;
