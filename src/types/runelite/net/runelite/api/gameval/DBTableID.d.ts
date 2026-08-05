@@ -4872,6 +4872,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_HISCORES_BOSSES_YAMA = 5130;
 		static readonly ROW_HISCORES_BOSSES_DOOM_OF_MOKHAIOTL = 5484;
 		static readonly ROW_HISCORES_BOSSES_MAD_ANGEL = 7208;
+		static readonly ROW_HISCORES_BOSSES_MAGGOT_KING = 7209;
 		static readonly ROW_HISCORES_BOSSES_GRYPHON_BOSS = 9447;
 		static readonly ROW_HISCORES_BOSSES_COWBOSS = 9655;
 		static readonly REGIONDATA_ID = 82;

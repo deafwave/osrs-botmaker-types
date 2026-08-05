@@ -13570,5 +13570,11 @@ declare namespace net.runelite.api {
 		static readonly FISHING_SPOT_16335 = 16335;
 		static readonly FISHING_SPOT_16336 = 16336;
 		static readonly FISHING_SPOT_16337 = 16337;
+		static readonly FISHING_SPOT_16338 = 16338;
+		static readonly FISHING_SPOT_16339 = 16339;
+		static readonly FISHING_SPOT_16340 = 16340;
+		static readonly FISHING_SPOT_16341 = 16341;
+		static readonly FISHING_SPOT_16342 = 16342;
+		static readonly FISHING_SPOT_16343 = 16343;
 	}
   }

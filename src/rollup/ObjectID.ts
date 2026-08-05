@@ -30086,6 +30086,7 @@ const data: Record<string, number> = {
 	SUNSTONE_ROCKS_62394: 62394,
 	BUOY_62395: 62395,
 	BUOY_62396: 62396,
+	BROKEN_WALL_62400: 62400,
 };
 
 export default data;

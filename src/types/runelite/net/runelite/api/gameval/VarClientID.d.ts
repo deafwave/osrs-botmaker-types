@@ -1509,5 +1509,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly MUSIC_CLIENT_SYNC_TIMER_TIME_PER_INTERVAL = 1504;
 		static readonly CASTLE_DRAKAN_WORLD_MAP_X = 1505;
 		static readonly CASTLE_DRAKAN_WORLD_MAP_Y = 1506;
+		static readonly SETTINGS_RENDERER_OPTION = 1507;
 	}
   }

@@ -5943,6 +5943,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly LEAGUE_TYPE = 10032;
 		static readonly LEAGUE_TASK_FILTER_TIER = 10033;
 		static readonly LEAGUE_TASK_FILTER_COMPLETED = 10034;
+		static readonly MOUSEOVER_TEXT_DISABLED = 10035;
 		static readonly LEAGUE_MAIN_PROFILE_INTRO = 10036;
 		static readonly LEAGUE_TUTORIAL_COMPLETED = 10037;
 		static readonly LEAGUE_GRUBBY_CHEST_COUNTER = 10038;
@@ -7083,6 +7084,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly TALENT_EXTRA_RETRO_EQUIP_ECHO_WEP = 11618;
 		static readonly TALENT_EXTRA_RETRO_EQUIP_MOONS_ITEM = 11619;
 		static readonly ENDLESS_HARVEST_LAST_OP = 11620;
+		static readonly SETTINGS_RT7_WARNING_SHOWN = 11621;
 		static readonly TALENT_FREE_RESET_2 = 11622;
 		static readonly GRIMSTONE_UNCERTER_STATUS = 11623;
 		static readonly SETTINGS_SAILING_WIND_ON_ORB_DISABLED = 11624;
@@ -7598,7 +7600,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly STAT_BOOSTS_HUD_TOOLTIPS_HIDDEN = 12374;
 		static readonly STAT_BOOSTS_HUD_NUM_DISPLAYS = 12375;
 		static readonly STAT_BOOSTS_HUD_DISPLAY_RELATIVE = 12376;
-		static readonly MOUSEOVER_TEXT_ENABLED = 12377;
 		static readonly OPTION_HIDE_ROOFTOPS = 12378;
 		static readonly AGILITY_HELPER_DISABLED = 12379;
 		static readonly AGILITY_HELPER_HIGHLIGHT_OBSTACLES_ENABLED = 12380;
@@ -10370,6 +10371,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_CHOOSE_TASK_2 = 15801;
 		static readonly SLAYER_CHOOSE_TASK_3 = 15802;
 		static readonly SLAYER_CHOOSE_TASK_1_BOSS_ID = 15803;
+		static readonly DEADMAN_QUEST_LAMP_TIER_11 = 15804;
 		static readonly XMAS24_MATCH_AMIK = 15892;
 		static readonly XMAS24_MATCH_HAIRDRESSER = 15902;
 		static readonly XMAS24_MATCH_SARAH = 15903;
@@ -10534,7 +10536,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly COLLECTION_CLUES_SCROLL_CASES_COMPLETED = 16609;
 		static readonly GIANT_BONE_BURY_WARNING_DISABLE = 16616;
 		static readonly SETTINGS_HD_NEW_RENDERER_TOGGLE = 16617;
-		static readonly SETTINGS_HD_WARNING_SHOWN = 16618;
 		static readonly SETTINGS_SD_BETA_ENABLED = 16619;
 		static readonly SAILING_WARNING_TELEPORTOFFBOAT = 16620;
 		static readonly SETTINGS_WORLD_MAP_HOTKEY_DISABLED = 16621;

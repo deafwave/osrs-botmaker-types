@@ -833,6 +833,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly LEAFYTREE_TILED_AUTUMN01 = 8557;
 		static readonly LEAFYTREE_AUTUMN02 = 8558;
 		static readonly LEAFYTREE_TILED_AUTUMN02 = 8559;
+		static readonly MINIMENU_ICONS = 8560;
 		static readonly _2XSTANDARDSPELLSON__0 = 0;
 		static readonly _2XSTANDARDSPELLSON__1 = 1;
 		static readonly _2XSTANDARDSPELLSON__2 = 2;

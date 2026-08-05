@@ -30402,5 +30402,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_GANGPLANK_WYRMSCRAIG = 62397;
 		static readonly SAILING_GANGPLANK_WYRMSCRAIG_CAVE = 62398;
 		static readonly HAVEN_TOWER_BASEMENT_WALL_STONE_CREVICE = 62399;
+		static readonly DEADMAN_POH_GAP_WHERE_WINDOW_IS_NOT = 62400;
 	}
   }

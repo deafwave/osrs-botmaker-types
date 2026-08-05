@@ -30088,5 +30088,6 @@ declare namespace net.runelite.api {
 		static readonly SUNSTONE_ROCKS_62394 = 62394;
 		static readonly BUOY_62395 = 62395;
 		static readonly BUOY_62396 = 62396;
+		static readonly BROKEN_WALL_62400 = 62400;
 	}
   }

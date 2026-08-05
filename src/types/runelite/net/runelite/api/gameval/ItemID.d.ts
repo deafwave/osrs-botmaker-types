@@ -19543,6 +19543,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly DULL_SUNSTONE_CORE = 34056;
 		static readonly FFG_FINAL_NOTE = 34057;
 		static readonly SAILING_SKILLGUIDE_PORTS_WYRMSCRAIG = 34058;
+		static readonly DEADMAN_QUEST_LAMP_TIER_11 = 34059;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -24246,6 +24247,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_GOAT_PIT_FUR = 34018;
 		static readonly CERT_HALLOWFELL = 34028;
 		static readonly CERT_MAD_ANGEL_SWORD = 34036;
+		static readonly CERT_BH_EMBLEM_5 = 34060;
 		static readonly PLACEHOLDER_STAFFORB = 13694;
 		static readonly PLACEHOLDER_FIRE_ORB = 13695;
 		static readonly PLACEHOLDER_WATER_ORB = 13696;

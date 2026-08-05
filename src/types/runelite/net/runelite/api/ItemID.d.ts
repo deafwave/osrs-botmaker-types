@@ -16609,5 +16609,6 @@ declare namespace net.runelite.api {
 		static readonly DULL_SUNSTONE_CORE = 34056;
 		static readonly FINAL_LETTER = 34057;
 		static readonly WYRMSCRAIG = 34058;
+		static readonly FAIRY_TALE_QUEST_LAMP = 34059;
 	}
   }

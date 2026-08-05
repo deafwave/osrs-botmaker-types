@@ -16607,6 +16607,7 @@ const data: Record<string, number> = {
 	DULL_SUNSTONE_CORE: 34056,
 	FINAL_LETTER: 34057,
 	WYRMSCRAIG: 34058,
+	FAIRY_TALE_QUEST_LAMP: 34059,
 };
 
 export default data;
