@@ -30403,5 +30403,30 @@ declare namespace net.runelite.api.gameval {
 		static readonly SAILING_GANGPLANK_WYRMSCRAIG_CAVE = 62398;
 		static readonly HAVEN_TOWER_BASEMENT_WALL_STONE_CREVICE = 62399;
 		static readonly DEADMAN_POH_GAP_WHERE_WINDOW_IS_NOT = 62400;
+		static readonly SOPHANEM_AGILITY_STONE_RIVER = 62401;
+		static readonly SOPHANEM_AGILITY_STONE_RIVER_NOOP = 62402;
+		static readonly GH_CLIMBING_ROCKS_TOP = 62403;
+		static readonly GH_CLIMBING_ROCKS_BOTTOM = 62404;
+		static readonly GH_CLIMBING_ROCKS_INACTIVE = 62405;
+		static readonly DARKWOOD_TREE_VAMPYRE_SNAIL_DOORWAY = 62406;
+		static readonly SNAIL_BUSH = 62407;
+		static readonly VIKING_PIER_STYLE_STILE = 62408;
+		static readonly VARROCK_DUNGEON_PIPE_2_SC = 62409;
+		static readonly MOS_LE_HARMLESS_STEP_1 = 62410;
+		static readonly MOS_LE_HARMLESS_STEP_2 = 62411;
+		static readonly CHAMPIONS_GUILD_STEPSTONE = 62412;
+		static readonly CHAMPIONS_GUILD_STEPSTONE_NOOP = 62413;
+		static readonly POLLNIVNEACH_SCRAMBLE_UP = 62414;
+		static readonly POLLNIVNEACH_SCRAMBLE_DOWN = 62415;
+		static readonly POLLNIVNEACH_SCRAMBLE_ACROSS = 62416;
+		static readonly YANILLE_WALLCLIMB = 62417;
+		static readonly FALADOR_WALLCLIMB = 62418;
+		static readonly FALADOR_WALLCLIMB2 = 62419;
+		static readonly KARAMJA_VOLCANO_SWIM = 62420;
+		static readonly CATHERBY_ISLAND_SWIM = 62421;
+		static readonly DRAYNOR_MANOR_FENCE_BROKEN = 62422;
+		static readonly HILLTOP_SHORTCUT_BOTTOM = 62423;
+		static readonly HILLTOP_SHORTCUT_TOP = 62424;
+		static readonly HILLTOP_SHORTCUT_MIDDLE = 62425;
 	}
   }

@@ -13574,6 +13574,7 @@ const data: Record<string, number> = {
 	FISHING_SPOT_16341: 16341,
 	FISHING_SPOT_16342: 16342,
 	FISHING_SPOT_16343: 16343,
+	VAMPYRE_SNAIL: 16344,
 };
 
 export default data;

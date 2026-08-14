@@ -7918,7 +7918,6 @@ declare namespace net.runelite.api {
 		static readonly BOX_TRAP_PACK = 12742;
 		static readonly MAGIC_IMP_BOX_PACK = 12744;
 		static readonly ARCHAIC_EMBLEM_TIER_1 = 12746;
-		static readonly ARCHAIC_EMBLEM_TIER_1_12747 = 12747;
 		static readonly ARCHAIC_EMBLEM_TIER_2 = 12748;
 		static readonly ARCHAIC_EMBLEM_TIER_3 = 12749;
 		static readonly ARCHAIC_EMBLEM_TIER_4 = 12750;
@@ -16610,5 +16609,7 @@ declare namespace net.runelite.api {
 		static readonly FINAL_LETTER = 34057;
 		static readonly WYRMSCRAIG = 34058;
 		static readonly FAIRY_TALE_QUEST_LAMP = 34059;
+		static readonly VAMPYRE_SNAIL_SHELL = 34061;
+		static readonly VAMPYRE_SNELM = 34063;
 	}
   }

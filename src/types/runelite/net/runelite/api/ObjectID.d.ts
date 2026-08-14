@@ -9623,10 +9623,10 @@ declare namespace net.runelite.api {
 		static readonly ROCKS_17042 = 17042;
 		static readonly ROCKS_17043 = 17043;
 		static readonly STRONG_TREE_17046 = 17046;
-		static readonly WALL_17047 = 17047;
+		static readonly ROUGH_WALL_17047 = 17047;
 		static readonly WALL_17048 = 17048;
-		static readonly WALL_17049 = 17049;
-		static readonly WALL_17050 = 17050;
+		static readonly ROUGH_WALL_17049 = 17049;
+		static readonly ROUGH_WALL_17050 = 17050;
 		static readonly WALL_17051 = 17051;
 		static readonly WALL_17052 = 17052;
 		static readonly CROSSBOW_TREE = 17056;
@@ -14875,6 +14875,8 @@ declare namespace net.runelite.api {
 		static readonly TABLE_28366 = 28366;
 		static readonly TABLE_28367 = 28367;
 		static readonly TABLE_28368 = 28368;
+		static readonly RAILING_28373 = 28373;
+		static readonly RAILING_28374 = 28374;
 		static readonly PARCHMENT = 28385;
 		static readonly PARCHMENT_28386 = 28386;
 		static readonly PARCHMENT_28387 = 28387;
@@ -30089,5 +30091,26 @@ declare namespace net.runelite.api {
 		static readonly BUOY_62395 = 62395;
 		static readonly BUOY_62396 = 62396;
 		static readonly BROKEN_WALL_62400 = 62400;
+		static readonly STEPPING_STONE_62401 = 62401;
+		static readonly ROCKS_62403 = 62403;
+		static readonly ROCKS_62404 = 62404;
+		static readonly DARKWOOD_TREES_62406 = 62406;
+		static readonly BUSH_62407 = 62407;
+		static readonly STILE_62408 = 62408;
+		static readonly OBSTACLE_PIPE_62409 = 62409;
+		static readonly STEPPING_STONE_62410 = 62410;
+		static readonly STEPPING_STONE_62411 = 62411;
+		static readonly STEPPING_STONE_62412 = 62412;
+		static readonly SLOPE_62414 = 62414;
+		static readonly SLOPE_62415 = 62415;
+		static readonly DITCH = 62416;
+		static readonly ROUGH_WALL_62417 = 62417;
+		static readonly ROUGH_WALL_62418 = 62418;
+		static readonly ROUGH_WALL_62419 = 62419;
+		static readonly SHORE = 62420;
+		static readonly SHORE_62421 = 62421;
+		static readonly BROKEN_FENCE_62422 = 62422;
+		static readonly ROCKS_62423 = 62423;
+		static readonly ROCKS_62424 = 62424;
 	}
   }

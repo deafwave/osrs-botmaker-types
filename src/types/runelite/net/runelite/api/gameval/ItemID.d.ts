@@ -9696,7 +9696,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly PACK_BOX_TRAP = 12742;
 		static readonly PACK_MAGIC_IMP_BOX = 12744;
 		static readonly BH_EMBLEM = 12746;
-		static readonly CERT_BH_EMBLEM = 12747;
 		static readonly BH_EMBLEM_2 = 12748;
 		static readonly BH_EMBLEM_3 = 12749;
 		static readonly BH_EMBLEM_4 = 12750;
@@ -19544,6 +19543,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly FFG_FINAL_NOTE = 34057;
 		static readonly SAILING_SKILLGUIDE_PORTS_WYRMSCRAIG = 34058;
 		static readonly DEADMAN_QUEST_LAMP_TIER_11 = 34059;
+		static readonly VAMPYRE_SNAIL_SHELL = 34061;
+		static readonly SNELM_VAMPYRE = 34063;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -22597,6 +22598,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_PACK_OJIBWAY_BIRD_SNARE = 12741;
 		static readonly CERT_PACK_BOX_TRAP = 12743;
 		static readonly CERT_PACK_MAGIC_IMP_BOX = 12745;
+		static readonly CERT_BH_EMBLEM = 12747;
 		static readonly CERT_BH_BLUE_PAINT = 12758;
 		static readonly CERT_BH_GREEN_PAINT = 12760;
 		static readonly CERT_BH_YELLOW_PAINT = 12762;
@@ -33975,5 +33977,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_MAD_ANGEL_SWORD = 34037;
 		static readonly PLACEHOLDER_GOATPITPET = 34041;
 		static readonly PLACEHOLDER_MADANGELPET = 34043;
+		static readonly PLACEHOLDER_VAMPYRE_SNAIL_SHELL = 34062;
+		static readonly PLACEHOLDER_SNELM_VAMPYRE = 34064;
 	}
   }

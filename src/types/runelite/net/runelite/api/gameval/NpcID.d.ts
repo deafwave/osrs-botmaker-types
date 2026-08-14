@@ -16346,5 +16346,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly FISHING_BOAT_KARAMBWANFISH = 16341;
 		static readonly FISHING_BOAT_PISCARILIUSFISH = 16342;
 		static readonly FISHING_BOAT_MONKFISH = 16343;
+		static readonly VAMPYRE_SNAIL = 16344;
 	}
   }
