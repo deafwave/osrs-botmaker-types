@@ -14167,7 +14167,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly PORTAL_VAMPYRIUM01_DESPAWN01 = 14169;
 		static readonly PORTAL_VAMPYRIUM01_IDLE01 = 14170;
 		static readonly PORTAL_VAMPYRIUM01_SPAWN_TO_IDLE01 = 14171;
-		static readonly PORTAL_VAMPYRIUM01_FULL_SEQUENCE = 14172;
 		static readonly PORTAL_VAMPYRIUM01_SPAWN02 = 14173;
 		static readonly PORTAL_VAMPYRIUM01_SPAWN02_FAST = 14174;
 		static readonly PORTAL_VAMPYRIUM01_DESPAWN02 = 14175;

@@ -30428,5 +30428,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly HILLTOP_SHORTCUT_BOTTOM = 62423;
 		static readonly HILLTOP_SHORTCUT_TOP = 62424;
 		static readonly HILLTOP_SHORTCUT_MIDDLE = 62425;
+		static readonly WYRMSCRAIG_CATHEDRAL_SPIRALSTAIRSTOP_PROXY = 62426;
+		static readonly BOULDER1_INACTIVE = 62427;
+		static readonly BOULDER2_INACTIVE = 62428;
+		static readonly BOULDER3_INACTIVE = 62429;
+		static readonly BOULDER4_INACTIVE = 62430;
 	}
   }

@@ -2929,9 +2929,11 @@ declare namespace net.runelite.api.gameval {
 		static readonly TOTAL_MAD_ANGEL_KILLS = 5712;
 		static readonly FFG_PRIMARY = 5715;
 		static readonly SLAYER_MODIFIERS = 5719;
+		static readonly SLAYER_MORTIMER_TASKS_COMPLETED = 5720;
 		static readonly SLAYER_REWARDS_BLOCKED_14 = 5721;
 		static readonly SLAYER_MISC_PERM = 5722;
 		static readonly SLAYER_MISC_PERM_2 = 5723;
 		static readonly SLAYER_MISC_PERM_3 = 5724;
+		static readonly SKILLPET_RUNECRAFTING_TRACKING = 5725;
 	}
   }

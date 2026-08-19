@@ -16591,7 +16591,6 @@ declare namespace net.runelite.api {
 		static readonly JAR_OF_LIGHT = 34030;
 		static readonly SUNSTONE_CRYSTAL = 34032;
 		static readonly ARDEAGLAIS_TELEPORT = 34033;
-		static readonly PLACEHOLDER = 34035;
 		static readonly MR_MCGROOT = 34040;
 		static readonly AGGY = 34042;
 		static readonly LARGE_HAT = 34044;
@@ -16611,5 +16610,6 @@ declare namespace net.runelite.api {
 		static readonly FAIRY_TALE_QUEST_LAMP = 34059;
 		static readonly VAMPYRE_SNAIL_SHELL = 34061;
 		static readonly VAMPYRE_SNELM = 34063;
+		static readonly SHARK_LURE_PACK = 34065;
 	}
   }

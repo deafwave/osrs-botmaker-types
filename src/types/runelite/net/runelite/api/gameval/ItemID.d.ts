@@ -19523,6 +19523,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SUNSTONE_CRYSTAL = 34032;
 		static readonly TELEPORTSCROLL_ARDEAGLAIS = 34033;
 		static readonly MAD_ANGEL_SWORD = 34035;
+		static readonly CERT_MAD_ANGEL_SWORD = 34036;
+		static readonly PLACEHOLDER_MAD_ANGEL_SWORD = 34037;
 		static readonly TELEPORTSCROLL_ARDEAGLAIS_DUMMY = 34038;
 		static readonly TELEPORTSCROLL_ARDEAGLAIS_SELECTED_DUMMY = 34039;
 		static readonly GOATPITPET = 34040;
@@ -19545,6 +19547,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_QUEST_LAMP_TIER_11 = 34059;
 		static readonly VAMPYRE_SNAIL_SHELL = 34061;
 		static readonly SNELM_VAMPYRE = 34063;
+		static readonly SHARK_LURE_PACK = 34065;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -24248,8 +24251,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_WYRMSCRAIG_VILLAGER_WORK_SKIRT08 = 34014;
 		static readonly CERT_GOAT_PIT_FUR = 34018;
 		static readonly CERT_HALLOWFELL = 34028;
-		static readonly CERT_MAD_ANGEL_SWORD = 34036;
 		static readonly CERT_BH_EMBLEM_5 = 34060;
+		static readonly CERT_SHARK_LURE_PACK = 34066;
 		static readonly PLACEHOLDER_STAFFORB = 13694;
 		static readonly PLACEHOLDER_FIRE_ORB = 13695;
 		static readonly PLACEHOLDER_WATER_ORB = 13696;
@@ -33974,10 +33977,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_HALLOWFELL = 34029;
 		static readonly PLACEHOLDER_JAR_OF_LIGHT = 34031;
 		static readonly PLACEHOLDER_TELEPORTSCROLL_ARDEAGLAIS = 34034;
-		static readonly PLACEHOLDER_MAD_ANGEL_SWORD = 34037;
 		static readonly PLACEHOLDER_GOATPITPET = 34041;
 		static readonly PLACEHOLDER_MADANGELPET = 34043;
 		static readonly PLACEHOLDER_VAMPYRE_SNAIL_SHELL = 34062;
 		static readonly PLACEHOLDER_SNELM_VAMPYRE = 34064;
+		static readonly PLACEHOLDER_SHARK_LURE_PACK = 34067;
 	}
   }

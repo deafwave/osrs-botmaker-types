@@ -407,7 +407,7 @@ declare namespace net.runelite.api.widgets {
 		static readonly SHOP_INVENTORY_ITEM_CONTAINER = 19660800;
 		static readonly SKILLS_CONTAINER = 20971520;
 		static readonly SKOTIZO_CONTAINER = 20185090;
-		static readonly SLAYER_REWARDS_TOP_BAR = 27918349;
+		static readonly SLAYER_REWARDS_TOP_BAR = 27918350;
 		static readonly SMITHING_INVENTORY_ITEM_CONTAINER = 20447232;
 		static readonly SPELLBOOK_ARCEUUS_HOME_TELEPORT = 14287001;
 		static readonly SPELLBOOK_CATHERBY_HOME_TELEPORT = 14286853;
