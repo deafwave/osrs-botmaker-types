@@ -13579,5 +13579,6 @@ declare namespace net.runelite.api {
 		static readonly VAMPYRE_SNAIL = 16344;
 		static readonly COMBAT_TEST_16345 = 16345;
 		static readonly FRENZIED_FISHING_SPOT = 16346;
+		static readonly LOWERNIEL_DRAKAN_16347 = 16347;
 	}
   }

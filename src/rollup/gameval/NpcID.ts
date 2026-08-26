@@ -16347,6 +16347,7 @@ const data: Record<string, number> = {
 	VAMPYRE_SNAIL: 16344,
 	TEST_COMBAT_DUMMY_2: 16345,
 	FISHING_SPOT_AERIAL_LARGE: 16346,
+	LOWERNIEL_DRAKAN_ANIMATION_TEST: 16347,
 };
 
 export default data;

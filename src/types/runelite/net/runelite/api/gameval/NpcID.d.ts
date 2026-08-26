@@ -16349,5 +16349,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly VAMPYRE_SNAIL = 16344;
 		static readonly TEST_COMBAT_DUMMY_2 = 16345;
 		static readonly FISHING_SPOT_AERIAL_LARGE = 16346;
+		static readonly LOWERNIEL_DRAKAN_ANIMATION_TEST = 16347;
 	}
   }
