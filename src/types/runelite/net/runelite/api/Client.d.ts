@@ -2258,5 +2258,10 @@ declare namespace net.runelite.api {
 		findWorldViewFromWorldPoint(point: net.runelite.api.coords.WorldPoint): WorldView;
 
 		getSocketFD(): java.io.FileDescriptor | null;
+
+		/**
+		 * Expand macros such as @mes_hl_blu@, @blu@, etc. with their corresponding values, eg. <col=0000ff>
+		 */
+		macroExpand(s: string): string;
 	}
 }
