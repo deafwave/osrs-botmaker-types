@@ -14167,6 +14167,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly PORTAL_VAMPYRIUM01_DESPAWN01 = 14169;
 		static readonly PORTAL_VAMPYRIUM01_IDLE01 = 14170;
 		static readonly PORTAL_VAMPYRIUM01_SPAWN_TO_IDLE01 = 14171;
+		static readonly AMULET_OF_AIR_CREATE = 14172;
 		static readonly PORTAL_VAMPYRIUM01_SPAWN02 = 14173;
 		static readonly PORTAL_VAMPYRIUM01_SPAWN02_FAST = 14174;
 		static readonly PORTAL_VAMPYRIUM01_DESPAWN02 = 14175;
@@ -14491,5 +14492,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly FORESTRY_CAMPFIRE_BURNING_CAMPHOR_LOGS_NOLOOP = 14494;
 		static readonly FORESTRY_CAMPFIRE_BURNING_IRONWOOD_LOGS_NOLOOP = 14495;
 		static readonly FORESTRY_CAMPFIRE_BURNING_ROSEWOOD_LOGS_NOLOOP = 14496;
+		static readonly SPOTANIM_AMULET_OF_FIRE_CREATE = 14497;
 	}
   }

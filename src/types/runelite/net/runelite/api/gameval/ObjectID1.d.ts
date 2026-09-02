@@ -30433,5 +30433,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly BOULDER2_INACTIVE = 62428;
 		static readonly BOULDER3_INACTIVE = 62429;
 		static readonly BOULDER4_INACTIVE = 62430;
+		static readonly LANSCAPE_MOLE_STICKY_MUD = 62431;
 	}
   }

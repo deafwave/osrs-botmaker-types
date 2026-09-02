@@ -16771,5 +16771,17 @@ declare namespace net.runelite.api {
 		static readonly MEDIUM_PORT_COIN_BAG = 34381;
 		static readonly LARGE_PORT_COIN_BAG = 34383;
 		static readonly HUGE_PORT_COIN_BAG = 34385;
+		static readonly BIG_RED_BUTTON = 34388;
+		static readonly LANSCAPE_COINS = 34390;
+		static readonly NECKLACE_OF_FANGS = 34401;
+		static readonly AIR_DIAMOND = 34404;
+		static readonly AMULET_OF_AIR = 34407;
+		static readonly WATER_SAPPHIRE = 34410;
+		static readonly AMULET_OF_WATER = 34413;
+		static readonly EARTH_EMERALD = 34416;
+		static readonly AMULET_OF_EARTH = 34419;
+		static readonly FIRE_RUBY = 34422;
+		static readonly AMULET_OF_FIRE = 34425;
+		static readonly ELEMENTAL_AMULET = 34428;
 	}
   }

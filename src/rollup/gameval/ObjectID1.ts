@@ -30431,6 +30431,7 @@ const data: Record<string, number> = {
 	BOULDER2_INACTIVE: 62428,
 	BOULDER3_INACTIVE: 62429,
 	BOULDER4_INACTIVE: 62430,
+	LANSCAPE_MOLE_STICKY_MUD: 62431,
 };
 
 export default data;

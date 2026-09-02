@@ -13580,5 +13580,16 @@ declare namespace net.runelite.api {
 		static readonly COMBAT_TEST_16345 = 16345;
 		static readonly FRENZIED_FISHING_SPOT = 16346;
 		static readonly LOWERNIEL_DRAKAN_16347 = 16347;
+		static readonly DURIAL321_16348 = 16348;
+		static readonly WISE_OLD_MAN_16349 = 16349;
+		static readonly AGGRESSIVE_BLACK_DRAGON = 16350;
+		static readonly AGGRESSIVE_BLACK_DRAGON_16351 = 16351;
+		static readonly AGGRESSIVE_BLACK_DRAGON_16352 = 16352;
+		static readonly GARY_GILBERT = 16353;
+		static readonly GIANT_MOLE_ZAMORAK = 16354;
+		static readonly GIANT_MOLE_SARADOMIN = 16355;
+		static readonly GIANT_MOLE_GUTHIX = 16356;
+		static readonly GIANT_MOLE_BANDOS = 16357;
+		static readonly MUD = 16358;
 	}
   }

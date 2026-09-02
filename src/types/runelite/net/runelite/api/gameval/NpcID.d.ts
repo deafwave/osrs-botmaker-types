@@ -16350,5 +16350,16 @@ declare namespace net.runelite.api.gameval {
 		static readonly TEST_COMBAT_DUMMY_2 = 16345;
 		static readonly FISHING_SPOT_AERIAL_LARGE = 16346;
 		static readonly LOWERNIEL_DRAKAN_ANIMATION_TEST = 16347;
+		static readonly LANSCAPE_DURIAL321_MUDPIE = 16348;
+		static readonly LANSCAPE_WISE_OLD_MAN_MUDPIE = 16349;
+		static readonly LANSCAPE_BLACK_DRAGON1 = 16350;
+		static readonly LANSCAPE_BLACK_DRAGON2 = 16351;
+		static readonly LANSCAPE_BLACK_DRAGON3 = 16352;
+		static readonly LANSCAPE_FINALE_SHOP_NPC = 16353;
+		static readonly MOLE_GIANT_ZAMORAK = 16354;
+		static readonly MOLE_GIANT_SARADOMIN = 16355;
+		static readonly MOLE_GIANT_GUTHIX = 16356;
+		static readonly MOLE_GIANT_BANDOS = 16357;
+		static readonly LANSCAPE_MOLE_STICKY_MUD_NPC = 16358;
 	}
   }

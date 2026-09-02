@@ -2935,5 +2935,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_MISC_PERM_2 = 5723;
 		static readonly SLAYER_MISC_PERM_3 = 5724;
 		static readonly SKILLPET_RUNECRAFTING_TRACKING = 5725;
+		static readonly TELETAB_LAST_CRAFTED = 5730;
+		static readonly TELETAB_LAST_CRAFTED_AMOUNT = 5731;
 	}
   }

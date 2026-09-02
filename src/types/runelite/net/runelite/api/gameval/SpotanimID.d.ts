@@ -4020,5 +4020,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW_PROJECTILE = 4015;
 		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW_IMPACT_01 = 4016;
 		static readonly VFX_MAD_ANGEL_ATTACK_BOMB_THROW_IMPACT_02 = 4017;
+		static readonly SPOTANIM_AMULET_OF_WATER = 4018;
+		static readonly SPOTANIM_AMULET_OF_EARTH = 4019;
+		static readonly SPOTANIM_AMULET_OF_FIRE = 4020;
+		static readonly SPOTANIM_ELEMENTAL_AMULET = 4021;
 	}
   }

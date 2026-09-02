@@ -1028,6 +1028,7 @@ const data: Record<string, number> = {
 	PUB_BURGH_DE_ROTT: 1025,
 	WYRMSCRAIG_GENERAL_SHOP: 1026,
 	WYRMSCRAIG_CLOTHES_SHOP: 1027,
+	LANSCAPE_GARY_GILBERT_FINALE_SHOP: 1028,
 };
 
 export default data;
