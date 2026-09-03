@@ -187,6 +187,7 @@ const data: Record<string, number> = {
 	SPELL_LEVELREQ: 604,
 	BANK_AUTOCHARGE: 2257,
 	CLUE_SCROLL: 623,
+	QUIVER_AMMO_AVAILABLE: 1910,
 };
 
 export default data;
