@@ -214,6 +214,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly MAIN_ICS_VAR = 445;
 		static readonly ICS_LITTLE_MULTI_EXTRA = 446;
 		static readonly FOLLOWER_NPC = 447;
+		static readonly FOLLOWER_OBJ = 448;
 		static readonly TOG_MINIGAME = 449;
 		static readonly BARROWS = 452;
 		static readonly BARROWS_KILLS = 453;
@@ -2937,5 +2938,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly SKILLPET_RUNECRAFTING_TRACKING = 5725;
 		static readonly TELETAB_LAST_CRAFTED = 5730;
 		static readonly TELETAB_LAST_CRAFTED_AMOUNT = 5731;
+		static readonly DOG_SELECTION_BREED = 5732;
+		static readonly DOG_SELECTION_COLOUR = 5733;
+		static readonly DOG_UNLOCKS = 5734;
+		static readonly CRAB = 5739;
+		static readonly CRAB_SECONDARY = 5740;
+		static readonly CRAB_TEMP = 5741;
+		static readonly DOGQUEST_MAIN = 5742;
 	}
   }

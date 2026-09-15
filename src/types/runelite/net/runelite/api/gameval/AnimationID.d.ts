@@ -14493,5 +14493,27 @@ declare namespace net.runelite.api.gameval {
 		static readonly FORESTRY_CAMPFIRE_BURNING_IRONWOOD_LOGS_NOLOOP = 14495;
 		static readonly FORESTRY_CAMPFIRE_BURNING_ROSEWOOD_LOGS_NOLOOP = 14496;
 		static readonly SPOTANIM_AMULET_OF_FIRE_CREATE = 14497;
+		static readonly DOG_UPDATE_DIG = 14498;
+		static readonly DOG_UPDATE_DIG_SMALL = 14499;
+		static readonly HORROR_CRAB_HIDE_LOOP = 14500;
+		static readonly HORROR_CRAB_DANCE = 14501;
+		static readonly DOG_QUEST_STRAYDOG_ATTACK = 14502;
+		static readonly HUMAN_PLAY_SHELL_1 = 14503;
+		static readonly HUMAN_PLAY_SHELL_2 = 14504;
+		static readonly HUMAN_PLAY_SHELL_3 = 14505;
+		static readonly HUMAN_PLAY_SHELL_4 = 14506;
+		static readonly HUMAN_PLAY_SHELL_5 = 14507;
+		static readonly HUMAN_PLAY_SHELL_6 = 14508;
+		static readonly HUMAN_PLAY_SHELL_7 = 14509;
+		static readonly HUMAN_DRINK_CHARTING_BOTTLE = 14510;
+		static readonly CRAB_SAND_CIRCLE_1 = 14511;
+		static readonly CRAB_SAND_CIRCLE_2 = 14512;
+		static readonly CRAB_SAND_CIRCLE_3 = 14513;
+		static readonly CRAB_SAND_CIRCLE_4 = 14514;
+		static readonly CRAB_SAND_CIRCLE_5 = 14515;
+		static readonly CRAB_SAND_CIRCLE_6 = 14516;
+		static readonly CRAB_SAND_CIRCLE_7 = 14517;
+		static readonly CRAB_SAND_CIRCLE_8 = 14518;
+		static readonly CRAB_SAND_CIRCLE_INITIAL = 14519;
 	}
   }

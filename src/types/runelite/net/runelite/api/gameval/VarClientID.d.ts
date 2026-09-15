@@ -1510,5 +1510,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly CASTLE_DRAKAN_WORLD_MAP_X = 1505;
 		static readonly CASTLE_DRAKAN_WORLD_MAP_Y = 1506;
 		static readonly SETTINGS_RENDERER_OPTION = 1507;
+		static readonly DOG_SELECTION_CURRENT_SELECTION = 1508;
+		static readonly DOG_SELECTION_CURRENT_COLOUR = 1509;
+		static readonly DOG_SELECTION_SCROLL_POS = 1510;
+		static readonly DOG_SELECTION_ZOOM = 1511;
 	}
   }

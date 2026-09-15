@@ -32301,5 +32301,37 @@ declare namespace net.runelite.api {
 		static readonly NULL_62429 = 62429;
 		static readonly NULL_62430 = 62430;
 		static readonly NULL_62431 = 62431;
+		static readonly NULL_62432 = 62432;
+		static readonly NULL_62433 = 62433;
+		static readonly NULL_62434 = 62434;
+		static readonly NULL_62435 = 62435;
+		static readonly NULL_62436 = 62436;
+		static readonly NULL_62437 = 62437;
+		static readonly NULL_62438 = 62438;
+		static readonly NULL_62442 = 62442;
+		static readonly NULL_62444 = 62444;
+		static readonly NULL_62446 = 62446;
+		static readonly NULL_62448 = 62448;
+		static readonly NULL_62450 = 62450;
+		static readonly NULL_62452 = 62452;
+		static readonly NULL_62454 = 62454;
+		static readonly NULL_62459 = 62459;
+		static readonly NULL_62464 = 62464;
+		static readonly NULL_62466 = 62466;
+		static readonly NULL_62467 = 62467;
+		static readonly NULL_62468 = 62468;
+		static readonly NULL_62469 = 62469;
+		static readonly NULL_62483 = 62483;
+		static readonly NULL_62486 = 62486;
+		static readonly NULL_62489 = 62489;
+		static readonly NULL_62492 = 62492;
+		static readonly NULL_62493 = 62493;
+		static readonly NULL_62495 = 62495;
+		static readonly NULL_62496 = 62496;
+		static readonly NULL_62497 = 62497;
+		static readonly NULL_62506 = 62506;
+		static readonly NULL_62507 = 62507;
+		static readonly NULL_62508 = 62508;
+		static readonly NULL_62509 = 62509;
 	}
   }

@@ -4024,5 +4024,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SPOTANIM_AMULET_OF_EARTH = 4019;
 		static readonly SPOTANIM_AMULET_OF_FIRE = 4020;
 		static readonly SPOTANIM_ELEMENTAL_AMULET = 4021;
+		static readonly CRAB_FLYINGPENGUIN = 4022;
 	}
   }

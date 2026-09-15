@@ -4022,6 +4022,7 @@ const data: Record<string, number> = {
 	SPOTANIM_AMULET_OF_EARTH: 4019,
 	SPOTANIM_AMULET_OF_FIRE: 4020,
 	SPOTANIM_ELEMENTAL_AMULET: 4021,
+	CRAB_FLYINGPENGUIN: 4022,
 };
 
 export default data;
