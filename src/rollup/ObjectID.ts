@@ -30156,6 +30156,7 @@ const data: Record<string, number> = {
 	FOOD_BOWL: 62503,
 	WATER_BOWL: 62504,
 	WHEELBARROW_62505: 62505,
+	STAIRCASE_62517: 62517,
 };
 
 export default data;

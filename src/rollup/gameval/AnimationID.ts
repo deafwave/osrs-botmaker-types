@@ -14513,6 +14513,7 @@ const data: Record<string, number> = {
 	CRAB_SAND_CIRCLE_7: 14517,
 	CRAB_SAND_CIRCLE_8: 14518,
 	CRAB_SAND_CIRCLE_INITIAL: 14519,
+	MAIDEN_PET_IDLE: 14520,
 };
 
 export default data;

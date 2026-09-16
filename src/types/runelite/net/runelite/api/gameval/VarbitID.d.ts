@@ -10466,6 +10466,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly XMAS24_MATCHES = 15905;
 		static readonly DOGQ_STRANGER_INTRO = 15910;
 		static readonly DOGQ_TALIA_INTRO = 15911;
+		static readonly CRAB_1OFF_NET_CHECK = 15912;
 		static readonly BANK_SIDE_SLOT_SHOWOP = 15915;
 		static readonly BANK_DEPOSITBOX_OPLOCU_ASKQUANTITY = 15958;
 		static readonly POH_SPIRIT_TREE_UPROOTED = 15959;

@@ -30158,5 +30158,6 @@ declare namespace net.runelite.api {
 		static readonly FOOD_BOWL = 62503;
 		static readonly WATER_BOWL = 62504;
 		static readonly WHEELBARROW_62505 = 62505;
+		static readonly STAIRCASE_62517 = 62517;
 	}
   }

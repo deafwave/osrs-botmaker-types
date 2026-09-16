@@ -7089,7 +7089,7 @@ declare namespace net.runelite.api {
 		static readonly ZAMORAK_MIX2 = 11521;
 		static readonly ZAMORAK_MIX1 = 11523;
 		static readonly FEATHER_11525 = 11525;
-		static readonly MAUSOLEUM_BRIDGE_REPAIR = 11527;
+		static readonly MAUSOLEUM_BRIDGE_REINFORCEMENT = 11527;
 		static readonly WATER_PUMP = 11547;
 		static readonly COOKING_POT_11548 = 11548;
 		static readonly POTTERY_WHEEL = 11549;

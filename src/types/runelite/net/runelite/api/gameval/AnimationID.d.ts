@@ -14515,5 +14515,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CRAB_SAND_CIRCLE_7 = 14517;
 		static readonly CRAB_SAND_CIRCLE_8 = 14518;
 		static readonly CRAB_SAND_CIRCLE_INITIAL = 14519;
+		static readonly MAIDEN_PET_IDLE = 14520;
 	}
   }

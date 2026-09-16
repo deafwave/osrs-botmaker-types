@@ -19732,7 +19732,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly SIDEJOURNAL_TAB_ICON_5 = 41222186;
 		static readonly SIDEJOURNAL_TAB_CONTAINER = 41222187;
 		static readonly SEEDVAULTDEPOSIT_UNIVERSE = 41287680;
-		static readonly SEEDVAULTDEPOSIT_INV = 41287681;
+		static readonly SEEDVAULTDEPOSIT_LOCKED_SLOT = 41287681;
+		static readonly SEEDVAULTDEPOSIT_INV = 41287682;
 		static readonly SEEDVAULT_INFINITY = 41353216;
 		static readonly SEEDVAULT_UNIVERSE = 41353217;
 		static readonly SEEDVAULT_FRAME = 41353218;

@@ -30512,5 +30512,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly DOGQ_FENCE_WOODEN01_PLANK01_NONBLOCKING = 62507;
 		static readonly DOGQ_FENCE_WOODEN01_PLANK01_BROKEN01 = 62508;
 		static readonly WOODENSUPPORT2 = 62509;
+		static readonly WALLKIT_WOODEN01_BAZAAR01 = 62510;
+		static readonly WALLKIT_WOODEN01_BAZAAR01_M = 62511;
+		static readonly WALLKIT_WOODEN01_BAZAAR02 = 62512;
+		static readonly WALLKIT_WOODEN01_BAZAAR02_M = 62513;
+		static readonly WALLKIT_WOODEN01_BAZAAR03 = 62514;
+		static readonly WALLKIT_WOODEN01_BAZAAR03_M = 62515;
+		static readonly WALLKIT_WOODEN01_BAZAAR04 = 62516;
+		static readonly CIVITAS_STAIRS_1X3_BAZAAR = 62517;
+		static readonly WALLKIT_COLOSSEUM10_WALLTOP03 = 62518;
+		static readonly TOA_KEPHRI_DUNG01_TILE = 62519;
+		static readonly TOA_KEPHRI_DUNG02_TILE = 62520;
+		static readonly TOA_KEPHRI_DUNG03_TILE = 62521;
 	}
   }
