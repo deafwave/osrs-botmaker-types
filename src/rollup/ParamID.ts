@@ -188,6 +188,7 @@ const data: Record<string, number> = {
 	BANK_AUTOCHARGE: 2257,
 	CLUE_SCROLL: 623,
 	QUIVER_AMMO_AVAILABLE: 1910,
+	COURIER_BAG_TIER: 2645,
 };
 
 export default data;

@@ -2945,5 +2945,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly CRAB_SECONDARY = 5740;
 		static readonly CRAB_TEMP = 5741;
 		static readonly DOGQUEST_MAIN = 5742;
+		static readonly SETTINGS_FARMING_PATCH_OVERLAY_COLOUR = 5745;
+		static readonly FARMING_COMPOST_TRANSMIT_1 = 5746;
+		static readonly FARMING_COMPOST_TRANSMIT_2 = 5747;
+		static readonly FARMING_COMPOST_TRANSMIT_3 = 5748;
+		static readonly FARMING_COMPOST_TRANSMIT_4 = 5749;
+		static readonly FARMING_COMPOST_TRANSMIT_5 = 5750;
+		static readonly FARMING_COMPOST_TRANSMIT_6 = 5751;
 	}
   }

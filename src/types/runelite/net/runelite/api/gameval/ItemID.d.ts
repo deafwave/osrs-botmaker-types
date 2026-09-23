@@ -24632,6 +24632,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_FIRE_RUBY = 34423;
 		static readonly CERT_AMULET_OF_FIRE = 34426;
 		static readonly CERT_ELEMENTAL_AMULET = 34429;
+		static readonly CERT_BLANKRUNE_DAEYALT = 34603;
 		static readonly PLACEHOLDER_STAFFORB = 13694;
 		static readonly PLACEHOLDER_FIRE_ORB = 13695;
 		static readonly PLACEHOLDER_WATER_ORB = 13696;

@@ -30150,6 +30150,7 @@ declare namespace net.runelite.api {
 		static readonly CHEWED_BOX = 62490;
 		static readonly CHEWED_BOX_62491 = 62491;
 		static readonly STUFFED_DOG = 62494;
+		static readonly DOG_BED = 62497;
 		static readonly DOGHOUSE = 62498;
 		static readonly SHELTER = 62499;
 		static readonly KENNEL = 62500;
