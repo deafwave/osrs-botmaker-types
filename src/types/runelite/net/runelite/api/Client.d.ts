@@ -668,18 +668,24 @@ declare namespace net.runelite.api {
 		getServerVarps(): number[];
 
 		/**
+		 * Gets an array of all client varplayers.
+		 *
+		 * @return local player variables
+		 */
+		getVarpsLong(): number[];
+
+		/**
+		 * Get an array of all server varplayers. These vars are only
+		 * modified by the server, and so represent the server's idea of
+		 * the varp values.
+		 * @return the server varps
+		 */
+		getServerVarpsLong(): number[];
+
+		/**
 		 * Gets an array of all client variables.
 		 */
 		getVarcMap(): Record<number, any>;
-
-		/**
-		 * Gets a value corresponding to the passed varbit.
-		 *
-		 * @param varbit the varbit id
-		 * @return the value
-		 * @see Client#getVarbitValue(int)
-		 */
-		getVar(varbit: number): number;
 
 		/**
 		 * Gets the value of the given varbit.
@@ -717,6 +723,39 @@ declare namespace net.runelite.api {
 		 * @return the value
 		 */
 		getServerVarpValue(varpId: number): number;
+
+		/**
+		 * Sets the value of a VarPlayer
+		 * @param varpId the VarPlayer id
+		 * @param value the value
+		 */
+		setVarpValue(varpId: number, value: number): void;
+
+		/**
+		 * Gets the value of a given VarPlayer.
+		 *
+		 * @param varpId the VarPlayer id
+		 * @return the value
+		 */
+		getVarpLongValue(varpId: number): number;
+
+		/**
+		 * Gets the value of a given VarPlayer.
+		 * This returns the server's idea of the value, not the client's. This is
+		 * specifically the last value set by the server regardless of changes to
+		 * the var by the client.
+		 *
+		 * @param varpId the VarPlayer id
+		 * @return the value
+		 */
+		getServerVarpLongValue(varpId: number): number;
+
+		/**
+		 * Sets the value of a VarPlayer
+		 * @param varpId the VarPlayer id
+		 * @param value the value
+		 */
+		setVarpLongValue(varpId: number, value: number): void;
 
 		/**
 		 * Gets the value of a given VarClientInt
@@ -1045,10 +1084,6 @@ declare namespace net.runelite.api {
 		mergeModels(models: ModelData[], length: number): ModelData;
 
 		mergeModels(...models: ModelData[]): ModelData;
-
-		mergeModels(models: Model[], length: number): Model;
-
-		mergeModels(...models: Model[]): Model;
 
 		/**
 		 * Loads and lights a model from the cache
