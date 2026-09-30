@@ -16881,5 +16881,6 @@ declare namespace net.runelite.api {
 		static readonly STRAY_PUPPY_34600 = 34600;
 		static readonly STRAY_DOG = 34601;
 		static readonly STUFFED_DOG = 34602;
+		static readonly COINS_AND_PLATINUM = 34604;
 	}
   }

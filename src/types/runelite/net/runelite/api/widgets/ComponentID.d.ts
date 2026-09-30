@@ -23,13 +23,13 @@ declare namespace net.runelite.api.widgets {
 		static readonly CHARACTER_SUMMARY_CONTAINER = 46661634;
 		static readonly CHATBOX_BUTTONS = 10616833;
 		static readonly CHATBOX_CONTAINER = 10616871;
-		static readonly CHATBOX_FIRST_MESSAGE = 10616891;
+		static readonly CHATBOX_FIRST_MESSAGE = 10616892;
 		static readonly CHATBOX_FRAME = 10616866;
 		static readonly CHATBOX_FULL_INPUT = 10616876;
-		static readonly CHATBOX_GE_SEARCH_RESULTS = 10616884;
-		static readonly CHATBOX_INPUT = 10616889;
-		static readonly CHATBOX_MESSAGE_LINES = 10616890;
-		static readonly CHATBOX_MESSAGES = 10616887;
+		static readonly CHATBOX_GE_SEARCH_RESULTS = 10616885;
+		static readonly CHATBOX_INPUT = 10616890;
+		static readonly CHATBOX_MESSAGE_LINES = 10616891;
+		static readonly CHATBOX_MESSAGES = 10616888;
 		static readonly CHATBOX_PARENT = 10616832;
 		static readonly CHATBOX_REPORT_TEXT = 10616865;
 		static readonly CHATBOX_TAB_ALL = 10616836;
@@ -41,7 +41,7 @@ declare namespace net.runelite.api.widgets {
 		static readonly CHATBOX_TAB_TRADE = 10616859;
 		static readonly CHATBOX_TITLE = 10616875;
 		static readonly CHATBOX_TRANSPARENT_BACKGROUND = 10616869;
-		static readonly CHATBOX_TRANSPARENT_BACKGROUND_LINES = 10616888;
+		static readonly CHATBOX_TRANSPARENT_BACKGROUND_LINES = 10616889;
 		static readonly CLAN_GUEST_HEADER = 46006273;
 		static readonly CLAN_GUEST_MEMBERS = 46006278;
 		static readonly CLAN_HEADER = 45940737;

@@ -2952,5 +2952,21 @@ declare namespace net.runelite.api.gameval {
 		static readonly FARMING_COMPOST_TRANSMIT_4 = 5749;
 		static readonly FARMING_COMPOST_TRANSMIT_5 = 5750;
 		static readonly FARMING_COMPOST_TRANSMIT_6 = 5751;
+		static readonly GE_TAX_SLOT_LONG_0 = 5754;
+		static readonly GE_TAX_SLOT_LONG_1 = 5755;
+		static readonly GE_TAX_SLOT_LONG_2 = 5756;
+		static readonly GE_TAX_SLOT_LONG_3 = 5757;
+		static readonly GE_TAX_SLOT_LONG_4 = 5758;
+		static readonly GE_TAX_SLOT_LONG_5 = 5759;
+		static readonly GE_TAX_SLOT_LONG_6 = 5760;
+		static readonly GE_TAX_SLOT_LONG_7 = 5761;
+		static readonly GE_ITEMSINK_PRICE_LONG_0 = 5762;
+		static readonly GE_ITEMSINK_PRICE_LONG_1 = 5763;
+		static readonly GE_ITEMSINK_PRICE_LONG_2 = 5764;
+		static readonly GE_ITEMSINK_PRICE_LONG_3 = 5765;
+		static readonly GE_ITEMSINK_PRICE_LONG_4 = 5766;
+		static readonly GE_ITEMSINK_PRICE_LONG_5 = 5767;
+		static readonly GE_ITEMSINK_PRICE_LONG_6 = 5768;
+		static readonly GE_ITEMSINK_PRICE_LONG_7 = 5769;
 	}
   }

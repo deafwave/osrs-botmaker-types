@@ -3204,7 +3204,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CHAT_STFU = 4394;
 		static readonly GE_NEWOFFER_QUANTITY = 4396;
 		static readonly GE_NEWOFFER_TYPE = 4397;
-		static readonly GE_NEWOFFER_PRICE = 4398;
 		static readonly PET_INSURANCE_VENENATISPET = 4429;
 		static readonly DEPOSITBOX_MODE = 4430;
 		static readonly GE_SELECTEDSLOT = 4439;

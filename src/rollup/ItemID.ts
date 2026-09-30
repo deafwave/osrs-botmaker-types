@@ -16879,6 +16879,7 @@ const data: Record<string, number> = {
 	STRAY_PUPPY_34600: 34600,
 	STRAY_DOG: 34601,
 	STUFFED_DOG: 34602,
+	COINS_AND_PLATINUM: 34604,
 };
 
 export default data;

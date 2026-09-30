@@ -19916,6 +19916,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly DOGQ_PUPPY_THREE_OBJECT = 34600;
 		static readonly DOGQ_STRAY_DOG_FOLLOWER_OBJECT = 34601;
 		static readonly DOGQ_STUFFED_DOG = 34602;
+		static readonly COINS_AND_PLATINUM = 34604;
+		static readonly COINS_AND_PLATINUM_MID = 34605;
+		static readonly COINS_AND_PLATINUM_HIGH = 34606;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
