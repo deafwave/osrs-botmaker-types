@@ -8562,5 +8562,15 @@ declare namespace net.runelite.api.gameval {
 		static readonly ICONSLAYERMODIFIERS01_25X25__2 = 8553;
 		static readonly ICONSLAYERMODIFIERS01_25X25__3 = 8554;
 		static readonly ICONSLAYERMODIFIERS01_25X25__4 = 8555;
+		static readonly ICONPVPTUTORIAL01_35X35__0 = 8561;
+		static readonly ICONPVPTUTORIAL01_35X35__1 = 8562;
+		static readonly ICONPVPTUTORIAL01_35X35__2 = 8563;
+		static readonly ICONPVPTUTORIAL01_35X35__3 = 8564;
+		static readonly ICONPVPTUTORIAL01_35X35__4 = 8565;
+		static readonly ICONPVPTUTORIAL01_35X35__5 = 8566;
+		static readonly ICONPVPTUTORIAL01_35X35__6 = 8567;
+		static readonly ICONPVPTUTORIAL01_35X35__7 = 8568;
+		static readonly ICONPVPTUTORIAL01_35X35__8 = 8569;
+		static readonly ICONPVPTUTORIAL01_35X35__9 = 8570;
 	}
   }

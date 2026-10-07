@@ -1570,5 +1570,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLOTINFO_OTHER_25_LONG = 1565;
 		static readonly SLOTINFO_OTHER_26_LONG = 1566;
 		static readonly SLOTINFO_OTHER_27_LONG = 1567;
+		static readonly PVPTUT_UI_SELECTED_TUTORIAL = 1568;
 	}
   }

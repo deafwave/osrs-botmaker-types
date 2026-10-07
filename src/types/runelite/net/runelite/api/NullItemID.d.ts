@@ -17486,5 +17486,24 @@ declare namespace net.runelite.api {
 		static readonly NULL_34603 = 34603;
 		static readonly NULL_34605 = 34605;
 		static readonly NULL_34606 = 34606;
+		static readonly NULL_34608 = 34608;
+		static readonly NULL_34610 = 34610;
+		static readonly NULL_34612 = 34612;
+		static readonly NULL_34614 = 34614;
+		static readonly NULL_34616 = 34616;
+		static readonly NULL_34618 = 34618;
+		static readonly NULL_34620 = 34620;
+		static readonly NULL_34622 = 34622;
+		static readonly NULL_34624 = 34624;
+		static readonly NULL_34626 = 34626;
+		static readonly NULL_34628 = 34628;
+		static readonly NULL_34630 = 34630;
+		static readonly NULL_34632 = 34632;
+		static readonly NULL_34634 = 34634;
+		static readonly NULL_34636 = 34636;
+		static readonly NULL_34638 = 34638;
+		static readonly NULL_34640 = 34640;
+		static readonly NULL_34642 = 34642;
+		static readonly NULL_34645 = 34645;
 	}
   }

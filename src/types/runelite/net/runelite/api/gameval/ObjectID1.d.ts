@@ -30524,5 +30524,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly TOA_KEPHRI_DUNG01_TILE = 62519;
 		static readonly TOA_KEPHRI_DUNG02_TILE = 62520;
 		static readonly TOA_KEPHRI_DUNG03_TILE = 62521;
+		static readonly HUNTING_SAPLING_UP_RESET_ORANGE = 62522;
+		static readonly HUNTING_SAPLING_NET_RESET_ORANGE = 62523;
+		static readonly HUNTING_SAPLING_UP_RESET_RED = 62524;
+		static readonly HUNTING_SAPLING_NET_RESET_RED = 62525;
+		static readonly HUNTING_SAPLING_UP_RESET_BLACK = 62526;
+		static readonly HUNTING_SAPLING_NET_RESET_BLACK = 62527;
+		static readonly HUNTING_SAPLING_UP_RESET_SWAMP = 62528;
+		static readonly HUNTING_SAPLING_NET_RESET_SWAMP = 62529;
+		static readonly HUNTING_SAPLING_UP_RESET_MOUNTAIN = 62530;
+		static readonly HUNTING_SAPLING_NET_RESET_MOUNTAIN = 62531;
+		static readonly PVPTUT_BOSS_EXIT = 62532;
+		static readonly PVPTUT_REWARD_CRATE = 62533;
 	}
   }

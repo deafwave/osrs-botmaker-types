@@ -16882,5 +16882,25 @@ declare namespace net.runelite.api {
 		static readonly STRAY_DOG = 34601;
 		static readonly STUFFED_DOG = 34602;
 		static readonly COINS_AND_PLATINUM = 34604;
+		static readonly IMBUED_ANCIENT_CAPE_DEADMAN = 34607;
+		static readonly KARILS_LEATHERSKIRT_34609 = 34609;
+		static readonly BANDOS_CHESTPLATE_34611 = 34611;
+		static readonly FIGHTER_TORSO_34613 = 34613;
+		static readonly BLACK_DHIDE_SHIELD_34615 = 34615;
+		static readonly TORVA_FULL_HELM_34617 = 34617;
+		static readonly ABYSSAL_TENTACLE_34619 = 34619;
+		static readonly DRAGON_BOOTS_34621 = 34621;
+		static readonly ANGLERFISH_34623 = 34623;
+		static readonly IMBUED_ANCIENT_MAX_CAPE = 34625;
+		static readonly IMBUED_ANCIENT_MAX_HOOD = 34627;
+		static readonly IMBUED_ANCIENT_MAX_CAPE_BROKEN = 34629;
+		static readonly NET_TRAP = 34631;
+		static readonly IMBUED_ANCIENT_CAPE = 34633;
+		static readonly IMBUED_ANCIENT_CAPE_BROKEN = 34635;
+		static readonly IMBUED_ANCIENT_CAPE_L = 34637;
+		static readonly IMBUED_ANCIENT_CAPE_34639 = 34639;
+		static readonly ANCIENT_FABRIC = 34641;
+		static readonly SUPPLY_CRATE_34643 = 34643;
+		static readonly PETES_VOUCHERS = 34644;
 	}
   }

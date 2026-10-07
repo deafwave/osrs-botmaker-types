@@ -30160,5 +30160,17 @@ declare namespace net.runelite.api {
 		static readonly WATER_BOWL = 62504;
 		static readonly WHEELBARROW_62505 = 62505;
 		static readonly STAIRCASE_62517 = 62517;
+		static readonly YOUNG_TREE_62522 = 62522;
+		static readonly NET_TRAP_62523 = 62523;
+		static readonly YOUNG_TREE_62524 = 62524;
+		static readonly NET_TRAP_62525 = 62525;
+		static readonly YOUNG_TREE_62526 = 62526;
+		static readonly NET_TRAP_62527 = 62527;
+		static readonly YOUNG_TREE_62528 = 62528;
+		static readonly NET_TRAP_62529 = 62529;
+		static readonly YOUNG_TREE_62530 = 62530;
+		static readonly NET_TRAP_62531 = 62531;
+		static readonly PORTAL_62532 = 62532;
+		static readonly PETES_CRATE = 62533;
 	}
   }

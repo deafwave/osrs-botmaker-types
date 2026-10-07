@@ -1568,6 +1568,7 @@ const data: Record<string, number> = {
 	SLOTINFO_OTHER_25_LONG: 1565,
 	SLOTINFO_OTHER_26_LONG: 1566,
 	SLOTINFO_OTHER_27_LONG: 1567,
+	PVPTUT_UI_SELECTED_TUTORIAL: 1568,
 };
 
 export default data;
