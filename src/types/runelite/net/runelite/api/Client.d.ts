@@ -2298,5 +2298,7 @@ declare namespace net.runelite.api {
 		 * Expand macros such as @mes_hl_blu@, @blu@, etc. with their corresponding values, eg. &lt;col=0000ff&gt;
 		 */
 		macroExpand(s: string): string;
+
+		switchJagexAccount(sessionId: string, characterId: string, displayName: string): void;
 	}
 }
