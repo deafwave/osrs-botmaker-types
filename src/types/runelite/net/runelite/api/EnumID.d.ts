@@ -23,9 +23,6 @@ declare namespace net.runelite.api {
 		static readonly CLAN_RANK_GRAPHIC = 3798;
 		static readonly PRAYERS_NORMAL = 4956;
 		static readonly PRAYERS_RUINOUS = 4959;
-		static readonly PRAYERS_NORMAL_DEADEYE = 3341;
-		static readonly PRAYERS_NORMAL_MYSTIC_VIGOUR = 3342;
-		static readonly PRAYERS_NORMAL_DEADEYE_MYSTIC_VIGOUR = 3343;
 		static readonly WORLD_LOCATIONS = 4992;
 		static readonly WEAPON_STYLES = 3908;
 		static readonly SPELLBOOKS = 1981;

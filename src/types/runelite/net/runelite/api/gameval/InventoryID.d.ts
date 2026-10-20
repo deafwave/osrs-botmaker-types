@@ -1031,5 +1031,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly WYRMSCRAIG_GENERAL_SHOP = 1026;
 		static readonly WYRMSCRAIG_CLOTHES_SHOP = 1027;
 		static readonly LANSCAPE_GARY_GILBERT_FINALE_SHOP = 1028;
+		static readonly TFA_CHESTS = 1029;
+		static readonly TFA_MIDRAID_SUPPLIES_SHOP = 1030;
+		static readonly TFA_SUPPLIES_SNAPSHOT_INV = 1031;
 	}
   }

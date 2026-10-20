@@ -1571,5 +1571,24 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLOTINFO_OTHER_26_LONG = 1566;
 		static readonly SLOTINFO_OTHER_27_LONG = 1567;
 		static readonly PVPTUT_UI_SELECTED_TUTORIAL = 1568;
+		static readonly TFA_CLIENT_NEXTREFRESH = 1569;
+		static readonly TFA_PARTYLIST_SCROLLPOS = 1570;
+		static readonly TFA_SUMMARY_SCROLLPOS = 1571;
+		static readonly TFA_RAID_SUMMARY_TOOLTIP = 1572;
+		static readonly TFA_CLIENT_NAME0 = 1573;
+		static readonly TFA_CLIENT_NAME1 = 1574;
+		static readonly TFA_CLIENT_NAME2 = 1575;
+		static readonly TFA_CLIENT_NAME3 = 1576;
+		static readonly TFA_CLIENT_NAME4 = 1577;
+		static readonly TFA_CLIENT_NAME5 = 1578;
+		static readonly TFA_CLIENT_NAME6 = 1579;
+		static readonly TFA_CLIENT_NAME7 = 1580;
+		static readonly TFA_STATS_IN_ACTIVE_RAID = 1581;
+		static readonly TFA_STATS_TAB = 1582;
+		static readonly TFA_STATS_ALL_SELECTED_CATEGORY = 1583;
+		static readonly TFA_STATS_PARTY_TIMES_TABLE_ID = 1584;
+		static readonly TFA_STATS_PARTY_STATS_TABLE_ID = 1585;
+		static readonly TFA_STATS_TARGET_WIDTH = 1586;
+		static readonly TFA_STATS_TARGET_HEIGHT = 1587;
 	}
   }

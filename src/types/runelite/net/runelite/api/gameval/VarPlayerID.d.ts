@@ -2770,6 +2770,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly COWBOSS_MISC = 5405;
 		static readonly TOTAL_COWBOSS_KILLS = 5407;
 		static readonly TOTAL_COWBOSS_HARDMODE_KILLS = 5408;
+		static readonly COLLECTION_ITEMS_358 = 5411;
 		static readonly COWQUEST_MAIN = 5412;
 		static readonly POH_NEXUS_TELEPORT8 = 5413;
 		static readonly POH_NEXUS_TELEPORT9 = 5414;
@@ -2936,6 +2937,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly SLAYER_MISC_PERM_2 = 5723;
 		static readonly SLAYER_MISC_PERM_3 = 5724;
 		static readonly SKILLPET_RUNECRAFTING_TRACKING = 5725;
+		static readonly COLLECTION_ITEMS_363 = 5729;
 		static readonly TELETAB_LAST_CRAFTED = 5730;
 		static readonly TELETAB_LAST_CRAFTED_AMOUNT = 5731;
 		static readonly DOG_SELECTION_BREED = 5732;
@@ -3008,5 +3010,26 @@ declare namespace net.runelite.api.gameval {
 		static readonly PVPTUT_TUTORIALS_SCORE_1 = 5888;
 		static readonly PVPTUT_TUTORIALS_SCORE_2 = 5889;
 		static readonly PVPTUT_TUTORIALS_SCORE_3 = 5890;
+		static readonly CHARGES_TOGGLE_QUANTITY_22 = 5892;
+		static readonly CHARGES_TOGGLE_QUANTITY_23 = 5893;
+		static readonly TOTAL_COMPLETED_THEFRACTUREDARCHIVE = 5894;
+		static readonly WORN_ITEM_BONUS7 = 5900;
+		static readonly TFA_PERM_TRANSMIT_1 = 5907;
+		static readonly TFA_PERM_TRANSMIT_2 = 5908;
+		static readonly TFA_PERM_TRANSMIT_3 = 5909;
+		static readonly TFA_TEMP_TRANSMIT_1 = 5910;
+		static readonly TFA_TEMP_TRANSMIT_2 = 5911;
+		static readonly TFA_TEMP_TRANSMIT_3 = 5912;
+		static readonly TFA_MYCONTROLLER = 5913;
+		static readonly TFA_GATHERING_COORD_TEMP = 5916;
+		static readonly TFA_MINIQUEST_MAIN = 5920;
+		static readonly TFA_LOOT_TEMP_1 = 5922;
+		static readonly TFA_REWARDS_1 = 5925;
+		static readonly ZORYAS_TOME_STACKS = 5926;
+		static readonly TFA_PET_METAMORPHS = 5927;
+		static readonly HPBAR_HUD_INFO_4 = 5990;
+		static readonly HPBAR_HUD_SHOW_EXTRA_BAR = 5991;
+		static readonly PRAYER_ALLACTIVE_ALTERNATE_0 = 5994;
+		static readonly PRAYER_ALTERNATE_UNLOCK_0 = 5995;
 	}
   }
