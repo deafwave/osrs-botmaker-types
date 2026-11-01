@@ -19999,6 +19999,14 @@ declare namespace net.runelite.api.gameval {
 		static readonly TFA_MIDRAID_SUPPLIES_NOTE = 34729;
 		static readonly TFA_MIDRAID_SUPPLIES_LEFTOVERS = 34730;
 		static readonly FLETCHING_BOLT_SHAFT_FLIGHTED_ASCENSION = 34731;
+		static readonly HW26_CANDY_ONION = 34732;
+		static readonly HW26_SUGAR = 34734;
+		static readonly HW26_MOLTEN_SUGAR = 34736;
+		static readonly HW26_ONION = 34738;
+		static readonly HW26_REWARD_HEAD = 34740;
+		static readonly HW26_REWARD_TOP = 34742;
+		static readonly HW26_REWARD_LEGS = 34744;
+		static readonly HW26_REWARD_CAPE = 34746;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -34734,5 +34742,13 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_RONDACHE = 34721;
 		static readonly PLACEHOLDER_ARCHIVISTS_FOLIO = 34724;
 		static readonly PLACEHOLDER_ZORYAS_TOME = 34726;
+		static readonly PLACEHOLDER_HW26_CANDY_ONION = 34733;
+		static readonly PLACEHOLDER_HW26_SUGAR = 34735;
+		static readonly PLACEHOLDER_HW26_MOLTEN_SUGAR = 34737;
+		static readonly PLACEHOLDER_HW26_ONION = 34739;
+		static readonly PLACEHOLDER_HW26_REWARD_HEAD = 34741;
+		static readonly PLACEHOLDER_HW26_REWARD_TOP = 34743;
+		static readonly PLACEHOLDER_HW26_REWARD_LEGS = 34745;
+		static readonly PLACEHOLDER_HW26_REWARD_CAPE = 34747;
 	}
   }

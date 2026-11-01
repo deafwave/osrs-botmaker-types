@@ -16939,5 +16939,13 @@ declare namespace net.runelite.api {
 		static readonly ZORYAS_TOME_UNCHARGED = 34727;
 		static readonly ALLIANCE_LOG = 34729;
 		static readonly LEFTOVERS = 34730;
+		static readonly CANDY_ONION = 34732;
+		static readonly SUGAR = 34734;
+		static readonly MOLTEN_SUGAR = 34736;
+		static readonly OLD_ONION = 34738;
+		static readonly VAMPYRE_MONOCLE = 34740;
+		static readonly VAMPYRE_COSTUME_TOP = 34742;
+		static readonly VAMPYRE_COSTUME_BOTTOM = 34744;
+		static readonly VAMPYRE_COSTUME_CAPE = 34746;
 	}
   }

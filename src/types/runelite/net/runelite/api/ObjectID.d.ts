@@ -24709,6 +24709,9 @@ declare namespace net.runelite.api {
 		static readonly STAIRS_50750 = 50750;
 		static readonly ENTRANCE_50751 = 50751;
 		static readonly GATE_50752 = 50752;
+		static readonly JACKOLANTERN_50777 = 50777;
+		static readonly JACKOLANTERN_50778 = 50778;
+		static readonly CRATE_OF_ONIONS = 50779;
 		static readonly COLOSSEUM_ENTRANCE_50825 = 50825;
 		static readonly COLOSSEUM_ENTRANCE_50826 = 50826;
 		static readonly BUILDING_SUPPLIES = 50855;

@@ -3031,5 +3031,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HPBAR_HUD_SHOW_EXTRA_BAR = 5991;
 		static readonly PRAYER_ALLACTIVE_ALTERNATE_0 = 5994;
 		static readonly PRAYER_ALTERNATE_UNLOCK_0 = 5995;
+		static readonly HW26 = 5996;
+		static readonly HW26_2 = 5997;
 	}
   }

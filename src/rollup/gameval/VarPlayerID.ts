@@ -3029,6 +3029,8 @@ const data: Record<string, number> = {
 	HPBAR_HUD_SHOW_EXTRA_BAR: 5991,
 	PRAYER_ALLACTIVE_ALTERNATE_0: 5994,
 	PRAYER_ALTERNATE_UNLOCK_0: 5995,
+	HW26: 5996,
+	HW26_2: 5997,
 };
 
 export default data;

@@ -15158,5 +15158,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly CURSE_IMPACT_SHORT = 15160;
 		static readonly JELLY_RANGE = 15161;
 		static readonly JELLY_SPAWN = 15162;
+		static readonly TFA_HUMAN_FOLIO_TELEPORT = 15163;
+		static readonly VFX_TFA_TELEPORT_START = 15164;
+		static readonly VFX_TFA_TELEPORT_END = 15165;
+		static readonly TFA_HUMAN_FOLIO_TELEPORT_END = 15166;
 	}
   }

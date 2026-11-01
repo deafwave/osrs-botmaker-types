@@ -13929,5 +13929,21 @@ declare namespace net.runelite.api {
 		static readonly ZEKE_16769 = 16769;
 		static readonly MIMI_16770 = 16770;
 		static readonly DORK_16771 = 16771;
+		static readonly NONE = 16777;
+		static readonly TRICK_OR_TREATER = 16778;
+		static readonly TRICK_OR_TREATER_16779 = 16779;
+		static readonly TRICK_OR_TREATER_16780 = 16780;
+		static readonly TRICK_OR_TREATER_16781 = 16781;
+		static readonly TRICK_OR_TREATER_16782 = 16782;
+		static readonly NONE_16793 = 16793;
+		static readonly TRICK_OR_TREATER_16794 = 16794;
+		static readonly TRICK_OR_TREATER_16795 = 16795;
+		static readonly TRICK_OR_TREATER_16796 = 16796;
+		static readonly TRICK_OR_TREATER_16797 = 16797;
+		static readonly TRICK_OR_TREATER_16798 = 16798;
+		static readonly TRICK_OR_TREATER_16800 = 16800;
+		static readonly TRICK_OR_TREATER_16801 = 16801;
+		static readonly TRICK_OR_TREATER_16802 = 16802;
+		static readonly TRICK_OR_TREATER_16803 = 16803;
 	}
   }

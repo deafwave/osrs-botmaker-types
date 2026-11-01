@@ -4446,5 +4446,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly CURSE_IMPACT_SHORT = 4441;
 		static readonly GARGBOSS_DEBRIS_SHADOW_120_SMALL = 4442;
 		static readonly GARBOSS_DEBRIS_SHADOW_RED_60 = 4443;
+		static readonly HW26_TUMBLEWEED = 4444;
+		static readonly VFX_TFA_TELEPORT_START = 4445;
+		static readonly VFX_TFA_TELEPORT_END = 4446;
 	}
   }

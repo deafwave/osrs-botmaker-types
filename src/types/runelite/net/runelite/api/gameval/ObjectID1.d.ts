@@ -18744,6 +18744,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly HH_ELITE_VM01 = 50739;
 		static readonly HH_MASTER_VM01 = 50740;
 		static readonly COLOSSEUM_REWARD = 50741;
+		static readonly HW26_JACKOLANTERN_1 = 50742;
 		static readonly COLOSSEUM_MOLTEN_POOL_1 = 50743;
 		static readonly COLOSSEUM_MOLTEN_POOL_2 = 50744;
 		static readonly COLOSSEUM_MOLTEN_POOL_3 = 50745;
@@ -18771,6 +18772,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly WALLKIT_COLOSSEUM10_ARCH02_M = 50767;
 		static readonly WALLKIT_COLOSSEUM10_WALLTOP01 = 50768;
 		static readonly WALLKIT_COLOSSEUM10_WALLTOP02 = 50769;
+		static readonly HW26_JACKOLANTERN_2 = 50770;
+		static readonly HW26_JACKOLANTERN_3 = 50771;
+		static readonly HW26_JACKOLANTERN_4 = 50772;
+		static readonly HW26_JACKOLANTERN_5 = 50773;
+		static readonly HW26_JACKOLANTERN_6 = 50774;
+		static readonly HW26_JACKOLANTERN_7 = 50775;
+		static readonly HW26_JACKOLANTERN_8 = 50776;
+		static readonly HW26_JACKOLANTERN_WHOLE = 50777;
+		static readonly HW26_JACKOLANTERN_SMASHED = 50778;
+		static readonly HW26_ONION_CRATE = 50779;
+		static readonly HW26_VOMIT_PUDDLE = 50780;
 		static readonly WAVES_ROCKS_FLOOR_HARD_01 = 50820;
 		static readonly WAVES_ROCKS_FLOOR_HARD_02 = 50821;
 		static readonly WAVES_ROCKS_FLOOR_HARD_03 = 50822;
