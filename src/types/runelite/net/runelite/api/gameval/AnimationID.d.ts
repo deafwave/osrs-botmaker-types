@@ -15162,5 +15162,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_TFA_TELEPORT_START = 15164;
 		static readonly VFX_TFA_TELEPORT_END = 15165;
 		static readonly TFA_HUMAN_FOLIO_TELEPORT_END = 15166;
+		static readonly VYRELORD_TRANSFORM_PT1_LOOP = 15167;
+		static readonly PEST_REPAIR_QUICK = 15168;
+		static readonly PEST_REPAIR_QUICK_IMCANDO_HAMMER = 15169;
+		static readonly SLICE_SURFACE_GOBLIN_SQUAT_RUN_SPEAR = 15170;
+		static readonly WOTW_HUMAN_SEPPUKU = 15171;
+		static readonly WOTW_HUMAN_SEPPUKU_IDLE = 15172;
+		static readonly CHEST_GUTHIXIAN02_REVEAL = 15173;
 	}
   }

@@ -13,6 +13,7 @@ declare namespace net.runelite.api {
 		static readonly NULL_226 = 226;
 		static readonly NULL_228 = 228;
 		static readonly NULL_230 = 230;
+		static readonly NULL_311 = 311;
 		static readonly NULL_317 = 317;
 		static readonly NULL_324 = 324;
 		static readonly NULL_384 = 384;
@@ -820,6 +821,7 @@ declare namespace net.runelite.api {
 		static readonly NULL_7436 = 7436;
 		static readonly NULL_7457 = 7457;
 		static readonly NULL_7458 = 7458;
+		static readonly NULL_7479 = 7479;
 		static readonly NULL_7489 = 7489;
 		static readonly NULL_7492 = 7492;
 		static readonly NULL_7493 = 7493;
@@ -2767,7 +2769,6 @@ declare namespace net.runelite.api {
 		static readonly NULL_16431 = 16431;
 		static readonly NULL_16469 = 16469;
 		static readonly NULL_16470 = 16470;
-		static readonly NULL_16478 = 16478;
 		static readonly NULL_16484 = 16484;
 		static readonly NULL_16487 = 16487;
 		static readonly NULL_16491 = 16491;
@@ -2837,5 +2838,33 @@ declare namespace net.runelite.api {
 		static readonly NULL_16791 = 16791;
 		static readonly NULL_16792 = 16792;
 		static readonly NULL_16799 = 16799;
+		static readonly NULL_16812 = 16812;
+		static readonly NULL_16820 = 16820;
+		static readonly NULL_16823 = 16823;
+		static readonly NULL_16824 = 16824;
+		static readonly NULL_16825 = 16825;
+		static readonly NULL_16826 = 16826;
+		static readonly NULL_16827 = 16827;
+		static readonly NULL_16828 = 16828;
+		static readonly NULL_16833 = 16833;
+		static readonly NULL_16834 = 16834;
+		static readonly NULL_16838 = 16838;
+		static readonly NULL_16841 = 16841;
+		static readonly NULL_16845 = 16845;
+		static readonly NULL_16846 = 16846;
+		static readonly NULL_16847 = 16847;
+		static readonly NULL_16848 = 16848;
+		static readonly NULL_16849 = 16849;
+		static readonly NULL_16856 = 16856;
+		static readonly NULL_16857 = 16857;
+		static readonly NULL_16858 = 16858;
+		static readonly NULL_16859 = 16859;
+		static readonly NULL_16860 = 16860;
+		static readonly NULL_16863 = 16863;
+		static readonly NULL_16864 = 16864;
+		static readonly NULL_16865 = 16865;
+		static readonly NULL_16868 = 16868;
+		static readonly NULL_16869 = 16869;
+		static readonly NULL_16870 = 16870;
 	}
   }

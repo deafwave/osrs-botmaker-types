@@ -781,13 +781,13 @@ declare namespace net.runelite.api {
 		static readonly ADAMANT_PICKAXE = 1271;
 		static readonly MITHRIL_PICKAXE = 1273;
 		static readonly RUNE_PICKAXE = 1275;
-		static readonly BRONZE_SWORD = 1277;
-		static readonly IRON_SWORD = 1279;
-		static readonly STEEL_SWORD = 1281;
-		static readonly BLACK_SWORD = 1283;
-		static readonly MITHRIL_SWORD = 1285;
-		static readonly ADAMANT_SWORD = 1287;
-		static readonly RUNE_SWORD = 1289;
+		static readonly BRONZE_SHORTSWORD = 1277;
+		static readonly IRON_SHORTSWORD = 1279;
+		static readonly STEEL_SHORTSWORD = 1281;
+		static readonly BLACK_SHORTSWORD = 1283;
+		static readonly MITHRIL_SHORTSWORD = 1285;
+		static readonly ADAMANT_SHORTSWORD = 1287;
+		static readonly RUNE_SHORTSWORD = 1289;
 		static readonly BRONZE_LONGSWORD = 1291;
 		static readonly IRON_LONGSWORD = 1293;
 		static readonly STEEL_LONGSWORD = 1295;
@@ -3927,7 +3927,7 @@ declare namespace net.runelite.api {
 		static readonly WHITE_HALBERD = 6599;
 		static readonly WHITE_MACE = 6601;
 		static readonly WHITE_MAGIC_STAFF = 6603;
-		static readonly WHITE_SWORD = 6605;
+		static readonly WHITE_SHORTSWORD = 6605;
 		static readonly WHITE_LONGSWORD = 6607;
 		static readonly WHITE_2H_SWORD = 6609;
 		static readonly WHITE_SCIMITAR = 6611;
@@ -4685,7 +4685,7 @@ declare namespace net.runelite.api {
 		static readonly GADDERHAMMER = 7668;
 		static readonly BOXING_GLOVES = 7671;
 		static readonly BOXING_GLOVES_7673 = 7673;
-		static readonly WOODEN_SWORD = 7675;
+		static readonly WOODEN_SHORTSWORD = 7675;
 		static readonly WOODEN_SHIELD_7676 = 7676;
 		static readonly TREASURE_STONE = 7677;
 		static readonly PRIZE_KEY = 7678;
@@ -6018,9 +6018,9 @@ declare namespace net.runelite.api {
 		static readonly BLANK_FIRE_RUNE = 9698;
 		static readonly FIRE_RUNE_9699 = 9699;
 		static readonly STICK_9702 = 9702;
-		static readonly TRAINING_SWORD = 9703;
+		static readonly TRAINING_SHORTSWORD = 9703;
 		static readonly TRAINING_SHIELD = 9704;
-		static readonly TRAINING_BOW = 9705;
+		static readonly TRAINING_SHORTBOW = 9705;
 		static readonly TRAINING_ARROWS = 9706;
 		static readonly SLASHED_BOOK = 9715;
 		static readonly ROCK_9716 = 9716;
@@ -9522,7 +9522,7 @@ declare namespace net.runelite.api {
 		static readonly TWISTED_BUCKLER = 21000;
 		static readonly ELDER_MAUL = 21003;
 		static readonly KODAI_WAND = 21006;
-		static readonly DRAGON_SWORD = 21009;
+		static readonly DRAGON_SHORTSWORD = 21009;
 		static readonly DRAGON_HUNTER_CROSSBOW = 21012;
 		static readonly DINHS_BULWARK = 21015;
 		static readonly ANCESTRAL_HAT = 21018;
@@ -9621,7 +9621,7 @@ declare namespace net.runelite.api {
 		static readonly MYSTIC_LAVA_STAFF_21200 = 21200;
 		static readonly LAVA_STAFF_UPGRADE_KIT = 21202;
 		static readonly ELDER_MAUL_21205 = 21205;
-		static readonly DRAGON_SWORD_21206 = 21206;
+		static readonly DRAGON_SHORTSWORD_21206 = 21206;
 		static readonly DRAGON_THROWNAXE_21207 = 21207;
 		static readonly INVITATION_LIST = 21208;
 		static readonly BIRTHDAY_BALLOONS = 21209;
@@ -13251,7 +13251,7 @@ declare namespace net.runelite.api {
 		static readonly DRAGON_DAGGER_PCR_28023 = 28023;
 		static readonly DRAGON_DAGGER_PCR_28025 = 28025;
 		static readonly DRAGON_MACE_CR = 28027;
-		static readonly DRAGON_SWORD_CR = 28029;
+		static readonly DRAGON_SHORTSWORD_CR = 28029;
 		static readonly DRAGON_SCIMITAR_CR = 28031;
 		static readonly DRAGON_LONGSWORD_CR = 28033;
 		static readonly DRAGON_WARHAMMER_CR = 28035;
@@ -16947,5 +16947,20 @@ declare namespace net.runelite.api {
 		static readonly VAMPYRE_COSTUME_TOP = 34742;
 		static readonly VAMPYRE_COSTUME_BOTTOM = 34744;
 		static readonly VAMPYRE_COSTUME_CAPE = 34746;
+		static readonly ANTIQUE_LAMP_34748 = 34748;
+		static readonly ANTIQUE_LAMP_34749 = 34749;
+		static readonly ANTIQUE_LAMP_34750 = 34750;
+		static readonly ANTIQUE_LAMP_34751 = 34751;
+		static readonly MUDFOOT = 34752;
+		static readonly MUDFOOT_34753 = 34753;
+		static readonly ANTIQUE_LAMP_34754 = 34754;
+		static readonly ANTIQUE_LAMP_34755 = 34755;
+		static readonly LETTER_34756 = 34756;
+		static readonly NEWSPAPER_CUTTING = 34757;
+		static readonly BLOODY_KNIFE_34758 = 34758;
+		static readonly HUMAN_HEAD = 34759;
+		static readonly LETTER_34760 = 34760;
+		static readonly CERTIFICATE_34761 = 34761;
+		static readonly AMULET_OF_SIGHT = 34762;
 	}
   }

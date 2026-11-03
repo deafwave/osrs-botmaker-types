@@ -4449,5 +4449,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly HW26_TUMBLEWEED = 4444;
 		static readonly VFX_TFA_TELEPORT_START = 4445;
 		static readonly VFX_TFA_TELEPORT_END = 4446;
+		static readonly THROWN_ROCK = 4447;
 	}
   }

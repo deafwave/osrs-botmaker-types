@@ -1034,5 +1034,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly TFA_CHESTS = 1029;
 		static readonly TFA_MIDRAID_SUPPLIES_SHOP = 1030;
 		static readonly TFA_SUPPLIES_SNAPSHOT_INV = 1031;
+		static readonly LUMBRIDGE_BLACKSMITH = 1032;
+		static readonly RENDER_WORN = 1033;
+		static readonly PUB_LUMBRIDGE = 1034;
 	}
   }

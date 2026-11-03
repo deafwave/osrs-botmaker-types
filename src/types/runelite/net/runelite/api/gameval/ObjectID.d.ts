@@ -2240,7 +2240,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly ZQDOLMEN = 2235;
 		static readonly ZQHANDHOLDS = 2236;
 		static readonly ZQQUEST_HIDYTREE = 2237;
-		static readonly CLUESCROLL_TUTOR_ICON = 2238;
 		static readonly MIMIC_WALL_WOOD_01 = 2239;
 		static readonly HILLSIDECLOSEDL = 2240;
 		static readonly HILLSIDECLOSEDR = 2241;
@@ -26250,8 +26249,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROUTE_SWAMPBRIDGE_1 = 26245;
 		static readonly ROUTE_SWAMPBRIDGE_2 = 26246;
 		static readonly ROUTE_SWAMPBRIDGE_3 = 26247;
-		static readonly ROUTE_TREEBASE_1OP = 26248;
-		static readonly ROUTE_TREEBASE_2OPS = 26249;
 		static readonly RCU_OUTER_MULTI8 = 26250;
 		static readonly RCU_OUTER_MULTI9 = 26251;
 		static readonly RCU_OUTER_MULTI10 = 26252;

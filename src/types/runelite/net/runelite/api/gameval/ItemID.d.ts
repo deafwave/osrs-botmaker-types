@@ -20007,6 +20007,22 @@ declare namespace net.runelite.api.gameval {
 		static readonly HW26_REWARD_TOP = 34742;
 		static readonly HW26_REWARD_LEGS = 34744;
 		static readonly HW26_REWARD_CAPE = 34746;
+		static readonly BKF_LAMP = 34748;
+		static readonly DEMON_SLAYER_LAMP = 34749;
+		static readonly ERNEST_CHICKEN_LAMP = 34750;
+		static readonly MBA_LAMP = 34751;
+		static readonly MBA_MUDFOOT_FOLLOWER_OBJ = 34752;
+		static readonly MBA_MUDFOOT_FOLLOWER_SPEAR_OBJ = 34753;
+		static readonly RANDJ_LAMP = 34754;
+		static readonly SOA_LAMP = 34755;
+		static readonly WOTW_LETTER_LANDS_END = 34756;
+		static readonly WOTW_NEWS_LANDS_END = 34757;
+		static readonly WOTW_KNIFE_LANDS_END = 34758;
+		static readonly WOTW_HEAD_HOSIDIUS = 34759;
+		static readonly WOTW_LETTER_HOSIDIUS = 34760;
+		static readonly WOTW_CERTIFICATE_HOSIDIUS = 34761;
+		static readonly AMULET_OF_SIGHT = 34762;
+		static readonly SPINNING_WHEEL_ICON_DUMMY = 34765;
 		static readonly CERT_TWPART1 = 7;
 		static readonly CERT_TWPART2 = 9;
 		static readonly CERT_TWPART3 = 11;
@@ -24736,6 +24752,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CERT_OBLIGATOR_UNCHARGED = 34718;
 		static readonly CERT_RONDACHE = 34720;
 		static readonly CERT_ZORYAS_TOME_UNCHARGED = 34728;
+		static readonly CERT_AMULET_OF_SIGHT = 34763;
 		static readonly PLACEHOLDER_STAFFORB = 13694;
 		static readonly PLACEHOLDER_FIRE_ORB = 13695;
 		static readonly PLACEHOLDER_WATER_ORB = 13696;
@@ -34750,5 +34767,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly PLACEHOLDER_HW26_REWARD_TOP = 34743;
 		static readonly PLACEHOLDER_HW26_REWARD_LEGS = 34745;
 		static readonly PLACEHOLDER_HW26_REWARD_CAPE = 34747;
+		static readonly PLACEHOLDER_AMULET_OF_SIGHT = 34764;
 	}
   }

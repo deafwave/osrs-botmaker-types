@@ -4447,6 +4447,7 @@ const data: Record<string, number> = {
 	HW26_TUMBLEWEED: 4444,
 	VFX_TFA_TELEPORT_START: 4445,
 	VFX_TFA_TELEPORT_END: 4446,
+	THROWN_ROCK: 4447,
 };
 
 export default data;
