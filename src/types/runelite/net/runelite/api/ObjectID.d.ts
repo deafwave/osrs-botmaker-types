@@ -17317,6 +17317,16 @@ declare namespace net.runelite.api {
 		static readonly BLOOD_CRYSTAL_33147 = 33147;
 		static readonly SHADOW_CRYSTAL = 33148;
 		static readonly SMOKE_CRYSTAL = 33149;
+		static readonly CRATE_33151 = 33151;
+		static readonly EQUIPMENT_CRATE = 33152;
+		static readonly BEEHIVE_33153 = 33153;
+		static readonly BEEHIVE_33154 = 33154;
+		static readonly GATE_33155 = 33155;
+		static readonly GATE_33156 = 33156;
+		static readonly GAP_33157 = 33157;
+		static readonly STEPPING_STONE_33158 = 33158;
+		static readonly TREE_33160 = 33160;
+		static readonly TREE_33161 = 33161;
 		static readonly ICY_ROCKS = 33177;
 		static readonly TROLL_STRONGHOLD_PORTAL = 33179;
 		static readonly TROLL_STRONGHOLD_PORTAL_33180 = 33180;
@@ -30530,5 +30540,10 @@ declare namespace net.runelite.api {
 		static readonly BED_63330 = 63330;
 		static readonly MARKET_STALL_63332 = 63332;
 		static readonly MARKET_STALL_63333 = 63333;
+		static readonly SHELTER_63334 = 63334;
+		static readonly BIRD_SNARE_63335 = 63335;
+		static readonly BIRD_SNARE_63336 = 63336;
+		static readonly BIRD_SNARE_63337 = 63337;
+		static readonly BIRD_SNARE_63338 = 63338;
 	}
   }

@@ -1035,6 +1035,7 @@ const data: Record<string, number> = {
 	LUMBRIDGE_BLACKSMITH: 1032,
 	RENDER_WORN: 1033,
 	PUB_LUMBRIDGE: 1034,
+	BAW_BEA_POST_QUEST_SHOP: 1035,
 };
 
 export default data;

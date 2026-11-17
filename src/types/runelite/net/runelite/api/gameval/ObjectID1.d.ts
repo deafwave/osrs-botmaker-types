@@ -1153,6 +1153,17 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEADMAN_CRYSTAL_SHADOW = 33148;
 		static readonly DEADMAN_CRYSTAL_SMOKE = 33149;
 		static readonly TUTOR_MAIN_ICON = 33150;
+		static readonly BAW_EQUIPMENT_CRATE_PRE_QUEST = 33151;
+		static readonly BAW_EQUIPMENT_CRATE_QUEST = 33152;
+		static readonly BAW_BEEHIVE_1 = 33153;
+		static readonly BAW_BEEHIVE_2 = 33154;
+		static readonly BAW_FENCEGATE_L = 33155;
+		static readonly BAW_FENCEGATE_R = 33156;
+		static readonly BAW_FENCING_INVISIBLE_WALL = 33157;
+		static readonly SNAILQUEST_STEPPING_STONE = 33158;
+		static readonly SNAILQUEST_TREE_MULTI = 33159;
+		static readonly SNAILQUEST_TREE_DEFAULT = 33160;
+		static readonly SNAILQUEST_TREE_BUILDABLE = 33161;
 		static readonly TUTOR_DANGER_ICON = 33162;
 		static readonly TUTOR_IRONMAN_ICON = 33163;
 		static readonly TUTOR_DEADMAN_ICON = 33164;
@@ -31325,5 +31336,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly DEATH_OFFICE_WALL_ALCOVE03 = 63331;
 		static readonly GE_EVENTS_STALL01 = 63332;
 		static readonly GE_EVENTS_STALL02 = 63333;
+		static readonly SNAILQUEST_TREE_SHELTER_BUILT = 63334;
+		static readonly HUNTING_OJIBWAY_TRAP_TRAPPING_HONEY_BUZZARD = 63335;
+		static readonly HUNTING_OJIBWAY_TRAP_FULL_HONEY_BUZZARD = 63336;
+		static readonly HUNTING_OJIBWAY_TRAP_TRAPPING_BLACK_HONEY_BUZZARD = 63337;
+		static readonly HUNTING_OJIBWAY_TRAP_FULL_BLACK_HONEY_BUZZARD = 63338;
 	}
   }

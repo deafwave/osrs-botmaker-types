@@ -4450,5 +4450,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly VFX_TFA_TELEPORT_START = 4445;
 		static readonly VFX_TFA_TELEPORT_END = 4446;
 		static readonly THROWN_ROCK = 4447;
+		static readonly WASP_DART_TRAVEL = 4448;
+		static readonly KILLER_WASP_DART_TRAVEL = 4449;
+		static readonly WASP_DART_LAUNCH = 4450;
+		static readonly KILLER_WASP_DART_LAUNCH = 4451;
 	}
   }

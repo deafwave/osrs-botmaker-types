@@ -3262,5 +3262,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly WOTW_PRIMARY = 6242;
 		static readonly WOTW_SECONDARY = 6243;
 		static readonly AIDE_NOPROTECT = 6245;
+		static readonly SETTINGS_VARP_7 = 6246;
+		static readonly HC_TRACKING_5 = 6247;
+		static readonly BAW_PRIMARY = 6248;
+		static readonly SNAILQUEST_PRIMARY = 6250;
 	}
   }

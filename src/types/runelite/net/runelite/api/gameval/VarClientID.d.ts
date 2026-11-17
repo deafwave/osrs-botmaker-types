@@ -1598,5 +1598,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly DISPLAYNAME_MENU_COUNTCHECKS = 1593;
 		static readonly DISPLAYNAME_MENU_KICKOUTTIME = 1594;
 		static readonly DISPLAYNAME_MENU_CHANGEDNAME = 1595;
+		static readonly TUTORIAL_NAME_INPUT_LISTENING = 1596;
 	}
   }

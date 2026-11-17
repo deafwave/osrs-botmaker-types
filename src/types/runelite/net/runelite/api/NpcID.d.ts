@@ -2982,6 +2982,16 @@ declare namespace net.runelite.api {
 		static readonly HARRY = 3213;
 		static readonly CASSIE = 3214;
 		static readonly FRINCOS = 3215;
+		static readonly FARMER_BEA = 3217;
+		static readonly FARMER_BEA_3218 = 3218;
+		static readonly BEE_DEALER = 3220;
+		static readonly FARMER_BEA_3221 = 3221;
+		static readonly SWARM_OF_WASPS = 3222;
+		static readonly SWARM_OF_KILLER_WASPS = 3223;
+		static readonly HONEY_BUZZARD = 3224;
+		static readonly BLACK_HONEY_BUZZARD = 3225;
+		static readonly SWARM_OF_WASPS_3226 = 3226;
+		static readonly SWARM_OF_WASPS_FURIOUS = 3227;
 		static readonly ELLIS = 3231;
 		static readonly WIZARD_JALARAST = 3232;
 		static readonly LEECH = 3233;
@@ -5042,6 +5052,7 @@ declare namespace net.runelite.api {
 		static readonly JARR = 5520;
 		static readonly LESABR = 5521;
 		static readonly FLAX_KEEPER = 5522;
+		static readonly SWARM_OF_KILLER_WASPS_5523 = 5523;
 		static readonly SIR_REBRAL = 5524;
 		static readonly TOBY = 5525;
 		static readonly THORODIN_5526 = 5526;
@@ -7580,6 +7591,7 @@ declare namespace net.runelite.api {
 		static readonly URI_8638 = 8638;
 		static readonly FIRE_8643 = 8643;
 		static readonly SARADOMINIST_RECRUITER = 8644;
+		static readonly SWARM_OF_KILLER_WASPS_FURIOUS = 8665;
 		static readonly BANKER_8666 = 8666;
 		static readonly PUFFER_FISH_8667 = 8667;
 		static readonly ISLWYN_8675 = 8675;
@@ -13970,5 +13982,11 @@ declare namespace net.runelite.api {
 		static readonly MONK_16873 = 16873;
 		static readonly JOYCE = 16874;
 		static readonly KYLE = 16875;
+		static readonly HONEY_BUZZARD_16879 = 16879;
+		static readonly BLACK_HONEY_BUZZARD_16881 = 16881;
+		static readonly JUVENILE_SNAIL = 16882;
+		static readonly LEECH_16883 = 16883;
+		static readonly SNELMLOVER500 = 16884;
+		static readonly SNELMLOVER500_16885 = 16885;
 	}
   }

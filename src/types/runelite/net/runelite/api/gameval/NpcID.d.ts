@@ -3218,6 +3218,18 @@ declare namespace net.runelite.api.gameval {
 		static readonly HARRY = 3213;
 		static readonly CASSIE = 3214;
 		static readonly FRINCOS = 3215;
+		static readonly BAW_BEA_MULTI = 3216;
+		static readonly BAW_BEA = 3217;
+		static readonly BAW_BEA_3OPS = 3218;
+		static readonly BAW_BEE_DEALER_MULTI = 3219;
+		static readonly BAW_BEE_DEALER = 3220;
+		static readonly BAW_BEA_CUTSCENE = 3221;
+		static readonly BAW_WASP_SWARM_CUTSCENE = 3222;
+		static readonly BAW_KILLER_WASP_SWARM_CUTSCENE = 3223;
+		static readonly BAW_HONEY_BUZZARD_CUTSCENE = 3224;
+		static readonly BAW_BLACK_HONEY_BUZZARD_CUTSCENE = 3225;
+		static readonly BAW_WASP_SWARM = 3226;
+		static readonly BAW_WASP_SWARM_FURIOUS = 3227;
 		static readonly RCU_ZAMMY_MAGE1 = 3228;
 		static readonly RCU_ZAMMY_MAGE1_EDGE = 3229;
 		static readonly MULTI_SKIPPY = 3230;
@@ -5513,6 +5525,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly JARR_DESERT_DIARY = 5520;
 		static readonly LESABRE_MORT_DIARY = 5521;
 		static readonly DIARY_FLAX_KEEPER = 5522;
+		static readonly BAW_KILLER_WASP_SWARM = 5523;
 		static readonly WHITE_KNIGHT_DIARY = 5524;
 		static readonly TOBY_VARROCK_DIARY = 5525;
 		static readonly VIKING_FREM_DIARY = 5526;
@@ -8654,6 +8667,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly _3RD_AGE_DRUID_STAFF_TRANSMOG = 8662;
 		static readonly _3RD_AGE_DRUID_CLOAK_TRANSMOG = 8663;
 		static readonly _3RD_AGE_RING_TRANSMOG = 8664;
+		static readonly BAW_KILLER_WASP_SWARM_FURIOUS = 8665;
 		static readonly VARROCK_BANK_DOORGUARD = 8666;
 		static readonly FOSSIL_PUFFER_FISH_MODEL = 8667;
 		static readonly FOSSIL_PUFFER_FISH_1 = 8668;
@@ -16463,6 +16477,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly CRAB_MAINCRAB_BLUSHING = 16472;
 		static readonly CRAB_MAINCRAB_START_NOMOVE = 16473;
 		static readonly CRAB_MAINCRAB_END = 16474;
+		static readonly BAW_WASP_1_MULTI = 16475;
+		static readonly BAW_WASP_2_MULTI = 16476;
+		static readonly BAW_WASP_3_MULTI = 16477;
+		static readonly BAW_KILLER_WASP_1_MULTI = 16478;
 		static readonly CRAB_MAINCRAB_CUTSCENE = 16479;
 		static readonly CRAB_CRAB_CUTSCENE = 16480;
 		static readonly CRAB_CRAB_CUTSCENE_ENDCRAB = 16481;
@@ -16860,5 +16878,15 @@ declare namespace net.runelite.api.gameval {
 		static readonly WOTW_MONK = 16873;
 		static readonly WOTW_FARMER = 16874;
 		static readonly WOTW_FORESTER = 16875;
+		static readonly BAW_KILLER_WASP_2_MULTI = 16876;
+		static readonly BAW_KILLER_WASP_3_MULTI = 16877;
+		static readonly BAW_HONEY_BUZZARD_MULTI = 16878;
+		static readonly BAW_HONEY_BUZZARD = 16879;
+		static readonly BAW_BLACK_HONEY_BUZZARD_MULTI = 16880;
+		static readonly BAW_BLACK_HONEY_BUZZARD = 16881;
+		static readonly SNAILQUEST_SNAIL = 16882;
+		static readonly SNAILQUEST_LEECH = 16883;
+		static readonly SNAILQUEST_SNELMLOVER = 16884;
+		static readonly SNAILQUEST_SNELMLOVER_COMBAT = 16885;
 	}
   }

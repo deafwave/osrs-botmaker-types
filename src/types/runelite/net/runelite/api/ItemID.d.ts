@@ -6250,7 +6250,7 @@ declare namespace net.runelite.api {
 		static readonly HUNTER_POTION1 = 10004;
 		static readonly BIRD_SNARE = 10006;
 		static readonly BOX_TRAP = 10008;
-		static readonly BUTTERFLY_NET = 10010;
+		static readonly INSECT_NET = 10010;
 		static readonly BUTTERFLY_JAR = 10012;
 		static readonly BLACK_WARLOCK = 10014;
 		static readonly SNOWY_KNIGHT = 10016;
@@ -6954,7 +6954,7 @@ declare namespace net.runelite.api {
 		static readonly NINJA_IMPLING_JAR = 11254;
 		static readonly DRAGON_IMPLING_JAR = 11256;
 		static readonly JAR_GENERATOR = 11258;
-		static readonly MAGIC_BUTTERFLY_NET = 11259;
+		static readonly MAGIC_INSECT_NET = 11259;
 		static readonly IMPLING_JAR = 11260;
 		static readonly IMP_REPELLENT = 11262;
 		static readonly ANCHOVY_OIL = 11264;
@@ -16962,5 +16962,24 @@ declare namespace net.runelite.api {
 		static readonly LETTER_34760 = 34760;
 		static readonly CERTIFICATE_34761 = 34761;
 		static readonly AMULET_OF_SIGHT = 34762;
+		static readonly PAINTED_SHORTSWORD = 34766;
+		static readonly PAINTED_KITESHIELD = 34769;
+		static readonly PAINTED_SHORTBOW = 34772;
+		static readonly BEE_BOX = 34775;
+		static readonly BEE_HUNTERS_HAT = 34777;
+		static readonly WASP_STING = 34779;
+		static readonly KILLER_WASP_STING = 34781;
+		static readonly BROWN_FEATHER = 34783;
+		static readonly BLACK_FEATHER = 34785;
+		static readonly WASP_DART = 34787;
+		static readonly KILLER_WASP_DART = 34789;
+		static readonly BEAS_SUPPLIES = 34791;
+		static readonly FRESH_LEAVES = 34793;
+		static readonly DEWCOVERED_BRANCH = 34795;
+		static readonly RESTORATIVE_DEW = 34797;
+		static readonly STRONG_STICKS = 34799;
+		static readonly PINK_SNELM = 34801;
+		static readonly HONEY_BUZZARD = 34806;
+		static readonly BLACK_HONEY_BUZZARD = 34807;
 	}
   }

@@ -3260,6 +3260,10 @@ const data: Record<string, number> = {
 	WOTW_PRIMARY: 6242,
 	WOTW_SECONDARY: 6243,
 	AIDE_NOPROTECT: 6245,
+	SETTINGS_VARP_7: 6246,
+	HC_TRACKING_5: 6247,
+	BAW_PRIMARY: 6248,
+	SNAILQUEST_PRIMARY: 6250,
 };
 
 export default data;

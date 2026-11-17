@@ -15169,5 +15169,9 @@ declare namespace net.runelite.api.gameval {
 		static readonly WOTW_HUMAN_SEPPUKU = 15171;
 		static readonly WOTW_HUMAN_SEPPUKU_IDLE = 15172;
 		static readonly CHEST_GUTHIXIAN02_REVEAL = 15173;
+		static readonly HUMAN_SPOT_JUMP_MERGE = 15174;
+		static readonly HUMAN_JUMP_STONES_MERGE = 15175;
+		static readonly HUMAN_FLETCHING_ADD_DART_FEATHERS_WASP = 15176;
+		static readonly HUMAN_FLETCHING_ADD_DART_FEATHERS_KILLER_WASP = 15177;
 	}
   }
