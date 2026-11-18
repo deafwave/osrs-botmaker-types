@@ -851,6 +851,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly WOTW_SYMBOL_MAIN_RED = 8919;
 		static readonly ICON_GRAVESTONE = 8920;
 		static readonly LOGO_HCMAIN = 8921;
+		static readonly SL_BUTTON9 = 8928;
 		static readonly _2XSTANDARDSPELLSON__0 = 0;
 		static readonly _2XSTANDARDSPELLSON__1 = 1;
 		static readonly _2XSTANDARDSPELLSON__2 = 2;
@@ -2635,6 +2636,12 @@ declare namespace net.runelite.api.gameval {
 		static readonly CHECKBOX__12 = 6913;
 		static readonly CHECKBOX__13 = 6914;
 		static readonly CHECKBOX__14 = 6915;
+		static readonly CHECKBOX__15 = 8922;
+		static readonly CHECKBOX__16 = 8923;
+		static readonly CHECKBOX__17 = 8924;
+		static readonly CHECKBOX__18 = 8925;
+		static readonly CHECKBOX__19 = 8926;
+		static readonly CHECKBOX__20 = 8927;
 		static readonly COMBATBOXESSPLIT__0 = 1229;
 		static readonly COMBATBOXESSPLIT__1 = 1230;
 		static readonly COMBATBOXESSPLIT__2 = 1231;

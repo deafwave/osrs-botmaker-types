@@ -591,6 +591,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly KR_ADDRESS_FORM = 586;
 		static readonly KR_SCRAP_PAPER = 587;
 		static readonly KR_PICKLOCK = 588;
+		static readonly RAG3_BOSS_OVERLAY = 589;
 		static readonly POH_JEWELLERY_BOX = 590;
 		static readonly ARAXXOR_SCOREBOARD = 591;
 		static readonly DIZANAS_QUIVER = 592;
@@ -18539,6 +18540,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly KRPICKLOCK_KR_KEY_1 = 38535232;
 		static readonly KRPICKLOCK_KR_KEY_2 = 38535233;
 		static readonly KRPICKLOCK_KR_KEY_3 = 38535234;
+		static readonly RAG3BOSSOVERLAY_UNIVERSE = 38600704;
+		static readonly RAG3BOSSOVERLAY_CONTENTS = 38600705;
+		static readonly RAG3BOSSOVERLAY_TINT_BOX = 38600706;
+		static readonly RAG3BOSSOVERLAY_FADER = 38600707;
 		static readonly POHJEWELLERYBOX_UNIVERSE = 38666240;
 		static readonly POHJEWELLERYBOX_FRAME = 38666241;
 		static readonly POHJEWELLERYBOX_DUELING = 38666242;
@@ -27820,7 +27825,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly QUESTRATING__3 = 64421896;
 		static readonly QUESTRATING__4 = 64421897;
 		static readonly QUESTRATING__5 = 64421898;
-		static readonly QUESTRATING_CLOSE = 64421899;
+		static readonly QUESTRATING_TOGGLE = 64421899;
+		static readonly QUESTRATING_TOGGLE_TEXT = 64421900;
+		static readonly QUESTRATING_TOGGLE_ICON = 64421901;
+		static readonly QUESTRATING_CLOSE = 64421902;
 		static readonly WOTWCERTIFICATEHOSIDIUS_UNIVERSE = 64487424;
 		static readonly WOTWCERTIFICATEHOSIDIUS_CLOSE = 64487425;
 		static readonly WOTWCERTIFICATEHOSIDIUS_CONTENT = 64487426;

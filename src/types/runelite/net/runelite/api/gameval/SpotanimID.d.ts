@@ -4446,7 +4446,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CURSE_IMPACT_SHORT = 4441;
 		static readonly GARGBOSS_DEBRIS_SHADOW_120_SMALL = 4442;
 		static readonly GARBOSS_DEBRIS_SHADOW_RED_60 = 4443;
-		static readonly HW26_TUMBLEWEED = 4444;
 		static readonly VFX_TFA_TELEPORT_START = 4445;
 		static readonly VFX_TFA_TELEPORT_END = 4446;
 		static readonly THROWN_ROCK = 4447;
@@ -4454,5 +4453,15 @@ declare namespace net.runelite.api.gameval {
 		static readonly KILLER_WASP_DART_TRAVEL = 4449;
 		static readonly WASP_DART_LAUNCH = 4450;
 		static readonly KILLER_WASP_DART_LAUNCH = 4451;
+		static readonly RAG2_TELEPORT_SPOTANIM = 4452;
+		static readonly RAG2_APPEAR_SPOTANIM = 4453;
+		static readonly RAG2_SKELETAL_BEAST_MAGIC_ATTACK_SPOTANIM_A = 4454;
+		static readonly RAG2_SKELETAL_BEAST_MAGIC_ATTACK_SPOTANIM_B = 4455;
+		static readonly RAG2_SKELETAL_BEAST_MAGIC_ATTACK_PROJANIM_A = 4456;
+		static readonly RAG2_SKELETAL_BEAST_MAGIC_ATTACK_PROJANIM_B = 4457;
+		static readonly RAG2_SKELETAL_BEAST_MAGIC_ATTACK_IMPACT_A = 4458;
+		static readonly RAG2_RIGHT_HAND_PROJ = 4459;
+		static readonly RAG2_LEFT_HAND_PROJ = 4460;
+		static readonly RAG2_TAIL_PROJ = 4461;
 	}
   }

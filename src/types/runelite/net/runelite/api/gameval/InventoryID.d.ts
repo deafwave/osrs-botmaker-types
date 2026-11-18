@@ -1038,5 +1038,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly RENDER_WORN = 1033;
 		static readonly PUB_LUMBRIDGE = 1034;
 		static readonly BAW_BEA_POST_QUEST_SHOP = 1035;
+		static readonly BONESACK_INV = 1036;
 	}
   }

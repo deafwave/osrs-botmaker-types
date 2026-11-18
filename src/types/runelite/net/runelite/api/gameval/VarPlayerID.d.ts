@@ -3266,5 +3266,10 @@ declare namespace net.runelite.api.gameval {
 		static readonly HC_TRACKING_5 = 6247;
 		static readonly BAW_PRIMARY = 6248;
 		static readonly SNAILQUEST_PRIMARY = 6250;
+		static readonly ANL_PRIMARY = 6251;
+		static readonly ANL_FIGHTERS_KILLED = 6252;
+		static readonly RAG_QUEST_2_PRIMARY = 6253;
+		static readonly RAG_QUEST_3_PRIMARY = 6254;
+		static readonly RAG_QUEST_3_SECONDARY = 6255;
 	}
   }

@@ -256,6 +256,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_QUEST_FALLENFROMGRACE = 7133;
 		static readonly ROW_QUEST_LEARNINGTHEROPES = 9643;
 		static readonly ROW_QUEST_IDESOFMILK = 9645;
+		static readonly ROW_QUEST_NEWLEAF = 13708;
+		static readonly ROW_QUEST_RAGANDBONEMAN3 = 13730;
 		static readonly ROW_QUEST_BLOODMOONRISES = 16414;
 		static readonly ROW_QUEST_RUFFSITUATION = 16971;
 		static readonly ROW_QUEST_CRABQUEST = 16972;
@@ -4402,6 +4404,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_MUSIC_SCAPE_SAIL = 7096;
 		static readonly ROW_MUSIC_MAD_ANGEL_BOSS = 7132;
 		static readonly ROW_MUSIC_BRUTUS_COW_BOSS = 8662;
+		static readonly ROW_MUSIC_SEVERED = 13704;
+		static readonly ROW_MUSIC_HORROR = 13705;
 		static readonly ROW_MUSIC_SAILING_COMBAT = 16223;
 		static readonly ROW_MUSIC_RED_ROCK_ISLAND = 16224;
 		static readonly ROW_MUSIC_RED_REEFS_UNDERWATER = 16225;
@@ -17826,6 +17830,8 @@ declare namespace net.runelite.api.gameval {
 		static readonly ROW_SANGVESTI = 11968;
 		static readonly ROW_SOTFA_FOREST = 12008;
 		static readonly ROW_SOTFA_FOREST_UNDERGROUND = 12065;
+		static readonly ROW_RAG3_ASYLUM = 13640;
+		static readonly ROW_WIZARDS_TOWER_BASEMENT = 13641;
 		static readonly ROW_SUGADINTI_HIDEOUT_INNER = 16389;
 		static readonly ROW_SUGADINTI_HIDEOUT_OUTER = 16390;
 		static readonly ROW_CASTLE_DRAKAN_ROOF = 16391;
