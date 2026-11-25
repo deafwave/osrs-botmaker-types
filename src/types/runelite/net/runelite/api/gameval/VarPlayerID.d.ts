@@ -2396,14 +2396,6 @@ declare namespace net.runelite.api.gameval {
 		static readonly CORROSION = 4966;
 		static readonly AMENITY_VARP_0 = 4968;
 		static readonly FLETCHING_TABLE_GENERAL = 4970;
-		static readonly FLETCHING_TABLE_FAVE_1 = 4973;
-		static readonly FLETCHING_TABLE_FAVE_2 = 4974;
-		static readonly FLETCHING_TABLE_FAVE_3 = 4975;
-		static readonly FLETCHING_TABLE_FAVE_4 = 4976;
-		static readonly FLETCHING_TABLE_FAVE_5 = 4977;
-		static readonly FLETCHING_TABLE_FAVE_6 = 4978;
-		static readonly FLETCHING_TABLE_FAVE_7 = 4979;
-		static readonly FLETCHING_TABLE_FAVE_8 = 4980;
 		static readonly CRAB_TRAPS_1 = 4981;
 		static readonly CRAB_TRAPS_2 = 4982;
 		static readonly SAILING_BT_TRIAL_DATA_IF = 4985;
@@ -3271,5 +3263,15 @@ declare namespace net.runelite.api.gameval {
 		static readonly RAG_QUEST_2_PRIMARY = 6253;
 		static readonly RAG_QUEST_3_PRIMARY = 6254;
 		static readonly RAG_QUEST_3_SECONDARY = 6255;
+		static readonly POR_GENERAL_TRANSMIT = 6258;
+		static readonly TOTAL_POR_COMPLETIONS = 6260;
+		static readonly POR_ADVANCED_STEPPINGSTONES_1 = 6262;
+		static readonly POR_ADVANCED_STEPPINGSTONES_2 = 6263;
+		static readonly RAEUN_PLAYER_CHAINED = 6265;
+		static readonly RAEUN_CHAIN_DAMAGE_1 = 6266;
+		static readonly RAEUN_CHAIN_DAMAGE_2 = 6267;
+		static readonly GRAVEYARD_PRIMARY = 6268;
+		static readonly GRAVEYARD_SECONDARY = 6269;
+		static readonly ROOFTOP_GENERAL = 6270;
 	}
   }

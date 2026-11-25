@@ -17091,5 +17091,36 @@ declare namespace net.runelite.api {
 		static readonly UGTHANKI_RIBS_35022 = 35022;
 		static readonly WALLASALKI_BONE_35024 = 35024;
 		static readonly GUTHIXIAN_ROOT = 35026;
+		static readonly FREMENNIK_GRACEFUL_ORNAMENT_KIT = 35027;
+		static readonly FREMENNIK_SAIL_FABRIC = 35029;
+		static readonly GHOSTLY_SAIL_FABRIC = 35031;
+		static readonly SUNKEN_TREASURE = 35033;
+		static readonly GRACEFUL_HOOD_35039 = 35039;
+		static readonly GRACEFUL_HOOD_35041 = 35041;
+		static readonly GRACEFUL_CAPE_35042 = 35042;
+		static readonly GRACEFUL_CAPE_35044 = 35044;
+		static readonly GRACEFUL_TOP_35045 = 35045;
+		static readonly GRACEFUL_TOP_35047 = 35047;
+		static readonly GRACEFUL_LEGS_35048 = 35048;
+		static readonly GRACEFUL_LEGS_35050 = 35050;
+		static readonly GRACEFUL_GLOVES_35051 = 35051;
+		static readonly GRACEFUL_GLOVES_35053 = 35053;
+		static readonly GRACEFUL_BOOTS_35054 = 35054;
+		static readonly GRACEFUL_BOOTS_35056 = 35056;
+		static readonly TORVA_PLATEBODY_35057 = 35057;
+		static readonly AMETHYST_ARROW_35059 = 35059;
+		static readonly CAPTAINS_LOG_35060 = 35060;
+		static readonly CAPTAINS_LOG_35061 = 35061;
+		static readonly CAPTAINS_LOG_E = 35062;
+		static readonly ARCTIC_PINE_STAKE = 35063;
+		static readonly INFUSED_ARCTIC_PINE_STAKE = 35065;
+		static readonly BINDING_STAKE = 35067;
+		static readonly SOUL_ESSENCE = 35069;
+		static readonly SALTCRUSTED_LAMP = 35071;
+		static readonly THE_BLIND_SEER = 35072;
+		static readonly WATERLOGGED_BOOK = 35073;
+		static readonly SOGGY_OWNERSHIP_NOTE = 35074;
+		static readonly DUSTY_OWNERSHIP_NOTE = 35075;
+		static readonly SCRATCHED_NOTE = 35076;
 	}
   }

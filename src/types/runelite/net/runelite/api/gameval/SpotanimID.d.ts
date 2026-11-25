@@ -4446,6 +4446,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly CURSE_IMPACT_SHORT = 4441;
 		static readonly GARGBOSS_DEBRIS_SHADOW_120_SMALL = 4442;
 		static readonly GARBOSS_DEBRIS_SHADOW_RED_60 = 4443;
+		static readonly SKELETON_TAXE_TRAVEL01 = 4444;
 		static readonly VFX_TFA_TELEPORT_START = 4445;
 		static readonly VFX_TFA_TELEPORT_END = 4446;
 		static readonly THROWN_ROCK = 4447;
@@ -4463,5 +4464,22 @@ declare namespace net.runelite.api.gameval {
 		static readonly RAG2_RIGHT_HAND_PROJ = 4459;
 		static readonly RAG2_LEFT_HAND_PROJ = 4460;
 		static readonly RAG2_TAIL_PROJ = 4461;
+		static readonly SKELETON_TAXE_TRAVEL02 = 4462;
+		static readonly SKELETON_TAXE_LAUNCH01 = 4463;
+		static readonly SKELETON_TAXE_LAUNCH02 = 4464;
+		static readonly SKELETON_BAS_ARROW_SPOTANIM = 4465;
+		static readonly SKELETON_BAS_ARROW_PROJECTILE = 4466;
+		static readonly VFX_RAEUN_SPAWN = 4467;
+		static readonly VFX_RAEUN_SPECIAL_ATTACK_MAGIC = 4468;
+		static readonly VFX_RAEUN_SPECIAL_ATTACK_MAGIC_CHAIN_HITANIM_01 = 4469;
+		static readonly VFX_RAEUN_CHAIN_ATTACK_HITANIM_02 = 4470;
+		static readonly VFX_RAEUN_CHAIN_ATTACK_HITANIM_03 = 4471;
+		static readonly VFX_RAEUN_SOUL_PRISON_SPAWN_01 = 4472;
+		static readonly VFX_RAEUN_SOUL_PRISON_CHAIN_DESPAWN_01 = 4473;
+		static readonly VFX_RAEUN_SOUL_PRISON_CHAIN_RESPAWN_01 = 4474;
+		static readonly VFX_RAEUN_SOUL_PRISON_DESPAWN_01 = 4475;
+		static readonly VFX_RAEUN_SOUL_PRISON_CHAIN_IDLE_01 = 4476;
+		static readonly VFX_RAEUN_SOUL_PRISON_DEATH_01 = 4477;
+		static readonly VFX_RAEUN_DEATH_WIND = 4478;
 	}
   }

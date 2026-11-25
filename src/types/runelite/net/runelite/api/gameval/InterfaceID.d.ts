@@ -995,6 +995,7 @@ declare namespace net.runelite.api.gameval {
 		static readonly WOTW_WALL_LANDS_END = 990;
 		static readonly WOTW_WALL_PISCARILIUS = 991;
 		static readonly WOTW_WALL_SHAYZIEN = 992;
+		static readonly POR_STATISTICS = 993;
 		static readonly _100GUIDEEGGSOVERLAY_UNIVERSE = 0;
 		static readonly _100GUIDEEGGSOVERLAY_DODGER = 1;
 		static readonly _100GUIDEEGGSOVERLAY_CONTENT = 2;
@@ -28188,5 +28189,20 @@ declare namespace net.runelite.api.gameval {
 		static readonly WOTWWALLSHAYZIEN_CONTENT_TEXT7 = 65011723;
 		static readonly WOTWWALLSHAYZIEN_CONTENT_TEXT8 = 65011724;
 		static readonly WOTWWALLSHAYZIEN_CONTENT_TEXT9 = 65011725;
+		static readonly PORSTATISTICS_ROOT_MODEL0 = 65077248;
+		static readonly PORSTATISTICS_CLOSE = 65077249;
+		static readonly PORSTATISTICS_MESSAGESCROLL2_CLOSE = 65077250;
+		static readonly PORSTATISTICS_CONTENT = 65077251;
+		static readonly PORSTATISTICS_TITLE = 65077252;
+		static readonly PORSTATISTICS_TITLE_TEXT = 65077253;
+		static readonly PORSTATISTICS_STATS = 65077254;
+		static readonly PORSTATISTICS_MS1 = 65077255;
+		static readonly PORSTATISTICS_MS2 = 65077256;
+		static readonly PORSTATISTICS_MS3 = 65077257;
+		static readonly PORSTATISTICS_MS4 = 65077258;
+		static readonly PORSTATISTICS_MS5 = 65077259;
+		static readonly PORSTATISTICS_MS6 = 65077260;
+		static readonly PORSTATISTICS_MS7 = 65077261;
+		static readonly PORSTATISTICS_MS8 = 65077262;
 	}
   }
